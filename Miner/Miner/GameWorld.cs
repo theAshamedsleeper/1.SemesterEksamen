@@ -38,6 +38,7 @@ namespace Miner
 
         protected override void Initialize()
         {
+            workShop.Add(new WorkShop());
             Terrain.Give_Terrain();
             base.Initialize();
         }
