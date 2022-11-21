@@ -10,77 +10,77 @@ namespace Miner
 {
     internal abstract class GameObjects
     {
-        protected Texture2D sprites;
-        protected Texture2D barSprites;
-        protected Rectangle energyRecBar;
-        protected Rectangle seedChestRectangle;
-        protected Vector2 positions;
-        protected float scale;
-        protected float speed;
-        protected Vector2 velocity;
-        protected byte charSpriteIndex;
-        protected Texture2D charset;
-        protected Vector2[] position1;
-        protected int threshold;
-        protected Rectangle SourceRectangle;
+        //protected Texture2D sprites;
+        //protected Texture2D barSprites;
+        //protected Rectangle energyRecBar;
+        //protected Rectangle seedChestRectangle;
+        //protected Vector2 positions;
+        //protected float scale;
+        //protected float speed;
+        //protected Vector2 velocity;
+        //protected byte charSpriteIndex;
+        //protected Texture2D charset;
+        //protected Vector2[] position1;
+        //protected int threshold;
+        //protected Rectangle SourceRectangle;
 
-        //Constructor:
+        ////Constructor:
 
-        public GameObjects(Vector2 pos)
-        {
+        //public GameObjects(Vector2 pos)
+        //{
 
-        }
-
-
-
-        //Methods:
+        //}
 
 
-        private Texture2D GetCurrentSprite
-        {
-            get
-            {
-                return;
-            }
-        }
 
-        private Vector2 GetSpriteSize
-        {
-            get
-            {
-                return;
-            }
-        }
+        ////Methods:
 
-        public void LoadContent()
-        {
 
-        }
+        //private Texture2D GetCurrentSprite
+        //{
+        //    get
+        //    {
+        //        return;
+        //    }
+        //}
 
-        public abstract void Update(GameTime gameTime);
+        //private Vector2 GetSpriteSize
+        //{
+        //    get
+        //    {
+        //        return;
+        //    }
+        //}
 
-        protected void Move(GameTime gametime)
-        {
+        //public void LoadContent()
+        //{
 
-        }
+        //}
 
-        public void Draw(SpriteBatch spriteBatch)
-        {
+        //public abstract void Update(GameTime gameTime);
 
-        }
+        //protected void Move(GameTime gametime)
+        //{
 
-        public Rectangle GetCollisionBox
-        {
-            get
-            {
-                return;
-            }
-        }
+        //}
 
-        public bool IsColliding(GameObjects other)
-        {
+        //public void Draw(SpriteBatch spriteBatch)
+        //{
+
+        //}
+
+        //public Rectangle GetCollisionBox
+        //{
+        //    get
+        //    {
+        //        return;
+        //    }
+        //}
+
+        //public bool IsColliding(GameObjects other)
+        //{
            
-        }
+        //}
         
 
 
