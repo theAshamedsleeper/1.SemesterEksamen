@@ -323,7 +323,7 @@ namespace Miner
         #region Making chunks
         public static void Start_Chunk(int[] direction, int[] last_chunk)
         {
-            loaded_chunks[0] = direction;
+            loaded_chunks.Add(direction);
             Chunk_maker(direction);
         }
         static void Chunk_maker(int[] direction)
