@@ -27,13 +27,5 @@ namespace Miner
         {
 
         }
-
-        public  void InvOpen()
-        {
-            if (isInvOpen)
-            {
-
-            }
-        }
     }
 }
