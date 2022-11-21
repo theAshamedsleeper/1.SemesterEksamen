@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
 namespace Miner
 {
@@ -21,6 +22,9 @@ namespace Miner
         private int ofset_y = 0;
         private int current_chunk = 0;
 
+        private List<WorkShop> workShop = new List<WorkShop>();
+
+
         public GameWorld()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -35,15 +39,17 @@ namespace Miner
         protected override void Initialize()
         {
             Terrain.Give_Terrain();
-            int[] ints = new int[] {0, 0};
-            Terrain.Start_Chunk(ints, ints);
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
+           
+            for (int i = 0; i < workShop.Count; i++)
+            {
+                workShop[i].LoadContent(Content);
+            }
             grass_terrain = Content.Load<Texture2D>("pixil-frame-0");
             dirt_terrain = Content.Load<Texture2D>("pixil-frame-2");
             player_terrain = Content.Load<Texture2D>("pixilart-drawing_1");
@@ -63,6 +69,10 @@ namespace Miner
                 ofset_y++;
             Terrain.Load_chunks(ofset_x, ofset_y);
             Terrain.Move_Main_chunk(ofset_x, ofset_y, _graphics.PreferredBackBufferWidth / 2 - player_terrain.Width / 2, _graphics.PreferredBackBufferHeight / 2 - player_terrain.Height / 2);
+            for (int i = 0; i < workShop.Count; i++)
+            {
+                workShop[i].Update(gameTime);
+            }
             base.Update(gameTime);
         }
 
@@ -115,7 +125,10 @@ namespace Miner
                 }
             }
             #endregion
-
+            foreach (WorkShop go in workShop)
+            {
+                go.Draw(_spriteBatch);
+            }
             _spriteBatch.Draw(player_terrain,//what to draw
                 new Vector2(_graphics.PreferredBackBufferWidth/2 - player_terrain.Width / 2, _graphics.PreferredBackBufferHeight/2 - player_terrain.Height / 2),//place to draw it
                 null,//rectangle
