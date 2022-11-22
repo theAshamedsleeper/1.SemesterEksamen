@@ -9,10 +9,26 @@
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/pixil-frame-2.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/pixilart-drawing_1.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/CraftingButton.PNG</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/Fonts/ArtifactsFont.fx</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/Fonts/ArtifactsFontT.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/Fonts/CraftFont.fx</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/Fonts/CraftFontT.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/Fonts/StatsFont.fx</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/Fonts/StatsFontT.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/Fonts/UpgradeFont.fx</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/Fonts/UpgradeFontT.spritefont</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/InventorybackGround.png</File>
   </SourceFiles>
   <DestFiles>
     <File>UI Sprites/InventorybackGround.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

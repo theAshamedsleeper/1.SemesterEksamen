@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Miner.UiForInv;
 using System.Collections.Generic;
 
 namespace Miner
@@ -23,7 +24,7 @@ namespace Miner
         private int current_chunk = 0;
 
         private List<WorkShop> workShop = new List<WorkShop>();
-
+        
 
         public GameWorld()
         {
@@ -38,7 +39,8 @@ namespace Miner
 
         protected override void Initialize()
         {
-            workShop.Add(new WorkShop());
+            workShop.Add(new CraftingButton());
+            
             Terrain.Give_Terrain();
             base.Initialize();
         }
@@ -54,6 +56,7 @@ namespace Miner
             grass_terrain = Content.Load<Texture2D>("pixil-frame-0");
             dirt_terrain = Content.Load<Texture2D>("pixil-frame-2");
             player_terrain = Content.Load<Texture2D>("pixilart-drawing_1");
+
         }
 
         protected override void Update(GameTime gameTime)

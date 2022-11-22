@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/CraftingButton.PNG</SourceFile>
-  <SourceTime>2022-11-21T13:03:00.7256868+01:00</SourceTime>
+  <SourceTime>2022-11-21T13:25:43.6817759+01:00</SourceTime>
   <DestFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/UI Sprites/CraftingButton.xnb</DestFile>
-  <DestTime>2022-11-21T13:03:23.8984653+01:00</DestTime>
+  <DestTime>2022-11-22T10:52:58.6155289+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

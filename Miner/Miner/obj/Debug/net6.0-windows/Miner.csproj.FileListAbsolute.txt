@@ -128,3 +128,11 @@ C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Min
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.genruntimeconfig.cache
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\ref\Miner.dll
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\CraftingButton.xnb
+C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\ArtifactsFont.xnb
+C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CraftFont.xnb
+C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\StatsFont.xnb
+C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\UpgradeFont.xnb
+C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\ArtifactsFontT.xnb
+C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CraftFontT.xnb
+C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\StatsFontT.xnb
+C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\UpgradeFontT.xnb
