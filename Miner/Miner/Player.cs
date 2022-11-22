@@ -1,78 +1,85 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Microsoft.VisualBasic.Devices;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
 using SharpDX.Direct2D1.Effects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using Microsoft.Xna.Framework.Input;
+using Keyboard = Microsoft.Xna.Framework.Input.Keyboard;
+using Keys = Microsoft.Xna.Framework.Input.Keys;
 
 namespace Miner
 {
     internal class Player : GameObjects
     {
-        //    private float energy;
-        //    private int x1;
-        //    private bool canMove;
-        //    private float energyDecrease;
-        //    private float idleTimer;
-        //    private float animationsRunningTimer;
-        //    private bool hasPower;
-        //    private bool canMine;
-        //    private int walkThreshold;
-        //    private int miningThreshold;
-        //    private float MiningTimer;
-        //    private bool animationIsRunningMining;
-        //    private SoundEffect step_1;
-        //    private SoundEffect step_2;
-        //    private SoundEffect step_3;
-        //    private SoundEffect step_4;
-        //    private SoundEffect step_5;
-        //    private SoundEffect step_6;
-        //    private SoundEffect step_7;
-        //    private float sound_time;
+        
+
+        
+
+        public override void LoadContent(ContentManager content)
+        {
+           
+
+            _spriteSheetTexture = content.Load<Texture2D>(ASSET_NAME_SPRITESHEET);
+        }
+
+        public override void Update(GameTime gameTime)
+        {
 
 
-        //    // Constuctor:
+            if (Keyboard.GetState().IsKeyDown(Keys.D))
+            {
+                effect = SpriteEffects.None;
+                timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+                velocity += new Vector2(5, 0);
 
-        //    public Player(Vector2 pos)
-        //    {
-
-        //    }
-
-        //    //Methods:
-
-        //    protected void LoadContent(ContentManager content)
-        //    {
-
-        //    }
-
-        //    private void MoveSound(GameTime gametime)
-        //    {
-
-        //    }
-
-        //    public void Update(GameTime gametime)
-        //    {
-
-        //    }
-
-        //    private void HandleInput(GameTime gametime)
-        //    {
-
-        //    }
-
-        //    private void HandleEnergy(GameTime gametime)
-        //    {
-
-        //    }
-
-        //    private void OnCollosion(GameObjects other)
-        //    {
-
-        //    }
+                if (timer > 50)
+                {
+                    frame = frame + 32;
+                    timer = 0;
+                }
+                // 32, 64, 96, 128 = De fire frames
+                if (frame == 128)
+                {
+                    frame = 0;
+                }
 
 
+
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.A))
+            {
+                effect = SpriteEffects.FlipHorizontally;
+                timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+                velocity += new Vector2(-5, 0);
+
+
+                if (timer > 50)
+                {
+                    frame = frame + 32;
+                    timer = 0;
+                }
+                // 32, 64, 96, 128 = De fire frames
+                if (frame == 128)
+                {
+                    frame = 0;
+                }
+
+            }
+
+
+
+            
+        }
+
+       
     }
 }

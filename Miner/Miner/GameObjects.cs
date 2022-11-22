@@ -1,87 +1,60 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Microsoft.VisualBasic.Devices;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using SharpDX.Direct2D1;
+using SharpDX.Direct2D1.Effects;
+using SharpDX.Direct3D9;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using SpriteBatch = Microsoft.Xna.Framework.Graphics.SpriteBatch;
 
 namespace Miner
 {
+
     internal abstract class GameObjects
     {
-        //protected Texture2D sprites;
-        //protected Texture2D barSprites;
-        //protected Rectangle energyRecBar;
-        //protected Rectangle seedChestRectangle;
-        //protected Vector2 positions;
-        //protected float scale;
-        //protected float speed;
-        //protected Vector2 velocity;
-        //protected byte charSpriteIndex;
-        //protected Texture2D charset;
-        //protected Vector2[] position1;
-        //protected int threshold;
-        //protected Rectangle SourceRectangle;
+        protected int frame = 0;
+        protected float timer;
+        protected Vector2 velocity = new Vector2(10, 10);
+        protected SpriteEffects effect = SpriteEffects.None;
+        protected float speed = 200f;
+        protected Vector2 positionx;
 
-        ////Constructor:
 
-        //public GameObjects(Vector2 pos)
+        protected const string ASSET_NAME_SPRITESHEET = "Digger7Spritesheet_NB";
+
+      
+
+        protected Texture2D _spriteSheetTexture;
+
+
+        public abstract void LoadContent(ContentManager content);
+
+        public abstract void Update(GameTime gameTime);
+
+        //protected void Move(GameTime gameTime)
         //{
+        //    float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
+        //    position += ((velocity * speed) * deltaTime);
         //}
 
+        public void Draw(SpriteBatch spriteBatch)
+        {
+            
+            spriteBatch.Draw(_spriteSheetTexture, positionx, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 7, effect, 1f);
+            
+        }
 
 
-        ////Methods:
 
 
-        //private Texture2D GetCurrentSprite
-        //{
-        //    get
-        //    {
-        //        return;
-        //    }
-        //}
 
-        //private Vector2 GetSpriteSize
-        //{
-        //    get
-        //    {
-        //        return;
-        //    }
-        //}
-
-        //public void LoadContent()
-        //{
-
-        //}
-
-        //public abstract void Update(GameTime gameTime);
-
-        //protected void Move(GameTime gametime)
-        //{
-
-        //}
-
-        //public void Draw(SpriteBatch spriteBatch)
-        //{
-
-        //}
-
-        //public Rectangle GetCollisionBox
-        //{
-        //    get
-        //    {
-        //        return;
-        //    }
-        //}
-
-        //public bool IsColliding(GameObjects other)
-        //{
-           
-        //}
-        
 
 
 
