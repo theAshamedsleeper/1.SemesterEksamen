@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/InventorybackGround.png</SourceFile>
-  <SourceTime>2022-11-21T12:06:32.1162659+01:00</SourceTime>
-  <DestFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Content/UI Sprites/InventorybackGround.xnb</DestFile>
-  <DestTime>2022-11-23T12:59:37.9843048+01:00</DestTime>
+  <SourceFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/Fonts/CloseUIButton.png</SourceFile>
+  <SourceTime>2022-11-23T12:37:27.3234889+01:00</SourceTime>
+  <DestFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Content/UI Sprites/Fonts/CloseUIButton.xnb</DestFile>
+  <DestTime>2022-11-23T12:37:30.7138016+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -24,7 +24,6 @@ namespace Miner
         private int current_chunk = 0;
 
         private List<WorkShop> workShop = new List<WorkShop>();
-        
 
         public GameWorld()
         {
@@ -61,6 +60,7 @@ namespace Miner
 
         protected override void Update(GameTime gameTime)
         {
+            
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.A))

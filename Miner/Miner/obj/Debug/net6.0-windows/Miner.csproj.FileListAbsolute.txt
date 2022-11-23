@@ -136,3 +136,4 @@ C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Min
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CraftFontT.xnb
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\StatsFontT.xnb
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\UpgradeFontT.xnb
+C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CloseUIButton.xnb
