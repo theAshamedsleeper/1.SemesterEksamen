@@ -13,7 +13,7 @@ namespace Miner.UiForInv
         private float closeDownShopTimer;
         public override void LoadContent(ContentManager content)
         {
-            
+            #region Tabs
             //Background
             spritePlacer[0] = content.Load<Texture2D>("Ui Sprites/InventorybackGround");
             spritePlacerPos[0] = new Vector2(400, 400);
@@ -40,7 +40,27 @@ namespace Miner.UiForInv
             //close ButtonUI
             spritePlacer[5] = content.Load<Texture2D>("Ui Sprites/Fonts/CloseUIButton");
             uiRectangles[4] = new Rectangle(1800, 400, 100, 100);
-
+            #endregion
+            #region UpgradeTab
+            spritePlacer[6] = content.Load<Texture2D>("Ui Sprites/UpgradePlaceHolder");
+            //First Upgrade Line
+            uiRectangles[5] = new Rectangle(440,540,100,100);
+            uiRectangles[6] = new Rectangle(580,540,100,100);
+            uiRectangles[7] = new Rectangle(720,540,100,100);
+            uiRectangles[8] = new Rectangle(860,540,100,100);
+            //Second Upgrade Line
+            uiRectangles[9] = new Rectangle(440,660,100,100);
+            uiRectangles[10] = new Rectangle(580,660,100,100);
+            uiRectangles[11] = new Rectangle(720,660,100,100);
+            uiRectangles[12] = new Rectangle(860,660,100,100);
+            //Third Upgrade Line
+            uiRectangles[13] = new Rectangle(440,780,100,100);
+            uiRectangles[14] = new Rectangle(580,780,100,100);
+            uiRectangles[15] = new Rectangle(720,780,100,100);
+            uiRectangles[16] = new Rectangle(860,780,100,100);
+            //Last upgrade
+            uiRectangles[17] = new Rectangle(420,660,100,100);
+            #endregion
         }
 
         public override void Update(GameTime gameTime)

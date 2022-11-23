@@ -9,7 +9,7 @@ namespace Miner
         protected Texture2D[] spritePlacer = new Texture2D[10];
         protected Vector2[] spritePlacerPos = new Vector2[10];
         protected SpriteFont[] fontsTitle = new SpriteFont[4];
-        protected Rectangle[] uiRectangles = new Rectangle[5];
+        protected Rectangle[] uiRectangles = new Rectangle[20];
         protected bool isCraftClicked = false;
         protected bool isUpgradesClicked = false;
         protected bool isStatsClicked = false;
@@ -76,6 +76,27 @@ namespace Miner
                 }
                 //close button
                 spriteBatch.Draw(spritePlacer[5], uiRectangles[4], Color.White);
+                #endregion
+                #region UpgradeButtons
+                if (isUpgradesClicked == true)
+                {
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[5], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[6], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[7], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[8], Color.White);
+
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[9], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[10], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[11], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[12], Color.White);
+
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[13], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[14], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[15], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[16], Color.White);
+
+
+                }
                 #endregion
                 #region Button Text
                 spriteBatch.DrawString(fontsTitle[0], "Craft", spritePlacerPos[1], Color.White, 0f, new Vector2(0, 0), 2f, SpriteEffects.None, 0f);
