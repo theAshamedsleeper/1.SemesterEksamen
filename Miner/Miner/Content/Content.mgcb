@@ -73,12 +73,6 @@
 /processorParam:TextureFormat=Color
 /build:UI Sprites/CraftingButton.PNG
 
-#begin UI Sprites/Fonts/ArtifactsFont.fx
-/importer:EffectImporter
-/processor:EffectProcessor
-/processorParam:DebugMode=Auto
-/build:UI Sprites/Fonts/ArtifactsFont.fx
-
 #begin UI Sprites/Fonts/ArtifactsFontT.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
@@ -98,12 +92,6 @@
 /processorParam:TextureFormat=Color
 /build:UI Sprites/Fonts/CloseUIButton.png
 
-#begin UI Sprites/Fonts/CraftFont.fx
-/importer:EffectImporter
-/processor:EffectProcessor
-/processorParam:DebugMode=Auto
-/build:UI Sprites/Fonts/CraftFont.fx
-
 #begin UI Sprites/Fonts/CraftFontT.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
@@ -111,24 +99,12 @@
 /processorParam:TextureFormat=Compressed
 /build:UI Sprites/Fonts/CraftFontT.spritefont
 
-#begin UI Sprites/Fonts/StatsFont.fx
-/importer:EffectImporter
-/processor:EffectProcessor
-/processorParam:DebugMode=Auto
-/build:UI Sprites/Fonts/StatsFont.fx
-
 #begin UI Sprites/Fonts/StatsFontT.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
 /build:UI Sprites/Fonts/StatsFontT.spritefont
-
-#begin UI Sprites/Fonts/UpgradeFont.fx
-/importer:EffectImporter
-/processor:EffectProcessor
-/processorParam:DebugMode=Auto
-/build:UI Sprites/Fonts/UpgradeFont.fx
 
 #begin UI Sprites/Fonts/UpgradeFontT.spritefont
 /importer:FontDescriptionImporter
@@ -161,3 +137,49 @@
 /processorParam:TextureFormat=Color
 /build:UI Sprites/UpgradePlaceHolder.PNG
 
+#begin UI Sprites/BarDivider.PNG
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:UI Sprites/BarDivider.PNG
+
+#begin UI Sprites/Fonts/R1.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:UI Sprites/Fonts/R1.spritefont
+
+#begin UI Sprites/Fonts/R2.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:UI Sprites/Fonts/R2.spritefont
+
+#begin UI Sprites/Fonts/R3.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:UI Sprites/Fonts/R3.spritefont
+
+#begin UI Sprites/Fonts/R4.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:UI Sprites/Fonts/R4.spritefont
+
+#begin UI Sprites/Fonts/R5.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:UI Sprites/Fonts/R5.spritefont

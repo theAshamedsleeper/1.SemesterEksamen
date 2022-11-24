@@ -40,26 +40,49 @@ namespace Miner.UiForInv
             //close ButtonUI
             spritePlacer[5] = content.Load<Texture2D>("Ui Sprites/Fonts/CloseUIButton");
             uiRectangles[4] = new Rectangle(1800, 400, 100, 100);
+
             #endregion
             #region UpgradeTab
             spritePlacer[6] = content.Load<Texture2D>("Ui Sprites/UpgradePlaceHolder");
+            spritePlacer[7] = content.Load<Texture2D>("Ui Sprites/BarDivider");
+            uiRectangles[23] = new Rectangle(1600, 500, 4, 500);
+            uiRectangles[24] = new Rectangle(720, 500, 4, 500);
+
             //First Upgrade Line
-            uiRectangles[5] = new Rectangle(440,540,100,100);
-            uiRectangles[6] = new Rectangle(580,540,100,100);
-            uiRectangles[7] = new Rectangle(720,540,100,100);
-            uiRectangles[8] = new Rectangle(860,540,100,100);
+            uiRectangles[5] = new Rectangle(780,540,100,100);
+            uiRectangles[6] = new Rectangle(920,540,100,100);
+            uiRectangles[7] = new Rectangle(1060,540,100,100);
+            uiRectangles[8] = new Rectangle(1200,540,100,100);
             //Second Upgrade Line
-            uiRectangles[9] = new Rectangle(440,660,100,100);
-            uiRectangles[10] = new Rectangle(580,660,100,100);
-            uiRectangles[11] = new Rectangle(720,660,100,100);
-            uiRectangles[12] = new Rectangle(860,660,100,100);
+            uiRectangles[9] = new Rectangle(780,660,100,100);
+            uiRectangles[10] = new Rectangle(920,660,100,100);
+            uiRectangles[11] = new Rectangle(1060,660,100,100);
+            uiRectangles[12] = new Rectangle(1200,660,100,100);
             //Third Upgrade Line
-            uiRectangles[13] = new Rectangle(440,780,100,100);
-            uiRectangles[14] = new Rectangle(580,780,100,100);
-            uiRectangles[15] = new Rectangle(720,780,100,100);
-            uiRectangles[16] = new Rectangle(860,780,100,100);
+            uiRectangles[13] = new Rectangle(780,780,100,100);
+            uiRectangles[14] = new Rectangle(920,780,100,100);
+            uiRectangles[15] = new Rectangle(1060,780,100,100);
+            uiRectangles[16] = new Rectangle(1200,780,100,100);
             //Last upgrade
-            uiRectangles[17] = new Rectangle(420,660,100,100);
+            uiRectangles[17] = new Rectangle(1380,660,100,100);
+            //Ressource count
+            uiRectangles[18] = new Rectangle(1650, 540, 50, 50);
+            fontsTitle[5] = content.Load<SpriteFont>("Ui Sprites/Fonts/R1");
+            uiRectangles[19] = new Rectangle(1650, 615, 50, 50);
+            fontsTitle[6] = content.Load<SpriteFont>("Ui Sprites/Fonts/R2");
+            uiRectangles[20] = new Rectangle(1650, 690, 50, 50);
+            fontsTitle[7] = content.Load<SpriteFont>("Ui Sprites/Fonts/R3");
+            uiRectangles[21] = new Rectangle(1650, 765, 50, 50);
+            fontsTitle[8] = content.Load<SpriteFont>("Ui Sprites/Fonts/R4");
+            uiRectangles[22] = new Rectangle(1650, 840, 50, 50);
+            fontsTitle[9] = content.Load<SpriteFont>("Ui Sprites/Fonts/R5");
+
+            // Upgrade Info
+            uiRectangles[25] = new Rectangle(465, 550, 200, 400);
+
+
+
+            //See Upgrade Info
             #endregion
         }
 
@@ -105,16 +128,79 @@ namespace Miner.UiForInv
             {
                 IsInvOpen = false;
             }
-            if(IsInvOpen == true &&Keyboard.GetState().IsKeyDown(Keys.I)&& closeDownShopTimer > 0.5f)
+            if(IsInvOpen == true &&Keyboard.GetState().IsKeyDown(Keys.I)&& closeDownShopTimer > 0.3f)
             {
                 IsInvOpen = false;
                 closeDownShopTimer = 0f;
             }
-            else if (IsInvOpen == false && Keyboard.GetState().IsKeyDown(Keys.I)&& closeDownShopTimer > 0.5f)
+            else if (IsInvOpen == false && Keyboard.GetState().IsKeyDown(Keys.I)&& closeDownShopTimer > 0.3f)
             {
                 IsInvOpen = true;
                 closeDownShopTimer = 0f;
             }
+            #endregion
+            #region See Upgrades
+            if (uiRectangles[5].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 1;
+            }
+            if (uiRectangles[6].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 2;
+            }
+            if (uiRectangles[7].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 3;
+            }
+            if (uiRectangles[8].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 4;
+            }
+            if (uiRectangles[9].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 5;
+            }
+            if (uiRectangles[10].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 6;
+            }
+            if (uiRectangles[11].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 7;
+            }
+            if (uiRectangles[12].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 8;
+            }
+            if (uiRectangles[12].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 8;
+            }
+            if (uiRectangles[13].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 10;
+            }
+            if (uiRectangles[14].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 11;
+            }
+            if (uiRectangles[15].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 12;
+            }
+
             #endregion
 
         }

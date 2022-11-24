@@ -141,14 +141,10 @@ D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\pixil-frame-2.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\pixilart-drawing_1.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\CraftingButton.xnb
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\ArtifactsFont.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\ArtifactsFontT.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CloseUIButton.xnb
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CraftFont.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CraftFontT.xnb
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\StatsFont.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\StatsFontT.xnb
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\UpgradeFont.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\UpgradeFontT.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InventorybackGround.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradePlaceHolder.xnb
@@ -189,3 +185,9 @@ D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\obj\Debug\
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.pdb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.genruntimeconfig.cache
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\ref\Miner.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BarDivider.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R1.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R3.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R4.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R5.xnb

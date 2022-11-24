@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using System.Windows.Forms;
 
 namespace Miner
 {
@@ -8,14 +9,26 @@ namespace Miner
     {
         protected Texture2D[] spritePlacer = new Texture2D[10];
         protected Vector2[] spritePlacerPos = new Vector2[10];
-        protected SpriteFont[] fontsTitle = new SpriteFont[4];
-        protected Rectangle[] uiRectangles = new Rectangle[20];
+        protected SpriteFont[] fontsTitle = new SpriteFont[10];
+        protected Rectangle[] uiRectangles = new Rectangle[40];
         protected bool isCraftClicked = false;
         protected bool isUpgradesClicked = false;
         protected bool isStatsClicked = false;
         protected bool isArtiClicked = false;
+        // protected bool[] upgradeClicked = new bool[12];
+        protected byte UpgradeClicked;
+        private static int r1;
+        private static int r2;
+        private static int r3;
+        private static int r4;
+        private static int r5;
         private bool isInvOpen = true;
         public bool IsInvOpen { get { return isInvOpen; } set { isInvOpen = value; } }
+        public static int R1 { get { return r1; } set { r1 = value; } }
+        public static int R2 { get { return r2; } set { r2 = value; } }
+        public static int R3 { get { return r3; } set { r3 = value; } }
+        public static int R4 { get { return r4; } set { r4 = value; } }
+        public static int R5 { get { return r5; } set { r5 = value; } }
 
         public abstract void LoadContent(ContentManager content);
 
@@ -80,21 +93,71 @@ namespace Miner
                 #region UpgradeButtons
                 if (isUpgradesClicked == true)
                 {
+                    //First Upgrade Line
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[5], Color.White);
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[6], Color.White);
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[7], Color.White);
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[8], Color.White);
-
+                    //Second Upgrade Line
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[9], Color.White);
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[10], Color.White);
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[11], Color.White);
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[12], Color.White);
-
+                    //Third Upgrade Line
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[13], Color.White);
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[14], Color.White);
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[15], Color.White);
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[16], Color.White);
+                    //Last upgrade
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[17], Color.White);
+                    //Ressource count
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[18], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[19], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[20], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[21], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[22], Color.White);
 
+                    spriteBatch.DrawString(fontsTitle[5],$"Name {R1}",new Vector2(1720,550),Color.White);
+                    spriteBatch.DrawString(fontsTitle[6],$"Name {R2}",new Vector2(1720,625),Color.White);
+                    spriteBatch.DrawString(fontsTitle[7],$"Name {R3}",new Vector2(1720,700),Color.White);
+                    spriteBatch.DrawString(fontsTitle[8],$"Name {R4}",new Vector2(1720,775),Color.White);
+                    spriteBatch.DrawString(fontsTitle[9],$"Name {R5}",new Vector2(1720,850),Color.White);
+                    
+                    //Border Divding from upgrades to show how many ressources you got
+                    spriteBatch.Draw(spritePlacer[7], uiRectangles[23], Color.Black);
+                    spriteBatch.Draw(spritePlacer[7], uiRectangles[24], Color.Black);
+                  
+                    #region Upgrade Info
+                    switch (UpgradeClicked)
+                    {
+                        case 1:
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[25], Color.White);
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
+                        case 5:
+                            break;
+                        case 6:
+                            break;
+                        case 7:
+                            break;
+                        case 8:
+                            break;
+                        case 9:
+                            break;
+                        case 10:
+                            break;
+                        case 11:
+                            break;
+                        case 12:
+                            break;
+
+                    }
+                    #endregion
 
                 }
                 #endregion
@@ -104,6 +167,7 @@ namespace Miner
                 spriteBatch.DrawString(fontsTitle[2], "Artifacts", spritePlacerPos[3], Color.White, 0f, new Vector2(0, 0), 2f, SpriteEffects.None, 0f);
                 spriteBatch.DrawString(fontsTitle[3], "Stats", spritePlacerPos[4], Color.White, 0f, new Vector2(0, 0), 2f, SpriteEffects.None, 0f);
                 #endregion
+                
 
             }
         }
