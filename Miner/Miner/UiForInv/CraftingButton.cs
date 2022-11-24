@@ -79,6 +79,17 @@ namespace Miner.UiForInv
 
             // Upgrade Info
             uiRectangles[25] = new Rectangle(465, 550, 200, 400);
+            uiRectangles[26] = new Rectangle(465, 550, 200, 400);
+            uiRectangles[27] = new Rectangle(465, 550, 200, 400);
+            uiRectangles[28] = new Rectangle(465, 550, 200, 400);
+            uiRectangles[29] = new Rectangle(465, 550, 200, 400);
+            uiRectangles[30] = new Rectangle(465, 550, 200, 400);
+            uiRectangles[31] = new Rectangle(465, 550, 200, 400);
+            uiRectangles[32] = new Rectangle(465, 550, 200, 400);
+            uiRectangles[33] = new Rectangle(465, 550, 200, 400);
+            uiRectangles[34] = new Rectangle(465, 550, 200, 400);
+            uiRectangles[35] = new Rectangle(465, 550, 200, 400);
+            uiRectangles[36] = new Rectangle(465, 550, 200, 400);
 
 
 
@@ -180,22 +191,22 @@ namespace Miner.UiForInv
                 // upgradeClicked[0] = true;
                 UpgradeClicked = 8;
             }
-            if (uiRectangles[12].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
-            {
-                // upgradeClicked[0] = true;
-                UpgradeClicked = 8;
-            }
             if (uiRectangles[13].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
             {
                 // upgradeClicked[0] = true;
-                UpgradeClicked = 10;
+                UpgradeClicked = 9;
             }
             if (uiRectangles[14].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
             {
                 // upgradeClicked[0] = true;
-                UpgradeClicked = 11;
+                UpgradeClicked = 10;
             }
             if (uiRectangles[15].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            {
+                // upgradeClicked[0] = true;
+                UpgradeClicked = 11;
+            }
+            if (uiRectangles[16].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
             {
                 // upgradeClicked[0] = true;
                 UpgradeClicked = 12;

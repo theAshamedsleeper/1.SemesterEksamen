@@ -1,7 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using System.Windows.Forms;
 
 namespace Miner
 {
@@ -117,43 +116,67 @@ namespace Miner
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[21], Color.White);
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[22], Color.White);
 
-                    spriteBatch.DrawString(fontsTitle[5],$"Name {R1}",new Vector2(1720,550),Color.White);
-                    spriteBatch.DrawString(fontsTitle[6],$"Name {R2}",new Vector2(1720,625),Color.White);
-                    spriteBatch.DrawString(fontsTitle[7],$"Name {R3}",new Vector2(1720,700),Color.White);
-                    spriteBatch.DrawString(fontsTitle[8],$"Name {R4}",new Vector2(1720,775),Color.White);
-                    spriteBatch.DrawString(fontsTitle[9],$"Name {R5}",new Vector2(1720,850),Color.White);
-                    
+                    spriteBatch.DrawString(fontsTitle[5], $"Name {R1}", new Vector2(1720, 550), Color.White);
+                    spriteBatch.DrawString(fontsTitle[6], $"Name {R2}", new Vector2(1720, 625), Color.White);
+                    spriteBatch.DrawString(fontsTitle[7], $"Name {R3}", new Vector2(1720, 700), Color.White);
+                    spriteBatch.DrawString(fontsTitle[8], $"Name {R4}", new Vector2(1720, 775), Color.White);
+                    spriteBatch.DrawString(fontsTitle[9], $"Name {R5}", new Vector2(1720, 850), Color.White);
+
                     //Border Divding from upgrades to show how many ressources you got
                     spriteBatch.Draw(spritePlacer[7], uiRectangles[23], Color.Black);
                     spriteBatch.Draw(spritePlacer[7], uiRectangles[24], Color.Black);
-                  
+
                     #region Upgrade Info
                     switch (UpgradeClicked)
                     {
                         case 1:
                             spriteBatch.Draw(spritePlacer[6], uiRectangles[25], Color.White);
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[5], Color.Gray);
+
                             break;
                         case 2:
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[26], Color.Red);
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[6], Color.Gray);
                             break;
                         case 3:
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[27], Color.Beige);
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[7], Color.Gray);
                             break;
                         case 4:
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[28], Color.Black);
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[8], Color.Gray);
                             break;
                         case 5:
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[29], Color.Blue);
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[9], Color.Gray);
                             break;
                         case 6:
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[30], Color.Violet);
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[10], Color.Gray);
                             break;
                         case 7:
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[31], Color.Purple);
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[11], Color.Gray);
                             break;
                         case 8:
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[32], Color.Pink);
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[12], Color.Gray);
                             break;
                         case 9:
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[33], Color.DarkBlue);
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[13], Color.Gray);
                             break;
                         case 10:
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[34], Color.Cyan);
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[14], Color.Gray);
                             break;
                         case 11:
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[35], Color.Green);
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[15], Color.Gray);
                             break;
                         case 12:
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[36], Color.Yellow);
+                            spriteBatch.Draw(spritePlacer[6], uiRectangles[16], Color.Gray);
                             break;
 
                     }
@@ -167,7 +190,7 @@ namespace Miner
                 spriteBatch.DrawString(fontsTitle[2], "Artifacts", spritePlacerPos[3], Color.White, 0f, new Vector2(0, 0), 2f, SpriteEffects.None, 0f);
                 spriteBatch.DrawString(fontsTitle[3], "Stats", spritePlacerPos[4], Color.White, 0f, new Vector2(0, 0), 2f, SpriteEffects.None, 0f);
                 #endregion
-                
+
 
             }
         }
