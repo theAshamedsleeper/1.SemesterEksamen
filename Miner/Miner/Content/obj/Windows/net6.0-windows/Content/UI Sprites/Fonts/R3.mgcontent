@@ -1,1 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><SourceFile>D:/Program Files (x86)/Skole/1 semester/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/Fonts/R3.spritefont</SourceFile><SourceTime>2022-11-24T10:01:20.8768161+01:00</SourceTime><DestFile>D:/Program Files (x86)/Skole/1 semester/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Content/UI Sprites/Fonts/R3.xnb</DestFile><DestTime>2022-11-24T10:02:16.0977678+01:00</DestTime><Importer>FontDescriptionImporter</Importer><ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime><Processor>FontDescriptionProcessor</Processor><ProcessorTime>2022-07-26T13:44:56+02:00</ProcessorTime><Parameters><Key>PremultiplyAlpha</Key><Value>True</Value></Parameters><Parameters><Key>TextureFormat</Key><Value>Compressed</Value></Parameters><Dependencies /><BuildAsset /><BuildOutput /></PipelineBuildEvent>
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/Fonts/R3.spritefont</SourceFile>
+  <SourceTime>2022-11-24T10:57:06.3860026+01:00</SourceTime>
+  <DestFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Content/UI Sprites/Fonts/R3.xnb</DestFile>
+  <DestTime>2022-11-24T10:58:29.8591891+01:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2022-07-26T13:44:56+02:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
