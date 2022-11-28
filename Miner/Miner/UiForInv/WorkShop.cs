@@ -9,19 +9,20 @@ namespace Miner
         protected Texture2D[] spritePlacer = new Texture2D[10];
         protected Vector2[] spritePlacerPos = new Vector2[10];
         protected SpriteFont[] fontsTitle = new SpriteFont[10];
-        protected Rectangle[] uiRectangles = new Rectangle[40];
+        protected Rectangle[] uiRectangles = new Rectangle[50];
         protected bool isCraftClicked = false;
         protected bool isUpgradesClicked = false;
         protected bool isStatsClicked = false;
         protected bool isArtiClicked = false;
-        // protected bool[] upgradeClicked = new bool[12];
-        protected byte UpgradeClicked;
-        private static int r1;
-        private static int r2;
+        protected static bool[] upgraded = new bool[13];
+        protected byte upgradeClicked;
+        private static int r1 = 100;
+        private static int r2 = 100;
         private static int r3;
         private static int r4;
         private static int r5;
         private bool isInvOpen = true;
+        public static bool[] Upgraded { get { return upgraded; } set { upgraded = value; } }
         public bool IsInvOpen { get { return isInvOpen; } set { isInvOpen = value; } }
         public static int R1 { get { return r1; } set { r1 = value; } }
         public static int R2 { get { return r2; } set { r2 = value; } }
@@ -93,22 +94,74 @@ namespace Miner
                 if (isUpgradesClicked == true)
                 {
                     //First Upgrade Line
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[5], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[6], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[7], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[8], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[5], Color.White);//Frist line first upgrade
+                    if (Upgraded[0] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[5], Color.Gray);
+                    }
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[6], Color.White);//Fist line second Upgrade
+                    if (Upgraded[1] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[6], Color.Gray);
+                    }
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[7], Color.White);//First Line third Upgrade
+                    if (Upgraded[2] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[7], Color.Gray);
+                    }
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[8], Color.White);//First Line Fourth Upgrade
+                    if (Upgraded[3] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[8], Color.Gray);
+                    }
                     //Second Upgrade Line
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[9], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[10], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[11], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[12], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[9], Color.White);//Second Line first upgrade
+                    if (Upgraded[4] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[9], Color.Gray);
+                    }
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[10], Color.White);//Second Line second upgrade
+                    if (Upgraded[5] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[10], Color.Gray);
+                    }
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[11], Color.White);//Second Line third upgrade
+                    if (Upgraded[6] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[11], Color.Gray);
+                    }
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[12], Color.White);//Second Line fourth upgrade
+                    if (Upgraded[7] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[12], Color.Gray);
+                    }
                     //Third Upgrade Line
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[13], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[14], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[15], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[16], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[13], Color.White);//Third line first upgrade
+                    if (Upgraded[8] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[13], Color.Gray);
+                    }
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[14], Color.White);//Third line second upgrade
+                    if (Upgraded[9] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[14], Color.Gray);
+                    }
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[15], Color.White);//Third line third upgrade
+                    if (Upgraded[10] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[15], Color.Gray);
+                    }
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[16], Color.White);//Third line fourth upgrade
+                    if (Upgraded[11] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[16], Color.Gray);
+                    }
                     //Last upgrade
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[17], Color.White);
+                    spriteBatch.Draw(spritePlacer[6], uiRectangles[17], Color.White);// very Last Upgrade
+                    if (Upgraded[12] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[6], uiRectangles[17], Color.Gray);
+                    }
                     //Ressource count
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[18], Color.White);
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[19], Color.White);
@@ -127,56 +180,167 @@ namespace Miner
                     spriteBatch.Draw(spritePlacer[7], uiRectangles[24], Color.Black);
 
                     #region Upgrade Info
-                    switch (UpgradeClicked)
+                    switch (upgradeClicked)
                     {
                         case 1:
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[25], Color.White);
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[5], Color.Gray);
-
+                            if (Upgraded[0] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[25], Color.White);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[5], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                            }
+                            else if (Upgraded[0] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[25], Color.White);
+                            }
                             break;
                         case 2:
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[26], Color.Red);
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[6], Color.Gray);
+                            if (Upgraded[1] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[6], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[26], Color.Red);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                            }
+                            else if (Upgraded[1] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[26], Color.Red);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                            }
                             break;
                         case 3:
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[27], Color.Beige);
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[7], Color.Gray);
+                            if (Upgraded[2] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[27], Color.Beige);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[7], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+
+                            }
+                            else if (Upgraded[2] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[27], Color.Beige);
+                            }
                             break;
                         case 4:
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[28], Color.Black);
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[8], Color.Gray);
+                            if (Upgraded[3] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[28], Color.Black);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[8], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                            }
+                            else if (Upgraded[3] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[28], Color.Black);
+                            }
                             break;
                         case 5:
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[29], Color.Blue);
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[9], Color.Gray);
+                            if (Upgraded[4] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[29], Color.Blue);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[9], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                            }
+                            else if (Upgraded[4] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[29], Color.Blue);
+                            }
                             break;
                         case 6:
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[30], Color.Violet);
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[10], Color.Gray);
+                            if (Upgraded[5] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[30], Color.Violet);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[10], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                            }
+                            else if (Upgraded[5] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[30], Color.Violet);
+
+                            }
                             break;
                         case 7:
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[31], Color.Purple);
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[11], Color.Gray);
+                            if (Upgraded[6] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[31], Color.Purple);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[11], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                            }
+                            else if (Upgraded[6] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[31], Color.Purple);
+                            }
                             break;
                         case 8:
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[32], Color.Pink);
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[12], Color.Gray);
+                            if (Upgraded[7] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[32], Color.Pink);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[12], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                            }
+                            else if (Upgraded[7] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[32], Color.Pink);
+                            }
                             break;
                         case 9:
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[33], Color.DarkBlue);
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[13], Color.Gray);
+                            if (Upgraded[8] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[33], Color.DarkBlue);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[13], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                            }
+                            else if (Upgraded[8] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[33], Color.DarkBlue);
+                            }
                             break;
                         case 10:
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[34], Color.Cyan);
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[14], Color.Gray);
+                            if (Upgraded[9] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[34], Color.Cyan);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[14], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                            }
+                            else if (Upgraded[9] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[34], Color.Cyan);
+                            }
                             break;
                         case 11:
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[35], Color.Green);
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[15], Color.Gray);
+                            if (Upgraded[10] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[35], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[15], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                            }
+                            else if (Upgraded[10] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[35], Color.Green);
+                            }
                             break;
                         case 12:
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[36], Color.Yellow);
-                            spriteBatch.Draw(spritePlacer[6], uiRectangles[16], Color.Gray);
+                            if (Upgraded[11] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[36], Color.Yellow);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[16], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                            }
+                            else if (Upgraded[11] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[36], Color.Yellow);
+                            }
+                            break;
+                        case 13:
                             break;
 
                     }
