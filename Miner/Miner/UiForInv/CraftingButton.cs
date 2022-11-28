@@ -100,18 +100,9 @@ namespace Miner.UiForInv
         public override void Update(GameTime gameTime)
         {
             mouse = Mouse.GetState();
-            UpgradeTab(gameTime);
-
-        }
-        private void CraftingTab()
-        {
-
-        }
-        private void UpgradeTab(GameTime gameTime)
-        {
             #region switch tabs
             //showing Craft tab
-            if (uiRectangles[0].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
+            if (uiRectangles[0].Contains(mouse.X,mouse.Y)&& mouse.LeftButton == ButtonState.Pressed)
             {
                 isCraftClicked = true;
                 isStatsClicked = false;
@@ -148,12 +139,12 @@ namespace Miner.UiForInv
             {
                 IsInvOpen = false;
             }
-            if (IsInvOpen == true && Keyboard.GetState().IsKeyDown(Keys.I) && closeDownShopTimer > 0.3f)
+            if(IsInvOpen == true &&Keyboard.GetState().IsKeyDown(Keys.I)&& closeDownShopTimer > 0.3f)
             {
                 IsInvOpen = false;
                 closeDownShopTimer = 0f;
             }
-            else if (IsInvOpen == false && Keyboard.GetState().IsKeyDown(Keys.I) && closeDownShopTimer > 0.3f)
+            else if (IsInvOpen == false && Keyboard.GetState().IsKeyDown(Keys.I)&& closeDownShopTimer > 0.3f)
             {
                 IsInvOpen = true;
                 closeDownShopTimer = 0f;
@@ -222,6 +213,15 @@ namespace Miner.UiForInv
             }
 
             #endregion
+
+        }
+        private void CraftingTab()
+        {
+
+        }
+        private void UpgradeTab()
+        {
+
         }
         private void ArtifactsTab()
         {
