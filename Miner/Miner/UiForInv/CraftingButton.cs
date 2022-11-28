@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using SharpDX.WIC;
+using System;
 
 namespace Miner.UiForInv
 {
@@ -10,7 +11,6 @@ namespace Miner.UiForInv
     {
         private MouseState mouse;
         private float closeDownShopTimer;
-        private float pressTimer;
         public override void LoadContent(ContentManager content)
         {
             #region Tabs
@@ -50,19 +50,31 @@ namespace Miner.UiForInv
 
             //First Upgrade Line
             uiRectangles[5] = new Rectangle(780, 540, 100, 100);
+            spritePlacer[14] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/10PDrill");
             uiRectangles[6] = new Rectangle(920, 540, 100, 100);
+            spritePlacer[15] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/20PDrill");
             uiRectangles[7] = new Rectangle(1060, 540, 100, 100);
+            spritePlacer[16] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/30PDrill");
             uiRectangles[8] = new Rectangle(1200, 540, 100, 100);
+            spritePlacer[17] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/40PDrill");
             //Second Upgrade Line
             uiRectangles[9] = new Rectangle(780, 660, 100, 100);
+            spritePlacer[18] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/Biger battery_Layer 0");
             uiRectangles[10] = new Rectangle(920, 660, 100, 100);
+            spritePlacer[19] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/Biger battery_Layer 1");
             uiRectangles[11] = new Rectangle(1060, 660, 100, 100);
+            spritePlacer[20] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/Biger battery_Layer 2");
             uiRectangles[12] = new Rectangle(1200, 660, 100, 100);
+            spritePlacer[21] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/Biger battery_Layer 3");
             //Third Upgrade Line
             uiRectangles[13] = new Rectangle(780, 780, 100, 100);
+            spritePlacer[22] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 0");
             uiRectangles[14] = new Rectangle(920, 780, 100, 100);
+            spritePlacer[23] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 0");
             uiRectangles[15] = new Rectangle(1060, 780, 100, 100);
+            spritePlacer[24] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 0");
             uiRectangles[16] = new Rectangle(1200, 780, 100, 100);
+            spritePlacer[25] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 0");
             //Last upgrade
             uiRectangles[17] = new Rectangle(1380, 660, 100, 100);
             //Ressource count
@@ -78,18 +90,28 @@ namespace Miner.UiForInv
             fontsTitle[9] = content.Load<SpriteFont>("Ui Sprites/Fonts/R5");
 
             // Upgrade Info
-            uiRectangles[25] = new Rectangle(465, 550, 200, 300);
-            uiRectangles[26] = new Rectangle(465, 550, 200, 300);
-            uiRectangles[27] = new Rectangle(465, 550, 200, 300);
-            uiRectangles[28] = new Rectangle(465, 550, 200, 300);
-            uiRectangles[29] = new Rectangle(465, 550, 200, 300);
-            uiRectangles[30] = new Rectangle(465, 550, 200, 300);
-            uiRectangles[31] = new Rectangle(465, 550, 200, 300);
-            uiRectangles[32] = new Rectangle(465, 550, 200, 300);
-            uiRectangles[33] = new Rectangle(465, 550, 200, 300);
-            uiRectangles[34] = new Rectangle(465, 550, 200, 300);
-            uiRectangles[35] = new Rectangle(465, 550, 200, 300);
-            uiRectangles[36] = new Rectangle(465, 550, 200, 300);
+            uiRectangles[25] = new Rectangle(465, 550, 200, 300);//First Line
+            upgradeInfo[0] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/10PBetterDrill_Info");
+            uiRectangles[26] = new Rectangle(465, 550, 200, 300);//First Line
+            upgradeInfo[1] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/20PBetterDrill_Info");
+            uiRectangles[27] = new Rectangle(465, 550, 200, 300);//First Line
+            upgradeInfo[2] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/30PBetterDrill_Info");
+            uiRectangles[28] = new Rectangle(465, 550, 200, 300);//First Line
+            upgradeInfo[3] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/40PBetterDrill_Info");
+
+            uiRectangles[29] = new Rectangle(465, 550, 200, 300);//Second Line
+            uiRectangles[30] = new Rectangle(465, 550, 200, 300);//Second Line
+            uiRectangles[31] = new Rectangle(465, 550, 200, 300);//Second Line
+            uiRectangles[32] = new Rectangle(465, 550, 200, 300);//Second Line
+
+            uiRectangles[33] = new Rectangle(465, 550, 200, 300);//Third Line
+            upgradeInfo[8] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/10PBetterSolarPanel");
+            uiRectangles[34] = new Rectangle(465, 550, 200, 300);//Third Line
+            upgradeInfo[9] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/20PBetterSolarPanel");
+            uiRectangles[35] = new Rectangle(465, 550, 200, 300);//Third Line
+            upgradeInfo[10] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/30PBetterSolarPanel");
+            uiRectangles[36] = new Rectangle(465, 550, 200, 300);//Third Line
+            upgradeInfo[11] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/40PBetterSolarPanel");
 
             uiRectangles[37] = new Rectangle(515, 900, 100, 50);//Confirm Upgrade  Button
 
@@ -102,6 +124,15 @@ namespace Miner.UiForInv
         public override void Update(GameTime gameTime)
         {
             mouse = Mouse.GetState();
+            UpgradeTab(gameTime);
+
+        }
+        private void CraftingTab()
+        {
+
+        }
+        private void UpgradeTab(GameTime gameTime)
+        {
             #region switch tabs
             //showing Craft tab
             if (uiRectangles[0].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
@@ -330,16 +361,6 @@ namespace Miner.UiForInv
                         break;
                 }
             }//Confirm Upgrade Button
-
-
-        }
-        private void CraftingTab()
-        {
-
-        }
-        private void UpgradeTab()
-        {
-
         }
         private void ArtifactsTab()
         {

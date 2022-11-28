@@ -6,7 +6,8 @@ namespace Miner
 {
     public abstract class WorkShop
     {
-        protected Texture2D[] spritePlacer = new Texture2D[10];
+        protected Texture2D[] spritePlacer = new Texture2D[30];
+        protected Texture2D[] upgradeInfo = new Texture2D[13];
         protected Vector2[] spritePlacerPos = new Vector2[10];
         protected SpriteFont[] fontsTitle = new SpriteFont[10];
         protected Rectangle[] uiRectangles = new Rectangle[50];
@@ -94,67 +95,67 @@ namespace Miner
                 if (isUpgradesClicked == true)
                 {
                     //First Upgrade Line
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[5], Color.White);//Frist line first upgrade
+                    spriteBatch.Draw(spritePlacer[14], uiRectangles[5], Color.White);//Frist line first upgrade
                     if (Upgraded[0] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[5], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[14], uiRectangles[5], Color.Gray);
                     }
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[6], Color.White);//Fist line second Upgrade
+                    spriteBatch.Draw(spritePlacer[15], uiRectangles[6], Color.White);//Fist line second Upgrade
                     if (Upgraded[1] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[6], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[15], uiRectangles[6], Color.Gray);
                     }
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[7], Color.White);//First Line third Upgrade
+                    spriteBatch.Draw(spritePlacer[16], uiRectangles[7], Color.White);//First Line third Upgrade
                     if (Upgraded[2] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[7], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[16], uiRectangles[7], Color.Gray);
                     }
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[8], Color.White);//First Line Fourth Upgrade
+                    spriteBatch.Draw(spritePlacer[17], uiRectangles[8], Color.White);//First Line Fourth Upgrade
                     if (Upgraded[3] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[8], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[17], uiRectangles[8], Color.Gray);
                     }
                     //Second Upgrade Line
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[9], Color.White);//Second Line first upgrade
+                    spriteBatch.Draw(spritePlacer[18], uiRectangles[9], Color.White);//Second Line first upgrade
                     if (Upgraded[4] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[9], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[18], uiRectangles[9], Color.Gray);
                     }
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[10], Color.White);//Second Line second upgrade
+                    spriteBatch.Draw(spritePlacer[19], uiRectangles[10], Color.White);//Second Line second upgrade
                     if (Upgraded[5] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[10], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[19], uiRectangles[10], Color.Gray);
                     }
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[11], Color.White);//Second Line third upgrade
+                    spriteBatch.Draw(spritePlacer[20], uiRectangles[11], Color.White);//Second Line third upgrade
                     if (Upgraded[6] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[11], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[20], uiRectangles[11], Color.Gray);
                     }
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[12], Color.White);//Second Line fourth upgrade
+                    spriteBatch.Draw(spritePlacer[21], uiRectangles[12], Color.White);//Second Line fourth upgrade
                     if (Upgraded[7] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[12], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[21], uiRectangles[12], Color.Gray);
                     }
                     //Third Upgrade Line
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[13], Color.White);//Third line first upgrade
+                    spriteBatch.Draw(spritePlacer[22], uiRectangles[13], Color.White);//Third line first upgrade
                     if (Upgraded[8] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[13], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[22], uiRectangles[13], Color.Gray);
                     }
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[14], Color.White);//Third line second upgrade
+                    spriteBatch.Draw(spritePlacer[23], uiRectangles[14], Color.White);//Third line second upgrade
                     if (Upgraded[9] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[14], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[23], uiRectangles[14], Color.Gray);
                     }
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[15], Color.White);//Third line third upgrade
+                    spriteBatch.Draw(spritePlacer[24], uiRectangles[15], Color.White);//Third line third upgrade
                     if (Upgraded[10] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[15], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[24], uiRectangles[15], Color.Gray);
                     }
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[16], Color.White);//Third line fourth upgrade
+                    spriteBatch.Draw(spritePlacer[25], uiRectangles[16], Color.White);//Third line fourth upgrade
                     if (Upgraded[11] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[16], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[25], uiRectangles[16], Color.Gray);
                     }
                     //Last upgrade
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[17], Color.White);// very Last Upgrade
@@ -182,162 +183,162 @@ namespace Miner
                     #region Upgrade Info
                     switch (upgradeClicked)
                     {
-                        case 1:
+                        case 1: //first on first line
                             if (Upgraded[0] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[25], Color.White);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[5], Color.Gray);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                                spriteBatch.Draw(upgradeInfo[0], uiRectangles[25], Color.White);//Upgrade Info
+                                spriteBatch.Draw(spritePlacer[14], uiRectangles[5], Color.Gray);//Upgrade box
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
                             }
                             else if (Upgraded[0] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[25], Color.White);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(upgradeInfo[0], uiRectangles[25], Color.White);//Uprade Info
                             }
                             break;
-                        case 2:
+                        case 2://second on first line
                             if (Upgraded[1] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[6], Color.Gray);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[26], Color.Red);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[15], uiRectangles[6], Color.Gray);//Upgrade box
+                                spriteBatch.Draw(upgradeInfo[1], uiRectangles[26], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
                             }
                             else if (Upgraded[1] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[26], Color.Red);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
+                                spriteBatch.Draw(upgradeInfo[1], uiRectangles[26], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
                             }
                             break;
-                        case 3:
+                        case 3://third on first line
                             if (Upgraded[2] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[27], Color.Beige);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[7], Color.Gray);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                                spriteBatch.Draw(upgradeInfo[2], uiRectangles[27], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[16], uiRectangles[7], Color.Gray);//Upgrade box
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
 
                             }
                             else if (Upgraded[2] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[27], Color.Beige);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(upgradeInfo[2], uiRectangles[27], Color.White);//Uprade Info
                             }
                             break;
-                        case 4:
+                        case 4://fourth on first line
                             if (Upgraded[3] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[28], Color.Black);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[8], Color.Gray);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                                spriteBatch.Draw(upgradeInfo[3], uiRectangles[28], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[17], uiRectangles[8], Color.Gray);//Upgrade box
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
                             }
                             else if (Upgraded[3] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[28], Color.Black);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(upgradeInfo[3], uiRectangles[28], Color.White);//Uprade Info
                             }
                             break;
-                        case 5:
+                        case 5://first on second line
                             if (Upgraded[4] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[29], Color.Blue);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[9], Color.Gray);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[29], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[18], uiRectangles[9], Color.Gray);//Upgrade box
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
                             }
                             else if (Upgraded[4] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[29], Color.Blue);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[29], Color.White);//Uprade Info
                             }
                             break;
-                        case 6:
+                        case 6://second on second line
                             if (Upgraded[5] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[30], Color.Violet);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[10], Color.Gray);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[30], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[19], uiRectangles[10], Color.Gray);//Upgrade box
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
                             }
                             else if (Upgraded[5] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[30], Color.Violet);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[30], Color.White);//Uprade Info
 
                             }
                             break;
-                        case 7:
+                        case 7://third on second line
                             if (Upgraded[6] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[31], Color.Purple);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[11], Color.Gray);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[31], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[20], uiRectangles[11], Color.Gray);//Upgrade box
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
                             }
                             else if (Upgraded[6] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[31], Color.Purple);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[31], Color.White);//Uprade Info
                             }
                             break;
-                        case 8:
+                        case 8://Fourth on second line
                             if (Upgraded[7] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[32], Color.Pink);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[12], Color.Gray);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[32], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[21], uiRectangles[12], Color.Gray);//Upgrade box
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
                             }
                             else if (Upgraded[7] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[32], Color.Pink);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[32], Color.White);//Uprade Info
                             }
                             break;
-                        case 9:
+                        case 9://First on Third Line
                             if (Upgraded[8] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[33], Color.DarkBlue);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[13], Color.Gray);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                                spriteBatch.Draw(upgradeInfo[8], uiRectangles[33], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[22], uiRectangles[13], Color.Gray);//Upgrade box
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
                             }
                             else if (Upgraded[8] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[33], Color.DarkBlue);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(upgradeInfo[8], uiRectangles[33], Color.White);//Uprade Info
                             }
                             break;
-                        case 10:
+                        case 10://second on Third Line
                             if (Upgraded[9] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[34], Color.Cyan);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[14], Color.Gray);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                                spriteBatch.Draw(upgradeInfo[9], uiRectangles[34], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[23], uiRectangles[14], Color.Gray);//Upgrade box
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
                             }
                             else if (Upgraded[9] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[34], Color.Cyan);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(upgradeInfo[9], uiRectangles[34], Color.White);//Uprade Info
                             }
                             break;
-                        case 11:
+                        case 11://Third on Third Line
                             if (Upgraded[10] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[35], Color.Green);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[15], Color.Gray);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                                spriteBatch.Draw(upgradeInfo[10], uiRectangles[35], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[24], uiRectangles[15], Color.Gray);//Upgrade box
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
                             }
                             else if (Upgraded[10] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[35], Color.Green);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(upgradeInfo[10], uiRectangles[35], Color.White);//Uprade Info
                             }
                             break;
-                        case 12:
+                        case 12://fourth on Third Line
                             if (Upgraded[11] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[36], Color.Yellow);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[16], Color.Gray);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);
+                                spriteBatch.Draw(upgradeInfo[11], uiRectangles[36], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[25], uiRectangles[16], Color.Gray);//Upgrade box
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
                             }
                             else if (Upgraded[11] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[36], Color.Yellow);
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(upgradeInfo[11], uiRectangles[36], Color.White);//Uprade Info
                             }
                             break;
                         case 13:
