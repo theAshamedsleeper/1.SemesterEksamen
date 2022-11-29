@@ -61,6 +61,18 @@
 /processorParam:TextureFormat=Color
 /build:pixilart-drawing_1.png
 
+#begin UI Sprites/BarDivider.PNG
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:UI Sprites/BarDivider.PNG
+
 #begin UI Sprites/CraftingButton.PNG
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -99,56 +111,6 @@
 /processorParam:TextureFormat=Compressed
 /build:UI Sprites/Fonts/CraftFontT.spritefont
 
-#begin UI Sprites/Fonts/StatsFontT.spritefont
-/importer:FontDescriptionImporter
-/processor:FontDescriptionProcessor
-/processorParam:PremultiplyAlpha=True
-/processorParam:TextureFormat=Compressed
-/build:UI Sprites/Fonts/StatsFontT.spritefont
-
-#begin UI Sprites/Fonts/UpgradeFontT.spritefont
-/importer:FontDescriptionImporter
-/processor:FontDescriptionProcessor
-/processorParam:PremultiplyAlpha=True
-/processorParam:TextureFormat=Compressed
-/build:UI Sprites/Fonts/UpgradeFontT.spritefont
-
-#begin UI Sprites/InventorybackGround.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:UI Sprites/InventorybackGround.png
-
-#begin UI Sprites/UpgradePlaceHolder.PNG
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:UI Sprites/UpgradePlaceHolder.PNG
-
-#begin UI Sprites/BarDivider.PNG
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:UI Sprites/BarDivider.PNG
-
 #begin UI Sprites/Fonts/R1.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
@@ -184,6 +146,44 @@
 /processorParam:TextureFormat=Compressed
 /build:UI Sprites/Fonts/R5.spritefont
 
+#begin UI Sprites/Fonts/StatsFontT.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:UI Sprites/Fonts/StatsFontT.spritefont
+
+#begin UI Sprites/Fonts/UpgradeFontT.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:UI Sprites/Fonts/UpgradeFontT.spritefont
+
+#begin UI Sprites/InventorybackGround.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:UI Sprites/InventorybackGround.png
+
+#begin Ui Sprites/UpgradeInfo/10PBetterDrill_Info.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/10PBetterDrill_Info.png
+
 #begin Ui Sprites/UpgradeInfo/10PBetterSolarPanel.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -195,42 +195,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Ui Sprites/UpgradeInfo/10PBetterSolarPanel.png
-
-#begin Ui Sprites/UpgradeInfo/20PBetterSolarPanel.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Ui Sprites/UpgradeInfo/20PBetterSolarPanel.png
-
-#begin Ui Sprites/UpgradeInfo/30PBetterSolarPanel.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Ui Sprites/UpgradeInfo/30PBetterSolarPanel.png
-
-#begin Ui Sprites/UpgradeInfo/40PBetterSolarPanel.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Ui Sprites/UpgradeInfo/40PBetterSolarPanel.png
 
 #begin Ui Sprites/UpgradeInfo/10PDrill.png
 /importer:TextureImporter
@@ -244,6 +208,30 @@
 /processorParam:TextureFormat=Color
 /build:Ui Sprites/UpgradeInfo/10PDrill.png
 
+#begin Ui Sprites/UpgradeInfo/20PBetterDrill_Info.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/20PBetterDrill_Info.png
+
+#begin Ui Sprites/UpgradeInfo/20PBetterSolarPanel.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/20PBetterSolarPanel.png
+
 #begin Ui Sprites/UpgradeInfo/20PDrill.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -256,6 +244,30 @@
 /processorParam:TextureFormat=Color
 /build:Ui Sprites/UpgradeInfo/20PDrill.png
 
+#begin Ui Sprites/UpgradeInfo/30PBetterDrill_Info.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/30PBetterDrill_Info.png
+
+#begin Ui Sprites/UpgradeInfo/30PBetterSolarPanel.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/30PBetterSolarPanel.png
+
 #begin Ui Sprites/UpgradeInfo/30PDrill.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -267,6 +279,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Ui Sprites/UpgradeInfo/30PDrill.png
+
+#begin Ui Sprites/UpgradeInfo/40PBetterDrill_Info.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/40PBetterDrill_Info.png
+
+#begin Ui Sprites/UpgradeInfo/40PBetterSolarPanel.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/40PBetterSolarPanel.png
 
 #begin Ui Sprites/UpgradeInfo/40PDrill.png
 /importer:TextureImporter
@@ -304,7 +340,7 @@
 /processorParam:TextureFormat=Color
 /build:Ui Sprites/UpgradeInfo/Biger battery_Layer 1.png
 
-#begin Ui Sprites/UpgradeInfo/Biger battery_Layer 3.png
+#begin Ui Sprites/UpgradeInfo/Biger battery_Layer 2.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -376,7 +412,7 @@
 /processorParam:TextureFormat=Color
 /build:Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 3.png
 
-#begin Ui Sprites/UpgradeInfo/10PBetterDrill_Info.png
+#begin Ui Sprites/UpgradeInfo/Last Upgrade AiBrainPng.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -386,9 +422,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Ui Sprites/UpgradeInfo/10PBetterDrill_Info.png
+/build:Ui Sprites/UpgradeInfo/Last Upgrade AiBrainPng.png
 
-#begin Ui Sprites/UpgradeInfo/20PBetterDrill_Info.png
+#begin UI Sprites/UpgradePlaceHolder.PNG
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -398,28 +434,5 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Ui Sprites/UpgradeInfo/20PBetterDrill_Info.png
+/build:UI Sprites/UpgradePlaceHolder.PNG
 
-#begin Ui Sprites/UpgradeInfo/30PBetterDrill_Info.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Ui Sprites/UpgradeInfo/30PBetterDrill_Info.png
-
-#begin Ui Sprites/UpgradeInfo/40PBetterDrill_Info.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Ui Sprites/UpgradeInfo/40PBetterDrill_Info.png

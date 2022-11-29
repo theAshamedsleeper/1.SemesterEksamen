@@ -1,6 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using SharpDX.Direct3D9;
+using System.Net;
+using System.Threading;
 
 namespace Miner
 {
@@ -17,19 +20,19 @@ namespace Miner
         protected bool isArtiClicked = false;
         protected static bool[] upgraded = new bool[13];
         protected byte upgradeClicked;
-        private static int r1 = 100;
-        private static int r2 = 100;
-        private static int r3;
-        private static int r4;
-        private static int r5;
+        private static int r1Copper = 100;
+        private static int r2MilitaryScrap = 100;
+        private static int r3Titanium;
+        private static int r4Plat;
+        private static int r5Uranium;
         private bool isInvOpen = true;
         public static bool[] Upgraded { get { return upgraded; } set { upgraded = value; } }
         public bool IsInvOpen { get { return isInvOpen; } set { isInvOpen = value; } }
-        public static int R1 { get { return r1; } set { r1 = value; } }
-        public static int R2 { get { return r2; } set { r2 = value; } }
-        public static int R3 { get { return r3; } set { r3 = value; } }
-        public static int R4 { get { return r4; } set { r4 = value; } }
-        public static int R5 { get { return r5; } set { r5 = value; } }
+        public static int R1Cop { get { return r1Copper; } set { r1Copper = value; } }
+        public static int R2Mili { get { return r2MilitaryScrap; } set { r2MilitaryScrap = value; } }
+        public static int R3Tit { get { return r3Titanium; } set { r3Titanium = value; } }
+        public static int R4Plat { get { return r4Plat; } set { r4Plat = value; } }
+        public static int R5Uran { get { return r5Uranium; } set { r5Uranium = value; } }
 
         public abstract void LoadContent(ContentManager content);
 
@@ -158,10 +161,10 @@ namespace Miner
                         spriteBatch.Draw(spritePlacer[25], uiRectangles[16], Color.Gray);
                     }
                     //Last upgrade
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[17], Color.White);// very Last Upgrade
+                    spriteBatch.Draw(spritePlacer[26], uiRectangles[17], Color.White);// very Last Upgrade
                     if (Upgraded[12] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[6], uiRectangles[17], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[26], uiRectangles[17], Color.Gray);
                     }
                     //Ressource count
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[18], Color.White);
@@ -170,11 +173,11 @@ namespace Miner
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[21], Color.White);
                     spriteBatch.Draw(spritePlacer[6], uiRectangles[22], Color.White);
 
-                    spriteBatch.DrawString(fontsTitle[5], $"Name {R1}", new Vector2(1720, 550), Color.White);
-                    spriteBatch.DrawString(fontsTitle[6], $"Name {R2}", new Vector2(1720, 625), Color.White);
-                    spriteBatch.DrawString(fontsTitle[7], $"Name {R3}", new Vector2(1720, 700), Color.White);
-                    spriteBatch.DrawString(fontsTitle[8], $"Name {R4}", new Vector2(1720, 775), Color.White);
-                    spriteBatch.DrawString(fontsTitle[9], $"Name {R5}", new Vector2(1720, 850), Color.White);
+                    spriteBatch.DrawString(fontsTitle[5], $"Name {R1Cop}", new Vector2(1720, 550), Color.White);
+                    spriteBatch.DrawString(fontsTitle[6], $"Name {R2Mili}", new Vector2(1720, 625), Color.White);
+                    spriteBatch.DrawString(fontsTitle[7], $"Name {R3Tit}", new Vector2(1720, 700), Color.White);
+                    spriteBatch.DrawString(fontsTitle[8], $"Name {R4Plat}", new Vector2(1720, 775), Color.White);
+                    spriteBatch.DrawString(fontsTitle[9], $"Name {R5Uran}", new Vector2(1720, 850), Color.White);
 
                     //Border Divding from upgrades to show how many ressources you got
                     spriteBatch.Draw(spritePlacer[7], uiRectangles[23], Color.Black);
@@ -342,6 +345,17 @@ namespace Miner
                             }
                             break;
                         case 13:
+                            if (Upgraded[12] == false)
+                            {
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[17],Color.Gray);//Upgrade Box
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[38], Color.White);//Upgrade info
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                            }
+                            else if (Upgraded[13] == true)
+                            {
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[38], Color.White);//Upgrade info
+                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                            }
                             break;
 
                     }
@@ -359,5 +373,6 @@ namespace Miner
 
             }
         }
+
     }
 }

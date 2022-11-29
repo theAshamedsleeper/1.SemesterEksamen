@@ -77,6 +77,7 @@ namespace Miner.UiForInv
             spritePlacer[25] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 0");
             //Last upgrade
             uiRectangles[17] = new Rectangle(1380, 660, 100, 100);
+            spritePlacer[26] = content.Load<Texture2D>("Ui Sprites/Upgradeinfo/Last Upgrade AiBrainPng");
             //Ressource count
             uiRectangles[18] = new Rectangle(1650, 540, 50, 50);
             fontsTitle[5] = content.Load<SpriteFont>("Ui Sprites/Fonts/R1");
@@ -113,17 +114,16 @@ namespace Miner.UiForInv
             uiRectangles[36] = new Rectangle(465, 550, 200, 300);//Third Line
             upgradeInfo[11] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/40PBetterSolarPanel");
 
+            uiRectangles[38] = new Rectangle(465,550,200,300);//Last Upgrade Info
+
             uiRectangles[37] = new Rectangle(515, 900, 100, 50);//Confirm Upgrade  Button
-
-
-
-            //See Upgrade Info
             #endregion
         }
 
         public override void Update(GameTime gameTime)
         {
             mouse = Mouse.GetState();
+
             UpgradeTab(gameTime);
 
         }
@@ -242,120 +242,115 @@ namespace Miner.UiForInv
                 switch (upgradeClicked)
                 {
                     //First line
-                    case 1:
-                        if (R1 >= 10 && Upgraded[0] == false)
+                    case 1://Upgrade DrilBit 10% faster
+                        if (R2Mili >= 10 && R4Plat >= 5 && Upgraded[0] == false)
                         {
                             Upgraded[0] = true;
-                            R1 -= 10;
+                            R4Plat -= 5;
+                            R2Mili -= 10;
                         }
                         break;
-                    case 2:
-                        if (Upgraded[1] == false && Upgraded[0] == true && R1 >= 20 && R2 >= 10)
+                    case 2://Upgrade DrilBit 20% faster
+                        if (Upgraded[1] == false && Upgraded[0] == true && R2Mili >= 20 && R4Plat >= 10)
                         {
                             Upgraded[1] = true;
-                            R1 -= 20;
-                            R2 -= 10;
+                            R2Mili -= 20;
+                            R4Plat -= 10;
                         }
                         break;
-                    case 3:
-                        if (Upgraded[2] == false && Upgraded[1] == true && R1 >= 30 && R2 >= 20 && R3 >= 10)
+                    case 3://Upgrade DrilBit 30% faster
+                        if (Upgraded[2] == false && Upgraded[1] == true && R2Mili >= 30 && R4Plat >= 15)
                         {
                             Upgraded[2] = true;
-                            R1 -= 30;
-                            R2 -= 20;
-                            R3 -= 10;
+                            R2Mili -= 30;
+                            R4Plat -= 15;
                         }
                         break;
-                    case 4:
-                        if (Upgraded[3] == false && Upgraded[2] == true && R1 >= 40 && R2 >= 30 && R3 >= 20 && R4 >= 10)
+                    case 4://Upgrade DrilBit 40% faster
+                        if (Upgraded[3] == false && Upgraded[2] == true && R2Mili >= 40 && R4Plat >= 20)
                         {
                             Upgraded[3] = true;
-                            R1 -= 40;
-                            R2 -= 30;
-                            R3 -= 20;
-                            R4 -= 10;
+                            R2Mili -= 40;
+                            R4Plat -= 20;
                         }
                         break;
                     //Second Line
-                    case 5:
-                        if (Upgraded[4] == false && R1 >= 10)
+                    case 5://Upgrade Battery Storage 10% more
+                        if (Upgraded[4] == false && R3Tit>=10 && R5Uran >= 5)
                         {
                             Upgraded[4] = true;
-                            R1 -= 10;
+                            R3Tit -= 10;
+                            R5Uran -= 5;
                         }
                         break;
-                    case 6:
-                        if (Upgraded[5] == false && Upgraded[4] == true && R1 >= 20 && R2 >= 10)
+                    case 6://Upgrade Battery Storage 20% more
+                        if (Upgraded[5] == false && Upgraded[4] == true && R3Tit >= 20 && R5Uran >= 10)
                         {
                             Upgraded[5] = true;
-                            R1 -= 20;
-                            R2 -= 10;
+                            R3Tit -= 20;
+                            R5Uran -= 10;
                         }
                         break;
-                    case 7:
-                        if (Upgraded[6] == false && Upgraded[5] == true && R1 >= 30 && R2 >= 20 && R3 >= 10)
+                    case 7://Upgrade Battery Storage 30% more
+                        if (Upgraded[6] == false && Upgraded[5] == true && R3Tit >= 30 && R5Uran >= 15)
                         {
                             Upgraded[6] = true;
-                            R1 -= 30;
-                            R2 -= 20;
-                            R3 -= 10;
+                            R3Tit -= 30;
+                            R5Uran -= 15;
                         }
                         break;
-                    case 8:
-                        if (Upgraded[7] == false && Upgraded[6] == true && R1 >= 40 && R2 >= 30 && R3 >= 20 && R4 >= 10)
+                    case 8://Upgrade Battery Storage 40% more
+                        if (Upgraded[7] == false && Upgraded[6] == true && R3Tit >= 40 && R5Uran >= 20)
                         {
                             Upgraded[7] = true;
-                            R1 -= 40;
-                            R2 -= 30;
-                            R3 -= 20;
-                            R4 -= 10;
+                            R3Tit -= 40;
+                            R5Uran -= 20;
                         }
                         break;
                     //Third Line
-                    case 9:
-                        if (Upgraded[8] == false && R1 >= 10)
+                    case 9://Upgrade battery recharge speed 10% faster
+                        if (Upgraded[8] == false && R1Cop >= 10 && R3Tit >= 5)
                         {
                             Upgraded[8] = true;
-                            R1 -= 10;
+                            R1Cop -= 10;
+                            R3Tit -= 5;
                         }
                         break;
-                    case 10:
-                        if (Upgraded[9] == false && Upgraded[8] == true && R1 >= 20 && R2 >= 10)
+                    case 10://Upgrade battery recharge speed 20% faster
+                        if (Upgraded[9] == false && Upgraded[8] == true && R1Cop >= 20 && R3Tit >= 10)
                         {
                             Upgraded[9] = true;
-                            R1 -= 20;
-                            R2 -= 10;
+                            R1Cop -= 20;
+                            R3Tit -= 10;
                         }
                         break;
-                    case 11:
-                        if (Upgraded[10] == false && Upgraded[9] == true && R1 >= 30 && R2 >= 20 && R3 >= 10)
+                    case 11://Upgrade battery recharge speed 30% faster
+                        if (Upgraded[10] == false && Upgraded[9] == true && R1Cop >= 30 && R3Tit >= 15)
                         {
                             Upgraded[10] = true;
-                            R1 -= 30;
-                            R2 -= 20;
-                            R3 -= 10;
+                            R1Cop -= 30;
+                            R3Tit -= 15;
                         }
                         break;
-                    case 12:
-                        if (Upgraded[11] == false && Upgraded[10] == true && R1 >= 40 && R2 >= 30 && R3 >= 20 && R4 >= 10)
+                    case 12://Upgrade battery recharge speed 40% faster
+                        if (Upgraded[11] == false && Upgraded[10] == true && R1Cop >= 40 && R3Tit >= 20)
                         {
                             Upgraded[11] = true;
-                            R1 -= 40;
-                            R2 -= 30;
-                            R3 -= 20;
-                            R4 -= 10;
+                            R1Cop -= 40;
+                            R3Tit -= 40;
                         }
                         break;
-                    //Fourth Line
-                    case 13:
-                        if (Upgraded[7] == false && Upgraded[11] == true && Upgraded[6] == true && Upgraded[3] == true && R1 >= 50 && R2 >= 40 && R3 >= 30 && R4 >= 20 && R5 >= 10)
+                    //Last Upgrade
+                    case 13://checks that all the last upgrades have been made and you have the resource needed.
+                        if (Upgraded[7] == false && Upgraded[11] == true && Upgraded[6] == true && Upgraded[3] == true 
+                            && R1Cop >= 50 && R2Mili >= 50 && R3Tit >= 50 && R4Plat >= 50 && R5Uran >= 50)
                         {
                             Upgraded[7] = true;
-                            R1 -= 50;
-                            R2 -= 40;
-                            R3 -= 30;
-                            R4 -= 20;
-                            R5 -= 10;
+                            R1Cop -= 50;
+                            R2Mili -= 50;
+                            R3Tit -= 50;
+                            R4Plat -= 50;
+                            R5Uran -= 50;
                         }
                         Upgraded[12] = true;
                         break;
