@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 3.png</SourceFile>
-  <SourceTime>2022-11-29T09:53:06.8318416+01:00</SourceTime>
+  <SourceTime>2022-11-30T17:46:27.684001+01:00</SourceTime>
   <DestFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Content/Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 3.xnb</DestFile>
-  <DestTime>2022-11-29T09:54:03.9380619+01:00</DestTime>
+  <DestTime>2022-11-30T17:50:00.5061017+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

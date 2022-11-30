@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/Fonts/R5.spritefont</SourceFile>
-  <SourceTime>2022-11-28T10:19:10.2756771+01:00</SourceTime>
-  <DestFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Content/UI Sprites/Fonts/R5.xnb</DestFile>
-  <DestTime>2022-11-29T09:54:03.8778984+01:00</DestTime>
+  <SourceFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/R5.spritefont</SourceFile>
+  <SourceTime>2022-11-30T13:40:05.991596+01:00</SourceTime>
+  <DestFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Content/Ui Sprites/Fonts/R5.xnb</DestFile>
+  <DestTime>2022-11-30T17:50:00.242266+01:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>

@@ -50,13 +50,13 @@ namespace Miner.UiForInv
 
             //First Upgrade Line
             uiRectangles[5] = new Rectangle(780, 540, 100, 100);
-            spritePlacer[14] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/10PDrill");
+            spritePlacer[14] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/10P faster drill_Layer 0");
             uiRectangles[6] = new Rectangle(920, 540, 100, 100);
-            spritePlacer[15] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/20PDrill");
+            spritePlacer[15] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/20P faster drill_Layer 1");
             uiRectangles[7] = new Rectangle(1060, 540, 100, 100);
-            spritePlacer[16] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/30PDrill");
+            spritePlacer[16] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/30P faster drill_Layer 2");
             uiRectangles[8] = new Rectangle(1200, 540, 100, 100);
-            spritePlacer[17] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/40PDrill");
+            spritePlacer[17] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/40P faster drill_Layer 3");
             //Second Upgrade Line
             uiRectangles[9] = new Rectangle(780, 660, 100, 100);
             spritePlacer[18] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/Biger battery_Layer 0");
@@ -106,9 +106,13 @@ namespace Miner.UiForInv
             upgradeInfo[3] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/40PBetterDrill_Info");
 
             uiRectangles[29] = new Rectangle(465, 550, 200, 300);//Second Line
+            upgradeInfo[4] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/10PBetterBattery");
             uiRectangles[30] = new Rectangle(465, 550, 200, 300);//Second Line
+            upgradeInfo[5] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/20PBetterBattery");
             uiRectangles[31] = new Rectangle(465, 550, 200, 300);//Second Line
+            upgradeInfo[6] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/30PBetterBattery");
             uiRectangles[32] = new Rectangle(465, 550, 200, 300);//Second Line
+            upgradeInfo[7] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/40PBetterBattery");
 
             uiRectangles[33] = new Rectangle(465, 550, 200, 300);//Third Line
             upgradeInfo[8] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/10PBetterSolarPanel");
@@ -120,6 +124,7 @@ namespace Miner.UiForInv
             upgradeInfo[11] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/40PBetterSolarPanel");
 
             uiRectangles[38] = new Rectangle(465,550,200,300);//Last Upgrade Info
+            upgradeInfo[12] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/RougeAiUpgradeInfo");
 
             uiRectangles[37] = new Rectangle(515, 900, 100, 50);//Confirm Upgrade  Button
             #endregion
@@ -264,19 +269,19 @@ namespace Miner.UiForInv
                         }
                         break;
                     case 3://Upgrade DrilBit 30% faster
-                        if (Upgraded[2] == false && Upgraded[1] == true && R2Mili >= 30 && R4Plat >= 15)
+                        if (Upgraded[2] == false && Upgraded[1] == true && R2Mili >= 30 && R4Plat >= 20)
                         {
                             Upgraded[2] = true;
                             R2Mili -= 30;
-                            R4Plat -= 15;
+                            R4Plat -= 20;
                         }
                         break;
                     case 4://Upgrade DrilBit 40% faster
-                        if (Upgraded[3] == false && Upgraded[2] == true && R2Mili >= 40 && R4Plat >= 20)
+                        if (Upgraded[3] == false && Upgraded[2] == true && R2Mili >= 40 && R4Plat >= 30)
                         {
                             Upgraded[3] = true;
                             R2Mili -= 40;
-                            R4Plat -= 20;
+                            R4Plat -= 30;
                         }
                         break;
                     //Second Line
@@ -297,19 +302,19 @@ namespace Miner.UiForInv
                         }
                         break;
                     case 7://Upgrade Battery Storage 30% more
-                        if (Upgraded[6] == false && Upgraded[5] == true && R3Tit >= 30 && R5Uran >= 15)
+                        if (Upgraded[6] == false && Upgraded[5] == true && R3Tit >= 30 && R5Uran >= 20)
                         {
                             Upgraded[6] = true;
                             R3Tit -= 30;
-                            R5Uran -= 15;
+                            R5Uran -= 20;
                         }
                         break;
                     case 8://Upgrade Battery Storage 40% more
-                        if (Upgraded[7] == false && Upgraded[6] == true && R3Tit >= 40 && R5Uran >= 20)
+                        if (Upgraded[7] == false && Upgraded[6] == true && R3Tit >= 40 && R5Uran >= 30)
                         {
                             Upgraded[7] = true;
                             R3Tit -= 40;
-                            R5Uran -= 20;
+                            R5Uran -= 30;
                         }
                         break;
                     //Third Line
@@ -330,19 +335,19 @@ namespace Miner.UiForInv
                         }
                         break;
                     case 11://Upgrade battery recharge speed 30% faster
-                        if (Upgraded[10] == false && Upgraded[9] == true && R1Cop >= 30 && R3Tit >= 15)
+                        if (Upgraded[10] == false && Upgraded[9] == true && R1Cop >= 30 && R3Tit >= 20)
                         {
                             Upgraded[10] = true;
                             R1Cop -= 30;
-                            R3Tit -= 15;
+                            R3Tit -= 20;
                         }
                         break;
                     case 12://Upgrade battery recharge speed 40% faster
-                        if (Upgraded[11] == false && Upgraded[10] == true && R1Cop >= 40 && R3Tit >= 20)
+                        if (Upgraded[11] == false && Upgraded[10] == true && R1Cop >= 40 && R3Tit >= 30)
                         {
                             Upgraded[11] = true;
                             R1Cop -= 40;
-                            R3Tit -= 20;
+                            R3Tit -= 30;
                         }
                         break;
                     //Last Upgrade
