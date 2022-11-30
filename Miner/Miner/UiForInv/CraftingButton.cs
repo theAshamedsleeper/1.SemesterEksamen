@@ -44,9 +44,9 @@ namespace Miner.UiForInv
             #endregion
             #region UpgradeTab
             spritePlacer[6] = content.Load<Texture2D>("Ui Sprites/UpgradePlaceHolder");
-            spritePlacer[7] = content.Load<Texture2D>("Ui Sprites/BarDivider");
-            uiRectangles[23] = new Rectangle(1600, 500, 4, 500);
-            uiRectangles[24] = new Rectangle(720, 500, 4, 500);
+            spritePlacer[7] = content.Load<Texture2D>("Ui Sprites/BarDivider");//Nothing Important, just a black line
+            uiRectangles[23] = new Rectangle(1600, 500, 4, 500);//Nothing Important, just the location for one of the black line
+            uiRectangles[24] = new Rectangle(720, 500, 4, 500);//Nothing Important, just the location for one of the black line
 
             //First Upgrade Line
             uiRectangles[5] = new Rectangle(780, 540, 100, 100);
@@ -77,7 +77,7 @@ namespace Miner.UiForInv
             spritePlacer[25] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 0");
             //Last upgrade
             uiRectangles[17] = new Rectangle(1380, 600, 200, 200);
-            spritePlacer[26] = content.Load<Texture2D>("Ui Sprites/Upgradeinfo/Last Upgrade AiBrainPng");
+            spritePlacer[27] = content.Load<Texture2D>("Ui Sprites/Upgradeinfo/Last Upgrade AiBrainPng");
             //Ressource count
             uiRectangles[18] = new Rectangle(1600, 520, 100, 100);//where to place the icon for copper
             reCount[0] = content.Load<Texture2D>("Ui Sprites/Upgradeinfo/OreSymbol_Copper");//load in copper
@@ -125,8 +125,9 @@ namespace Miner.UiForInv
 
             uiRectangles[38] = new Rectangle(465,550,200,300);//Last Upgrade Info
             upgradeInfo[12] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/RougeAiUpgradeInfo");
-
-            uiRectangles[37] = new Rectangle(515, 900, 100, 50);//Confirm Upgrade  Button
+            //Upgrade Button
+            uiRectangles[37] = new Rectangle(515, 900, 100, 50);//location for Upgrade  Button
+            spritePlacer[26] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/UpgradeButton");
             #endregion
         }
 

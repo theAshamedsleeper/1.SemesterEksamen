@@ -163,10 +163,10 @@ namespace Miner
                         spriteBatch.Draw(spritePlacer[25], uiRectangles[16], Color.Gray);
                     }
                     //Last upgrade
-                    spriteBatch.Draw(spritePlacer[26], uiRectangles[17], Color.White);// very Last Upgrade
+                    spriteBatch.Draw(spritePlacer[27], uiRectangles[17], Color.White);// very Last Upgrade
                     if (Upgraded[12] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[26], uiRectangles[17], Color.Gray);
+                        spriteBatch.Draw(spritePlacer[27], uiRectangles[17], Color.Gray);
                     }
                     #endregion
                     //Ressource count
@@ -194,11 +194,11 @@ namespace Miner
                             {
                                 spriteBatch.Draw(upgradeInfo[0], uiRectangles[25], Color.White);//Upgrade Info
                                 spriteBatch.Draw(spritePlacer[14], uiRectangles[5], Color.Gray);//Upgrade box
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                             }
                             else if (Upgraded[0] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
                                 spriteBatch.Draw(upgradeInfo[0], uiRectangles[25], Color.White);//Uprade Info
                             }
                             break;
@@ -207,12 +207,12 @@ namespace Miner
                             {
                                 spriteBatch.Draw(spritePlacer[15], uiRectangles[6], Color.Gray);//Upgrade box
                                 spriteBatch.Draw(upgradeInfo[1], uiRectangles[26], Color.White);//Uprade Info
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                             }
                             else if (Upgraded[1] == true)
                             {
                                 spriteBatch.Draw(upgradeInfo[1], uiRectangles[26], Color.White);//Uprade Info
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
                             }
                             break;
                         case 3://third on first line
@@ -220,12 +220,12 @@ namespace Miner
                             {
                                 spriteBatch.Draw(upgradeInfo[2], uiRectangles[27], Color.White);//Uprade Info
                                 spriteBatch.Draw(spritePlacer[16], uiRectangles[7], Color.Gray);//Upgrade box
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
 
                             }
                             else if (Upgraded[2] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
                                 spriteBatch.Draw(upgradeInfo[2], uiRectangles[27], Color.White);//Uprade Info
                             }
                             break;
@@ -234,11 +234,11 @@ namespace Miner
                             {
                                 spriteBatch.Draw(upgradeInfo[3], uiRectangles[28], Color.White);//Uprade Info
                                 spriteBatch.Draw(spritePlacer[17], uiRectangles[8], Color.Gray);//Upgrade box
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                             }
                             else if (Upgraded[3] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
                                 spriteBatch.Draw(upgradeInfo[3], uiRectangles[28], Color.White);//Uprade Info
                             }
                             break;
@@ -247,11 +247,11 @@ namespace Miner
                             {
                                 spriteBatch.Draw(upgradeInfo[4], uiRectangles[29], Color.White);//Uprade Info
                                 spriteBatch.Draw(spritePlacer[18], uiRectangles[9], Color.Gray);//Upgrade box
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                             }
                             else if (Upgraded[4] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
                                 spriteBatch.Draw(upgradeInfo[4], uiRectangles[29], Color.White);//Uprade Info
                             }
                             break;
@@ -260,12 +260,12 @@ namespace Miner
                             {
                                 spriteBatch.Draw(upgradeInfo[5], uiRectangles[30], Color.White);//Uprade Info
                                 spriteBatch.Draw(spritePlacer[19], uiRectangles[10], Color.Gray);//Upgrade box
-                                spriteBatch.Draw(upgradeInfo[5], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                             }
                             else if (Upgraded[5] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[30], Color.White);//Uprade Info
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(upgradeInfo[5], uiRectangles[30], Color.White);//Uprade Info
 
                             }
                             break;
@@ -274,11 +274,11 @@ namespace Miner
                             {
                                 spriteBatch.Draw(upgradeInfo[6], uiRectangles[31], Color.White);//Uprade Info
                                 spriteBatch.Draw(spritePlacer[20], uiRectangles[11], Color.Gray);//Upgrade box
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                             }
                             else if (Upgraded[6] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
                                 spriteBatch.Draw(upgradeInfo[6], uiRectangles[31], Color.White);//Uprade Info
                             }
                             break;
@@ -287,11 +287,11 @@ namespace Miner
                             {
                                 spriteBatch.Draw(upgradeInfo[7], uiRectangles[32], Color.White);//Uprade Info
                                 spriteBatch.Draw(spritePlacer[21], uiRectangles[12], Color.Gray);//Upgrade box
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                             }
                             else if (Upgraded[7] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
                                 spriteBatch.Draw(upgradeInfo[7], uiRectangles[32], Color.White);//Uprade Info
                             }
                             break;
@@ -300,11 +300,11 @@ namespace Miner
                             {
                                 spriteBatch.Draw(upgradeInfo[8], uiRectangles[33], Color.White);//Uprade Info
                                 spriteBatch.Draw(spritePlacer[22], uiRectangles[13], Color.Gray);//Upgrade box
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                             }
                             else if (Upgraded[8] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
                                 spriteBatch.Draw(upgradeInfo[8], uiRectangles[33], Color.White);//Uprade Info
                             }
                             break;
@@ -313,11 +313,11 @@ namespace Miner
                             {
                                 spriteBatch.Draw(upgradeInfo[9], uiRectangles[34], Color.White);//Uprade Info
                                 spriteBatch.Draw(spritePlacer[23], uiRectangles[14], Color.Gray);//Upgrade box
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                             }
                             else if (Upgraded[9] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
                                 spriteBatch.Draw(upgradeInfo[9], uiRectangles[34], Color.White);//Uprade Info
                             }
                             break;
@@ -326,11 +326,11 @@ namespace Miner
                             {
                                 spriteBatch.Draw(upgradeInfo[10], uiRectangles[35], Color.White);//Uprade Info
                                 spriteBatch.Draw(spritePlacer[24], uiRectangles[15], Color.Gray);//Upgrade box
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                             }
                             else if (Upgraded[10] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
                                 spriteBatch.Draw(upgradeInfo[10], uiRectangles[35], Color.White);//Uprade Info
                             }
                             break;
@@ -339,25 +339,25 @@ namespace Miner
                             {
                                 spriteBatch.Draw(upgradeInfo[11], uiRectangles[36], Color.White);//Uprade Info
                                 spriteBatch.Draw(spritePlacer[25], uiRectangles[16], Color.Gray);//Upgrade box
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                             }
                             else if (Upgraded[11] == true)
                             {
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
                                 spriteBatch.Draw(upgradeInfo[11], uiRectangles[36], Color.White);//Uprade Info
                             }
                             break;
                         case 13://last upgrade
                             if (Upgraded[12] == false)
                             {
-                                spriteBatch.Draw(spritePlacer[26], uiRectangles[17],Color.Gray);//Upgrade Box
+                                spriteBatch.Draw(spritePlacer[27], uiRectangles[17],Color.Gray);//Upgrade Box
                                 spriteBatch.Draw(upgradeInfo[12], uiRectangles[38], Color.White);//Upgrade info
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Gray);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                             }
                             else if (Upgraded[13] == true)
                             {
                                 spriteBatch.Draw(upgradeInfo[12], uiRectangles[38], Color.White);//Upgrade info
-                                spriteBatch.Draw(spritePlacer[6], uiRectangles[37], Color.Green);//Upgrade Button
+                                spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
                             }
                             break;
 
