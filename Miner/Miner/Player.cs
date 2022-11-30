@@ -20,18 +20,26 @@ namespace Miner
 {
     internal class Player : GameObjects
     {
-       
-        
+        private Texture2D spriteIdleTexture;
+        private Texture2D _drivingTexture;
+        private Texture2D _flyingTexture;
+        private Texture2D _drillingTexture;
+
+        public Player(Vector2 position)
+        {
+            this.position = position;
+        }
 
         public override void LoadContent(ContentManager content)
         {
-           
+            _drivingTexture = content.Load<Texture2D>(SPRITESHEET_DRIVING);
+            _flyingTexture = content.Load<Texture2D>(SPRITESHEET_FLYING);
+            _drillingTexture = content.Load<Texture2D>(SPRITESHEET_DIGGING);
 
-            _spriteSheetTexture = content.Load<Texture2D>(SPRITESHEET_DRIVING);
+            _spriteSheetTexture = _drivingTexture;
             _spriteIdleTexture = content.Load<Texture2D>(SPRITE_OVERLAY);
 
-            _drill = new Player(_spriteSheetTexture, position);
-            _drillOverlay = new Player(_spriteIdleTexture, position);
+            
 
         }
 
@@ -39,20 +47,16 @@ namespace Miner
 
        
 
-        public override void Update(GameTime gameTime, Vector2 position)
+        public override void Update(GameTime gameTime)
         {
 
-
-     
-
-            #region Clumsy controlls
+           
             if (Keyboard.GetState().IsKeyDown(Keys.D))
             {
-                _spriteSheetTexture = Content.Load<Texture2D>(SPRITESHEET_DRIVING);
+                
                 effect = SpriteEffects.None;
                 timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-                //position += new Vector2(5, 0);
-
+                
                 if (timer > 50)
                 {
                     frame = frame + 32;
@@ -70,10 +74,11 @@ namespace Miner
 
             if (Keyboard.GetState().IsKeyDown(Keys.A))
             {
-                _spriteSheetTexture = Content.Load<Texture2D>(SPRITESHEET_DRIVING);
+                _spriteSheetTexture = _drivingTexture;
                 effect = SpriteEffects.FlipHorizontally;
                 timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-                //position += new Vector2(-5, 0);
+                
+
 
 
                 if (timer > 50)
@@ -92,9 +97,9 @@ namespace Miner
 
             if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
-                _spriteSheetTexture = Content.Load<Texture2D>(SPRITESHEET_FLYING);
+                _spriteSheetTexture = _flyingTexture;
                 timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-                //position += new Vector2(0, -5);
+                
 
 
                 if (timer > 50)
@@ -112,7 +117,7 @@ namespace Miner
 
             if (Keyboard.GetState().IsKeyDown(Keys.R)) // Burde være ved collision med blok
             {
-                _spriteSheetTexture = Content.Load<Texture2D>(SPRITESHEET_DIGGING);
+                _spriteSheetTexture = _drillingTexture;
 
                 timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
@@ -132,20 +137,13 @@ namespace Miner
             }
             else
             {
-                _spriteSheetTexture = Content.Load<Texture2D>(SPRITESHEET_DRIVING);
+                _spriteSheetTexture = _drivingTexture;
             }
-            #endregion
-
-
-
-
-
-
-
+        
 
 
         }
 
-
+        
     }
 }

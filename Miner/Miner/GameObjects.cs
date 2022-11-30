@@ -20,7 +20,7 @@ namespace Miner
     {
         protected int frame = 0;
         protected float timer;
-        protected Vector2 positionx = new Vector2(10, 10);
+        protected Vector2 positionx = new Vector2(100, 10);
         protected SpriteEffects effect = SpriteEffects.None;
         protected float speed = 200f;
         public Vector2 position = new Vector2(10, 10);
@@ -38,8 +38,8 @@ namespace Miner
         public Player _drill;
 
         public abstract void LoadContent(ContentManager content);
-
-       
+        
+        
 
         public abstract void Update(GameTime gameTime);
 
@@ -54,14 +54,14 @@ namespace Miner
         {
 
 
-            spriteBatch.Draw(_spriteSheetTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 7, effect, 1f);
+            spriteBatch.Draw(_spriteSheetTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5, effect, 1f);
 
             timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
             if (timer > 1500)
             {
 
-                spriteBatch.Draw(_spriteIdleTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 7, effect, 1f);
+                spriteBatch.Draw(_spriteIdleTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5, effect, 1f);
 
             }
             if (timer > 2000)

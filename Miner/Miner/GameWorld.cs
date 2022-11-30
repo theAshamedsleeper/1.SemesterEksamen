@@ -14,6 +14,8 @@ namespace Miner
         private Texture2D texture_terrain;
         private Texture2D dirt_terrain;
         private Texture2D grass_terrain;
+        private List<GameObjects> gameObjects = new List<GameObjects>();
+        
 
         private Texture2D player_terrain;
         private float worldScale = 1.875f;//2.4f så passer den i width
@@ -39,8 +41,10 @@ namespace Miner
 
         protected override void Initialize()
         {
+            gameObjects.Add(new Player(new Vector2(screenSize.X /2, screenSize.Y / 2)));
             Terrain.Give_Terrain();
             base.Initialize();
+            
         }
 
         protected override void LoadContent()
@@ -54,6 +58,11 @@ namespace Miner
             grass_terrain = Content.Load<Texture2D>("pixil-frame-0");
             dirt_terrain = Content.Load<Texture2D>("pixil-frame-2");
             player_terrain = Content.Load<Texture2D>("pixilart-drawing_1");
+
+            for (int i = 0; i < gameObjects.Count; i++)
+            {
+                gameObjects[i].LoadContent(Content);
+            }
         }
 
         protected override void Update(GameTime gameTime)
@@ -75,6 +84,11 @@ namespace Miner
                 workShop[i].Update(gameTime);
             }
             base.Update(gameTime);
+
+            for (int i = 0; i < gameObjects.Count; i++)
+            {
+                gameObjects[i].Update(gameTime);
+            }
         }
 
         protected override void Draw(GameTime gameTime)
@@ -130,15 +144,11 @@ namespace Miner
             {
                 go.Draw(_spriteBatch);
             }
-            _spriteBatch.Draw(player_terrain,//what to draw
-                new Vector2(_graphics.PreferredBackBufferWidth/2 - player_terrain.Width / 2, _graphics.PreferredBackBufferHeight/2 - player_terrain.Height / 2),//place to draw it
-                null,//rectangle
-                Color.White,//color of player
-                0f, //Rotation of player
-                Vector2.Zero,//Orgin Point
-                worldScale,//How big is the player
-                SpriteEffects.None,//effects
-                0f);//Layer 
+
+            foreach (GameObjects objects in gameObjects)
+            {
+                objects.Draw(_spriteBatch, gameTime);
+            }
 
             _spriteBatch.End();
 
