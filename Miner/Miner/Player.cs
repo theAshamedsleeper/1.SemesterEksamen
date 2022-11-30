@@ -41,7 +41,50 @@ namespace Miner
         {
 
 
-            if (Keyboard.GetState().IsKeyDown(Keys.H))
+            if (Keyboard.GetState().IsKeyDown(Keys.T))
+            {
+                drilling = true;
+                _spriteSheetTexture = _flyingTexture;
+                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+
+
+                if (frameTimer > 50)
+                {
+                    frame = frame + 32;
+                    frameTimer = 0;
+                }
+                // 32, 64, 96, 128 = De fire frames
+                if (frame == 128)
+                {
+                    frame = 0;
+                }
+
+            }
+
+
+            else if (Keyboard.GetState().IsKeyDown(Keys.B)) // Burde være ved collision med blok
+            {
+                drilling = true;
+                _spriteSheetTexture = _drillingSideTexture;
+                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+
+
+                if (frameTimer > 50)
+                {
+                    frame = frame + 32;
+                    frameTimer = 0;
+                }
+                // 32, 64, 96, 128 = De fire frames
+                if (frame == 128)
+                {
+                    frame = 0;
+                }
+
+            }
+
+            else if (Keyboard.GetState().IsKeyDown(Keys.H))
             {
                 drilling = false;
                 _spriteSheetTexture = _drivingTexture;
@@ -85,26 +128,6 @@ namespace Miner
             }
 
 
-            else if (Keyboard.GetState().IsKeyDown(Keys.T))
-            {
-                drilling = false;
-                _spriteSheetTexture = _flyingTexture;
-                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-
-
-
-                if (frameTimer > 50)
-                {
-                    frame = frame + 32;
-                    frameTimer = 0;
-                }
-                // 32, 64, 96, 128 = De fire frames
-                if (frame == 128)
-                {
-                    frame = 0;
-                }
-
-            }
 
 
             else if (Keyboard.GetState().IsKeyDown(Keys.G)) // Burde være ved collision med blok
@@ -127,26 +150,8 @@ namespace Miner
                 }
 
 
-            }
-
-            else if (Keyboard.GetState().IsKeyDown(Keys.B)) // Burde være ved collision med blok
-            {
-                drilling = true;
-                _spriteSheetTexture = _drillingSideTexture;
-                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
 
-
-                if (frameTimer > 50)
-                {
-                    frame = frame + 32;
-                    frameTimer = 0;
-                }
-                // 32, 64, 96, 128 = De fire frames
-                if (frame == 128)
-                {
-                    frame = 0;
-                }
 
             }
             else

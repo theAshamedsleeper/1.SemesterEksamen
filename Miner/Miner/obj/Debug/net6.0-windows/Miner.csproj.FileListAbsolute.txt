@@ -78,19 +78,17 @@ C:\Users\Thorbjørn\Desktop\Miner\Miner\obj\Debug\net6.0-windows\refint\Miner.dl
 C:\Users\Thorbjørn\Desktop\Miner\Miner\obj\Debug\net6.0-windows\Miner.pdb
 C:\Users\Thorbjørn\Desktop\Miner\Miner\obj\Debug\net6.0-windows\Miner.genruntimeconfig.cache
 C:\Users\Thorbjørn\Desktop\Miner\Miner\obj\Debug\net6.0-windows\ref\Miner.dll
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.csproj.AssemblyReference.cache
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.AssemblyInfoInputs.cache
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.AssemblyInfo.cs
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.csproj.CoreCompileInputs.cache
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.dll
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\refint\Miner.dll
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.pdb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Deep Rock.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Dirt.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingDown3Spritesheet.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingSide6Spritesheet.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlying6Spritesheet.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillIdleBub3.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillMoving9Spritesheet.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Gold.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\pixil-frame-0.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\pixil-frame-2.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Pixilart Sprite Sheet (19).xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\pixilart-drawing_1.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Rock.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Rocky dirt.xnb
@@ -121,11 +119,14 @@ C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Mi
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.csproj.AssemblyReference.cache
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.AssemblyInfoInputs.cache
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.AssemblyInfo.cs
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.csproj.CoreCompileInputs.cache
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.csproj.CopyComplete
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.dll
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\refint\Miner.dll
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.pdb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\Miner.genruntimeconfig.cache
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\obj\Debug\net6.0-windows\ref\Miner.dll
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Digger7Spritesheet_NB.xnb
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Pixilart Sprite Sheet (19).xnb
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillIdleBub3.xnb
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingDown1Spritesheet.xnb
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\FlyingSpritesheet.xnb

@@ -25,18 +25,6 @@
 /processorParam:TextureFormat=Color
 /build:Deep Rock.png
 
-#begin Digger7Spritesheet_NB.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Digger7Spritesheet_NB.png
-
 #begin Dirt.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -49,7 +37,7 @@
 /processorParam:TextureFormat=Color
 /build:Dirt.png
 
-#begin DrillDiggingDown1Spritesheet.png
+#begin DrillDiggingDown3Spritesheet.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -59,7 +47,31 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:DrillDiggingDown1Spritesheet.png
+/build:DrillDiggingDown3Spritesheet.png
+
+#begin DrillDiggingSide6Spritesheet.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:DrillDiggingSide6Spritesheet.png
+
+#begin DrillFlying6Spritesheet.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:DrillFlying6Spritesheet.png
 
 #begin DrillIdleBub3.png
 /importer:TextureImporter
@@ -73,7 +85,7 @@
 /processorParam:TextureFormat=Color
 /build:DrillIdleBub3.png
 
-#begin FlyingSpritesheet.png
+#begin DrillMoving9Spritesheet.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -83,7 +95,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:FlyingSpritesheet.png
+/build:DrillMoving9Spritesheet.png
 
 #begin Gold.png
 /importer:TextureImporter
@@ -120,18 +132,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:pixil-frame-2.png
-
-#begin Pixilart Sprite Sheet (19).png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Pixilart Sprite Sheet (19).png
 
 #begin pixilart-drawing_1.png
 /importer:TextureImporter

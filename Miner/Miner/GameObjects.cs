@@ -28,10 +28,10 @@ namespace Miner
 
 
 
-        protected const string SPRITESHEET_DRIVING = "Digger7Spritesheet_NB";
-        protected const string SPRITESHEET_DIGGING_SIDE = "Pixilart Sprite Sheet (19)";
-        protected const string SPRITESHEET_FLYING = "FlyingSpritesheet";
-        protected const string SPRITESHEET_DIGGING_DOWN = "DrillDiggingDown1Spritesheet";
+        protected const string SPRITESHEET_DRIVING = "DrillMoving9Spritesheet";
+        protected const string SPRITESHEET_DIGGING_SIDE = "DrillDiggingSide6Spritesheet";
+        protected const string SPRITESHEET_FLYING = "DrillFlying6Spritesheet";
+        protected const string SPRITESHEET_DIGGING_DOWN = "DrillDiggingDown3Spritesheet";
         protected const string SPRITE_OVERLAY = "DrillIdleBub3";
 
         protected Texture2D _spriteSheetTexture;
