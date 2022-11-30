@@ -13,6 +13,7 @@ namespace Miner
         private Texture2D _flyingTexture;
         private Texture2D _drillingSideTexture;
         private Texture2D _drillingDownTexture;
+        
 
         public Player(Vector2 position)
         {
@@ -28,6 +29,7 @@ namespace Miner
 
             _spriteSheetTexture = _drivingTexture;
             _spriteIdleTexture = content.Load<Texture2D>(SPRITE_OVERLAY);
+            _controlsFont = content.Load<SpriteFont>("File");
 
 
 

@@ -33,9 +33,11 @@ namespace Miner
         protected const string SPRITESHEET_FLYING = "DrillFlying6Spritesheet";
         protected const string SPRITESHEET_DIGGING_DOWN = "DrillDiggingDown3Spritesheet";
         protected const string SPRITE_OVERLAY = "DrillIdleBub3";
+        
 
         protected Texture2D _spriteSheetTexture;
-        protected Texture2D _spriteIdleTexture; 
+        protected Texture2D _spriteIdleTexture;
+        public SpriteFont _controlsFont;
         public Player _drillOverlay;
         public Player _drill;
         public bool drilling = false;
@@ -78,8 +80,8 @@ namespace Miner
             }
 
 
-            
-            
+            spriteBatch.DrawString(_controlsFont, " Fly: T \n Drive: F & H \n Dig down: G \n Dig side: B", new Vector2(1600, 100), Color.Black);
+
         }
 
 
