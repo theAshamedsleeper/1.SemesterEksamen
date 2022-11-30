@@ -19,7 +19,8 @@ namespace Miner
     internal abstract class GameObjects
     {
         protected int frame = 0;
-        protected float timer;
+        protected float frameTimer = 0f;
+        protected float idletimer = 0f;
         protected Vector2 positionx = new Vector2(100, 10);
         protected SpriteEffects effect = SpriteEffects.None;
         protected float speed = 200f;
@@ -28,14 +29,16 @@ namespace Miner
 
 
         protected const string SPRITESHEET_DRIVING = "Digger7Spritesheet_NB";
-        protected const string SPRITESHEET_DIGGING = "Pixilart Sprite Sheet (19)";
-        protected const string SPRITESHEET_FLYING = "DrillFlying3Spritesheet";
+        protected const string SPRITESHEET_DIGGING_SIDE = "Pixilart Sprite Sheet (19)";
+        protected const string SPRITESHEET_FLYING = "FlyingSpritesheet";
+        protected const string SPRITESHEET_DIGGING_DOWN = "DrillDiggingDown1Spritesheet";
         protected const string SPRITE_OVERLAY = "DrillIdleBub3";
 
         protected Texture2D _spriteSheetTexture;
         protected Texture2D _spriteIdleTexture; 
         public Player _drillOverlay;
         public Player _drill;
+        public bool drilling = false;
 
         public abstract void LoadContent(ContentManager content);
         
@@ -56,17 +59,22 @@ namespace Miner
 
             spriteBatch.Draw(_spriteSheetTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5, effect, 1f);
 
-            timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+            idletimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
-            if (timer > 1500)
+            if (idletimer > 1500)
             {
-
-                spriteBatch.Draw(_spriteIdleTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5, effect, 1f);
+                if (drilling == false)
+                {
+                    spriteBatch.Draw(_spriteIdleTexture, position, new Rectangle(0, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5, effect, 1f);
+                }
+                
+                
+                
 
             }
-            if (timer > 2000)
+            if (idletimer > 2000)
             {
-                timer = 0;
+                idletimer = 0;
             }
 
 

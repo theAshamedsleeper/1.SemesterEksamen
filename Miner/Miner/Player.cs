@@ -1,20 +1,8 @@
-﻿using Microsoft.VisualBasic.Devices;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using SharpDX.Direct2D1.Effects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Microsoft.Xna.Framework.Input;
 using Keyboard = Microsoft.Xna.Framework.Input.Keyboard;
 using Keys = Microsoft.Xna.Framework.Input.Keys;
-using ButtonState = Microsoft.Xna.Framework.Input.ButtonState;
 
 namespace Miner
 {
@@ -23,7 +11,8 @@ namespace Miner
         private Texture2D spriteIdleTexture;
         private Texture2D _drivingTexture;
         private Texture2D _flyingTexture;
-        private Texture2D _drillingTexture;
+        private Texture2D _drillingSideTexture;
+        private Texture2D _drillingDownTexture;
 
         public Player(Vector2 position)
         {
@@ -34,33 +23,35 @@ namespace Miner
         {
             _drivingTexture = content.Load<Texture2D>(SPRITESHEET_DRIVING);
             _flyingTexture = content.Load<Texture2D>(SPRITESHEET_FLYING);
-            _drillingTexture = content.Load<Texture2D>(SPRITESHEET_DIGGING);
+            _drillingSideTexture = content.Load<Texture2D>(SPRITESHEET_DIGGING_SIDE);
+            _drillingDownTexture = content.Load<Texture2D>(SPRITESHEET_DIGGING_DOWN);
 
             _spriteSheetTexture = _drivingTexture;
             _spriteIdleTexture = content.Load<Texture2D>(SPRITE_OVERLAY);
 
-            
+
 
         }
 
-      
 
-       
+
+
 
         public override void Update(GameTime gameTime)
         {
 
-           
-            if (Keyboard.GetState().IsKeyDown(Keys.D))
+
+            if (Keyboard.GetState().IsKeyDown(Keys.H))
             {
-                
+                drilling = false;
+                _spriteSheetTexture = _drivingTexture;
                 effect = SpriteEffects.None;
-                timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-                
-                if (timer > 50)
+                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+                if (frameTimer > 50)
                 {
                     frame = frame + 32;
-                    timer = 0;
+                    frameTimer = 0;
                 }
                 // 32, 64, 96, 128 = De fire frames
                 if (frame == 128)
@@ -72,19 +63,18 @@ namespace Miner
 
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.A))
+            else if (Keyboard.GetState().IsKeyDown(Keys.F))
             {
+                drilling = false;
                 _spriteSheetTexture = _drivingTexture;
                 effect = SpriteEffects.FlipHorizontally;
-                timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-                
+                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
 
-
-                if (timer > 50)
+                if (frameTimer > 50)
                 {
                     frame = frame + 32;
-                    timer = 0;
+                    frameTimer = 0;
                 }
                 // 32, 64, 96, 128 = De fire frames
                 if (frame == 128)
@@ -95,17 +85,18 @@ namespace Miner
             }
 
 
-            if (Keyboard.GetState().IsKeyDown(Keys.W))
+            else if (Keyboard.GetState().IsKeyDown(Keys.T))
             {
+                drilling = false;
                 _spriteSheetTexture = _flyingTexture;
-                timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-                
+                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
 
-                if (timer > 50)
+
+                if (frameTimer > 50)
                 {
                     frame = frame + 32;
-                    timer = 0;
+                    frameTimer = 0;
                 }
                 // 32, 64, 96, 128 = De fire frames
                 if (frame == 128)
@@ -115,18 +106,41 @@ namespace Miner
 
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.R)) // Burde være ved collision med blok
+
+            else if (Keyboard.GetState().IsKeyDown(Keys.G)) // Burde være ved collision med blok
             {
-                _spriteSheetTexture = _drillingTexture;
+                drilling = true;
+                _spriteSheetTexture = _drillingDownTexture;
+                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
-                timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
 
-
-                if (timer > 50)
+                if (frameTimer > 50)
                 {
                     frame = frame + 32;
-                    timer = 0;
+                    frameTimer = 0;
+                }
+                // 32, 64, 96, 128 = De fire frames
+                if (frame == 128)
+                {
+                    frame = 0;
+                }
+
+
+            }
+
+            else if (Keyboard.GetState().IsKeyDown(Keys.B)) // Burde være ved collision med blok
+            {
+                drilling = true;
+                _spriteSheetTexture = _drillingSideTexture;
+                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+
+
+                if (frameTimer > 50)
+                {
+                    frame = frame + 32;
+                    frameTimer = 0;
                 }
                 // 32, 64, 96, 128 = De fire frames
                 if (frame == 128)
@@ -138,12 +152,13 @@ namespace Miner
             else
             {
                 _spriteSheetTexture = _drivingTexture;
+                drilling = false;
             }
-        
+
 
 
         }
 
-        
+
     }
 }
