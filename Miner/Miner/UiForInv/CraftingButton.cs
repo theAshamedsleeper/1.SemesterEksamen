@@ -342,17 +342,16 @@ namespace Miner.UiForInv
                         {
                             Upgraded[11] = true;
                             R1Cop -= 40;
-                            R3Tit -= 40;
+                            R3Tit -= 20;
                         }
                         break;
                     //Last Upgrade
                     case 13://checks that all the last upgrades have been made and you have the resource needed.
                         if (Upgraded[7] == false && Upgraded[11] == true && Upgraded[6] == true && Upgraded[3] == true 
-                            && R1Cop >= 50 && R2Mili >= 50 && R3Tit >= 50 && R4Plat >= 50 && R5Uran >= 50)
+                            && R1Cop >= 50 && R3Tit >= 50 && R4Plat >= 50 && R5Uran >= 50)
                         {
                             Upgraded[7] = true;
                             R1Cop -= 50;
-                            R2Mili -= 50;
                             R3Tit -= 50;
                             R4Plat -= 50;
                             R5Uran -= 50;
