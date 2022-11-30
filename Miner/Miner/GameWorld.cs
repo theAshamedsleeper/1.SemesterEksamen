@@ -25,6 +25,7 @@ namespace Miner
         private List<WorkShop> workShop = new List<WorkShop>();
 
 
+
         public GameWorld()
         {
             _graphics = new GraphicsDeviceManager(this);

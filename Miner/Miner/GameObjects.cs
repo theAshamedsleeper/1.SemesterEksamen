@@ -23,17 +23,23 @@ namespace Miner
         protected Vector2 positionx = new Vector2(10, 10);
         protected SpriteEffects effect = SpriteEffects.None;
         protected float speed = 200f;
-        
+        public Vector2 position = new Vector2(10, 10);
 
 
-        protected const string ASSET_NAME_SPRITESHEET = "Digger7Spritesheet_NB";
 
-      
+        protected const string SPRITESHEET_DRIVING = "Digger7Spritesheet_NB";
+        protected const string SPRITESHEET_DIGGING = "Pixilart Sprite Sheet (19)";
+        protected const string SPRITESHEET_FLYING = "DrillFlying3Spritesheet";
+        protected const string SPRITE_OVERLAY = "DrillIdleBub3";
 
         protected Texture2D _spriteSheetTexture;
-
+        protected Texture2D _spriteIdleTexture; 
+        public Player _drillOverlay;
+        public Player _drill;
 
         public abstract void LoadContent(ContentManager content);
+
+       
 
         public abstract void Update(GameTime gameTime);
 
@@ -44,12 +50,27 @@ namespace Miner
         //    position += ((velocity * speed) * deltaTime);
         //}
 
-        public void Draw(SpriteBatch spriteBatch)
+        public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
+
+
+            spriteBatch.Draw(_spriteSheetTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 7, effect, 1f);
+
+            timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+            if (timer > 1500)
+            {
+
+                spriteBatch.Draw(_spriteIdleTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 7, effect, 1f);
+
+            }
+            if (timer > 2000)
+            {
+                timer = 0;
+            }
+
+
             
-
-
-            spriteBatch.Draw(_spriteSheetTexture, positionx, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 7, effect, 1f);
             
         }
 
