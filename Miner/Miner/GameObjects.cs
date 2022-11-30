@@ -20,10 +20,10 @@ namespace Miner
     {
         protected int frame = 0;
         protected float timer;
-        protected Vector2 velocity = new Vector2(10, 10);
+        protected Vector2 positionx = new Vector2(10, 10);
         protected SpriteEffects effect = SpriteEffects.None;
         protected float speed = 200f;
-        protected Vector2 positionx;
+        
 
 
         protected const string ASSET_NAME_SPRITESHEET = "Digger7Spritesheet_NB";
@@ -47,6 +47,8 @@ namespace Miner
         public void Draw(SpriteBatch spriteBatch)
         {
             
+
+
             spriteBatch.Draw(_spriteSheetTexture, positionx, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 7, effect, 1f);
             
         }

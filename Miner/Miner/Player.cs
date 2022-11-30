@@ -38,7 +38,7 @@ namespace Miner
             {
                 effect = SpriteEffects.None;
                 timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-                velocity += new Vector2(5, 0);
+                positionx += new Vector2(5, 0);
 
                 if (timer > 50)
                 {
@@ -59,7 +59,7 @@ namespace Miner
             {
                 effect = SpriteEffects.FlipHorizontally;
                 timer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-                velocity += new Vector2(-5, 0);
+                positionx += new Vector2(-5, 0);
 
 
                 if (timer > 50)
