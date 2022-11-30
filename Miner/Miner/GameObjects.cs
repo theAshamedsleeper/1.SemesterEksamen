@@ -80,7 +80,9 @@ namespace Miner
             }
 
 
-            spriteBatch.DrawString(_controlsFont, " Fly: T \n Drive: F & H \n Dig down: G \n Dig side: B", new Vector2(1600, 100), Color.Black);
+            spriteBatch.DrawString(_controlsFont, 
+                " Fly               : T \n Drive           : F & H \n Dig down    : G \n Dig side      : B"
+                , new Vector2(1600, 100), Color.Black, 0f, new Vector2 (0,0),2, SpriteEffects.None,1);
 
         }
 
