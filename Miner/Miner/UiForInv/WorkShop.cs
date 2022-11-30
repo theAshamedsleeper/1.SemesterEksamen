@@ -14,14 +14,15 @@ namespace Miner
         protected Vector2[] spritePlacerPos = new Vector2[10];
         protected SpriteFont[] fontsTitle = new SpriteFont[10];
         protected Rectangle[] uiRectangles = new Rectangle[50];
+        protected Texture2D[] reCount= new Texture2D[5];
         protected bool isCraftClicked = false;
         protected bool isUpgradesClicked = false;
         protected bool isStatsClicked = false;
         protected bool isArtiClicked = false;
         protected static bool[] upgraded = new bool[13];
         protected byte upgradeClicked;
-        private static int r1Copper = 100;
-        private static int r2MilitaryScrap = 100;
+        private static int r1Copper;
+        private static int r2MilitaryScrap;
         private static int r3Titanium;
         private static int r4Plat;
         private static int r5Uranium;
@@ -94,9 +95,10 @@ namespace Miner
                 //close button
                 spriteBatch.Draw(spritePlacer[5], uiRectangles[4], Color.White);
                 #endregion
-                #region UpgradeButtons
                 if (isUpgradesClicked == true)
                 {
+
+                #region UpgradeButtons
                     //First Upgrade Line
                     spriteBatch.Draw(spritePlacer[14], uiRectangles[5], Color.White);//Frist line first upgrade
                     if (Upgraded[0] == true)
@@ -166,18 +168,19 @@ namespace Miner
                     {
                         spriteBatch.Draw(spritePlacer[26], uiRectangles[17], Color.Gray);
                     }
+                    #endregion
                     //Ressource count
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[18], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[19], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[20], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[21], Color.White);
-                    spriteBatch.Draw(spritePlacer[6], uiRectangles[22], Color.White);
+                    spriteBatch.Draw(reCount[0], uiRectangles[18], Color.White);
+                    spriteBatch.Draw(reCount[1], uiRectangles[19], Color.White);
+                    spriteBatch.Draw(reCount[2], uiRectangles[20], Color.White);
+                    spriteBatch.Draw(reCount[3], uiRectangles[21], Color.White);
+                    spriteBatch.Draw(reCount[4], uiRectangles[22], Color.White);
 
-                    spriteBatch.DrawString(fontsTitle[5], $"Name {R1Cop}", new Vector2(1720, 550), Color.White);
-                    spriteBatch.DrawString(fontsTitle[6], $"Name {R2Mili}", new Vector2(1720, 625), Color.White);
-                    spriteBatch.DrawString(fontsTitle[7], $"Name {R3Tit}", new Vector2(1720, 700), Color.White);
-                    spriteBatch.DrawString(fontsTitle[8], $"Name {R4Plat}", new Vector2(1720, 775), Color.White);
-                    spriteBatch.DrawString(fontsTitle[9], $"Name {R5Uran}", new Vector2(1720, 850), Color.White);
+                    spriteBatch.DrawString(fontsTitle[5], $"Copper   {R1Cop}", new Vector2(1700, 550), Color.White);
+                    spriteBatch.DrawString(fontsTitle[6], $"Scrap    {R2Mili}", new Vector2(1700, 625), Color.White);
+                    spriteBatch.DrawString(fontsTitle[7], $"Titanium {R3Tit}", new Vector2(1700, 700), Color.White);
+                    spriteBatch.DrawString(fontsTitle[8], $"Platinum {R4Plat}", new Vector2(1700, 775), Color.White);
+                    spriteBatch.DrawString(fontsTitle[9], $"Uranium  {R5Uran}", new Vector2(1700, 850), Color.White);
 
                     //Border Divding from upgrades to show how many ressources you got
                     spriteBatch.Draw(spritePlacer[7], uiRectangles[23], Color.Black);
@@ -362,7 +365,6 @@ namespace Miner
                     #endregion
 
                 }
-                #endregion
                 #region Button Text
                 spriteBatch.DrawString(fontsTitle[0], "Craft", spritePlacerPos[1], Color.White, 0f, new Vector2(0, 0), 2f, SpriteEffects.None, 0f);
                 spriteBatch.DrawString(fontsTitle[1], "Upgrade", spritePlacerPos[2], Color.White, 0f, new Vector2(0, 0), 2f, SpriteEffects.None, 0f);

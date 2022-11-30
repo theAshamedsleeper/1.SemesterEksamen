@@ -42,10 +42,20 @@
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 2.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 3.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/Last Upgrade AiBrainPng.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_Copper.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_MiliScrap.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_Plat.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_Titanium.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_Uranium.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/UI Sprites/UpgradePlaceHolder.PNG</File>
   </SourceFiles>
   <DestFiles>
     <File>UI Sprites/InventorybackGround.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

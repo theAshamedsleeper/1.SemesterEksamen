@@ -424,6 +424,66 @@
 /processorParam:TextureFormat=Color
 /build:Ui Sprites/UpgradeInfo/Last Upgrade AiBrainPng.png
 
+#begin Ui Sprites/UpgradeInfo/OreSymbol_Copper.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/OreSymbol_Copper.png
+
+#begin Ui Sprites/UpgradeInfo/OreSymbol_MiliScrap.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/OreSymbol_MiliScrap.png
+
+#begin Ui Sprites/UpgradeInfo/OreSymbol_Plat.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/OreSymbol_Plat.png
+
+#begin Ui Sprites/UpgradeInfo/OreSymbol_Titanium.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/OreSymbol_Titanium.png
+
+#begin Ui Sprites/UpgradeInfo/OreSymbol_Uranium.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/OreSymbol_Uranium.png
+
 #begin UI Sprites/UpgradePlaceHolder.PNG
 /importer:TextureImporter
 /processor:TextureProcessor

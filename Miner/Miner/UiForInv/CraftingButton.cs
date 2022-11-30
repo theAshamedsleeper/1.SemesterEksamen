@@ -76,19 +76,24 @@ namespace Miner.UiForInv
             uiRectangles[16] = new Rectangle(1200, 780, 100, 100);
             spritePlacer[25] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 0");
             //Last upgrade
-            uiRectangles[17] = new Rectangle(1380, 660, 100, 100);
+            uiRectangles[17] = new Rectangle(1380, 600, 200, 200);
             spritePlacer[26] = content.Load<Texture2D>("Ui Sprites/Upgradeinfo/Last Upgrade AiBrainPng");
             //Ressource count
-            uiRectangles[18] = new Rectangle(1650, 540, 50, 50);
-            fontsTitle[5] = content.Load<SpriteFont>("Ui Sprites/Fonts/R1");
-            uiRectangles[19] = new Rectangle(1650, 615, 50, 50);
-            fontsTitle[6] = content.Load<SpriteFont>("Ui Sprites/Fonts/R2");
-            uiRectangles[20] = new Rectangle(1650, 690, 50, 50);
-            fontsTitle[7] = content.Load<SpriteFont>("Ui Sprites/Fonts/R3");
-            uiRectangles[21] = new Rectangle(1650, 765, 50, 50);
-            fontsTitle[8] = content.Load<SpriteFont>("Ui Sprites/Fonts/R4");
-            uiRectangles[22] = new Rectangle(1650, 840, 50, 50);
-            fontsTitle[9] = content.Load<SpriteFont>("Ui Sprites/Fonts/R5");
+            uiRectangles[18] = new Rectangle(1600, 520, 100, 100);//where to place the icon for copper
+            reCount[0] = content.Load<Texture2D>("Ui Sprites/Upgradeinfo/OreSymbol_Copper");//load in copper
+            fontsTitle[5] = content.Load<SpriteFont>("Ui Sprites/Fonts/R1");//load in the amount of copper
+            uiRectangles[19] = new Rectangle(1600, 590, 100, 100);//where to place the icon for MiliScrap
+            reCount[1] = content.Load<Texture2D>("Ui Sprites/Upgradeinfo/OreSymbol_MiliScrap");//Load in miliScrap
+            fontsTitle[6] = content.Load<SpriteFont>("Ui Sprites/Fonts/R2");//load in the amount of MiliScrap
+            uiRectangles[20] = new Rectangle(1600, 660, 100, 100);////where to place the icon for titanium
+            reCount[2] = content.Load<Texture2D>("Ui Sprites/Upgradeinfo/OreSymbol_Titanium");//load in Titanium
+            fontsTitle[7] = content.Load<SpriteFont>("Ui Sprites/Fonts/R3");//load in the amount of Titanium
+            uiRectangles[21] = new Rectangle(1600, 755, 100, 100);//Where to place the icon for Plat
+            reCount[3] = content.Load<Texture2D>("Ui Sprites/Upgradeinfo/OreSymbol_Plat");//load in plat
+            fontsTitle[8] = content.Load<SpriteFont>("Ui Sprites/Fonts/R4");//load in the amount of plat
+            uiRectangles[22] = new Rectangle(1600, 820, 100, 100);//Where to place the icon for Uranium
+            reCount[4] = content.Load<Texture2D>("Ui Sprites/Upgradeinfo/OreSymbol_Uranium");//Load in Uranium
+            fontsTitle[9] = content.Load<SpriteFont>("Ui Sprites/Fonts/R5");//The amount of Uranium
 
             // Upgrade Info
             uiRectangles[25] = new Rectangle(465, 550, 200, 300);//First Line
