@@ -28,6 +28,7 @@ namespace Miner
 
 
 
+
         protected const string SPRITESHEET_DRIVING = "DrillMoving9Spritesheet";
         protected const string SPRITESHEET_DIGGING_SIDE = "DrillDiggingSide6Spritesheet";
         protected const string SPRITESHEET_FLYING = "DrillFlying6Spritesheet";
@@ -63,7 +64,7 @@ namespace Miner
 
             idletimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
-            if (idletimer > 1500)
+            if (idletimer > 750)
             {
                 if (drilling == false)
                 {
@@ -74,7 +75,7 @@ namespace Miner
                 
 
             }
-            if (idletimer > 2000)
+            if (idletimer > 1000)
             {
                 idletimer = 0;
             }
