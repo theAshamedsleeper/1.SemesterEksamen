@@ -129,6 +129,7 @@ namespace Miner
             float gx = 0f;
             float gy = 0f;
             int tx = 0;
+            int ty = 0;
             int[] loaded_chunk = new int[2];
             for (int i = 0; i < Terrain.Chunk_differ(); i++)
             {
@@ -138,8 +139,9 @@ namespace Miner
 
                 gx = 0f;
                 gy = 0f;
-                tx = 0;
 
+                tx = 0;
+                ty = 0;
                 // for loop to draw all the terrain.
                 for (int i_2 = 0; i_2 < (32) * (18); i_2++)
                 {
@@ -166,14 +168,14 @@ namespace Miner
                     1f);//Layer 
                     if (tx >= 31)
                     {
+                        tx = 0;
                         gx = 0;
-                        tx += 1;
                         gy += 32f * worldScale;
                     }
                     else
                     {
+                        tx++;
                         gx += 32f * worldScale;
-                        tx = 0;
                     }
                 }
             }
