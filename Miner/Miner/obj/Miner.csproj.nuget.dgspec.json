@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Stuff\\Kode\\C\\Miner\\Miner\\Miner.csproj": {}
+    "C:\\Users\\thorb\\OneDrive\\Dokumenter\\GitHub\\2Uger pro\\1.SemesterEksamen\\Miner\\Miner\\Miner.csproj": {}
   },
   "projects": {
-    "C:\\Stuff\\Kode\\C\\Miner\\Miner\\Miner.csproj": {
+    "C:\\Users\\thorb\\OneDrive\\Dokumenter\\GitHub\\2Uger pro\\1.SemesterEksamen\\Miner\\Miner\\Miner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Stuff\\Kode\\C\\Miner\\Miner\\Miner.csproj",
+        "projectUniqueName": "C:\\Users\\thorb\\OneDrive\\Dokumenter\\GitHub\\2Uger pro\\1.SemesterEksamen\\Miner\\Miner\\Miner.csproj",
         "projectName": "Miner",
-        "projectPath": "C:\\Stuff\\Kode\\C\\Miner\\Miner\\Miner.csproj",
+        "projectPath": "C:\\Users\\thorb\\OneDrive\\Dokumenter\\GitHub\\2Uger pro\\1.SemesterEksamen\\Miner\\Miner\\Miner.csproj",
         "packagesPath": "C:\\Users\\thorb\\.nuget\\packages\\",
-        "outputPath": "C:\\Stuff\\Kode\\C\\Miner\\Miner\\obj\\",
+        "outputPath": "C:\\Users\\thorb\\OneDrive\\Dokumenter\\GitHub\\2Uger pro\\1.SemesterEksamen\\Miner\\Miner\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thorb\\AppData\\Roaming\\NuGet\\NuGet.Config",

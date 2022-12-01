@@ -78,3 +78,4 @@ C:\Users\Thorbjørn\Desktop\Miner\Miner\obj\Debug\net6.0-windows\refint\Miner.dl
 C:\Users\Thorbjørn\Desktop\Miner\Miner\obj\Debug\net6.0-windows\Miner.pdb
 C:\Users\Thorbjørn\Desktop\Miner\Miner\obj\Debug\net6.0-windows\Miner.genruntimeconfig.cache
 C:\Users\Thorbjørn\Desktop\Miner\Miner\obj\Debug\net6.0-windows\ref\Miner.dll
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\File.xnb
