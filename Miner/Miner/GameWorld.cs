@@ -165,7 +165,7 @@ namespace Miner
 <<<<<<< HEAD
                     if (gx >= 1920 - 32 * worldScale)
 =======
-                    if (tx >= 32)
+                    if (tx >= 31)
 >>>>>>> parent of b2de25d (thtjhf)
                     {
                         gx = 0;
