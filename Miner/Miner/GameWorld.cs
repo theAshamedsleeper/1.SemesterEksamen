@@ -45,6 +45,7 @@ namespace Miner
         {
             gameObjects.Add(new Player(new Vector2(screenSize.X /2, screenSize.Y / 2)));
             workShop.Add(new UpgradeButton());
+            workShop.Add(new ArtifactsButton());
             Terrain.Give_Terrain();
             int[] ints = new int[] { 0, 0 };
             Terrain.Start_Chunk(ints);
