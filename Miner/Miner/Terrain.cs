@@ -1145,10 +1145,10 @@ namespace Miner
             switch (loaded_one[0])
             {
                 case int n when n < loaded_chunks[0][0]:
-                    direction[0] = -1920;
+                    direction[0] = -5120;
                     break;
                 case int n when n > loaded_chunks[0][0]:
-                    direction[0] = 1920;
+                    direction[0] = 5120;
                     break;
                 default:
                     direction[0] = 0;
@@ -1157,10 +1157,10 @@ namespace Miner
             switch (loaded_one[1])
             {
                 case int k when k < loaded_chunks[0][1]:
-                    direction[1] = 1080;
+                    direction[1] = 2880;
                     break;
                 case int k when k > loaded_chunks[0][1]:
-                    direction[1] = -1080;
+                    direction[1] = -2880;
                     break;
                 default:
                     direction[1] = 0;
@@ -1188,8 +1188,8 @@ namespace Miner
                 // scaling the input into usable data
                 //float y_1 = (((y / scale) - ((y / scale) % 32f)) / 32f);
                 //float x_1 = (((x / scale) - ((x / scale) % 32f)) / 32f);
-                float y_1 = y / 60 - ((y / 60) % 1);
-                float x_1 = x / 60 - ((x / 60) % 1);
+                float y_1 = (((y / 5) - ((y / 5) % 32f)) / 32f);
+                float x_1 = (((x / 5) - ((x / 5) % 32f)) / 32f);
                 // checks the y array for the location.
                 for (int i = 0; i < height; i++)
                 {
@@ -1242,8 +1242,10 @@ namespace Miner
         public static int Which(float x, float y, int[] chunk)
         {
             // Makes input applicable for sprite size.
-            float y_1 = (((y / scale) - ((y / scale) % 32f)) / 32f);
-            float x_1 = (((x / scale) - ((x / scale) % 32f)) / 32f);
+            //float y_1 = (((y / scale) - ((y / scale) % 32f)) / 32f);
+            //float x_1 = (((x / scale) - ((x / scale) % 32f)) / 32f);
+            float y_1 = (((y / 5) - ((y / 5) % 32f)) / 32f);
+            float x_1 = (((x / 5) - ((x / 5) % 32f)) / 32f);
             // xmod * width is basically the location of our y pos in y array
             int x_mod = 0;
             // locate location of y pos in y array
