@@ -43,7 +43,7 @@ namespace Miner
         {
 
 
-            if (Keyboard.GetState().IsKeyDown(Keys.T))
+            if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
                 drilling = true;
                 _spriteSheetTexture = _flyingTexture;
@@ -65,7 +65,7 @@ namespace Miner
             }
 
 
-            else if (Keyboard.GetState().IsKeyDown(Keys.B)) // Burde være ved collision med blok
+            else if (Keyboard.GetState().IsKeyDown(Keys. C)) // Burde være ved collision med blok
             {
                 drilling = true;
                 _spriteSheetTexture = _drillingSideTexture;
@@ -86,7 +86,7 @@ namespace Miner
 
             }
 
-            else if (Keyboard.GetState().IsKeyDown(Keys.H))
+            else if (Keyboard.GetState().IsKeyDown(Keys.D))
             {
                 drilling = false;
                 _spriteSheetTexture = _drivingTexture;
@@ -108,7 +108,7 @@ namespace Miner
 
             }
 
-            else if (Keyboard.GetState().IsKeyDown(Keys.F))
+            else if (Keyboard.GetState().IsKeyDown(Keys.A))
             {
                 drilling = false;
                 _spriteSheetTexture = _drivingTexture;
@@ -132,7 +132,7 @@ namespace Miner
 
 
 
-            else if (Keyboard.GetState().IsKeyDown(Keys.G)) // Burde være ved collision med blok
+            else if (Keyboard.GetState().IsKeyDown(Keys.S)) // Burde være ved collision med blok
             {
                 drilling = true;
                 _spriteSheetTexture = _drillingDownTexture;
