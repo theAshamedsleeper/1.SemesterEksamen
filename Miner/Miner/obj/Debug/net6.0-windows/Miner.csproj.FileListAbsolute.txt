@@ -400,5 +400,3 @@ C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Mine
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradePlaceHolder.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Uranium.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\FileFont.xnb
-C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\FileFont.xnb
-C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\UpgradeButton.xnb

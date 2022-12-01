@@ -166,7 +166,7 @@ namespace Miner
                     worldScale,//How big is the player
                     SpriteEffects.None,//effects
                     1f);//Layer 
-                    if (tx >= 31)
+                    if (tx >= 32)
                     {
                         tx = 0;
                         gx = 0;
