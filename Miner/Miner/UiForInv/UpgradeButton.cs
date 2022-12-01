@@ -408,13 +408,7 @@ namespace Miner.UiForInv
 
                 }
                 #endregion
-
             }
-
-        }
-        private void CraftingTab()
-        {
-
         }
         private void UpgradeTab(GameTime gameTime)
         {
@@ -640,11 +634,6 @@ namespace Miner.UiForInv
                         break;
                 }
             }//Confirm Upgrade Button
-        }
-        
-        private void StatsTab()
-        {
-
         }
     }
 }
