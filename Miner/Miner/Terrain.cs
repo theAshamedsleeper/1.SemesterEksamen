@@ -46,7 +46,7 @@ namespace Miner
         {
             for (int i_2 = 0; i_2 < width * height; i_2++)
             {
-                
+
                 tiles_x[i_2] = x_1;
                 tiles_y[i_2] = y_1;
                 // updating the coordinates
@@ -1053,7 +1053,7 @@ namespace Miner
             {
                 File.Delete(@"Chunks\" + filename);
             }
-            
+
             //File.CreateText(@"Chunks\" + filename);
             string write = "";
             for (int i = 0; i < t.Length; i++)
@@ -1071,7 +1071,7 @@ namespace Miner
                 tw.WriteLine(write);
                 tw.Close();
             }
-            
+
         }
         #endregion
         #endregion
@@ -1128,7 +1128,7 @@ namespace Miner
                     }
                 }
             }
-            
+
             return tiles;
         }
         public static int Chunk_differ()
@@ -1189,7 +1189,7 @@ namespace Miner
                 //float y_1 = (((y / scale) - ((y / scale) % 32f)) / 32f);
                 //float x_1 = (((x / scale) - ((x / scale) % 32f)) / 32f);
                 float y_1 = y / 60 - ((y / 60) % 1);
-                float x_1 = x/60 - ((x/60) % 1);
+                float x_1 = x / 60 - ((x / 60) % 1);
                 // checks the y array for the location.
                 for (int i = 0; i < height; i++)
                 {

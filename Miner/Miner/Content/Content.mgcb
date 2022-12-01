@@ -104,6 +104,13 @@
 /processorParam:TextureFormat=Compressed
 /build:File.spritefont
 
+#begin FileFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:FileFont.spritefont
+
 #begin Gold.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -659,6 +666,18 @@
 /processorParam:TextureFormat=Color
 /build:Ui Sprites/UpgradeInfo/RougeAiUpgradeInfo.png
 
+#begin Ui Sprites/UpgradeInfo/UpgradeButton.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/UpgradeInfo/UpgradeButton.png
+
 #begin Ui Sprites/UpgradePlaceHolder.PNG
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -683,14 +702,3 @@
 /processorParam:TextureFormat=Color
 /build:Uranium.png
 
-#begin Ui Sprites/UpgradeInfo/UpgradeButtonpng
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Ui Sprites/UpgradeInfo/UpgradeButton.png

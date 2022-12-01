@@ -336,3 +336,67 @@ D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PBetterBattery.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\RougeAiUpgradeInfo.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\UpgradeButton.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Pixilart Sprite Sheet (19).xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10PDrill.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PDrill.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PDrill.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PDrill.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Deep Rock.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Dirt.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingDown3Spritesheet.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingSide6Spritesheet.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlying6Spritesheet.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillIdleBub3.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillMoving9Spritesheet.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\File.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Gold.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Rock.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Rocky dirt.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BarDivider.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\CraftingButton.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\ArtifactsFontT.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CloseUIButton.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CraftFontT.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R1.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R2.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R3.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R4.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R5.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\StatsFontT.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\UpgradeFontT.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InventorybackGround.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10P faster drill_Layer 0.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10PBetterBattery.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10PBetterDrill_Info.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10PBetterSolarPanel.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20P faster drill_Layer 1.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PBetterBattery.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PBetterDrill_Info.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PBetterSolarPanel.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30P faster drill_Layer 2.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PBetterBattery.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PBetterDrill_Info.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PBetterSolarPanel.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40P faster drill_Layer 3.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PBetterBattery.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PBetterDrill_Info.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PBetterSolarPanel.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Biger battery_Layer 0.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Biger battery_Layer 1.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Biger battery_Layer 2.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Biger battery_Layer 3.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\faster Battery recharge_Layer 0.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\faster Battery recharge_Layer 1.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\faster Battery recharge_Layer 2.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\faster Battery recharge_Layer 3.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Last Upgrade AiBrainPng.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Copper.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_MiliScrap.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Plat.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Titanium.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Uranium.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\RougeAiUpgradeInfo.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\UpgradeButton.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradePlaceHolder.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Uranium.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\FileFont.xnb
