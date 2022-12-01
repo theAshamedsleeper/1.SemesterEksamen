@@ -60,7 +60,7 @@ namespace Miner
         {
 
 
-            spriteBatch.Draw(_spriteSheetTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5, effect, 1f);
+            spriteBatch.Draw(_spriteSheetTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5f, effect, 1f);
 
             idletimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
@@ -68,7 +68,7 @@ namespace Miner
             {
                 if (drilling == false)
                 {
-                    spriteBatch.Draw(_spriteIdleTexture, position, new Rectangle(0, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5, effect, 1f);
+                    spriteBatch.Draw(_spriteIdleTexture, position, new Rectangle(0, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5f, effect, 1f);
                 }
                 
                 
