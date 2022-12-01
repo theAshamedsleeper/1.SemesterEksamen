@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1qhJp4Yldm9W/7BJVpPi+nYzSU9EjI6mUw8Zvz7k0jab1tjhnnxoBv9Ans/U3RNBZhq3FV/szwqHlaXq7EsZ3Q==",
+  "dgSpecHash": "zfbKl+ZQ5ME5c0aaaXJMODxPc6cRJkAlIA3W3VqwVGetJsQldESGNzHeuSSz2nlgpAJka70YJOSKVdkVwhuCMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thorb\\OneDrive\\Dokumenter\\GitHub\\2Uger pro\\1.SemesterEksamen\\Miner\\Miner\\Miner.csproj",
+  "projectFilePath": "D:\\Program Files (x86)\\Skole\\1 semester\\1.SemesterEksamen\\Miner\\Miner\\Miner.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thorb\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\thorb\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
