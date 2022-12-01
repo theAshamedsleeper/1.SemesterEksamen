@@ -1,1 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><SourceFile>C:/Users/thorb/OneDrive/Dokumenter/GitHub/2Uger pro/1.SemesterEksamen/Miner/Miner/Content/FileFont.spritefont</SourceFile><SourceTime>2022-12-01T11:48:57.4629716+01:00</SourceTime><DestFile>C:/Users/thorb/OneDrive/Dokumenter/GitHub/2Uger pro/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Content/FileFont.xnb</DestFile><DestTime>2022-12-01T11:50:34.2863724+01:00</DestTime><Importer>FontDescriptionImporter</Importer><ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime><Processor>FontDescriptionProcessor</Processor><ProcessorTime>2022-07-26T13:44:56+02:00</ProcessorTime><Parameters><Key>PremultiplyAlpha</Key><Value>True</Value></Parameters><Parameters><Key>TextureFormat</Key><Value>Compressed</Value></Parameters><Dependencies /><BuildAsset /><BuildOutput /></PipelineBuildEvent>
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/FileFont.spritefont</SourceFile>
+  <SourceTime>2022-12-01T12:42:16.0911503+01:00</SourceTime>
+  <DestFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Content/FileFont.xnb</DestFile>
+  <DestTime>2022-12-01T12:43:25.1193809+01:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2022-07-26T13:44:56+02:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
