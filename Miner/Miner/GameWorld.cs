@@ -20,7 +20,7 @@ namespace Miner
         
 
         private Texture2D player_terrain;
-        private float worldScale = 1.875f;//2.4f så passer den i width
+        private float worldScale = 5f;//2.4f så passer den i width
         private bool inv = false;
         private int ofset_x = 0;
         private int ofset_y = 0;
@@ -128,6 +128,7 @@ namespace Miner
             // x and y coords of where the terrain tiles are drawn.
             float gx = 0f;
             float gy = 0f;
+            int tx = 0;
             int[] loaded_chunk = new int[2];
             for (int i = 0; i < Terrain.Chunk_differ(); i++)
             {
@@ -137,6 +138,7 @@ namespace Miner
 
                 gx = 0f;
                 gy = 0f;
+                tx = 0;
 
                 // for loop to draw all the terrain.
                 for (int i_2 = 0; i_2 < (32) * (18); i_2++)
@@ -162,18 +164,16 @@ namespace Miner
                     worldScale,//How big is the player
                     SpriteEffects.None,//effects
                     1f);//Layer 
-<<<<<<< HEAD
-                    if (gx >= 1920 - 32 * worldScale)
-=======
                     if (tx >= 31)
->>>>>>> parent of b2de25d (thtjhf)
                     {
                         gx = 0;
+                        tx += 1;
                         gy += 32f * worldScale;
                     }
                     else
                     {
                         gx += 32f * worldScale;
+                        tx = 0;
                     }
                 }
             }
