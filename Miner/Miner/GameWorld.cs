@@ -162,7 +162,11 @@ namespace Miner
                     worldScale,//How big is the player
                     SpriteEffects.None,//effects
                     1f);//Layer 
+<<<<<<< HEAD
                     if (gx >= 1920 - 32 * worldScale)
+=======
+                    if (tx >= 32)
+>>>>>>> parent of b2de25d (thtjhf)
                     {
                         gx = 0;
                         gy += 32f * worldScale;
