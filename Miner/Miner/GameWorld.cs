@@ -43,7 +43,7 @@ namespace Miner
         protected override void Initialize()
         {
             gameObjects.Add(new Player(new Vector2(screenSize.X /2, screenSize.Y / 2)));
-            workShop.Add(new CraftingButton());
+            workShop.Add(new UpgradeButton());
             Terrain.Give_Terrain();
             base.Initialize();
             
