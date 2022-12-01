@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Miner.UiForInv;
 using System.Collections.Generic;
 
 namespace Miner
@@ -42,6 +43,7 @@ namespace Miner
         protected override void Initialize()
         {
             gameObjects.Add(new Player(new Vector2(screenSize.X /2, screenSize.Y / 2)));
+            workShop.Add(new CraftingButton());
             Terrain.Give_Terrain();
             base.Initialize();
             
