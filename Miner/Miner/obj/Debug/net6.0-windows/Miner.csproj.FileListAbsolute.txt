@@ -78,20 +78,15 @@ C:\Users\Thorbjørn\Desktop\Miner\Miner\obj\Debug\net6.0-windows\refint\Miner.dl
 C:\Users\Thorbjørn\Desktop\Miner\Miner\obj\Debug\net6.0-windows\Miner.pdb
 C:\Users\Thorbjørn\Desktop\Miner\Miner\obj\Debug\net6.0-windows\Miner.genruntimeconfig.cache
 C:\Users\Thorbjørn\Desktop\Miner\Miner\obj\Debug\net6.0-windows\ref\Miner.dll
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Deep Rock.xnb
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Dirt.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingDown3Spritesheet.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingSide6Spritesheet.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlying6Spritesheet.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillIdleBub3.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillMoving9Spritesheet.xnb
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Gold.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\pixil-frame-0.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\pixil-frame-2.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Pixilart Sprite Sheet (19).xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\pixilart-drawing_1.xnb
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Rock.xnb
-C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Rocky dirt.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Uranium.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Miner.exe
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Miner.deps.json
@@ -453,3 +448,8 @@ C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Min
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_batteryPower.xnb
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\RockyDrit.xnb
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Stone.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\BatterySpritesheet2.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\RockyDrit.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Stone.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_Batterholder.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_batteryPower.xnb

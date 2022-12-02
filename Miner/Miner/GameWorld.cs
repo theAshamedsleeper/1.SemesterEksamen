@@ -17,7 +17,7 @@ namespace Miner
 
         private SpriteFont ContFont;
         private List<GameObjects> gameObjects = new List<GameObjects>();
-
+        private List<Tools> toolList = new List<Tools>();
 
         private float worldScale = 5f;//2.4f så passer den i width
         private bool inv = false;
@@ -44,6 +44,7 @@ namespace Miner
         {
             gameObjects.Add(new Player(new Vector2(screenSize.X / 2, screenSize.Y / 2)));
             workShop.Add(new UpgradeButton());
+            toolList.Add(new Tools());
             workShop.Add(new ArtifactsButton());
             Terrain.Give_Terrain();
             int[] ints = new int[] { 0, 0 };
@@ -71,6 +72,11 @@ namespace Miner
             for (int i = 0; i < gameObjects.Count; i++)
             {
                 gameObjects[i].LoadContent(Content);
+            }
+
+            for (int i = 0; i < toolList.Count; i++)
+            {
+                toolList[i].LoadContent(Content);
             }
         }
 
@@ -204,6 +210,11 @@ namespace Miner
             foreach (WorkShop go in workShop)
             {
                 go.Draw(_spriteBatch);
+            }
+
+            foreach (Tools tool in toolList)
+            {
+                tool.Draw(_spriteBatch, gameTime);
             }
 
             _spriteBatch.End();
