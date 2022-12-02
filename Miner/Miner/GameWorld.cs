@@ -17,7 +17,7 @@ namespace Miner
         private Texture2D grass_terrain;
         private SpriteFont ContFont;
         private List<GameObjects> gameObjects = new List<GameObjects>();
-        
+        private List<Tools> toolsList = new List<Tools>();
 
         private Texture2D player_terrain;
         private float worldScale = 5f;//2.4f så passer den i width
@@ -46,6 +46,7 @@ namespace Miner
             gameObjects.Add(new Player(new Vector2(screenSize.X /2, screenSize.Y / 2)));
             workShop.Add(new UpgradeButton());
             workShop.Add(new ArtifactsButton());
+            toolsList.Add(new Tools());
             Terrain.Give_Terrain();
             int[] ints = new int[] { 0, 0 };
             Terrain.Start_Chunk(ints);
@@ -69,6 +70,11 @@ namespace Miner
             for (int i = 0; i < gameObjects.Count; i++)
             {
                 gameObjects[i].LoadContent(Content);
+            }
+
+            for (int i = 0; i < toolsList.Count; i++)
+            {
+                toolsList[i].LoadContent(Content);
             }
         }
 
@@ -117,6 +123,11 @@ namespace Miner
             for (int i = 0; i < gameObjects.Count; i++)
             {
                 gameObjects[i].Update(gameTime);
+            }
+
+            for (int i = 0; i < toolsList.Count; i++)
+            {
+                toolsList[i].Update(gameTime);
             }
         }
 
@@ -191,6 +202,7 @@ namespace Miner
             }
             _spriteBatch.DrawString(ContFont, text, new Vector2(1600, 100), Color.White);
 
+            
 
             foreach (GameObjects objects in gameObjects)
             {
@@ -200,6 +212,11 @@ namespace Miner
             {
                 go.Draw(_spriteBatch);
             }
+            foreach (Tools tool in toolsList)
+            {
+                tool.Draw(_spriteBatch, gameTime);
+            }
+
 
             _spriteBatch.End();
 

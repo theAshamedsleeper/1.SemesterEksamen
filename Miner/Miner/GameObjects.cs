@@ -29,6 +29,7 @@ namespace Miner
 
 
 
+
         protected const string SPRITESHEET_DRIVING = "DrillMoving9Spritesheet";
         protected const string SPRITESHEET_DIGGING_SIDE = "DrillDiggingSide6Spritesheet";
         protected const string SPRITESHEET_FLYING = "DrillFlying6Spritesheet";
@@ -36,6 +37,7 @@ namespace Miner
         protected const string SPRITE_OVERLAY = "DrillIdleBub3";
         
 
+        
         protected Texture2D _spriteSheetTexture;
         protected Texture2D _spriteIdleTexture;
         public SpriteFont _controlsFont;
@@ -70,15 +72,14 @@ namespace Miner
                 {
                     spriteBatch.Draw(_spriteIdleTexture, position, new Rectangle(0, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5f, effect, 1f);
                 }
-                
-                
-                
 
             }
             if (idletimer > 1000)
             {
                 idletimer = 0;
             }
+
+
 
 
             spriteBatch.DrawString(_controlsFont,
