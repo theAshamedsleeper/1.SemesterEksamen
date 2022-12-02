@@ -41,6 +41,15 @@ namespace Miner
 
         public override void Update(GameTime gameTime)
         {
+            //Switch
+            Terrain.Which(x-offset, y-offset, chunk[Loaded_chunk_Differ])
+            {
+                
+
+            }
+
+
+
 
 
             if (Keyboard.GetState().IsKeyDown(Keys.W))
@@ -104,8 +113,6 @@ namespace Miner
                     frame = 0;
                 }
 
-
-
             }
 
             else if (Keyboard.GetState().IsKeyDown(Keys.A))
@@ -128,10 +135,6 @@ namespace Miner
                 }
 
             }
-
-
-
-
             else if (Keyboard.GetState().IsKeyDown(Keys.S)) // Burde være ved collision med blok
             {
                 drilling = true;
