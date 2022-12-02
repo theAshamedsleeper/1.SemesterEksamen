@@ -22,8 +22,8 @@ namespace Miner
         private Texture2D player_terrain;
         private float worldScale = 5f;//2.4f så passer den i width
         private bool inv = false;
-        private int ofset_x = 0;
-        private int ofset_y = 0;
+        public static int ofset_x = 0;
+        public static int ofset_y = 0;
         private int current_chunk = 0;
 
         private List<WorkShop> workShop = new List<WorkShop>();

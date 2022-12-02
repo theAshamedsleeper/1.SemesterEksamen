@@ -13,7 +13,7 @@ namespace Miner
         private Texture2D _flyingTexture;
         private Texture2D _drillingSideTexture;
         private Texture2D _drillingDownTexture;
-        
+        private int collition;
 
         public Player(Vector2 position)
         {
@@ -31,16 +31,37 @@ namespace Miner
             _spriteIdleTexture = content.Load<Texture2D>(SPRITE_OVERLAY);
             _controlsFont = content.Load<SpriteFont>("File");
 
-
-
         }
-
-
-
-
 
         public override void Update(GameTime gameTime)
         {
+
+            //1 = venstre 2 = højre 3 = ned 4 = op
+
+
+            if (Terrain.Which((position.X - GameWorld.ofset_x) - 1, (position.Y - GameWorld.ofset_y), Terrain.Loaded_Chunk_differ(0)) < 1f)
+            {
+                collition = 1;
+                GameWorld.ofset_x + 1;
+            }
+
+            if (Terrain.Which((position.X - GameWorld.ofset_x), (position.Y - GameWorld.ofset_y) - 1, Terrain.Loaded_Chunk_differ(0)) < 1f)
+            {
+                collition = 2;
+                GameWorld.ofset_y + 1;
+            }
+
+            if (Terrain.Which((position.X - GameWorld.ofset_x) + 33, (position.Y - GameWorld.ofset_y), Terrain.Loaded_Chunk_differ(0)) < 1f)
+            {
+                collition = 3;
+                GameWorld.ofset_x - 1;
+            }
+
+            if (Terrain.Which((position.X - GameWorld.ofset_x), (position.Y - GameWorld.ofset_y) + 33, Terrain.Loaded_Chunk_differ(0)) < 1f)
+            {
+                collition = 4;
+                GameWorld.ofset_y - 1;
+            }
 
 
             if (Keyboard.GetState().IsKeyDown(Keys.W))
@@ -65,7 +86,7 @@ namespace Miner
             }
 
 
-            else if (Keyboard.GetState().IsKeyDown(Keys. C)) // Burde være ved collision med blok
+            else if (collition < 3)
             {
                 drilling = true;
                 _spriteSheetTexture = _drillingSideTexture;
@@ -104,8 +125,6 @@ namespace Miner
                     frame = 0;
                 }
 
-
-
             }
 
             else if (Keyboard.GetState().IsKeyDown(Keys.A))
@@ -128,10 +147,6 @@ namespace Miner
                 }
 
             }
-
-
-
-
             else if (Keyboard.GetState().IsKeyDown(Keys.S)) // Burde være ved collision med blok
             {
                 drilling = true;
