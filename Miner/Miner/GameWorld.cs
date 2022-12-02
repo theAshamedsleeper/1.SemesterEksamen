@@ -45,6 +45,7 @@ namespace Miner
         {
             gameObjects.Add(new Player(new Vector2(screenSize.X /2, screenSize.Y / 2)));
             workShop.Add(new UpgradeButton());
+            workShop.Add(new ArtifactsButton());
             Terrain.Give_Terrain();
             int[] ints = new int[] { 0, 0 };
             Terrain.Start_Chunk(ints);
@@ -190,14 +191,14 @@ namespace Miner
             }
             _spriteBatch.DrawString(ContFont, text, new Vector2(1600, 100), Color.White);
 
-            foreach (WorkShop go in workShop)
-            {
-                go.Draw(_spriteBatch);
-            }
 
             foreach (GameObjects objects in gameObjects)
             {
                 objects.Draw(_spriteBatch, gameTime);
+            }
+            foreach (WorkShop go in workShop)
+            {
+                go.Draw(_spriteBatch);
             }
 
             _spriteBatch.End();
