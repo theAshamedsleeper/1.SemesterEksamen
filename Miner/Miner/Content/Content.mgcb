@@ -195,6 +195,30 @@
 /processorParam:TextureFormat=Color
 /build:Ui Sprites/BarDivider.PNG
 
+#begin Ui Sprites/BatteryForPlayer_Batterholder.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/BatteryForPlayer_Batterholder.png
+
+#begin Ui Sprites/BatteryForPlayer_batteryPower.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/BatteryForPlayer_batteryPower.png
+
 #begin Ui Sprites/CraftingButton.PNG
 /importer:TextureImporter
 /processor:TextureProcessor
