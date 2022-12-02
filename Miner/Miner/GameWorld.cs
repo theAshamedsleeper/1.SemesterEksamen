@@ -12,14 +12,13 @@ namespace Miner
         private SpriteBatch _spriteBatch;
         private static Vector2 screenSize;
 
+        private Texture2D[] groundSprite = new Texture2D[10];
         private Texture2D texture_terrain;
-        private Texture2D dirt_terrain;
-        private Texture2D grass_terrain;
+
         private SpriteFont ContFont;
         private List<GameObjects> gameObjects = new List<GameObjects>();
-        private List<Tools> toolsList = new List<Tools>();
 
-        private Texture2D player_terrain;
+
         private float worldScale = 5f;//2.4f så passer den i width
         private bool inv = false;
         public static int ofset_x = 0;
@@ -43,38 +42,35 @@ namespace Miner
 
         protected override void Initialize()
         {
-            gameObjects.Add(new Player(new Vector2(screenSize.X /2, screenSize.Y / 2)));
+            gameObjects.Add(new Player(new Vector2(screenSize.X / 2, screenSize.Y / 2)));
             workShop.Add(new UpgradeButton());
             workShop.Add(new ArtifactsButton());
-            toolsList.Add(new Tools());
             Terrain.Give_Terrain();
             int[] ints = new int[] { 0, 0 };
             Terrain.Start_Chunk(ints);
             base.Initialize();
-            
+
         }
 
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-           
+
             for (int i = 0; i < workShop.Count; i++)
             {
                 workShop[i].LoadContent(Content);
             }
-            grass_terrain = Content.Load<Texture2D>("pixil-frame-0");
-            dirt_terrain = Content.Load<Texture2D>("pixil-frame-2");
-            player_terrain = Content.Load<Texture2D>("pixilart-drawing_1");
+            groundSprite[0] = Content.Load<Texture2D>("pixil-frame-0");//Grass Terrain
+            groundSprite[1] = Content.Load<Texture2D>("pixil-frame-2");//dirt Terrain
+            groundSprite[2] = Content.Load<Texture2D>("GroundSprite/Stone");
+            groundSprite[3] = Content.Load<Texture2D>("GroundSprite/RockyDrit");
+            
+
             ContFont = Content.Load<SpriteFont>("FileFont");
 
             for (int i = 0; i < gameObjects.Count; i++)
             {
                 gameObjects[i].LoadContent(Content);
-            }
-
-            for (int i = 0; i < toolsList.Count; i++)
-            {
-                toolsList[i].LoadContent(Content);
             }
         }
 
@@ -108,10 +104,7 @@ namespace Miner
             {
                 int[] loaded_chunk = new int[2];
                 loaded_chunk = Terrain.Loaded_Chunk_differ(0);
-                if (Terrain.Which(_graphics.PreferredBackBufferWidth / 2 - player_terrain.Width / 2 - ofset_x, _graphics.PreferredBackBufferHeight / 2 - player_terrain.Height / 2 - ofset_y, loaded_chunk) == 1)
-                {
-                    Terrain.Change(_graphics.PreferredBackBufferWidth / 2 - player_terrain.Width / 2 - ofset_x, _graphics.PreferredBackBufferHeight / 2 - player_terrain.Height / 2 - ofset_y, 0, loaded_chunk);
-                }
+
             }
             #endregion
             for (int i = 0; i < workShop.Count; i++)
@@ -123,11 +116,6 @@ namespace Miner
             for (int i = 0; i < gameObjects.Count; i++)
             {
                 gameObjects[i].Update(gameTime);
-            }
-
-            for (int i = 0; i < toolsList.Count; i++)
-            {
-                toolsList[i].Update(gameTime);
             }
         }
 
@@ -162,10 +150,16 @@ namespace Miner
                     switch (Terrain.Which(gx, gy, loaded_chunk))
                     {
                         case 0:
-                            texture_terrain = grass_terrain;
+                            texture_terrain = groundSprite[0];
                             break;
                         case 1:
-                            texture_terrain = dirt_terrain;
+                            texture_terrain = groundSprite[1];
+                            break;
+                        case 2:
+                            texture_terrain = groundSprite[2];
+                            break;
+                        case 3:
+                            texture_terrain = groundSprite[3];
                             break;
                     }
                     #endregion
@@ -202,7 +196,6 @@ namespace Miner
             }
             _spriteBatch.DrawString(ContFont, text, new Vector2(1600, 100), Color.White);
 
-            
 
             foreach (GameObjects objects in gameObjects)
             {
@@ -212,11 +205,6 @@ namespace Miner
             {
                 go.Draw(_spriteBatch);
             }
-            foreach (Tools tool in toolsList)
-            {
-                tool.Draw(_spriteBatch, gameTime);
-            }
-
 
             _spriteBatch.End();
 

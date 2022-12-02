@@ -1035,7 +1035,7 @@ namespace Miner
         {
             if (xy[0] == 0 && xy[1] == 0)
             {
-                return Randomies.randoms(2);
+                return Randomies.randoms(4);
             }
             switch (xy[1])
             {
