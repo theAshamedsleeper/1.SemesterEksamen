@@ -61,28 +61,6 @@ namespace Miner
                 }
             }
         }
-        // our start terrain method,
-        // it will say which coordinates should return dirt or grass,
-        // with what we wish the starting land should look like
-        static int start_terrain(int x_1, int y_1)
-        {
-            switch (x_1)
-            {
-                case 17:
-                    return 2;
-                case 0:
-                    return 2;
-            }
-            switch (x_1)
-            {
-                case 0:
-                    return 2;
-                case 31:
-                    return 2;
-            }
-            return 0;
-        }
-
         #endregion
         #region chunks
         #region new chunks
@@ -318,133 +296,6 @@ namespace Miner
                     break;
             }
         }
-        //public static void Load_chunks(int x_off, int y_off)
-        //{
-        //    bool make_side = true;
-        //    bool make_top = true;
-        //    bool is_there_no_chunk = true;
-        //    int[] direction = new int[2];
-        //    //direction switch, choses direction based on offset.
-        //    switch (x_off)
-        //    {
-        //        case int k when k > 0:
-        //            direction[0] = -1;
-        //            break;
-        //        case int k when k < 0:
-        //            direction[0] = 1;
-        //            break;
-        //        default:
-        //            direction[0] = 0;
-        //            break;
-        //    }
-        //    for (int k = 0; k < loaded_chunks.Count; k++)
-        //    {
-        //        if (direction[0] == loaded_chunks[k][0] - loaded_chunks[0][0] && 0 == loaded_chunks[k][1] - loaded_chunks[0][1])
-        //        {
-        //            make_side = false;
-        //        }
-        //    }
-        //    if (make_side)
-        //    {
-        //        goto maker;
-        //    }
-        //    switch (y_off)
-        //    {
-        //        case int k when k > 0:
-        //            direction[1] = 1;
-        //            break;
-        //        case int k when k < 0:
-        //            direction[1] = -1;
-        //            break;
-        //        default:
-        //            direction[1] = 0;
-        //            break;
-        //    }
-        //    for (int k = 0; k < loaded_chunks.Count; k++)
-        //    {
-        //        if (0 == loaded_chunks[k][0] - loaded_chunks[0][0] && direction[1] == loaded_chunks[k][1] - loaded_chunks[0][1])
-        //        {
-        //            make_top = false;
-        //        }
-        //    }
-        //    if (make_top)
-        //    {
-        //        direction[0] = 0;
-        //        goto maker;
-        //    }
-        //maker:
-        //    direction[0] += loaded_chunks[0][0];
-        //    direction[1] += loaded_chunks[0][1];
-        //    for (int i = 0; i < loaded_chunks.Count; i++)
-        //    {
-        //        if (loaded_chunks[i][0] == direction[0] && loaded_chunks[i][1] == direction[1])
-        //        {
-        //            is_there_no_chunk = false;
-        //        }
-        //    }
-        //    if (is_there_no_chunk)
-        //    {
-        //        sort_chunk_adding(direction);
-        //    }
-        //}
-        public static void Load_chunkss(int x_off, int y_off)
-        {
-            bool make_side = true;
-            bool make_top = true;
-            int[] direction = new int[2];
-            //direction switch, choses direction based on offset.
-            switch (x_off)
-            {
-                case int k when k > 0:
-                    direction[0] = -1;
-                    break;
-                case int k when k < 0:
-                    direction[0] = 1;
-                    break;
-                default:
-                    direction[0] = 0;
-                    break;
-            }
-            for (int k = 0; k < loaded_chunks.Count; k++)
-            {
-                if (direction[0] == loaded_chunks[k][0] - loaded_chunks[0][0] && 0 == loaded_chunks[k][1] - loaded_chunks[0][1])
-                {
-                    make_side = false;
-                }
-            }
-            if (make_side)
-            {
-                goto maker;
-            }
-            switch (y_off)
-            {
-                case int k when k > 0:
-                    direction[1] = 1;
-                    break;
-                case int k when k < 0:
-                    direction[1] = -1;
-                    break;
-                default:
-                    direction[1] = 0;
-                    break;
-            }
-            for (int k = 0; k < loaded_chunks.Count; k++)
-            {
-                if (0 == loaded_chunks[k][0] - loaded_chunks[0][0] && direction[1] == loaded_chunks[k][1] - loaded_chunks[0][1])
-                {
-                    make_top = false;
-                }
-            }
-            if (make_top)
-            {
-                direction[0] = 0;
-                goto maker;
-            }
-        maker:
-            direction[0] += loaded_chunks[0][0];
-            direction[1] += loaded_chunks[0][1];
-            sort_chunk_adding(direction);
-        }
         public static void Move_Main_chunk(int x_1, int y_1, int _width, int _height)
         {
             // make a adding for strait and not strait, this can not add 2 chunks
@@ -455,7 +306,7 @@ namespace Miner
                 direction[1] = 0;
                 // change new main chunk
             }
-            if (x_1 < -_width)
+            if (x_1 < 0)
             {
                 direction[0] = -1;
                 direction[1] = 0;
@@ -467,7 +318,7 @@ namespace Miner
                 direction[1] = 1;
                 // change new main chunk
             }
-            if (y_1 < -_height)
+            if (y_1 < 0)
             {
                 direction[0] = 0;
                 direction[1] = -1;
@@ -475,178 +326,11 @@ namespace Miner
             }
             if (direction[0] != 0 || direction[1] != 0)
             {
-                if (chunk_check_file(direction))
-                {
-                    sort_chunk_moving(direction);
-                }
+                sort_chunk_moving(direction);
             }
         }
         #endregion
         #region sorting
-        private static void sort_chunk_adding(int[] new_one)
-        {
-            if (loaded_chunks.Count == 0)
-            {
-                loaded_chunks.Add(new_one);
-            }
-            else
-            {
-                int[] main = new int[2];
-                main = loaded_chunks[0];
-                int amount_removed = 0;
-                int[] position = new int[loaded_chunks.Count];
-                int[] position_o = new int[loaded_chunks.Count];
-                List<int[]> amount_add = new List<int[]>();
-                if (loaded_chunks.Count > 1)
-                {
-                    amount_add.Add(loaded_chunks[1]);
-                    if (loaded_chunks.Count > 2)
-                    {
-                        amount_add.Add(loaded_chunks[2]);
-                        if (loaded_chunks.Count > 3)
-                        {
-                            amount_add.Add(loaded_chunks[3]);
-
-                        }
-                    }
-                }
-                // pos
-                for (int i = 0; i < loaded_chunks.Count; i++)
-                {
-                    int[] order_checker = new int[2];
-                    switch (i)
-                    {
-                        case 0:
-                            order_checker = new_one;
-                            break;
-                        case 1:
-                            order_checker = loaded_chunks[1];
-                            break;
-                        case 2:
-                            order_checker = loaded_chunks[2];
-                            break;
-                        case 3:
-                            order_checker = loaded_chunks[3];
-                            break;
-                    }
-                    switch (order_checker[1])
-                    {
-                        case int n when n < main[1]:
-                            switch (order_checker[0])
-                            {
-                                case int j when j < main[0]:
-                                    position[i] = 0;
-                                    break;
-                                case int j when j == main[0]:
-                                    position[i] = 1;
-                                    break;
-                                case int j when j > main[0]:
-                                    position[i] = 2;
-                                    break;
-                            }
-                            break;
-                        case int n when n == main[1]:
-                            switch (order_checker[0])
-                            {
-                                case int j when j < main[0]:
-                                    position[i] = 3;
-                                    break;
-                                case int j when j == main[0]:
-                                    position[i] = 4;
-                                    break;
-                                case int j when j > main[0]:
-                                    position[i] = 5;
-                                    break;
-                            }
-                            break;
-                        case int n when n > main[1]:
-                            switch (order_checker[0])
-                            {
-                                case int j when j < main[0]:
-                                    position[i] = 6;
-                                    break;
-                                case int j when j == main[0]:
-                                    position[i] = 7;
-                                    break;
-                                case int j when j > main[0]:
-                                    position[i] = 8;
-                                    break;
-                            }
-                            break;
-                    }
-                }
-                // remove
-                for (int i = loaded_chunks.Count; i > 0; i--)
-                {
-                    loaded_chunks.RemoveAt(i - 1);
-                    amount_removed++;
-                }
-                // add
-                position_o = position;
-                Array.Sort(position_o);
-                for (int i_2 = 0; i_2 < amount_removed + 1; i_2++)
-                {
-                    switch (i_2)
-                    {
-                        case 0:
-                            loaded_chunks.Add(main);
-                            Get_tiles(main, i_2 + 1);
-                            break;
-                        case 1:
-                            switch (position_o[i_2 - 1])
-                            {
-                                case int k when k == position[0]:
-                                    loaded_chunks.Add(new_one);
-                                    Get_tiles(new_one, i_2 + 1);
-                                    break;
-                                case int k when k == position[1]:
-                                    loaded_chunks.Add(amount_add[0]);
-                                    Get_tiles(amount_add[0], i_2 + 1);
-                                    break;
-                                case int k when k == position[2]:
-                                    loaded_chunks.Add(amount_add[1]);
-                                    Get_tiles(amount_add[1], i_2 + 1);
-                                    break;
-                            }
-                            break;
-                        case 2:
-                            switch (position_o[i_2 - 1])
-                            {
-                                case int k when k == position[0]:
-                                    loaded_chunks.Add(new_one);
-                                    Get_tiles(new_one, i_2 + 1);
-                                    break;
-                                case int k when k == position[1]:
-                                    loaded_chunks.Add(amount_add[0]);
-                                    Get_tiles(amount_add[0], i_2 + 1);
-                                    break;
-                                case int k when k == position[2]:
-                                    loaded_chunks.Add(amount_add[1]);
-                                    Get_tiles(amount_add[1], i_2 + 1);
-                                    break;
-                            }
-                            break;
-                        case 3:
-                            switch (position_o[i_2 - 1])
-                            {
-                                case int k when k == position[0]:
-                                    loaded_chunks.Add(new_one);
-                                    Get_tiles(new_one, i_2 + 1);
-                                    break;
-                                case int k when k == position[1]:
-                                    loaded_chunks.Add(amount_add[0]);
-                                    Get_tiles(amount_add[0], i_2 + 1);
-                                    break;
-                                case int k when k == position[2]:
-                                    loaded_chunks.Add(amount_add[1]);
-                                    Get_tiles(amount_add[1], i_2 + 1);
-                                    break;
-                            }
-                            break;
-                    }
-                }
-            }
-        }
         private static void Get_tiles(int[] pos, int tile)
         {
             int[] tiles = new int[width * height];
@@ -680,329 +364,78 @@ namespace Miner
         }
         private static void sort_chunk_moving(int[] new_one)
         {
-            #region add
-            if (loaded_chunks.Count == 0)
+            switch (new_one)
             {
-                loaded_chunks.Add(new_one);
-            }
-            else
-            {
-                int[] main = new int[2];
-                main = loaded_chunks[0];
-                int amount_removed = 0;
-                int[] position = new int[loaded_chunks.Count];
-                int[] position_o = new int[loaded_chunks.Count];
-                List<int[]> amount_add = new List<int[]>();
-                if (loaded_chunks.Count > 1)
-                {
-                    amount_add.Add(loaded_chunks[1]);
-                    if (loaded_chunks.Count > 2)
+                case int[] n when n[0] == 1 && n[1] == 0:
+                    #region 5
+                    int[] chunk_0 = new int[2];
+                    for (int i = loaded_chunks.Count; i > 0; i--)
                     {
-                        amount_add.Add(loaded_chunks[2]);
-                        if (loaded_chunks.Count > 3)
+                        loaded_chunks.RemoveAt(i);
+                    }
+                    loaded_chunks.Add(new_one);
+                    new_one[0] += loaded_chunks[0][0];
+                    new_one[1] += loaded_chunks[0][1];
+                    Get_tiles(new_one, 2);
+                    tiles_t_c3 = tiles_empty;
+                    tiles_t_c4 = tiles_empty;
+                    switch_off = 5;
+                    #endregion
+                    break;
+                case int[] n when n[0] == -1 && n[1] == 0:
+                    #region 4
+                    if (switch_off != 4)
+                    {
+                        for (int i = loaded_chunks.Count - 1; i > 0; i--)
                         {
-                            amount_add.Add(loaded_chunks[3]);
-
+                            loaded_chunks.RemoveAt(i);
                         }
+                        loaded_chunks.Add(new_one);
+                        new_one[0] += loaded_chunks[0][0];
+                        new_one[1] += loaded_chunks[0][1];
+                        Get_tiles(new_one, 2);
+                        tiles_t_c3 = tiles_empty;
+                        tiles_t_c4 = tiles_empty;
+                        switch_off = 4;
                     }
-                }
-                // pos
-                for (int i = 0; i < loaded_chunks.Count; i++)
-                {
-                    int[] order_checker = new int[2];
-                    switch (i)
+                    #endregion
+                    break;
+                case int[] n when n[0] == 0 && n[1] == 1:
+                    #region 2
+                    if (switch_off != 2)
                     {
-                        case 0:
-                            order_checker = new_one;
-                            break;
-                        case 1:
-                            order_checker = loaded_chunks[1];
-                            break;
-                        case 2:
-                            order_checker = loaded_chunks[2];
-                            break;
-                        case 3:
-                            order_checker = loaded_chunks[3];
-                            break;
-                    }
-                    switch (order_checker[1])
-                    {
-                        case int n when n < main[1]:
-                            switch (order_checker[0])
-                            {
-                                case int j when j < main[0]:
-                                    position[i] = 0;
-                                    break;
-                                case int j when j == main[0]:
-                                    position[i] = 1;
-                                    break;
-                                case int j when j > main[0]:
-                                    position[i] = 2;
-                                    break;
-                            }
-                            break;
-                        case int n when n == main[1]:
-                            switch (order_checker[0])
-                            {
-                                case int j when j < main[0]:
-                                    position[i] = 3;
-                                    break;
-                                case int j when j == main[0]:
-                                    position[i] = 4;
-                                    break;
-                                case int j when j > main[0]:
-                                    position[i] = 5;
-                                    break;
-                            }
-                            break;
-                        case int n when n > main[1]:
-                            switch (order_checker[0])
-                            {
-                                case int j when j < main[0]:
-                                    position[i] = 6;
-                                    break;
-                                case int j when j == main[0]:
-                                    position[i] = 7;
-                                    break;
-                                case int j when j > main[0]:
-                                    position[i] = 8;
-                                    break;
-                            }
-                            break;
-                    }
-                }
-                // remove
-                for (int i = loaded_chunks.Count; i > 0; i--)
-                {
-                    loaded_chunks.RemoveAt(i - 1);
-                    amount_removed++;
-                }
-                // add
-                position_o = position;
-                Array.Sort(position_o);
-                for (int i_2 = 0; i_2 < amount_removed; i_2++)
-                {
-                    switch (i_2)
-                    {
-                        case 0:
-                            loaded_chunks.Add(main);
-                            break;
-                        case 1:
-                            switch (position_o[i_2 - 1])
-                            {
-                                case int k when k == position[0]:
-                                    loaded_chunks.Add(new_one);
-                                    break;
-                                case int k when k == position[1]:
-                                    loaded_chunks.Add(amount_add[0]);
-                                    break;
-                                case int k when k == position[2]:
-                                    loaded_chunks.Add(amount_add[1]);
-                                    break;
-                            }
-                            break;
-                        case 2:
-                            switch (position_o[i_2 - 1])
-                            {
-                                case int k when k == position[0]:
-                                    loaded_chunks.Add(new_one);
-                                    break;
-                                case int k when k == position[1]:
-                                    loaded_chunks.Add(amount_add[0]);
-                                    break;
-                                case int k when k == position[2]:
-                                    loaded_chunks.Add(amount_add[1]);
-                                    break;
-                            }
-                            break;
-                        case 3:
-                            switch (position_o[i_2 - 1])
-                            {
-                                case int k when k == position[0]:
-                                    loaded_chunks.Add(new_one);
-                                    break;
-                                case int k when k == position[1]:
-                                    loaded_chunks.Add(amount_add[0]);
-                                    break;
-                                case int k when k == position[2]:
-                                    loaded_chunks.Add(amount_add[1]);
-                                    break;
-                            }
-                            break;
-                    }
-                }
-            }
-            #endregion
-            if (loaded_chunks.Count == 0)
-            {
-                loaded_chunks.Add(new_one);
-            }
-            else
-            {
-                int[] main = new int[2];
-                main = loaded_chunks[0];
-                int amount_removed = 0;
-                int[] position = new int[loaded_chunks.Count];
-                List<int[]> amount_add = new List<int[]>();
-                if (loaded_chunks.Count > 0)
-                {
-                    if (loaded_chunks[1] == new_one)
-                    {
-                        amount_add.Add(loaded_chunks[0]);
-                    }
-                    else
-                    {
-                        amount_add.Add(loaded_chunks[1]);
-                    }
-                    if (loaded_chunks.Count > 2)
-                    {
-                        if (loaded_chunks[1] == new_one)
+                        for (int i = loaded_chunks.Count - 1; i > 0; i--)
                         {
-                            amount_add.Add(loaded_chunks[0]);
+                            loaded_chunks.RemoveAt(i);
                         }
-                        else
+                        loaded_chunks.Add(new_one);
+                        new_one[0] += loaded_chunks[0][0];
+                        new_one[1] += loaded_chunks[0][1];
+                        Get_tiles(new_one, 2);
+                        tiles_t_c3 = tiles_empty;
+                        tiles_t_c4 = tiles_empty;
+                        switch_off = 2;
+                    }
+                    #endregion
+                    break;
+                case int[] n when n[0] == 0 && n[1] == -1:
+                    #region 8
+                    if (switch_off != 8)
+                    {
+                        for (int i = loaded_chunks.Count - 1; i > 0; i--)
                         {
-                            amount_add.Add(loaded_chunks[2]);
+                            loaded_chunks.RemoveAt(i);
                         }
-                        if (loaded_chunks.Count > 3)
-                        {
-                            if (loaded_chunks[1] == new_one)
-                            {
-                                amount_add.Add(loaded_chunks[0]);
-                            }
-                            else
-                            {
-                                amount_add.Add(loaded_chunks[3]);
-                            }
-                        }
+                        loaded_chunks.Add(new_one);
+                        new_one[0] += loaded_chunks[0][0];
+                        new_one[1] += loaded_chunks[0][1];
+                        Get_tiles(new_one, 2);
+                        tiles_t_c3 = tiles_empty;
+                        tiles_t_c4 = tiles_empty;
+                        switch_off = 8;
                     }
-                }
-                // pos
-                for (int i = 0; i < loaded_chunks.Count; i++)
-                {
-                    int[] order_checker = new int[2];
-                    switch (i)
-                    {
-                        case 0:
-                            order_checker = new_one;
-                            break;
-                        case 1:
-                            order_checker = amount_add[0];
-                            break;
-                        case 2:
-                            order_checker = amount_add[1];
-                            break;
-                        case 3:
-                            order_checker = amount_add[2];
-                            break;
-                    }
-                    switch (order_checker[1])
-                    {
-                        case int n when n < new_one[1]:
-                            switch (order_checker[0])
-                            {
-                                case int j when j < new_one[0]:
-                                    position[i] = 0;
-                                    break;
-                                case int j when j == new_one[0]:
-                                    position[i] = 1;
-                                    break;
-                                case int j when j > new_one[0]:
-                                    position[i] = 2;
-                                    break;
-                            }
-                            break;
-                        case int n when n == new_one[1]:
-                            switch (order_checker[0])
-                            {
-                                case int j when j < new_one[0]:
-                                    position[i] = 3;
-                                    break;
-                                case int j when j == new_one[0]:
-                                    position[i] = 4;
-                                    break;
-                                case int j when j > new_one[0]:
-                                    position[i] = 5;
-                                    break;
-                            }
-                            break;
-                        case int n when n > new_one[1]:
-                            switch (order_checker[0])
-                            {
-                                case int j when j < new_one[0]:
-                                    position[i] = 6;
-                                    break;
-                                case int j when j == new_one[0]:
-                                    position[i] = 7;
-                                    break;
-                                case int j when j > new_one[0]:
-                                    position[i] = 8;
-                                    break;
-                            }
-                            break;
-                    }
-                }
-                // remove
-                for (int i = 0; i < loaded_chunks.Count; i++)
-                {
-                    loaded_chunks.RemoveAt(i);
-                    amount_removed++;
-                }
-                // add
-                int[] position_o = new int[loaded_chunks.Count];
-                position_o = position;
-                Array.Sort(position_o);
-                for (int i_2 = 0; i_2 < amount_removed + 1; i_2++)
-                {
-                    switch (i_2)
-                    {
-                        case 0:
-                            loaded_chunks.Add(new_one);
-                            break;
-                        case 1:
-                            switch (position_o[i_2])
-                            {
-                                case int k when k == position[0]:
-                                    loaded_chunks.Add(amount_add[0]);
-                                    break;
-                                case int k when k == position[1]:
-                                    loaded_chunks.Add(amount_add[1]);
-                                    break;
-                                case int k when k == position[2]:
-                                    loaded_chunks.Add(amount_add[2]);
-                                    break;
-                            }
-                            break;
-                        case 2:
-                            switch (position_o[i_2])
-                            {
-                                case int k when k == position[0]:
-                                    loaded_chunks.Add(amount_add[0]);
-                                    break;
-                                case int k when k == position[1]:
-                                    loaded_chunks.Add(amount_add[1]);
-                                    break;
-                                case int k when k == position[2]:
-                                    loaded_chunks.Add(amount_add[2]);
-                                    break;
-                            }
-                            break;
-                        case 3:
-                            switch (position_o[i_2])
-                            {
-                                case int k when k == position[0]:
-                                    loaded_chunks.Add(amount_add[0]);
-                                    break;
-                                case int k when k == position[1]:
-                                    loaded_chunks.Add(amount_add[1]);
-                                    break;
-                                case int k when k == position[2]:
-                                    loaded_chunks.Add(amount_add[2]);
-                                    break;
-                            }
-                            break;
-                    }
-                }
+                    #endregion
+                    break;
             }
         }
         #endregion
