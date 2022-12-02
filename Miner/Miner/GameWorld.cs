@@ -123,6 +123,12 @@ namespace Miner
             {
                 gameObjects[i].Update(gameTime);
             }
+
+            for (int i = 0; i < toolList.Count; i++)
+            {
+                toolList[i].Update(gameTime);
+            }
+
         }
 
         protected override void Draw(GameTime gameTime)
