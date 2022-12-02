@@ -24,11 +24,12 @@ namespace Miner
         protected static bool isArtiClicked = false;
         protected static bool[] upgraded = new bool[13];
         protected static byte upgradeClicked;
-        private static int r1Copper;
-        private static int r2MilitaryScrap;
-        private static int r3Titanium;
-        private static int r4Plat;
-        private static int r5Uranium;
+        protected static byte artifactClicked;
+        private static int r1Copper = 100;
+        private static int r2MilitaryScrap = 100;
+        private static int r3Titanium = 100;
+        private static int r4Plat = 100;
+        private static int r5Uranium = 100;
         private bool isInvOpen = true;
         public static bool[] Upgraded { get { return upgraded; } set { upgraded = value; } }
         public bool IsInvOpen { get { return isInvOpen; } set { isInvOpen = value; } }
