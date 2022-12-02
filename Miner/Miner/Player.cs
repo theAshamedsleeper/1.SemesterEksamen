@@ -36,9 +36,32 @@ namespace Miner
         public override void Update(GameTime gameTime)
         {
 
-            //1 = venstre 2 = højre 3 = ned 4 = op
+            ////1 = venstre 2 = højre 3 = ned 4 = op
 
 
+            //if (Terrain.Which((position.X - GameWorld.ofset_x) - 1, (position.Y - GameWorld.ofset_y), Terrain.Loaded_Chunk_differ(0)) < 1f)
+            //{
+            //    collition = 1;
+            //    GameWorld.ofset_x + 1;
+            //}
+
+            //if (Terrain.Which((position.X - GameWorld.ofset_x), (position.Y - GameWorld.ofset_y) - 1, Terrain.Loaded_Chunk_differ(0)) < 1f)
+            //{
+            //    collition = 2;
+            //    GameWorld.ofset_y + 1;
+            //}
+
+            //if (Terrain.Which((position.X - GameWorld.ofset_x) + 33, (position.Y - GameWorld.ofset_y), Terrain.Loaded_Chunk_differ(0)) < 1f)
+            //{
+            //    collition = 3;
+            //    GameWorld.ofset_x - 1;
+            //}
+
+            //if (Terrain.Which((position.X - GameWorld.ofset_x), (position.Y - GameWorld.ofset_y) + 33, Terrain.Loaded_Chunk_differ(0)) < 1f)
+            //{
+            //    collition = 4;
+            //    GameWorld.ofset_y - 1;
+            //}
 
 
             if (Keyboard.GetState().IsKeyDown(Keys.W))
