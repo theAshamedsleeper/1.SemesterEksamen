@@ -4,8 +4,6 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Deep Rock.png</File>
-    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Dirt.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/DrillDiggingDown3Spritesheet.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/DrillDiggingSide6Spritesheet.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/DrillFlying6Spritesheet.png</File>
@@ -13,13 +11,14 @@
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/DrillMoving9Spritesheet.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/File.spritefont</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/FileFont.spritefont</File>
-    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Gold.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/RockyDrit.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/Stone.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/pixil-frame-0.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/pixil-frame-2.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/pixilart-drawing_1.png</File>
-    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Rock.png</File>
-    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Rocky dirt.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/BarDivider.PNG</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/BatteryForPlayer_Batterholder.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/BatteryForPlayer_batteryPower.png</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/CraftingButton.PNG</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/ArtifactsFontT.spritefont</File>
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/CloseUIButton.png</File>
@@ -68,7 +67,6 @@
     <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Uranium.png</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

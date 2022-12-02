@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Gold.png</SourceFile>
-  <SourceTime>2022-11-30T13:41:35.2156879+01:00</SourceTime>
-  <DestFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Content/Gold.xnb</DestFile>
-  <DestTime>2022-12-02T09:50:40.0351109+01:00</DestTime>
+  <SourceFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/Stone.png</SourceFile>
+  <SourceTime>2022-12-02T11:26:33.4448757+01:00</SourceTime>
+  <DestFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Content/GroundSprite/Stone.xnb</DestFile>
+  <DestTime>2022-12-02T11:29:00.4606024+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
