@@ -21,53 +21,65 @@ namespace Miner
         private int batteryFrame = 0;
 
 
-        public int batteryMax = 10000;
-        public int solarPanelSize = 5000;
+        public int batteryMax;
+        public int solarPanelSize;
+        //Balancen mellem solpanel og batteri
         public int solarPanelCombined;
 
         public void LoadContent(ContentManager content)
         {
             batterySpritesheet = content.Load<Texture2D>(SPRITESHEET_BATTERY);
-            solarPanelCombined = batteryMax - solarPanelSize;
+            batteryMax = 10000;
+            solarPanelSize = 8000;
+            
         }
 
         
         public void Update(GameTime gameTime)
         {
+            solarPanelCombined = batteryMax - solarPanelSize;
             //Battery upgrade
+
             if (UpgradeButton.Upgraded[7] == true)
             {
                 batteryMax = 14000;
             }
-            else if (UpgradeButton.Upgraded[6] == true)
+            
+            if (UpgradeButton.Upgraded[6] == true)
             {
                 batteryMax = 13000;
             }
-            else if (UpgradeButton.Upgraded[5] == true)
+            
+            if (UpgradeButton.Upgraded[5] == true)
             {
                 batteryMax = 12000;
             }
-            else if (UpgradeButton.Upgraded[4] == true)
+
+            if (UpgradeButton.Upgraded[4] == true)
             {
                 batteryMax = 11000;
             }
 
             //Solar upgrade
+            
             if (UpgradeButton.Upgraded[11] == true)
+            {
+                solarPanelSize = 10000;
+            }
+
+            if (UpgradeButton.Upgraded[10] == true)
+            {
+                solarPanelSize = 9500;
+            }
+
+            if (UpgradeButton.Upgraded[9] == true)
             {
                 solarPanelSize = 9000;
             }
-            else if (UpgradeButton.Upgraded[10] == true)
+
+            if (UpgradeButton.Upgraded[8] == true)
             {
-                solarPanelSize = 8000;
-            }
-            else if (UpgradeButton.Upgraded[9] == true)
-            {
-                solarPanelSize = 7000;
-            }
-            else if (UpgradeButton.Upgraded[8] == true)
-            {
-                solarPanelSize = 6000;
+                solarPanelSize = 8500;
             }
 
         }
