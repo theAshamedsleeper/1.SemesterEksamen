@@ -99,30 +99,6 @@
 /processorParam:TextureFormat=Color
 /build:GroundSprite/RockyDrit.png
 
-#begin GroundSprite/RockyDrit.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:GroundSprite/RockyDrit.png
-
-#begin GroundSprite/Stone.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:GroundSprite/Stone.png
-
 #begin GroundSprite/Stone.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -170,6 +146,12 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:pixilart-drawing_1.png
+
+#begin Sound/Menu Selection Click.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/Menu Selection Click.wav
 
 #begin Ui Sprites/BarDivider.PNG
 /importer:TextureImporter

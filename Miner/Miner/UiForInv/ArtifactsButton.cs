@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -33,6 +34,7 @@ namespace Miner.UiForInv
             artifactsPlacer[10] = new Rectangle(1490, 800, 150, 150);
             artifactsPlacer[11] = new Rectangle(1675, 800, 150, 150);
 
+            menuSound = content.Load<SoundEffect>("Sound/Menu Selection Click");
 
         }
 
