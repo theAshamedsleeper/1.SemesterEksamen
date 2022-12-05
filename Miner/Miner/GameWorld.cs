@@ -10,24 +10,22 @@ namespace Miner
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+
         private static Vector2 screenSize;
 
         private Texture2D[] groundSprite = new Texture2D[10];
         private Texture2D texture_terrain;
-
         private SpriteFont ContFont;
+
         private List<GameObjects> gameObjects = new List<GameObjects>();
         private List<Tools> toolList = new List<Tools>();
+        private List<WorkShop> workShop = new List<WorkShop>();
 
         private float worldScale = 5f;//2.4f så passer den i width
         private bool inv = false;
         public static int ofset_x = 0;
         public static int ofset_y = 0;
         private int current_chunk = 0;
-
-        private List<WorkShop> workShop = new List<WorkShop>();
-
-
 
         public GameWorld()
         {

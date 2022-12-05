@@ -34,8 +34,16 @@ namespace Miner
         
         public void Update(GameTime gameTime)
         {
+            
             solarPanelCombined = batteryMax - solarPanelSize;
-            //Battery upgrade
+            /*(variablen solarPanelCombined^ sikrer at et større batteri tager længere tid at oplade,
+            i sammenhæng med størrelsen af solpanelet. 
+            Dvs. at den bruges til at skabe dynamik mellem solpanelet og batteriet,
+            og definerer solpanelets virkning, når de opgraderes i de nedenstående regioner.) */
+
+
+            #region - Battery upgrade -
+            
 
             if (UpgradeButton.Upgraded[7] == true)
             {
@@ -57,8 +65,11 @@ namespace Miner
                 batteryMax = 11000;
             }
 
-            //Solar upgrade
-            
+            #endregion
+
+            #region - Solar upgrade -
+           
+
             if (UpgradeButton.Upgraded[11] == true)
             {
                 solarPanelSize = 10000;
@@ -79,12 +90,18 @@ namespace Miner
                 solarPanelSize = 8500;
             }
 
+            #endregion
+
         }
-        
+
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
-            gaintimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
+            // - SOLPANELETS VIRKNING -
+            gaintimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+            /*gainTimer tæller op til solarPanelCombined,
+            som bliver defineret pr ovenstående upgrades på sloarSize og batteryMax. 
+            Når den er nået til max, skifter den frame og timeren bliver resettet. */
             if (Keyboard.GetState().IsKeyDown(Keys.Q) && batteryFrame > 0 && gaintimer > solarPanelCombined)
             {
 
@@ -95,10 +112,10 @@ namespace Miner
 
             
 
-
+            // - BATTERIETS VIRKNING OG ANIMATION -
             draintimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-
-            if (draintimer > batteryMax && batteryFrame <= 320 && !Keyboard.GetState().IsKeyDown(Keys.Q))
+            //drainTimer tæller op til batteryMax, som bliver defineret pr batteri upgrade. 
+            if (draintimer > batteryMax && batteryFrame <= 320 && !Keyboard.GetState().IsKeyDown(Keys.Q)) 
 
             {
                 batteryFrame = batteryFrame + 30;
@@ -112,7 +129,8 @@ namespace Miner
             }
 
 
-
+            //batteriet tegnes. Den bruger frames på samme måde som spiller animationerne i Player klassen.
+            //Hvis den løber tør for frames, vil det sige at batteriet er løbet tør for energi, og spillet er tabt.
             spriteBatch.Draw(batterySpritesheet, new Vector2(100, 100), new Rectangle(batteryFrame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5f, SpriteEffects.None, 1f);
 
         }
