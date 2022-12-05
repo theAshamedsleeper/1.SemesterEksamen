@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/RockyDrit.png</SourceFile>
-  <SourceTime>2022-12-02T11:26:19.4622253+01:00</SourceTime>
+  <SourceTime>2022-12-02T11:32:35.8894046+01:00</SourceTime>
   <DestFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/GroundSprite/RockyDrit.xnb</DestFile>
-  <DestTime>2022-12-02T11:28:50.8680455+01:00</DestTime>
+  <DestTime>2022-12-05T10:00:52.1695236+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

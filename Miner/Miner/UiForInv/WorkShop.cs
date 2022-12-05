@@ -1,6 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Media;
 using Miner.UiForInv;
 using SharpDX.Direct3D9;
 using System.Net;
@@ -30,7 +32,8 @@ namespace Miner
         private static int r3Titanium = 100;
         private static int r4Plat = 100;
         private static int r5Uranium = 100;
-        private bool isInvOpen = true;
+        private bool isInvOpen = false;
+        protected SoundEffect menuSound;
         public static bool[] Upgraded { get { return upgraded; } set { upgraded = value; } }
         public bool IsInvOpen { get { return isInvOpen; } set { isInvOpen = value; } }
         public static int R1Cop { get { return r1Copper; } set { r1Copper = value; } }
