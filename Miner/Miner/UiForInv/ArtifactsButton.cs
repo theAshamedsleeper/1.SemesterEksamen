@@ -14,12 +14,13 @@ namespace Miner.UiForInv
     internal class ArtifactsButton : WorkShop
     {
         private MouseState mouse;
-        private float closeDownShopTimer;
 
-
+        /// <summary>
+        /// Loads in the Different places, sizes of the artifacts and the menu sound
+        /// </summary>
+        /// <param name="content"></param>
         public override void LoadContent(ContentManager content)
         {
-           // artifactsSprite[0] = content.Load<Texture2D>("");
             artifactsPlacer[0] = new Rectangle(750, 560, 150, 150);
             artifactsPlacer[1] = new Rectangle(935, 560, 150, 150);
             artifactsPlacer[2] = new Rectangle(1120, 560, 150, 150); 
@@ -37,12 +38,19 @@ namespace Miner.UiForInv
             menuSound = content.Load<SoundEffect>("Sound/Menu Selection Click");
 
         }
-
+        /// <summary>
+        /// Makes it so you can use the mouse for collision with an inbuild function. Calls another method
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Update(GameTime gameTime)
         {
-            mouse = Mouse.GetState();
+            mouse = Mouse.GetState();//So you can click around with the mouse.
             ArtifactsTab(gameTime);
         }
+        /// <summary>
+        /// draws in the diffrent artifacts, when called on
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public static void DrawArtifact(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(spritePlacer[7], uiRectangles[24], Color.Black);//nothing imprtant, just a border.
@@ -66,6 +74,12 @@ namespace Miner.UiForInv
                     break;
             }
         }
+        /// <summary>
+        /// All functionality between the mouse and each boxs of artifacts.
+        /// When you click an icon it changes the number of which artifact is click
+        /// and shows diffenct information about the item
+        /// </summary>
+        /// <param name="gameTime"></param>
         private void ArtifactsTab(GameTime gameTime)
         {
             #region Invetory Tab
