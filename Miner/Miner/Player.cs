@@ -15,6 +15,7 @@ namespace Miner
         private Texture2D _drillingDownTexture;
         private int collition;
 
+        //PLAYER CONSTRUCTOR
         public Player(Vector2 position)
         {
             this.position = position;
@@ -22,6 +23,7 @@ namespace Miner
 
         public override void LoadContent(ContentManager content)
         {
+
             _drivingTexture = content.Load<Texture2D>(SPRITESHEET_DRIVING);
             _flyingTexture = content.Load<Texture2D>(SPRITESHEET_FLYING);
             _drillingSideTexture = content.Load<Texture2D>(SPRITESHEET_DIGGING_SIDE);
@@ -31,39 +33,20 @@ namespace Miner
             _spriteIdleTexture = content.Load<Texture2D>(SPRITE_OVERLAY);
             _controlsFont = content.Load<SpriteFont>("File");
 
+
         }
 
         public override void Update(GameTime gameTime)
         {
 
-            ////1 = venstre 2 = højre 3 = ned 4 = op
+            #region - Player Animations -
+            /*Animationerne styres ved hjælp af flere spritesheets. Disse kaldes fra GameObjects.
+            Frame variablen styrer hvilke billeder der vises på de forskellige animationer.
+            Alle frames er 32 brede. 32, 64, 96, 128 = De fire frames. 
+            Animationerne tegnes i Gameobjects*/
 
 
-            //if (Terrain.Which((position.X - GameWorld.ofset_x) - 1, (position.Y - GameWorld.ofset_y), Terrain.Loaded_Chunk_differ(0)) < 1f)
-            //{
-            //    collition = 1;
-            //    GameWorld.ofset_x + 1;
-            //}
-
-            //if (Terrain.Which((position.X - GameWorld.ofset_x), (position.Y - GameWorld.ofset_y) - 1, Terrain.Loaded_Chunk_differ(0)) < 1f)
-            //{
-            //    collition = 2;
-            //    GameWorld.ofset_y + 1;
-            //}
-
-            //if (Terrain.Which((position.X - GameWorld.ofset_x) + 33, (position.Y - GameWorld.ofset_y), Terrain.Loaded_Chunk_differ(0)) < 1f)
-            //{
-            //    collition = 3;
-            //    GameWorld.ofset_x - 1;
-            //}
-
-            //if (Terrain.Which((position.X - GameWorld.ofset_x), (position.Y - GameWorld.ofset_y) + 33, Terrain.Loaded_Chunk_differ(0)) < 1f)
-            //{
-            //    collition = 4;
-            //    GameWorld.ofset_y - 1;
-            //}
-
-
+            // - FLYING ANIMATIONS -
             if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
                 drilling = true;
@@ -71,13 +54,12 @@ namespace Miner
                 frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
 
-
                 if (frameTimer > 50)
                 {
                     frame = frame + 32;
                     frameTimer = 0;
                 }
-                // 32, 64, 96, 128 = De fire frames
+                
                 if (frame == 128)
                 {
                     frame = 0;
@@ -85,8 +67,8 @@ namespace Miner
 
             }
 
-
-            else if (collition < 3)
+            // - DRILLING ANIMATIONS _ SIDE -
+            else if (Keyboard.GetState().IsKeyDown(Keys.C)) //(Skal senere aktivere ved kollision i stedet)
             {
                 drilling = true;
                 _spriteSheetTexture = _drillingSideTexture;
@@ -99,7 +81,7 @@ namespace Miner
                     frame = frame + 32;
                     frameTimer = 0;
                 }
-                // 32, 64, 96, 128 = De fire frames
+                
                 if (frame == 128)
                 {
                     frame = 0;
@@ -107,6 +89,7 @@ namespace Miner
 
             }
 
+            // - DRIVING ANIMATION _ RIGHT -
             else if (Keyboard.GetState().IsKeyDown(Keys.D))
             {
                 drilling = false;
@@ -119,7 +102,7 @@ namespace Miner
                     frame = frame + 32;
                     frameTimer = 0;
                 }
-                // 32, 64, 96, 128 = De fire frames
+                
                 if (frame == 128)
                 {
                     frame = 0;
@@ -127,6 +110,7 @@ namespace Miner
 
             }
 
+            // - DRIVING ANIMATION _ LEFT -
             else if (Keyboard.GetState().IsKeyDown(Keys.A))
             {
                 drilling = false;
@@ -140,14 +124,16 @@ namespace Miner
                     frame = frame + 32;
                     frameTimer = 0;
                 }
-                // 32, 64, 96, 128 = De fire frames
+                
                 if (frame == 128)
                 {
                     frame = 0;
                 }
 
             }
-            else if (Keyboard.GetState().IsKeyDown(Keys.S)) // Burde være ved collision med blok
+
+            // - DRILLING ANIMATION _ DOWN -
+            else if (Keyboard.GetState().IsKeyDown(Keys.S))
             {
                 drilling = true;
                 _spriteSheetTexture = _drillingDownTexture;
@@ -160,22 +146,28 @@ namespace Miner
                     frame = frame + 32;
                     frameTimer = 0;
                 }
-                // 32, 64, 96, 128 = De fire frames
+                
                 if (frame == 128)
                 {
                     frame = 0;
                 }
-
-
-
-
 
             }
             else
             {
                 _spriteSheetTexture = _drivingTexture;
                 drilling = false;
+                /*Ved at sætte den samme idle texture på, som er gemt i _drivingTexture, 
+                vil hjulene få den samme position som tidligere gemt, frem for at blive startet forfra.
+                Alle animationer bruger samme frame variabel og har alle samme mængde frames.
+                dvs at hvis man skifter fra fx at køre, til at flyve, til at borre, så er tandjulspositionerne
+                gennemgående mellem dem alle. Alle har samme hjul position på samme frame.
+                Dette virker rigtig godt sammen med den usammenhængende idle animation,
+                som bliver tegnet ovenpå i GameObjects. Man får følelsen af at bilen faktisk bruger hjulene
+                til at komme fremad, og forbundne tandhjul til at borre, 
+                da de aldrig hopper fra deres givne position, mellem maskinens aktioner.*/
             }
+            #endregion
 
 
 
