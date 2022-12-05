@@ -117,7 +117,7 @@ namespace Miner
             {
                 workShop[i].Update(gameTime);
             }
-            base.Update(gameTime);
+            
 
             for (int i = 0; i < gameObjects.Count; i++)
             {
@@ -128,6 +128,7 @@ namespace Miner
             {
                 toolList[i].Update(gameTime);
             }
+            base.Update(gameTime);
 
         }
 

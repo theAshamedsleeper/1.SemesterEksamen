@@ -19,11 +19,8 @@ namespace Miner
         public float draintimer = 0;
         public float gaintimer = 0;
         private int batteryFrame = 0;
-
-
         public int batteryMax;
         public int solarPanelSize;
-        //Balancen mellem solpanel og batteri
         public int solarPanelCombined;
 
         public void LoadContent(ContentManager content)
@@ -91,7 +88,7 @@ namespace Miner
             if (Keyboard.GetState().IsKeyDown(Keys.Q) && batteryFrame > 0 && gaintimer > solarPanelCombined)
             {
 
-                batteryFrame = batteryFrame - 30;
+                batteryFrame -= 30;
                 gaintimer = 0;
                 
             }
