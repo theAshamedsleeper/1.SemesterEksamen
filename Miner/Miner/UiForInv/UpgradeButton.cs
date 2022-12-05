@@ -9,7 +9,10 @@ namespace Miner.UiForInv
     internal class UpgradeButton : WorkShop
     {
         private MouseState mouse;
-        private float closeDownShopTimer;
+        /// <summary>
+        /// Loads in all the different spirtes, location and sizes.
+        /// </summary>
+        /// <param name="content"></param>
         public override void LoadContent(ContentManager content)
         {
             #region Tabs
@@ -130,14 +133,22 @@ namespace Miner.UiForInv
             #endregion
             menuSound = content.Load<SoundEffect>("Sound/Menu Selection Click");
         }
-
+        /// <summary>
+        /// Calls another method, and makes you able to use the mouse.
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Update(GameTime gameTime)
         {
-            mouse = Mouse.GetState();
+            mouse = Mouse.GetState();//So you can click around with the mouse.
 
             UpgradeTab(gameTime);
 
         }
+        /// <summary>
+        /// Draws each upgrade in, and if certain conditions are meet it changes the look of the upgrade.
+        /// Draws in each resource with the amount you have.
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public static void DrawUpgrade(SpriteBatch spriteBatch)
         {
             if (isUpgradesClicked == true)
@@ -410,6 +421,13 @@ namespace Miner.UiForInv
                 #endregion
             }
         }
+        /// <summary>
+        /// All functionality between the mouse and the upgrade boxes.
+        /// When you click on a upgrade icon you get another box with the information about that upgrade.
+        /// on that box is another which can be clicked on if you have the right amount of resources.
+        /// Its a swith case that controls which upgrade info you can see.
+        /// </summary>
+        /// <param name="gameTime"></param>
         private void UpgradeTab(GameTime gameTime)
         {
             #region switch tabs
