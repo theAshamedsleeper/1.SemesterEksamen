@@ -3,7 +3,6 @@ using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Miner.UiForInv;
-using SharpDX.DXGI;
 using System.Collections.Generic;
 
 namespace Miner
@@ -28,8 +27,9 @@ namespace Miner
         public static int ofset_x = 0;
         public static int ofset_y = 0;
         private int current_chunk = 0;
-        public static bool collisionBool = false;
-
+        public static bool sideCollision = false;
+        public static bool downCollision = false;
+        public static bool inAir = false;
 
         private SoundEffect engine_sound;
         private SoundEffectInstance engine_sound_inst;
@@ -75,7 +75,7 @@ namespace Miner
             groundSprite[6] = Content.Load<Texture2D>("GroundSprite/Titanium");
             engine_sound = Content.Load<SoundEffect>("Sound/motorcycle-idle-01");
             engine_sound_inst = engine_sound.CreateInstance();
-            
+
 
 
             ContFont = Content.Load<SpriteFont>("FileFont");
@@ -102,69 +102,84 @@ namespace Miner
                 if (engine_sound_inst.State == SoundState.Stopped)
                 {
                     engine_sound_inst.Play();
-                   }
-                engine_sound_inst.Volume = 0.1f;
-                
+                }
+                engine_sound_inst.Volume = 0.8f;
+
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.D))
                 {
                     if (Terrain.player_collis(1, deltatime) == false)
                     {
-                        collisionBool = false;
+
+                        sideCollision = false;
                         ofset_x--;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
                     else
                     {
-                        collisionBool = true;
+                        sideCollision = true;
+                        inAir = false;
                     }
+
                 }
-               
+
+
 
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.A))
                 {
                     if (Terrain.player_collis(0, deltatime) == false)
                     {
-                        collisionBool = false;
+
+                        sideCollision = false;
                         ofset_x++;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
                     else
                     {
-                        collisionBool = true;
+                        sideCollision = true;
+                        inAir = false;
                     }
+
                 }
-               
+
 
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.S))
                 {
                     if (Terrain.player_collis(3, deltatime) == false)
                     {
-                        
+
+                        downCollision = false;
+                        inAir = true;
                         ofset_y--;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
-                   
+                    else
+                    {
+                        inAir = false;
+                        downCollision = true;
+                    }
+
                 }
-               
+
 
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.W))
                 {
                     if (Terrain.player_collis(2, deltatime) == false)
                     {
-                        
+
                         ofset_y += 2;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
-                   
+
                 }
-              
+
                 Terrain.Move_Main_chunk(ofset_x, ofset_y);
             }
             else
             {
-                engine_sound_inst.Volume = 0.1f;
+                inAir = false;
+                engine_sound_inst.Volume = 0.4f;
             }
-            
+
             #endregion
             #region gravity
             float player_pos_y = screenSize.Y / 2 - (32 * 5) / 2 + ofset_y;
@@ -178,7 +193,7 @@ namespace Miner
             {
                 workShop[i].Update(gameTime);
             }
-            
+
 
             for (int i = 0; i < gameObjects.Count; i++)
             {
@@ -221,21 +236,21 @@ namespace Miner
                 {
                     #region texture terrain switch
                     // the switch changes the terrain drawn depending on the terrain int.
-                    
+
                     texture_terrain = groundSprite[Terrain.Which(gx, gy, loaded_chunk)];
-                    
-                    switch(texture_terrain)
+
+                    switch (texture_terrain)
                     {
                         case Texture n when n == groundSprite[5]:
-                        _spriteBatch.Draw(groundSprite[3],//what to draw
-                        new Vector2(gx + ofset_x + direction[0], gy + ofset_y + direction[1]),//place to draw it
-                        null,//rectangle
-                        Color.White,//color of player
-                        0f, //Rotation of player
-                        Vector2.Zero,//Orgin Point
-                        worldScale,//How big is the player
-                        SpriteEffects.None,//effects
-                        1f);//Layer 
+                            _spriteBatch.Draw(groundSprite[3],//what to draw
+                            new Vector2(gx + ofset_x + direction[0], gy + ofset_y + direction[1]),//place to draw it
+                            null,//rectangle
+                            Color.White,//color of player
+                            0f, //Rotation of player
+                            Vector2.Zero,//Orgin Point
+                            worldScale,//How big is the player
+                            SpriteEffects.None,//effects
+                            1f);//Layer 
                             break;
                         case Texture n when n == groundSprite[6]:
                             _spriteBatch.Draw(groundSprite[4],//what to draw

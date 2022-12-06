@@ -61,11 +61,47 @@ namespace Miner
 
 
             // - FLYING ANIMATIONS -
-            if (Keyboard.GetState().IsKeyDown(Keys.W))
+            if (Keyboard.GetState().IsKeyDown(Keys.W) || GameWorld.inAir == true)
             {
                 drilling = true;
                 _spriteSheetTexture = _flyingTexture;
                 frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+
+                if (frameTimer > 50)
+                {
+                    if (GameWorld.inAir == true && Keyboard.GetState().IsKeyDown(Keys.W))
+                    {
+                        frame = frame - 32;
+                        frameTimer = 0;
+                    }
+                    else
+                    {
+                        frame = frame + 32;
+                        frameTimer = 0;
+                    }
+                    
+                }
+                
+                if (frame == 128)
+                {
+                    frame = 0;
+                }
+
+                if (frame < 0)
+                {
+                    frame = 96;
+                }
+
+            }
+
+            // - DRILLING ANIMATIONS _ SIDE -
+            else if (Keyboard.GetState().IsKeyDown(Keys.D) && GameWorld.sideCollision == true)
+            {
+                drilling = true;
+                _spriteSheetTexture = _drillingSideTexture;
+                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
 
 
                 if (frameTimer > 50)
@@ -80,9 +116,7 @@ namespace Miner
                 }
 
             }
-
-            // - DRILLING ANIMATIONS _ SIDE -
-            else if (GameWorld.collisionBool == true)
+            else if (Keyboard.GetState().IsKeyDown(Keys.A) && GameWorld.sideCollision == true)
             {
                 drilling = true;
                 _spriteSheetTexture = _drillingSideTexture;
@@ -95,7 +129,7 @@ namespace Miner
                     frame = frame + 32;
                     frameTimer = 0;
                 }
-                
+
                 if (frame == 128)
                 {
                     frame = 0;
@@ -145,7 +179,7 @@ namespace Miner
             }
 
             // - DRILLING ANIMATION _ DOWN -
-            else if (Keyboard.GetState().IsKeyDown(Keys.S))
+            else if (Keyboard.GetState().IsKeyDown(Keys.S) && GameWorld.downCollision == true)
             {
                 drilling = true;
                 _spriteSheetTexture = _drillingDownTexture;
