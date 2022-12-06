@@ -201,7 +201,10 @@ namespace Miner
                     // the switch changes the terrain drawn depending on the terrain int.
                     
                     texture_terrain = groundSprite[Terrain.Which(gx, gy, loaded_chunk)];
-                    
+                    if (Terrain.Which(gx, gy, loaded_chunk) >= 9)
+                    {
+                        int hey = 0;
+                    }
                     switch(texture_terrain)
                     {
                         case Texture n when n == groundSprite[5]:

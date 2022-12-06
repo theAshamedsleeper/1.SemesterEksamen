@@ -79,7 +79,7 @@ namespace Miner
             stonebreakfinish = content.Load<SoundEffect>("Sound/Rocks/StoneBreakfinish");
         }
         #endregion
-        #region stuff
+        #region player
         public static bool player_collis(int side, float deltatime)
         {
             float pos_x = 0;
@@ -199,11 +199,11 @@ namespace Miner
                 switch (p)
                 {
                     case 0:
-                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - 1;
+                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x +1;
                         pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y+ 32 *5;
                         break;
                     case 1:
-                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 + 1;
+                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 - 1;
                         pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
                         break;
                 }
@@ -636,32 +636,107 @@ namespace Miner
         }
         static int chunk_terrain(int[] xy, int i)
         {
-            if (xy[0] == 0 && xy[1] == 0)
-            {
-                if (i > 127)
-                {
-                    int returns = (Randomies.randoms(3) + 2);
-                    if (returns == 3)
-                    {
-                        if (Randomies.randoms(5) == 0)
-                        {
-                            returns = 5;
-                        }
-                    }
-                    if (returns == 4)
-                    {
-                        if (Randomies.randoms(5) == 0)
-                        {
-                            returns = 6;
-                        }
-                    }
-                    return returns;
-                }
-                return 0;
-            }
+            
             switch (xy[1])
             {
-                case int n when n < 3 && n > -1:
+                case int n when n > 0:
+                    return 0;
+                case int n when n == 0:
+                    if (xy[0] == 0 && xy[1] == 0)
+                    {
+                        if (i > 127)
+                        {
+                            if (i > 224)
+                            {
+                                if (i > 288)
+                                {
+                                    #region layer 3
+                                    int returns = (Randomies.randoms(7) + 2);
+                                    if (returns == 3 || returns == 9)
+                                    {
+                                        if (Randomies.randoms(5) == 0)
+                                        {
+                                            returns = 5;
+                                        }
+                                        else
+                                        {
+                                            returns = 3;
+                                        }
+                                    }
+                                    if (returns == 4 || returns == 8 || returns == 7 || returns == 6)
+                                    {
+                                        if (Randomies.randoms(5) == 0)
+                                        {
+                                            returns = 6;
+                                        }
+                                        else
+                                        {
+                                            returns = 4;
+                                        }
+                                    }
+                                    return returns;
+                                    #endregion
+                                }
+                                else
+                                {
+                                    #region layer 2
+                                    int returns = (Randomies.randoms(7) + 2);
+                                    if (returns == 3 || returns == 9 || returns == 8 || returns == 7)
+                                    {
+                                        if (Randomies.randoms(5) == 0)
+                                        {
+                                            returns = 5;
+                                        }
+                                        else
+                                        {
+                                            returns = 3;
+                                        }
+                                    }
+                                    if (returns == 6)
+                                    {
+                                        returns = 2;
+                                    }
+                                    if (returns == 4)
+                                    {
+                                        if (Randomies.randoms(5) == 0)
+                                        {
+                                            returns = 6;
+                                        }
+                                    }
+                                    return returns;
+                                    #endregion
+                                }
+                            }
+                            else
+                            {
+                                #region layer 1
+                                int returns = (Randomies.randoms(5) + 2);
+                                if (returns == 3)
+                                {
+                                    if (Randomies.randoms(5) == 0)
+                                    {
+                                        returns = 5;
+                                    }
+                                }
+                                if (returns == 6 || returns == 7)
+                                {
+                                    returns = 2;
+                                }
+                                if (returns == 4)
+                                {
+                                    if (Randomies.randoms(5) == 0)
+                                    {
+                                        returns = 6;
+                                    }
+                                }
+                                return returns;
+                                #endregion
+                            }
+                        }
+                        return 0;
+                    }
+                    break;
+                case int n when n < 0:
                     return 1;
             }
             return 0;
