@@ -410,7 +410,7 @@ namespace Miner.UiForInv
                             spriteBatch.Draw(upgradeInfo[12], uiRectangles[38], Color.White);//Upgrade info
                             spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.White);//Upgrade Button
                         }
-                        else if (Upgraded[13] == true)
+                        else if (Upgraded[12] == true)
                         {
                             spriteBatch.Draw(upgradeInfo[12], uiRectangles[38], Color.White);//Upgrade info
                             spriteBatch.Draw(spritePlacer[26], uiRectangles[37], Color.Green);//Upgrade Button
@@ -651,17 +651,16 @@ namespace Miner.UiForInv
                         break;
                     //Last Upgrade
                     case 13://checks that all the last upgrades have been made and you have the resource needed.
-                        if (Upgraded[7] == false && Upgraded[11] == true && Upgraded[6] == true && Upgraded[3] == true
+                        if (Upgraded[7] == false && Upgraded[11] == true && Upgraded[3] == true
                             && R1Cop >= 50 && R3Tit >= 50 && R4Plat >= 50 && R5Uran >= 50)
                         {
-                            Upgraded[7] = true;
+                            Upgraded[12] = true;
                             R1Cop -= 50;
                             R3Tit -= 50;
                             R4Plat -= 50;
                             R5Uran -= 50;
                             menuSound.Play();
                         }
-                        Upgraded[12] = true;
                         break;
                 }
             }//Confirm Upgrade Button
