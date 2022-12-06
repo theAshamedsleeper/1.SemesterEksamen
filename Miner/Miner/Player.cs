@@ -240,7 +240,7 @@ namespace Miner
                 frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
 
-                if (frameTimer > 100)
+                if (frameTimer > 75)
                 {
                     frame = frame + 32;
                     frameTimer = 0;
