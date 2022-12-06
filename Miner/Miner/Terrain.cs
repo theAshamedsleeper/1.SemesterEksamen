@@ -96,11 +96,11 @@ namespace Miner
                         {
                             case 0:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y+1;
                                 break;
                             case 1:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5-1;
                                 break;
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
@@ -120,11 +120,11 @@ namespace Miner
                         {
                             case 0:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y+1;
                                 break;
                             case 1:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5-1;
                                 break;
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
@@ -199,12 +199,12 @@ namespace Miner
                 switch (p)
                 {
                     case 0:
-                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
-                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y+ 32 *5+1;
+                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - 1;
+                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y+ 32 *5;
                         break;
                     case 1:
-                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
-                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5+1;
+                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 + 1;
+                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
                         break;
                 }
                 if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
@@ -214,10 +214,21 @@ namespace Miner
             }
             return false;
         }
+        public static bool is_we_on_top()
+        {
+            if (loaded_chunks[0][1] > -1)
+            {
+                if (Which(1920 / 2 - (32 * 5) / 2, 1080 / 2 - (32 * 5) / 2, loaded_chunks[0]) == 0)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
         private static void Walk_Sound(float deltatime)
         {
             sound_timer += deltatime;
-            if (sound_timer > 500)
+            if (sound_timer > 700)
             {
                 #region rnd switch
                 Random rnd = new Random();
@@ -627,7 +638,7 @@ namespace Miner
         {
             if (xy[0] == 0 && xy[1] == 0)
             {
-                if (i > 107)
+                if (i > 127)
                 {
                     int returns = (Randomies.randoms(3) + 2);
                     if (returns == 3)
@@ -916,14 +927,51 @@ namespace Miner
             {
                 if (tiles_x[(x_mod * width) + i] == x_1)
                 {
-                    if (tiles_mined[(x_mod * width) + i] > 1000)
+                    switch(tiles_t_c1[(x_mod*width) + i])
                     {
-                        Terrain.Change(x, y, 1, loaded_chunks[0]);
+                        case 2:
+                            if (tiles_mined[(x_mod * width) + i] > 700)
+                            {
+                                stonebreakfinish.Play();
+                                Terrain.Change(x, y, 1, loaded_chunks[0]);
+                            }
+                            else
+                            {
+                                tiles_mined[(x_mod * width) + i] += deltatime;
+                            }
+                            break;
+                        case int n when n == 3 || n == 5:
+                            if (tiles_mined[(x_mod * width) + i] > 1300)
+                            {
+                                if (Terrain.Which(x, y, loaded_chunks[0]) == 5)
+                                {
+                                    WorkShop.R1Cop++;
+                                }
+                                stonebreakfinish.Play();
+                                Terrain.Change(x, y, 1, loaded_chunks[0]);
+                            }
+                            else
+                            {
+                                tiles_mined[(x_mod * width) + i] += deltatime;
+                            }
+                            break;
+                        case int n when n == 4 || n == 6:
+                            if (tiles_mined[(x_mod * width) + i] > 1800)
+                            {
+                                if (Terrain.Which(x, y, loaded_chunks[0]) == 6)
+                                {
+                                    WorkShop.R3Tit++;
+                                }
+                                stonebreakfinish.Play();
+                                Terrain.Change(x, y, 1, loaded_chunks[0]);
+                            }
+                            else
+                            {
+                                tiles_mined[(x_mod * width) + i] += deltatime;
+                            }
+                            break;
                     }
-                    else
-                    {
-                        tiles_mined[(x_mod * width) + i] += deltatime;
-                    }
+                    
                 }
             }
         }
