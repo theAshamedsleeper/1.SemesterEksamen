@@ -30,6 +30,7 @@ namespace Miner
         public static bool sideCollision = false;
         public static bool downCollision = false;
         public static bool inAir = false;
+        public static bool passive = false;
 
         private SoundEffect engine_sound;
         private SoundEffectInstance engine_sound_inst;
@@ -110,14 +111,17 @@ namespace Miner
                     if (Terrain.player_collis(1, deltatime) == false)
                     {
 
+                        
                         sideCollision = false;
                         ofset_x--;
                         Terrain.Load_chunks(ofset_x, ofset_y);
+                        inAir = false;
                     }
                     else
                     {
                         sideCollision = true;
-                        inAir = false;
+                        inAir = true;
+                        
                     }
 
                 }
@@ -128,15 +132,18 @@ namespace Miner
                 {
                     if (Terrain.player_collis(0, deltatime) == false)
                     {
-
+                       
+                        inAir = false;
                         sideCollision = false;
                         ofset_x++;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
                     else
                     {
+
                         sideCollision = true;
-                        inAir = false;
+                        inAir = true;
+                        
                     }
 
                 }
@@ -148,14 +155,17 @@ namespace Miner
                     {
 
                         downCollision = false;
-                        inAir = true;
+                        
+                        inAir = false;
                         ofset_y--;
                         Terrain.Load_chunks(ofset_x, ofset_y);
-                    }
+                        
+    }
                     else
                     {
-                        inAir = false;
+                        inAir = true;
                         downCollision = true;
+                        
                     }
 
                 }
@@ -165,18 +175,35 @@ namespace Miner
                 {
                     if (Terrain.player_collis(2, deltatime) == false)
                     {
-
+                        
+                        inAir = false;
                         ofset_y += 2;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
+                    else
+                    {
+                        inAir = true;
+                       
 
+                    }
+
+
+                }
+
+                if (Terrain.player_collis(3, deltatime) == false)
+                {
+                    inAir = false;
+                }
+                else
+                {
+                    inAir = true;
                 }
 
                 Terrain.Move_Main_chunk(ofset_x, ofset_y);
             }
             else
             {
-                inAir = false;
+                
                 engine_sound_inst.Volume = 0.4f;
             }
 
@@ -204,6 +231,12 @@ namespace Miner
             {
                 toolList[i].Update(gameTime);
             }
+
+
+            
+
+
+
             base.Update(gameTime);
 
         }
