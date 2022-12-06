@@ -155,7 +155,7 @@ namespace Miner
             }
 
             // - DRIVING ANIMATION _ RIGHT -
-            else if (Keyboard.GetState().IsKeyDown(Keys.D))
+            else if (Keyboard.GetState().IsKeyDown(Keys.D) && GameWorld.inAir == true)
             {
                 drilling = false;
                 _spriteSheetTexture = _drivingTexture;
@@ -175,7 +175,7 @@ namespace Miner
             }
 
             // - DRIVING ANIMATION _ LEFT -
-            else if (Keyboard.GetState().IsKeyDown(Keys.A))
+            else if (Keyboard.GetState().IsKeyDown(Keys.A) && GameWorld.inAir == true)
             {
                 drilling = false;
                 _spriteSheetTexture = _drivingTexture;
