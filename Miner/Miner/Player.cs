@@ -8,12 +8,12 @@ namespace Miner
 {
     internal class Player : GameObjects
     {
-        private Texture2D spriteIdleTexture;
+
         private Texture2D _drivingTexture;
         private Texture2D _flyingTexture;
         private Texture2D _drillingSideTexture;
         private Texture2D _drillingDownTexture;
-        private int collition;
+
 
         //PLAYER CONSTRUCTOR
         public Player(Vector2 position)
@@ -33,7 +33,6 @@ namespace Miner
             _spriteIdleTexture = content.Load<Texture2D>(SPRITE_OVERLAY);
             _controlsFont = content.Load<SpriteFont>("File");
 
-
         }
 
         public override void Update(GameTime gameTime)
@@ -46,10 +45,14 @@ namespace Miner
             Animationerne tegnes i Gameobjects*/
 
 
+
+
+
+
             // - UNIVERSAL -
-                              /* (Universal har ikke 'else if', da disse spriteEffects skal påvirke alle aktioner. 
-                                  fx skal man kunne flippe spriten til venstre med A mens man flyver, 
-                                  uden at starte køre animationen. Af denne grund er det lavet for sig.) */
+            /* (Universal har ikke 'else if', da disse spriteEffects skal påvirke alle aktioner. 
+                fx skal man kunne flippe spriten til venstre med A mens man flyver, 
+                uden at starte køre animationen. Af denne grund er det lavet for sig.) */
             if (Keyboard.GetState().IsKeyDown(Keys.D))
             {
                 effect = SpriteEffects.None;
@@ -71,19 +74,46 @@ namespace Miner
 
                 if (frameTimer > 50)
                 {
+
                     frame = frame + 32;
                     frameTimer = 0;
+
+
                 }
-                
+
                 if (frame == 128)
                 {
                     frame = 0;
                 }
 
+
+            }
+
+            else if (Keyboard.GetState().IsKeyDown(Keys.S) && GameWorld.inAir == false)
+            {
+                drilling = true;
+                _spriteSheetTexture = _flyingTexture;
+                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+
+                if (frameTimer > 50)
+                {
+
+                    frame = frame - 32;
+                    frameTimer = 0;
+
+                }
+
+
+                if (frame < 0)
+                {
+                    frame = 96;
+                }
+
             }
 
             // - DRILLING ANIMATIONS _ SIDE -
-            else if (Keyboard.GetState().IsKeyDown(Keys.C)) //(Skal senere aktivere ved kollision i stedet)
+            else if (Keyboard.GetState().IsKeyDown(Keys.D) && GameWorld.sideCollision == true)
             {
                 drilling = true;
                 _spriteSheetTexture = _drillingSideTexture;
@@ -96,7 +126,27 @@ namespace Miner
                     frame = frame + 32;
                     frameTimer = 0;
                 }
-                
+
+                if (frame == 128)
+                {
+                    frame = 0;
+                }
+
+            }
+            else if (Keyboard.GetState().IsKeyDown(Keys.A) && GameWorld.sideCollision == true)
+            {
+                drilling = true;
+                _spriteSheetTexture = _drillingSideTexture;
+                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+
+
+                if (frameTimer > 50)
+                {
+                    frame = frame + 32;
+                    frameTimer = 0;
+                }
+
                 if (frame == 128)
                 {
                     frame = 0;
@@ -116,7 +166,7 @@ namespace Miner
                     frame = frame + 32;
                     frameTimer = 0;
                 }
-                
+
                 if (frame == 128)
                 {
                     frame = 0;
@@ -137,7 +187,7 @@ namespace Miner
                     frame = frame + 32;
                     frameTimer = 0;
                 }
-                
+
                 if (frame == 128)
                 {
                     frame = 0;
@@ -146,7 +196,7 @@ namespace Miner
             }
 
             // - DRILLING ANIMATION _ DOWN -
-            else if (Keyboard.GetState().IsKeyDown(Keys.S))
+            else if (Keyboard.GetState().IsKeyDown(Keys.S) && GameWorld.downCollision == true && GameWorld.inAir == true)
             {
                 drilling = true;
                 _spriteSheetTexture = _drillingDownTexture;
@@ -159,18 +209,28 @@ namespace Miner
                     frame = frame + 32;
                     frameTimer = 0;
                 }
-                
+
                 if (frame == 128)
                 {
                     frame = 0;
                 }
 
             }
-            else
+            else if (GameWorld.inAir == false)
+            {
+                _spriteSheetTexture = _flyingTexture;
+                drilling = true;
+
+            }
+            else if (GameWorld.inAir == true)
             {
                 _spriteSheetTexture = _drivingTexture;
-                drilling = false;
-                /*Ved at sætte den samme idle texture på, som er gemt i _drivingTexture, 
+                drilling = true;
+
+            }
+            #endregion
+
+            /*Ved at sætte den samme idle texture på, som er gemt i _drivingTexture, 
                 vil hjulene få den samme position som tidligere gemt, frem for at blive startet forfra.
                 Alle animationer bruger samme frame variabel og har alle samme mængde frames.
                 dvs at hvis man skifter fra fx at køre, til at flyve, til at borre, så er tandjulspositionerne
@@ -179,10 +239,6 @@ namespace Miner
                 som bliver tegnet ovenpå i GameObjects. Man får følelsen af at bilen faktisk bruger hjulene
                 til at komme fremad, og forbundne tandhjul til at borre, 
                 da de aldrig hopper fra deres givne position, mellem maskinens aktioner.*/
-            }
-            #endregion
-
-
 
         }
 
