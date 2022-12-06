@@ -7,7 +7,7 @@ namespace Miner.UiForInv
 {
     internal class CraftButton : WorkShop
     {
-
+        private MouseState mouse;
 
         public override void LoadContent(ContentManager content)
         {
@@ -17,6 +17,14 @@ namespace Miner.UiForInv
         }
 
         public override void Update(GameTime gameTime)
+        {
+
+        }
+        public static void DrawCrafting(SpriteBatch spriteBatch)
+        {
+
+        }
+        private void CraftingTab(GameTime gameTime)
         {
 
         }

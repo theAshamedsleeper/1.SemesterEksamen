@@ -21,13 +21,9 @@ namespace Miner
         protected int frame = 0;
         protected float frameTimer = 0f;
         protected float idletimer = 0f;
-        protected Vector2 positionx = new Vector2(100, 10);
         protected SpriteEffects effect = SpriteEffects.None;
         protected float speed = 200f;
         public Vector2 position = new Vector2(10, 10);
-
-
-
 
         protected const string SPRITESHEET_DRIVING = "DrillMoving9Spritesheet";
         protected const string SPRITESHEET_DIGGING_SIDE = "DrillDiggingSide6Spritesheet";
@@ -36,6 +32,7 @@ namespace Miner
         protected const string SPRITE_OVERLAY = "DrillIdleBub3";
         
 
+        
         protected Texture2D _spriteSheetTexture;
         protected Texture2D _spriteIdleTexture;
         public SpriteFont _controlsFont;
@@ -70,15 +67,14 @@ namespace Miner
                 {
                     spriteBatch.Draw(_spriteIdleTexture, position, new Rectangle(0, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5f, effect, 1f);
                 }
-                
-                
-                
 
             }
             if (idletimer > 1000)
             {
                 idletimer = 0;
             }
+
+
 
 
             spriteBatch.DrawString(_controlsFont,

@@ -1,16 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using SharpDX.WIC;
-using System;
 
 namespace Miner.UiForInv
 {
     internal class UpgradeButton : WorkShop
     {
         private MouseState mouse;
-        private float closeDownShopTimer;
+        /// <summary>
+        /// Loads in all the different spirtes, location and sizes.
+        /// </summary>
+        /// <param name="content"></param>
         public override void LoadContent(ContentManager content)
         {
             #region Tabs
@@ -123,21 +125,30 @@ namespace Miner.UiForInv
             uiRectangles[36] = new Rectangle(465, 550, 200, 300);//Third Line
             upgradeInfo[11] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/40PBetterSolarPanel");
 
-            uiRectangles[38] = new Rectangle(465,550,200,300);//Last Upgrade Info
+            uiRectangles[38] = new Rectangle(465, 550, 200, 300);//Last Upgrade Info
             upgradeInfo[12] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/RougeAiUpgradeInfo");
             //Upgrade Button
             uiRectangles[37] = new Rectangle(515, 900, 100, 50);//location for Upgrade  Button
             spritePlacer[26] = content.Load<Texture2D>("Ui Sprites/UpgradeInfo/UpgradeButton");
             #endregion
+            menuSound = content.Load<SoundEffect>("Sound/Menu Selection Click");
         }
-
+        /// <summary>
+        /// Calls another method, and makes you able to use the mouse.
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Update(GameTime gameTime)
         {
-            mouse = Mouse.GetState();
+            mouse = Mouse.GetState();//So you can click around with the mouse.
 
             UpgradeTab(gameTime);
 
         }
+        /// <summary>
+        /// Draws each upgrade in, and if certain conditions are meet it changes the look of the upgrade.
+        /// Draws in each resource with the amount you have.
+        /// </summary>
+        /// <param name="spriteBatch"></param>
         public static void DrawUpgrade(SpriteBatch spriteBatch)
         {
             if (isUpgradesClicked == true)
@@ -410,6 +421,13 @@ namespace Miner.UiForInv
                 #endregion
             }
         }
+        /// <summary>
+        /// All functionality between the mouse and the upgrade boxes.
+        /// When you click on a upgrade icon you get another box with the information about that upgrade.
+        /// on that box is another which can be clicked on if you have the right amount of resources.
+        /// Its a swith case that controls which upgrade info you can see.
+        /// </summary>
+        /// <param name="gameTime"></param>
         private void UpgradeTab(GameTime gameTime)
         {
             #region switch tabs
@@ -527,6 +545,7 @@ namespace Miner.UiForInv
                             Upgraded[0] = true;
                             R4Plat -= 5;
                             R2Mili -= 10;
+                            menuSound.Play();
                         }
                         break;
                     case 2://Upgrade DrilBit 20% faster
@@ -535,6 +554,7 @@ namespace Miner.UiForInv
                             Upgraded[1] = true;
                             R2Mili -= 20;
                             R4Plat -= 10;
+                            menuSound.Play();
                         }
                         break;
                     case 3://Upgrade DrilBit 30% faster
@@ -543,6 +563,7 @@ namespace Miner.UiForInv
                             Upgraded[2] = true;
                             R2Mili -= 30;
                             R4Plat -= 20;
+                            menuSound.Play();
                         }
                         break;
                     case 4://Upgrade DrilBit 40% faster
@@ -551,15 +572,17 @@ namespace Miner.UiForInv
                             Upgraded[3] = true;
                             R2Mili -= 40;
                             R4Plat -= 30;
+                            menuSound.Play();
                         }
                         break;
                     //Second Line
                     case 5://Upgrade Battery Storage 10% more
-                        if (Upgraded[4] == false && R3Tit>=10 && R5Uran >= 5)
+                        if (Upgraded[4] == false && R3Tit >= 10 && R5Uran >= 5)
                         {
                             Upgraded[4] = true;
                             R3Tit -= 10;
                             R5Uran -= 5;
+                            menuSound.Play();
                         }
                         break;
                     case 6://Upgrade Battery Storage 20% more
@@ -568,6 +591,7 @@ namespace Miner.UiForInv
                             Upgraded[5] = true;
                             R3Tit -= 20;
                             R5Uran -= 10;
+                            menuSound.Play();
                         }
                         break;
                     case 7://Upgrade Battery Storage 30% more
@@ -576,6 +600,7 @@ namespace Miner.UiForInv
                             Upgraded[6] = true;
                             R3Tit -= 30;
                             R5Uran -= 20;
+                            menuSound.Play();
                         }
                         break;
                     case 8://Upgrade Battery Storage 40% more
@@ -584,6 +609,7 @@ namespace Miner.UiForInv
                             Upgraded[7] = true;
                             R3Tit -= 40;
                             R5Uran -= 30;
+                            menuSound.Play();
                         }
                         break;
                     //Third Line
@@ -593,6 +619,7 @@ namespace Miner.UiForInv
                             Upgraded[8] = true;
                             R1Cop -= 10;
                             R3Tit -= 5;
+                            menuSound.Play();
                         }
                         break;
                     case 10://Upgrade battery recharge speed 20% faster
@@ -601,6 +628,7 @@ namespace Miner.UiForInv
                             Upgraded[9] = true;
                             R1Cop -= 20;
                             R3Tit -= 10;
+                            menuSound.Play();
                         }
                         break;
                     case 11://Upgrade battery recharge speed 30% faster
@@ -609,6 +637,7 @@ namespace Miner.UiForInv
                             Upgraded[10] = true;
                             R1Cop -= 30;
                             R3Tit -= 20;
+                            menuSound.Play();
                         }
                         break;
                     case 12://Upgrade battery recharge speed 40% faster
@@ -617,11 +646,12 @@ namespace Miner.UiForInv
                             Upgraded[11] = true;
                             R1Cop -= 40;
                             R3Tit -= 30;
+                            menuSound.Play();
                         }
                         break;
                     //Last Upgrade
                     case 13://checks that all the last upgrades have been made and you have the resource needed.
-                        if (Upgraded[7] == false && Upgraded[11] == true && Upgraded[6] == true && Upgraded[3] == true 
+                        if (Upgraded[7] == false && Upgraded[11] == true && Upgraded[6] == true && Upgraded[3] == true
                             && R1Cop >= 50 && R3Tit >= 50 && R4Plat >= 50 && R5Uran >= 50)
                         {
                             Upgraded[7] = true;
@@ -629,6 +659,7 @@ namespace Miner.UiForInv
                             R3Tit -= 50;
                             R4Plat -= 50;
                             R5Uran -= 50;
+                            menuSound.Play();
                         }
                         Upgraded[12] = true;
                         break;

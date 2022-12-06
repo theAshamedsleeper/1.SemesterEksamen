@@ -1,12 +1,18 @@
 ﻿using Microsoft.VisualBasic.ApplicationServices;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 namespace Miner
 {
@@ -32,7 +38,14 @@ namespace Miner
         static Random rnd = new Random();
         private static int[] current_chunk = new int[width * height];
         private static List<int[]> loaded_chunks = new List<int[]>();
+        private static float[] tiles_mined = new float[width * height];
         private static byte switch_off = 0;
+        private static SoundEffect stonebreak_1;
+        private static SoundEffect stonebreak_2;
+        private static SoundEffect stonebreak_3;
+        private static SoundEffect stonebreak_4;
+        private static SoundEffect stonebreakfinish;
+        private static float sound_timer = 0;
         public static float t_scale { get { return scale; } }
         #region terrain making
         /// <summary>
@@ -42,11 +55,10 @@ namespace Miner
         /// this way we will be able to pin point a location, 
         /// we believe this will be more effective than an object for each tile.
         /// </summary>
-        public static void Give_Terrain()
+        public static void Give_Terrain(ContentManager content)
         {
             for (int i_2 = 0; i_2 < width * height; i_2++)
             {
-
                 tiles_x[i_2] = x_1;
                 tiles_y[i_2] = y_1;
                 // updating the coordinates
@@ -59,6 +71,173 @@ namespace Miner
                 {
                     x_1 += 1;
                 }
+            }
+            stonebreak_1 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak1");
+            stonebreak_2 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak2");
+            stonebreak_3 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak3");
+            stonebreak_4 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak4");
+            stonebreakfinish = content.Load<SoundEffect>("Sound/Rocks/StoneBreakfinish");
+        }
+        #endregion
+        #region stuff
+        public static bool player_collis(int side, float deltatime)
+        {
+            float pos_x = 0;
+            float pos_y = 0;
+            // 0 + amount;
+            int amount_of_air_tiles = 1;
+            switch (side)
+            {
+                case 0:
+                    #region left
+                    for (int j = 0; j < 2; j++)
+                    {
+                        switch (j)
+                        {
+                            case 0:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y;
+                                break;
+                            case 1:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
+                                break;
+                        }
+                        if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
+                        {
+                            mining_updater(pos_x, pos_y, deltatime, 0);
+                            Walk_Sound(deltatime);
+                            return true;
+                        }
+                    }
+                    #endregion
+                    break;
+                case 1:
+                    #region right
+                    for (int h = 0; h < 2; h++)
+                    {
+                        switch (h)
+                        {
+                            case 0:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y;
+                                break;
+                            case 1:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
+                                break;
+                        }
+                        if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
+                        {
+                            mining_updater(pos_x, pos_y, deltatime, 1);
+                            Walk_Sound(deltatime);
+                            return true;
+                        }
+                    }
+                    #endregion
+                    break;
+                case 2:
+                    #region up
+                    for (int p = 0; p < 2; p++)
+                    {
+                        switch (p)
+                        {
+                            case 0:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y;
+                                break;
+                            case 1:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y;
+                                break;
+                        }
+                        if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
+                        {
+                            mining_updater(pos_x, pos_y, deltatime, 2);
+                            Walk_Sound(deltatime);
+                            return true;
+                        }
+                    }
+                    #endregion
+                    break;
+                case 3:
+                    #region down
+                    for (int l = 0; l < 2; l++)
+                    {
+                        switch (l)
+                        {
+                            case 0:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
+                                break;
+                            case 1:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
+                                break;
+                        }
+                        if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
+                        {
+                            mining_updater(pos_x, pos_y, deltatime, 3);
+                            Walk_Sound(deltatime);
+                            return true;
+                        }
+                    }
+                    #endregion
+                    break;
+            }
+
+            return false;
+        }
+        public static bool player_collis_gravity()
+        {
+            float pos_x = 0;
+            float pos_y = 0;
+            // 0 + amount;
+            int amount_of_air_tiles = 1;
+            for (int p = 0; p < 2; p++)
+            {
+                switch (p)
+                {
+                    case 0:
+                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
+                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y+ 32 *5+1;
+                        break;
+                    case 1:
+                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
+                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5+1;
+                        break;
+                }
+                if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        private static void Walk_Sound(float deltatime)
+        {
+            sound_timer += deltatime;
+            if (sound_timer > 500)
+            {
+                #region rnd switch
+                Random rnd = new Random();
+                switch (rnd.Next(4) + 1)
+                {
+                    case 1:
+                        stonebreak_1.Play();
+                        break;
+                    case 2:
+                        stonebreak_2.Play();
+                        break;
+                    case 3:
+                        stonebreak_3.Play();
+                        break;
+                    case 4:
+                        stonebreak_4.Play();
+                        break;
+                }
+                #endregion
+                sound_timer -= 500;
             }
         }
         #endregion
@@ -94,6 +273,70 @@ namespace Miner
                     break;
             }
             sorter_new(direction);
+        }
+        public static void Move_Main_chunk(int x_1, int y_1)
+        {
+            int _width = 5120;
+            int _height = 2880;
+            // make a adding for strait and not strait, this can not add 2 chunks
+            int[] direction = new int[2];
+            if (x_1 < -(_width - (1920 / 2 - (32 * 5) / 2)) - loaded_chunks[0][0] * 5120)
+            {
+                direction[0] = 1;
+                direction[1] = 0;
+                // change new main chunk
+            }
+            if (x_1 - (1920 / 2 - (32 * 5) / 2) + loaded_chunks[0][0] * 5120 > 0)
+            {
+                direction[0] = -1;
+                direction[1] = 0;
+                // change new main chunk
+            }
+            if (y_1 > _height - (1080 / 2 - (32 * 5) / 2) + loaded_chunks[0][1] * 2880)
+            {
+                direction[0] = 0;
+                direction[1] = 1;
+                // change new main chunk
+            }
+            if (y_1 < -(_height - (1080 / 2 - (32 * 5) / 2)) + loaded_chunks[0][1] * 2880)
+            {
+                direction[0] = 0;
+                direction[1] = -1;
+                // change new main chunk
+            }
+            if (direction[0] != 0 || direction[1] != 0)
+            {
+                sort_chunk_moving(direction, x_1, y_1);
+            }
+        }
+        #endregion
+        #region sorting
+        private static void Get_tiles(int[] pos, int tile)
+        {
+            int[] tiles = new int[width * height];
+            if (chunk_check_file(pos))
+            {
+                tiles = Chunk_Read(pos);
+            }
+            else
+            {
+                tiles = Chunk_maker(pos);
+            }
+            switch (tile)
+            {
+                case 1:
+                    tiles_t_c1 = tiles;
+                    break;
+                case 2:
+                    tiles_t_c2 = tiles;
+                    break;
+                case 3:
+                    tiles_t_c3 = tiles;
+                    break;
+                case 4:
+                    tiles_t_c4 = tiles;
+                    break;
+            }
         }
         public static void sorter_new(int[] new_one)
         {
@@ -230,9 +473,9 @@ namespace Miner
                         {
                             loaded_chunks.RemoveAt(i);
                         }
-                        loaded_chunks.Add(new_one);
                         new_one[0] += loaded_chunks[0][0];
                         new_one[1] += loaded_chunks[0][1];
+                        loaded_chunks.Add(new_one);
                         Get_tiles(new_one, 2);
                         tiles_t_c3 = tiles_empty;
                         tiles_t_c4 = tiles_empty;
@@ -248,9 +491,9 @@ namespace Miner
                         {
                             loaded_chunks.RemoveAt(i);
                         }
-                        loaded_chunks.Add(new_one);
                         new_one[0] += loaded_chunks[0][0];
                         new_one[1] += loaded_chunks[0][1];
+                        loaded_chunks.Add(new_one);
                         Get_tiles(new_one, 2);
                         tiles_t_c3 = tiles_empty;
                         tiles_t_c4 = tiles_empty;
@@ -266,9 +509,9 @@ namespace Miner
                         {
                             loaded_chunks.RemoveAt(i);
                         }
-                        loaded_chunks.Add(new_one);
                         new_one[0] += loaded_chunks[0][0];
                         new_one[1] += loaded_chunks[0][1];
+                        loaded_chunks.Add(new_one);
                         Get_tiles(new_one, 2);
                         tiles_t_c3 = tiles_empty;
                         tiles_t_c4 = tiles_empty;
@@ -284,9 +527,9 @@ namespace Miner
                         {
                             loaded_chunks.RemoveAt(i);
                         }
-                        loaded_chunks.Add(new_one);
                         new_one[0] += loaded_chunks[0][0];
                         new_one[1] += loaded_chunks[0][1];
+                        loaded_chunks.Add(new_one);
                         Get_tiles(new_one, 2);
                         tiles_t_c3 = tiles_empty;
                         tiles_t_c4 = tiles_empty;
@@ -296,144 +539,60 @@ namespace Miner
                     break;
             }
         }
-        public static void Move_Main_chunk(int x_1, int y_1, int _width, int _height)
-        {
-            // make a adding for strait and not strait, this can not add 2 chunks
-            int[] direction = new int[2];
-            if (x_1 > _width)
-            {
-                direction[0] = 1;
-                direction[1] = 0;
-                // change new main chunk
-            }
-            if (x_1 < 0)
-            {
-                direction[0] = -1;
-                direction[1] = 0;
-                // change new main chunk
-            }
-            if (y_1 > _height)
-            {
-                direction[0] = 0;
-                direction[1] = 1;
-                // change new main chunk
-            }
-            if (y_1 < 0)
-            {
-                direction[0] = 0;
-                direction[1] = -1;
-                // change new main chunk
-            }
-            if (direction[0] != 0 || direction[1] != 0)
-            {
-                sort_chunk_moving(direction);
-            }
-        }
-        #endregion
-        #region sorting
-        private static void Get_tiles(int[] pos, int tile)
-        {
-            int[] tiles = new int[width * height];
-            if (chunk_check_file(pos))
-            {
-                if (pos[0] == 1 && pos[1] == 0)
-                {
-                    int hey = 0;
-                }
-                tiles = Chunk_Read(pos);
-            }
-            else
-            {
-                tiles = Chunk_maker(pos);
-            }
-            switch (tile)
-            {
-                case 1:
-                    tiles_t_c1 = tiles;
-                    break;
-                case 2:
-                    tiles_t_c2 = tiles;
-                    break;
-                case 3:
-                    tiles_t_c3 = tiles;
-                    break;
-                case 4:
-                    tiles_t_c4 = tiles;
-                    break;
-            }
-        }
-        private static void sort_chunk_moving(int[] new_one)
+        private static void sort_chunk_moving(int[] new_one, int x_1, int y_1)
         {
             switch (new_one)
             {
                 case int[] n when n[0] == 1 && n[1] == 0:
-                    #region 5
-                    int[] chunk_0 = new int[2];
-                    for (int i = loaded_chunks.Count; i > 0; i--)
-                    {
-                        loaded_chunks.RemoveAt(i);
-                    }
-                    loaded_chunks.Add(new_one);
+                    #region right
                     new_one[0] += loaded_chunks[0][0];
                     new_one[1] += loaded_chunks[0][1];
-                    Get_tiles(new_one, 2);
-                    tiles_t_c3 = tiles_empty;
-                    tiles_t_c4 = tiles_empty;
-                    switch_off = 5;
+                    for (int i = loaded_chunks.Count; i > 0; i--)
+                    {
+                        loaded_chunks.RemoveAt(i - 1);
+                    }
+                    loaded_chunks.Add(new_one);
+                    Get_tiles(new_one, 0);
+                    Load_chunks(x_1, y_1);
                     #endregion
                     break;
                 case int[] n when n[0] == -1 && n[1] == 0:
-                    #region 4
-                    if (switch_off != 4)
+                    #region left
+                    new_one[0] += loaded_chunks[0][0];
+                    new_one[1] += loaded_chunks[0][1];
+                    for (int i = loaded_chunks.Count; i > 0; i--)
                     {
-                        for (int i = loaded_chunks.Count - 1; i > 0; i--)
-                        {
-                            loaded_chunks.RemoveAt(i);
-                        }
-                        loaded_chunks.Add(new_one);
-                        new_one[0] += loaded_chunks[0][0];
-                        new_one[1] += loaded_chunks[0][1];
-                        Get_tiles(new_one, 2);
-                        tiles_t_c3 = tiles_empty;
-                        tiles_t_c4 = tiles_empty;
-                        switch_off = 4;
+                        loaded_chunks.RemoveAt(i - 1);
                     }
+                    loaded_chunks.Add(new_one);
+                    Get_tiles(new_one, 0);
+                    Load_chunks(x_1, y_1);
                     #endregion
                     break;
                 case int[] n when n[0] == 0 && n[1] == 1:
-                    #region 2
-                    if (switch_off != 2)
+                    #region up
+                    new_one[0] += loaded_chunks[0][0];
+                    new_one[1] += loaded_chunks[0][1];
+                    for (int i = loaded_chunks.Count; i > 0; i--)
                     {
-                        for (int i = loaded_chunks.Count - 1; i > 0; i--)
-                        {
-                            loaded_chunks.RemoveAt(i);
-                        }
-                        loaded_chunks.Add(new_one);
-                        new_one[0] += loaded_chunks[0][0];
-                        new_one[1] += loaded_chunks[0][1];
-                        Get_tiles(new_one, 2);
-                        tiles_t_c3 = tiles_empty;
-                        tiles_t_c4 = tiles_empty;
-                        switch_off = 2;
+                        loaded_chunks.RemoveAt(i - 1);
                     }
+                    loaded_chunks.Add(new_one);
+                    Get_tiles(new_one, 0);
+                    Load_chunks(x_1, y_1);
                     #endregion
                     break;
                 case int[] n when n[0] == 0 && n[1] == -1:
-                    #region 8
-                    if (switch_off != 8)
+                    #region down
+                    new_one[0] += loaded_chunks[0][0];
+                    new_one[1] += loaded_chunks[0][1];
+                    for (int i = loaded_chunks.Count; i > 0; i--)
                     {
-                        for (int i = loaded_chunks.Count - 1; i > 0; i--)
-                        {
-                            loaded_chunks.RemoveAt(i);
-                        }
-                        loaded_chunks.Add(new_one);
-                        new_one[0] += loaded_chunks[0][0];
-                        new_one[1] += loaded_chunks[0][1];
-                        Get_tiles(new_one, 2);
-                        tiles_t_c3 = tiles_empty;
-                        tiles_t_c4 = tiles_empty;
-                        switch_off = 8;
+                        loaded_chunks.RemoveAt(i - 1);
                     }
+                    loaded_chunks.Add(new_one);
+                    Get_tiles(new_one, 0);
+                    Load_chunks(x_1, y_1);
                     #endregion
                     break;
             }
@@ -468,7 +627,26 @@ namespace Miner
         {
             if (xy[0] == 0 && xy[1] == 0)
             {
-                return Randomies.randoms(2);
+                if (i > 107)
+                {
+                    int returns = (Randomies.randoms(3) + 2);
+                    if (returns == 3)
+                    {
+                        if (Randomies.randoms(5) == 0)
+                        {
+                            returns = 5;
+                        }
+                    }
+                    if (returns == 4)
+                    {
+                        if (Randomies.randoms(5) == 0)
+                        {
+                            returns = 6;
+                        }
+                    }
+                    return returns;
+                }
+                return 0;
             }
             switch (xy[1])
             {
@@ -616,50 +794,48 @@ namespace Miner
         {
             // x modification
             int x_mod = 0;
-            if (0 <= z && z <= terrain_amount)
+
+            // scaling the input into usable data
+            //float y_1 = (((y / scale) - ((y / scale) % 32f)) / 32f);
+            //float x_1 = (((x / scale) - ((x / scale) % 32f)) / 32f);
+            float y_1 = (((y / 5) - ((y / 5) % 32f)) / 32f);
+            float x_1 = (((x / 5) - ((x / 5) % 32f)) / 32f);
+            // checks the y array for the location.
+            for (int i = 0; i < height; i++)
             {
-                // scaling the input into usable data
-                //float y_1 = (((y / scale) - ((y / scale) % 32f)) / 32f);
-                //float x_1 = (((x / scale) - ((x / scale) % 32f)) / 32f);
-                float y_1 = (((y / 5) - ((y / 5) % 32f)) / 32f);
-                float x_1 = (((x / 5) - ((x / 5) % 32f)) / 32f);
-                // checks the y array for the location.
-                for (int i = 0; i < height; i++)
+                if (tiles_y[i * width] == y_1)
                 {
-                    if (tiles_y[i * width] == y_1)
-                    {
-                        x_mod = i;
-                    }
+                    x_mod = i;
                 }
-                // checks the x array for location
-                for (int i = 0; i < width; i++)
+            }
+            // checks the x array for location
+            for (int i = 0; i < width; i++)
+            {
+                if (tiles_x[(x_mod * width) + i] == x_1)
                 {
-                    if (tiles_x[(x_mod * width) + i] == x_1)
+                    for (int k = 0; k < loaded_chunks.Count; k++)
                     {
-                        for (int k = 0; k < loaded_chunks.Count; k++)
+                        if (loaded_chunks[k][0] == chunk[0] && loaded_chunks[k][1] == chunk[1])
                         {
-                            if (loaded_chunks[k][0] == chunk[0] && loaded_chunks[k][1] == chunk[1])
+                            // we have x and y, now we know how far down the array we gotta go for the terrain, then we change it.
+                            switch (k)
                             {
-                                // we have x and y, now we know how far down the array we gotta go for the terrain, then we change it.
-                                switch (k)
-                                {
-                                    case 0:
-                                        tiles_t_c1[(x_mod * width) + i] = z;
-                                        chunk_writer(tiles_t_c1, chunk);
-                                        break;
-                                    case 1:
-                                        tiles_t_c2[(x_mod * width) + i] = z;
-                                        chunk_writer(tiles_t_c2, chunk);
-                                        break;
-                                    case 2:
-                                        tiles_t_c3[(x_mod * width) + i] = z;
-                                        chunk_writer(tiles_t_c3, chunk);
-                                        break;
-                                    case 3:
-                                        tiles_t_c4[(x_mod * width) + i] = z;
-                                        chunk_writer(tiles_t_c4, chunk);
-                                        break;
-                                }
+                                case 0:
+                                    tiles_t_c1[(x_mod * width) + i] = z;
+                                    chunk_writer(tiles_t_c1, chunk);
+                                    break;
+                                case 1:
+                                    tiles_t_c2[(x_mod * width) + i] = z;
+                                    chunk_writer(tiles_t_c2, chunk);
+                                    break;
+                                case 2:
+                                    tiles_t_c3[(x_mod * width) + i] = z;
+                                    chunk_writer(tiles_t_c3, chunk);
+                                    break;
+                                case 3:
+                                    tiles_t_c4[(x_mod * width) + i] = z;
+                                    chunk_writer(tiles_t_c4, chunk);
+                                    break;
                             }
                         }
                     }
@@ -715,6 +891,41 @@ namespace Miner
                 }
             }
             return 0;
+        }
+        #endregion
+        #region mining
+        public static void mining_updater(float x, float y, float deltatime, int direction)
+        {
+            int x_mod = 0;
+
+            //x = x * (-1);
+            //y = y * (-1);
+            float y_1 = (((y) / 5) - ((y) / 5) % 32f) / 32f;
+            float x_1 = (((x) / 5) - ((x) / 5) % 32f) / 32f;
+
+            // checks the y array for the location.
+            for (int i = 0; i < height; i++)
+            {
+                if (tiles_y[i * width] == y_1)
+                {
+                    x_mod = i;
+                }
+            }
+            // checks the x array for location
+            for (int i = 0; i < width; i++)
+            {
+                if (tiles_x[(x_mod * width) + i] == x_1)
+                {
+                    if (tiles_mined[(x_mod * width) + i] > 1000)
+                    {
+                        Terrain.Change(x, y, 1, loaded_chunks[0]);
+                    }
+                    else
+                    {
+                        tiles_mined[(x_mod * width) + i] += deltatime;
+                    }
+                }
+            }
         }
         #endregion
     }
