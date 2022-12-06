@@ -45,7 +45,11 @@ namespace Miner
             Alle frames er 32 brede. 32, 64, 96, 128 = De fire frames. 
             Animationerne tegnes i Gameobjects*/
 
-            // - UNIVERSAL - 
+
+            // - UNIVERSAL -
+                              /* (Universal har ikke 'else if', da disse spriteEffects skal påvirke alle aktioner. 
+                                  fx skal man kunne flippe spriten til venstre med A mens man flyver, 
+                                  uden at starte køre animationen. Af denne grund er det lavet for sig.) */
             if (Keyboard.GetState().IsKeyDown(Keys.D))
             {
                 effect = SpriteEffects.None;
