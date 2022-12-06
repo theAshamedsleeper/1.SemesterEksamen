@@ -45,6 +45,17 @@ namespace Miner
             Alle frames er 32 brede. 32, 64, 96, 128 = De fire frames. 
             Animationerne tegnes i Gameobjects*/
 
+            // - UNIVERSAL - 
+            if (Keyboard.GetState().IsKeyDown(Keys.D))
+            {
+                effect = SpriteEffects.None;
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.A))
+            {
+                effect = SpriteEffects.FlipHorizontally;
+            }
+
 
             // - FLYING ANIMATIONS -
             if (Keyboard.GetState().IsKeyDown(Keys.W))
@@ -94,7 +105,6 @@ namespace Miner
             {
                 drilling = false;
                 _spriteSheetTexture = _drivingTexture;
-                effect = SpriteEffects.None;
                 frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
                 if (frameTimer > 50)
@@ -115,7 +125,6 @@ namespace Miner
             {
                 drilling = false;
                 _spriteSheetTexture = _drivingTexture;
-                effect = SpriteEffects.FlipHorizontally;
                 frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
 

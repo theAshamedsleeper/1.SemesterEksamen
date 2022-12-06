@@ -594,3 +594,19 @@ C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Mine
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreakfinish.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_Batterholder.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_batteryPower.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak1.wma
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak2.wma
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak3.wma
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak4.wma
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreakfinish.wma
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\ArtefactBlock.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Kobber.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\output-onlinepngtools (1).xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Titanium.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\UraniumNew.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\motorcycle-idle-01.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak1.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak2.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak3.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak4.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreakfinish.xnb
