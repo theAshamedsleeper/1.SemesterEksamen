@@ -331,17 +331,12 @@ C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Mine
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PDrill.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PDrill.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PDrill.xnb
-C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Deep Rock.xnb
-C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Dirt.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingDown3Spritesheet.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingSide6Spritesheet.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlying6Spritesheet.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillIdleBub3.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillMoving9Spritesheet.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\File.xnb
-C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Gold.xnb
-C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Rock.xnb
-C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Rocky dirt.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BarDivider.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\CraftingButton.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\ArtifactsFontT.xnb
@@ -577,3 +572,25 @@ C:\Users\Thorbjørn\Desktop\1.SemesterEksamen-main\Miner\Miner\bin\Debug\net6.0-
 C:\Users\Thorbjørn\Desktop\1.SemesterEksamen-main\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Titanium.xnb
 C:\Users\Thorbjørn\Desktop\1.SemesterEksamen-main\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\UraniumNew.xnb
 C:\Users\Thorbjørn\Desktop\1.SemesterEksamen-main\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\motorcycle-idle-01.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\BatterySpritesheet2.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak1.wma
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak2.wma
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak3.wma
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak4.wma
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreakfinish.wma
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\ArtefactBlock.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Kobber.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\output-onlinepngtools (1).xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\RockyDrit.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Stone.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Titanium.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\UraniumNew.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Menu Selection Click.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\motorcycle-idle-01.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak1.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak2.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak3.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak4.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreakfinish.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_Batterholder.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_batteryPower.xnb

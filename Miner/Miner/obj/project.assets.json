@@ -7532,19 +7532,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Thorbjørn\\.nuget\\packages\\": {}
+    "C:\\Users\\thorb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thorbjørn\\Desktop\\1.SemesterEksamen-main\\Miner\\Miner\\Miner.csproj",
+      "projectUniqueName": "C:\\Users\\thorb\\OneDrive\\Dokumenter\\GitHub\\2Uger pro\\1.SemesterEksamen\\Miner\\Miner\\Miner.csproj",
       "projectName": "Miner",
-      "projectPath": "C:\\Users\\Thorbjørn\\Desktop\\1.SemesterEksamen-main\\Miner\\Miner\\Miner.csproj",
-      "packagesPath": "C:\\Users\\Thorbjørn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thorbjørn\\Desktop\\1.SemesterEksamen-main\\Miner\\Miner\\obj\\",
+      "projectPath": "C:\\Users\\thorb\\OneDrive\\Dokumenter\\GitHub\\2Uger pro\\1.SemesterEksamen\\Miner\\Miner\\Miner.csproj",
+      "packagesPath": "C:\\Users\\thorb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thorb\\OneDrive\\Dokumenter\\GitHub\\2Uger pro\\1.SemesterEksamen\\Miner\\Miner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Thorbjørn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thorb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7598,7 +7598,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
