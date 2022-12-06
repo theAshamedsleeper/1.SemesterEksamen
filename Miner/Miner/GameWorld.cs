@@ -98,6 +98,18 @@ namespace Miner
                 Exit();
             #region input
             float deltatime = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+            if (Terrain.player_collis(3, deltatime) == false)
+            {
+                inAir = false;
+            }
+            else
+            {
+                inAir = true;
+            }
+
+            Terrain.Move_Main_chunk(ofset_x, ofset_y);
+
             if (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.W))
             {
                 if (engine_sound_inst.State == SoundState.Stopped)
@@ -115,12 +127,12 @@ namespace Miner
                         sideCollision = false;
                         ofset_x--;
                         Terrain.Load_chunks(ofset_x, ofset_y);
-                        inAir = false;
+                        
                     }
                     else
                     {
                         sideCollision = true;
-                        inAir = true;
+                        
                         
                     }
 
@@ -133,7 +145,7 @@ namespace Miner
                     if (Terrain.player_collis(0, deltatime) == false)
                     {
                        
-                        inAir = false;
+                        
                         sideCollision = false;
                         ofset_x++;
                         Terrain.Load_chunks(ofset_x, ofset_y);
@@ -142,7 +154,7 @@ namespace Miner
                     {
 
                         sideCollision = true;
-                        inAir = true;
+                        
                         
                     }
 
@@ -156,14 +168,14 @@ namespace Miner
 
                         downCollision = false;
                         
-                        inAir = false;
+                        
                         ofset_y--;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                         
     }
                     else
                     {
-                        inAir = true;
+                        
                         downCollision = true;
                         
                     }
@@ -176,30 +188,15 @@ namespace Miner
                     if (Terrain.player_collis(2, deltatime) == false)
                     {
                         
-                        inAir = false;
+                        
                         ofset_y += 2;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
-                    else
-                    {
-                        inAir = true;
-                       
-
-                    }
-
+                    
 
                 }
 
-                if (Terrain.player_collis(3, deltatime) == false)
-                {
-                    inAir = false;
-                }
-                else
-                {
-                    inAir = true;
-                }
-
-                Terrain.Move_Main_chunk(ofset_x, ofset_y);
+                
             }
             else
             {

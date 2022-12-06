@@ -44,12 +44,8 @@ namespace Miner
             Alle frames er 32 brede. 32, 64, 96, 128 = De fire frames. 
             Animationerne tegnes i Gameobjects*/
 
-
-
-
-
-
-            // - UNIVERSAL -
+            #region - UNIVERSAL -
+            
             /* (Universal har ikke 'else if', da disse spriteEffects skal påvirke alle aktioner. 
                 fx skal man kunne flippe spriten til venstre med A mens man flyver, 
                 uden at starte køre animationen. Af denne grund er det lavet for sig.) */
@@ -63,8 +59,11 @@ namespace Miner
                 effect = SpriteEffects.FlipHorizontally;
             }
 
+            #endregion
 
-            // - FLYING ANIMATIONS -
+            #region - FLYING ANIMATIONS -
+
+            
             if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
                 drilling = true;
@@ -112,7 +111,11 @@ namespace Miner
 
             }
 
-            // - DRILLING ANIMATIONS _ SIDE -
+            #endregion
+
+            #region - DRILLING ANIMATIONS _ SIDE -
+            
+
             else if (Keyboard.GetState().IsKeyDown(Keys.D) && GameWorld.sideCollision == true)
             {
                 drilling = true;
@@ -153,8 +156,11 @@ namespace Miner
                 }
 
             }
+            #endregion
 
-            // - DRIVING ANIMATION _ RIGHT -
+            #region - DRIVING ANIMATIONS -
+
+            // - DRIVING ANIMATION -
             else if (Keyboard.GetState().IsKeyDown(Keys.D) && GameWorld.inAir == true)
             {
                 drilling = false;
@@ -174,7 +180,7 @@ namespace Miner
 
             }
 
-            // - DRIVING ANIMATION _ LEFT -
+           
             else if (Keyboard.GetState().IsKeyDown(Keys.A) && GameWorld.inAir == true)
             {
                 drilling = false;
@@ -194,8 +200,11 @@ namespace Miner
                 }
 
             }
+            #endregion
 
-            // - DRILLING ANIMATION _ DOWN -
+            #region - DRILLING ANIMATIONS _ DOWN -
+
+            
             else if (Keyboard.GetState().IsKeyDown(Keys.S) && GameWorld.downCollision == true && GameWorld.inAir == true)
             {
                 drilling = true;
@@ -216,29 +225,44 @@ namespace Miner
                 }
 
             }
+            #endregion
+
+            #region -IDLE ANIMATIONS -
+            else if (GameWorld.inAir == true)
+            {
+                _spriteSheetTexture = _drivingTexture;
+                drilling = false;
+
+            }
+
             else if (GameWorld.inAir == false)
             {
+                frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+
+                if (frameTimer > 100)
+                {
+                    frame = frame + 32;
+                    frameTimer = 0;
+                }
+
+                if (frame == 128)
+                {
+                    frame = 0;
+                }
+
+
                 _spriteSheetTexture = _flyingTexture;
                 drilling = true;
 
             }
-            else if (GameWorld.inAir == true)
-            {
-                _spriteSheetTexture = _drivingTexture;
-                drilling = true;
+            
 
-            }
+            
+            #endregion
             #endregion
 
-            /*Ved at sætte den samme idle texture på, som er gemt i _drivingTexture, 
-                vil hjulene få den samme position som tidligere gemt, frem for at blive startet forfra.
-                Alle animationer bruger samme frame variabel og har alle samme mængde frames.
-                dvs at hvis man skifter fra fx at køre, til at flyve, til at borre, så er tandjulspositionerne
-                gennemgående mellem dem alle. Alle har samme hjul position på samme frame.
-                Dette virker rigtig godt sammen med den usammenhængende idle animation,
-                som bliver tegnet ovenpå i GameObjects. Man får følelsen af at bilen faktisk bruger hjulene
-                til at komme fremad, og forbundne tandhjul til at borre, 
-                da de aldrig hopper fra deres givne position, mellem maskinens aktioner.*/
+            
 
         }
 
