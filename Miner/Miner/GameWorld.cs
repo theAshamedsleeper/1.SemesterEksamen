@@ -28,6 +28,7 @@ namespace Miner
         public static int ofset_x = 0;
         public static int ofset_y = 0;
         private int current_chunk = 0;
+        public static bool collisionBool = false;
 
 
         private SoundEffect engine_sound;
@@ -102,45 +103,66 @@ namespace Miner
                 {
                     engine_sound_inst.Play();
                    }
-                engine_sound_inst.Volume = 0.04f;
+                engine_sound_inst.Volume = 0.1f;
                 
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.D))
                 {
                     if (Terrain.player_collis(1, deltatime) == false)
                     {
+                        collisionBool = false;
                         ofset_x--;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
+                    else
+                    {
+                        collisionBool = true;
+                    }
                 }
+               
+
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.A))
                 {
                     if (Terrain.player_collis(0, deltatime) == false)
                     {
+                        collisionBool = false;
                         ofset_x++;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
+                    else
+                    {
+                        collisionBool = true;
+                    }
                 }
+               
+
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.S))
                 {
                     if (Terrain.player_collis(3, deltatime) == false)
                     {
+                        
                         ofset_y--;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
+                   
                 }
+               
+
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.W))
                 {
                     if (Terrain.player_collis(2, deltatime) == false)
                     {
+                        
                         ofset_y += 2;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
+                   
                 }
+              
                 Terrain.Move_Main_chunk(ofset_x, ofset_y);
             }
             else
             {
-                engine_sound_inst.Volume = 0.02f;
+                engine_sound_inst.Volume = 0.1f;
             }
             
             #endregion

@@ -8,12 +8,12 @@ namespace Miner
 {
     internal class Player : GameObjects
     {
-        private Texture2D spriteIdleTexture;
+        
         private Texture2D _drivingTexture;
         private Texture2D _flyingTexture;
         private Texture2D _drillingSideTexture;
         private Texture2D _drillingDownTexture;
-        private int collition;
+        
 
         //PLAYER CONSTRUCTOR
         public Player(Vector2 position)
@@ -32,7 +32,6 @@ namespace Miner
             _spriteSheetTexture = _drivingTexture;
             _spriteIdleTexture = content.Load<Texture2D>(SPRITE_OVERLAY);
             _controlsFont = content.Load<SpriteFont>("File");
-
 
         }
 
@@ -83,7 +82,7 @@ namespace Miner
             }
 
             // - DRILLING ANIMATIONS _ SIDE -
-            else if (Keyboard.GetState().IsKeyDown(Keys.C)) //(Skal senere aktivere ved kollision i stedet)
+            else if (GameWorld.collisionBool == true)
             {
                 drilling = true;
                 _spriteSheetTexture = _drillingSideTexture;
