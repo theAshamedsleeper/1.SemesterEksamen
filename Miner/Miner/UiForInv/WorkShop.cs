@@ -35,13 +35,13 @@ namespace Miner
         private static int r4Plat;
         private static int r5Uranium;
 
-        private bool isInvOpen = false;//to see if the inventory is open
+        private static bool isInvOpen = false;//to see if the inventory is open
         protected float closeDownShopTimer;//A timer to make sure you cant spame the invetory button.
         protected SoundEffect menuSound;//for playing the sound of moving around the inventory
         //A property so you can access the upgrade system from another class
         public static bool[] Upgraded { get { return upgraded; } set { upgraded = value; } }
-        //A property so you can open the inventory through another class
-        public bool IsInvOpen { get { return isInvOpen; } set { isInvOpen = value; } }
+        //A property so you can open the inventory through another sub class
+        public static bool IsInvOpen { get { return isInvOpen; } set { isInvOpen = value; } }
         //5 properties for each resource that can be accessed in anyother script
         public static int R1Cop { get { return r1Copper; } set { r1Copper = value; } }
         public static int R2Mili { get { return r2MilitaryScrap; } set { r2MilitaryScrap = value; } }
