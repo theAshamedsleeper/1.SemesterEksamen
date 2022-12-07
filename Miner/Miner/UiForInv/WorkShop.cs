@@ -42,7 +42,7 @@ namespace Miner
         public static bool[] Upgraded { get { return upgraded; } set { upgraded = value; } }
         //A property so you can open the inventory through another class
         public bool IsInvOpen { get { return isInvOpen; } set { isInvOpen = value; } }
-        //5 properties for each resource 
+        //5 properties for each resource that can be accessed in anyother script
         public static int R1Cop { get { return r1Copper; } set { r1Copper = value; } }
         public static int R2Mili { get { return r2MilitaryScrap; } set { r2MilitaryScrap = value; } }
         public static int R3Tit { get { return r3Titanium; } set { r3Titanium = value; } }
@@ -67,7 +67,7 @@ namespace Miner
         {
             if (isInvOpen == true)//handles the drawing and the 4 buttons at the top of the inventory
             {
-                //draws the button
+                //draws the button at the top of the inv
                 #region Buttons
                 //background
                 spriteBatch.Draw(spritePlacer[0],//what to draw
@@ -87,7 +87,7 @@ namespace Miner
                 }
                 else if (isCraftClicked == true)
                 {
-                    spriteBatch.Draw(spritePlacer[1], uiRectangles[0], Color.Black);
+                    spriteBatch.Draw(spritePlacer[1], uiRectangles[0], Color.Gray);
                 }
                 //second button
                 if (isUpgradesClicked == false)
@@ -97,7 +97,7 @@ namespace Miner
                 }
                 else if (isUpgradesClicked == true)
                 {
-                    spriteBatch.Draw(spritePlacer[2], uiRectangles[1], Color.Black);
+                    spriteBatch.Draw(spritePlacer[2], uiRectangles[1], Color.Gray);
                 }
                 //third button
                 if (isArtiClicked == false)
@@ -106,7 +106,7 @@ namespace Miner
                 }
                 else if (isArtiClicked == true)
                 {
-                    spriteBatch.Draw(spritePlacer[3], uiRectangles[2], Color.Black);
+                    spriteBatch.Draw(spritePlacer[3], uiRectangles[2], Color.Gray);
                 }
                 //fourth button
                 if (isStatsClicked == false)
@@ -115,18 +115,11 @@ namespace Miner
                 }
                 else if (isStatsClicked == true)
                 {
-                    spriteBatch.Draw(spritePlacer[4], uiRectangles[3], Color.Black);
+                    spriteBatch.Draw(spritePlacer[4], uiRectangles[3], Color.Gray);
 
                 }
                 //close button
                 spriteBatch.Draw(spritePlacer[5], uiRectangles[4], Color.White);
-                #endregion
-                //draws the text that goes on top of the buttons
-                #region Button Text
-                spriteBatch.DrawString(fontsTitle[0], "Craft", spritePlacerPos[1], Color.White, 0f, new Vector2(0, 0), 2f, SpriteEffects.None, 0f);
-                spriteBatch.DrawString(fontsTitle[1], "Upgrade", spritePlacerPos[2], Color.White, 0f, new Vector2(0, 0), 2f, SpriteEffects.None, 0f);
-                spriteBatch.DrawString(fontsTitle[2], "Artifacts", spritePlacerPos[3], Color.White, 0f, new Vector2(0, 0), 2f, SpriteEffects.None, 0f);
-                spriteBatch.DrawString(fontsTitle[3], "Stats", spritePlacerPos[4], Color.White, 0f, new Vector2(0, 0), 2f, SpriteEffects.None, 0f);
                 #endregion
                 //Switches between what is shown when a button is clicked.
                 if (isUpgradesClicked == true)

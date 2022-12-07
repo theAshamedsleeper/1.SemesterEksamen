@@ -255,20 +255,15 @@ D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Titanium.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Uranium.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradePlaceHolder.xnb
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Deep Rock.xnb
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Dirt.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingDown3Spritesheet.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingSide6Spritesheet.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlying6Spritesheet.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillIdleBub3.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillMoving9Spritesheet.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\File.xnb
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Gold.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\pixil-frame-0.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\pixil-frame-2.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\pixilart-drawing_1.xnb
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Rock.xnb
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Rocky dirt.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Uranium.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Miner.exe
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Miner.deps.json
@@ -626,3 +621,29 @@ C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Min
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak3.xnb
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak4.xnb
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreakfinish.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\BatterySpritesheet2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak1.wma
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak2.wma
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak3.wma
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak4.wma
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreakfinish.wma
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\ArtefactBlock.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Kobber.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\output-onlinepngtools (1).xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\RockyDrit.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Stone.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Titanium.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\UraniumNew.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Menu Selection Click.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\motorcycle-idle-01.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak1.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak3.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak4.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreakfinish.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_Batterholder.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_batteryPower.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleArtifacts.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleCraft.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleStats.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleUpgrade.xnb

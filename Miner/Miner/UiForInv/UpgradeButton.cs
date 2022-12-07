@@ -20,25 +20,21 @@ namespace Miner.UiForInv
             spritePlacer[0] = content.Load<Texture2D>("Ui Sprites/InventorybackGround");
             spritePlacerPos[0] = new Vector2(400, 400);
             //first button 
-            spritePlacer[1] = content.Load<Texture2D>("Ui Sprites/CraftingButton");
+            spritePlacer[1] = content.Load<Texture2D>("Ui Sprites/InvetoryTitleCraft");
             spritePlacerPos[1] = new Vector2(400, 400);
             uiRectangles[0] = new Rectangle(400, 400, 350, 100);
-            fontsTitle[0] = content.Load<SpriteFont>("Ui Sprites/Fonts/CraftFontT");
             //second button 
-            spritePlacer[2] = content.Load<Texture2D>("Ui Sprites/CraftingButton");
+            spritePlacer[2] = content.Load<Texture2D>("Ui Sprites/InvetoryTitleUpgrade");
             spritePlacerPos[2] = new Vector2(750, 400);
             uiRectangles[1] = new Rectangle(750, 400, 350, 100);
-            fontsTitle[1] = content.Load<SpriteFont>("Ui Sprites/Fonts/UpgradeFontT");
             //third button 
-            spritePlacer[3] = content.Load<Texture2D>("Ui Sprites/CraftingButton");
+            spritePlacer[3] = content.Load<Texture2D>("Ui Sprites/InvetoryTitleArtifacts");
             spritePlacerPos[3] = new Vector2(1100, 400);
             uiRectangles[2] = new Rectangle(1100, 400, 350, 100);
-            fontsTitle[2] = content.Load<SpriteFont>("Ui Sprites/Fonts/ArtifactsFontT");
             //fourth button 
-            spritePlacer[4] = content.Load<Texture2D>("Ui Sprites/CraftingButton");
+            spritePlacer[4] = content.Load<Texture2D>("Ui Sprites/InvetoryTitleStats");
             spritePlacerPos[4] = new Vector2(1450, 400);
             uiRectangles[3] = new Rectangle(1450, 400, 350, 100);
-            fontsTitle[3] = content.Load<SpriteFont>("Ui Sprites/Fonts/StatsFontT");
             //close ButtonUI
             spritePlacer[5] = content.Load<Texture2D>("Ui Sprites/Fonts/CloseUIButton");
             uiRectangles[4] = new Rectangle(1800, 400, 100, 100);
