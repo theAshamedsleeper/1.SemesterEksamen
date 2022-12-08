@@ -651,3 +651,4 @@ C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Mi
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleCraft.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleStats.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleUpgrade.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlyingDiggingSpritesheet.xnb

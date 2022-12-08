@@ -1,8 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using SharpDX;
 using Keyboard = Microsoft.Xna.Framework.Input.Keyboard;
 using Keys = Microsoft.Xna.Framework.Input.Keys;
+using Vector2 = Microsoft.Xna.Framework.Vector2;
 
 namespace Miner
 {
@@ -13,6 +15,7 @@ namespace Miner
         private Texture2D _flyingTexture;
         private Texture2D _drillingSideTexture;
         private Texture2D _drillingDownTexture;
+        private Texture2D _drillingUpTexture;
 
 
         //PLAYER CONSTRUCTOR
@@ -28,6 +31,7 @@ namespace Miner
             _flyingTexture = content.Load<Texture2D>(SPRITESHEET_FLYING);
             _drillingSideTexture = content.Load<Texture2D>(SPRITESHEET_DIGGING_SIDE);
             _drillingDownTexture = content.Load<Texture2D>(SPRITESHEET_DIGGING_DOWN);
+            _drillingUpTexture = content.Load<Texture2D>(SPRITESHEET_DIGGING_UP);
 
             _spriteSheetTexture = _drivingTexture;
             _spriteIdleTexture = content.Load<Texture2D>(SPRITE_OVERLAY);
@@ -61,13 +65,47 @@ namespace Miner
 
             #endregion
 
+            #region - DRILLING ANIMATIONS _ UP -
+
+
+            //else if (Keyboard.GetState().IsKeyDown(Keys.W) && GameWorld.upCollision == true)
+            //{
+            //    drilling = true;
+            //    _spriteSheetTexture = _drillingUpTexture;
+            //    frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+
+
+            //    if (frameTimer > 50)
+            //    {
+            //        frame = frame + 32;
+            //        frameTimer = 0;
+            //    }
+
+            //    if (frame == 128)
+            //    {
+            //        frame = 0;
+            //    }
+
+            //}
+            #endregion
+
             #region - FLYING ANIMATIONS -
 
-            
+
             if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
                 drilling = true;
-                _spriteSheetTexture = _flyingTexture;
+                if (GameWorld.upCollision == true)
+                {
+                    _spriteSheetTexture = _drillingUpTexture;
+                }
+                else
+                {
+                    _spriteSheetTexture = _flyingTexture;
+                }
+                
+
                 frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
 
