@@ -28,7 +28,7 @@ namespace Miner
         public static int ofset_y = 0;
         private int current_chunk = 0;
         public static bool sideCollision = false;
-        public static bool downCollision = false;
+        
         public static bool inAir = false;
         public static bool passive = false;
 
@@ -166,7 +166,6 @@ namespace Miner
                     if (Terrain.player_collis(3, deltatime) == false)
                     {
 
-                        downCollision = false;
                         
                         
                         ofset_y--;
@@ -175,8 +174,7 @@ namespace Miner
     }
                     else
                     {
-                        
-                        downCollision = true;
+                      
                         
                     }
 
