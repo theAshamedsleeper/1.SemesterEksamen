@@ -99,14 +99,7 @@ namespace Miner
             #region input
             float deltatime = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
-            if (Terrain.player_collis(3, deltatime) == false)
-            {
-                inAir = false;
-            }
-            else
-            {
-                inAir = true;
-            }
+           
 
             Terrain.Move_Main_chunk(ofset_x, ofset_y);
 
@@ -208,6 +201,11 @@ namespace Miner
             if (Terrain.player_collis_gravity() == false)
             {
                 ofset_y--;
+                inAir = false;
+            }
+            else
+            {
+                inAir = true;
             }
             #endregion
 
@@ -226,10 +224,6 @@ namespace Miner
             {
                 toolList[i].Update(gameTime);
             }
-
-
-            
-
 
 
             base.Update(gameTime);
