@@ -26,8 +26,8 @@ namespace Miner
         public void LoadContent(ContentManager content)
         {
             batterySpritesheet = content.Load<Texture2D>(SPRITESHEET_BATTERY);
-            batteryMax = 1000;
-            solarPanelSize = 800;
+            batteryMax = 10000;
+            solarPanelSize = 8000;
             
         }
 

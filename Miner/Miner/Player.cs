@@ -65,31 +65,6 @@ namespace Miner
 
             #endregion
 
-            #region - DRILLING ANIMATIONS _ UP -
-
-
-            //else if (Keyboard.GetState().IsKeyDown(Keys.W) && GameWorld.upCollision == true)
-            //{
-            //    drilling = true;
-            //    _spriteSheetTexture = _drillingUpTexture;
-            //    frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-
-
-
-            //    if (frameTimer > 50)
-            //    {
-            //        frame = frame + 32;
-            //        frameTimer = 0;
-            //    }
-
-            //    if (frame == 128)
-            //    {
-            //        frame = 0;
-            //    }
-
-            //}
-            #endregion
-
             #region - FLYING ANIMATIONS -
 
 

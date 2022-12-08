@@ -116,8 +116,6 @@ namespace Miner
                 {
                     if (Terrain.player_collis(1, deltatime) == false)
                     {
-
-
                         sideCollision = false;
                         ofset_x--;
                         Terrain.Load_chunks(ofset_x, ofset_y);
@@ -127,50 +125,33 @@ namespace Miner
                     {
                         sideCollision = true;
 
-
                     }
 
                 }
-
-
 
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.A))
                 {
                     if (Terrain.player_collis(0, deltatime) == false)
                     {
-
-
                         sideCollision = false;
                         ofset_x++;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
                     else
                     {
-
                         sideCollision = true;
-
-
                     }
-
                 }
-
-
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.S))
                 {
                     if (Terrain.player_collis(3, deltatime) == false)
                     {
-
-
-
                         ofset_y--;
                         Terrain.Load_chunks(ofset_x, ofset_y);
 
                     }
-                   
 
                 }
-
-
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.W))
                 {
                     if (Terrain.player_collis(2, deltatime) == false)
@@ -185,13 +166,7 @@ namespace Miner
                         upCollision = true;
 
                     }
-
-
-
-
                 }
-
-
             }
             else
             {
@@ -228,8 +203,6 @@ namespace Miner
             {
                 toolList[i].Update(gameTime);
             }
-
-
             base.Update(gameTime);
 
         }
