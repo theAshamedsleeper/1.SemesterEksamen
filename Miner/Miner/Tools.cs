@@ -115,7 +115,7 @@ namespace Miner
             // - BATTERIETS VIRKNING OG ANIMATION -
             draintimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             //drainTimer tæller op til batteryMax, som bliver defineret pr batteri upgrade. 
-            if (draintimer > batteryMax && batteryFrame <= 320 && !Keyboard.GetState().IsKeyDown(Keys.Q)) 
+            if (Terrain.is_we_on_top() == false && draintimer > batteryMax && batteryFrame <= 320 && !Keyboard.GetState().IsKeyDown(Keys.Q)) 
 
             {
                 batteryFrame = batteryFrame + 30;
