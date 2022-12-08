@@ -143,11 +143,11 @@ namespace Miner
                         switch (p)
                         {
                             case 0:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x+1;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y;
                                 break;
                             case 1:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5-1;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y;
                                 break;
                         }
@@ -167,11 +167,11 @@ namespace Miner
                         switch (l)
                         {
                             case 0:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x+1;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
                                 break;
                             case 1:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5-1;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
                                 break;
                         }
