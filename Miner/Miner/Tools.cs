@@ -102,7 +102,7 @@ namespace Miner
             /*gainTimer tæller op til solarPanelCombined,
             som bliver defineret pr ovenstående upgrades på sloarSize og batteryMax. 
             Når den er nået til max, skifter den frame og timeren bliver resettet. */
-            if (Keyboard.GetState().IsKeyDown(Keys.Q) && batteryFrame > 0 && gaintimer > solarPanelCombined)
+            if (Terrain.is_we_on_top() == true && batteryFrame > 0 && gaintimer > solarPanelCombined)
             {
 
                 batteryFrame -= 30;
@@ -115,7 +115,7 @@ namespace Miner
             // - BATTERIETS VIRKNING OG ANIMATION -
             draintimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             //drainTimer tæller op til batteryMax, som bliver defineret pr batteri upgrade. 
-            if (draintimer > batteryMax && batteryFrame <= 320 && !Keyboard.GetState().IsKeyDown(Keys.Q)) 
+            if (Terrain.is_we_on_top() == false && draintimer > batteryMax && batteryFrame <= 320 && !Keyboard.GetState().IsKeyDown(Keys.Q)) 
 
             {
                 batteryFrame = batteryFrame + 30;
