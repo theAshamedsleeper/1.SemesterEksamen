@@ -30,9 +30,9 @@ namespace Miner
         protected const string SPRITESHEET_FLYING = "DrillFlying6Spritesheet";
         protected const string SPRITESHEET_DIGGING_DOWN = "DrillDiggingDown3Spritesheet";
         protected const string SPRITE_OVERLAY = "DrillIdleBub3";
-        
+        protected const string SPRITESHEET_DIGGING_UP = "DrillFlyingDiggingSpritesheet";
 
-        
+
         protected Texture2D _spriteSheetTexture;
         protected Texture2D _spriteIdleTexture;
         public SpriteFont _controlsFont;

@@ -218,7 +218,7 @@ namespace Miner
         {
             if (loaded_chunks[0][1] > -1)
             {
-                if (Which(1920 / 2 - (32 * 5) / 2, 1080 / 2 - (32 * 5) / 2, loaded_chunks[0]) == 0)
+                if (Which(1920 / 2 - (32 * 5) / 2, 1080 / 2 - (32 * 5)  / 2 + GameWorld.ofset_y, loaded_chunks[0]) == 0)
                 {
                     return true;
                 }

@@ -28,12 +28,13 @@ namespace Miner
         public static int ofset_y = 0;
         private int current_chunk = 0;
         public static bool sideCollision = false;
-        
+        public static bool upCollision = false;
         public static bool inAir = false;
         public static bool passive = false;
 
         private SoundEffect engine_sound;
         private SoundEffectInstance engine_sound_inst;
+        private bool digginUp;
 
         public GameWorld()
         {
@@ -99,7 +100,7 @@ namespace Miner
             #region input
             float deltatime = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
-           
+
 
             Terrain.Move_Main_chunk(ofset_x, ofset_y);
 
@@ -116,17 +117,17 @@ namespace Miner
                     if (Terrain.player_collis(1, deltatime) == false)
                     {
 
-                        
+
                         sideCollision = false;
                         ofset_x--;
                         Terrain.Load_chunks(ofset_x, ofset_y);
-                        
+
                     }
                     else
                     {
                         sideCollision = true;
-                        
-                        
+
+
                     }
 
                 }
@@ -137,8 +138,8 @@ namespace Miner
                 {
                     if (Terrain.player_collis(0, deltatime) == false)
                     {
-                       
-                        
+
+
                         sideCollision = false;
                         ofset_x++;
                         Terrain.Load_chunks(ofset_x, ofset_y);
@@ -147,8 +148,8 @@ namespace Miner
                     {
 
                         sideCollision = true;
-                        
-                        
+
+
                     }
 
                 }
@@ -159,17 +160,13 @@ namespace Miner
                     if (Terrain.player_collis(3, deltatime) == false)
                     {
 
-                        
-                        
+
+
                         ofset_y--;
                         Terrain.Load_chunks(ofset_x, ofset_y);
-                        
-    }
-                    else
-                    {
-                      
-                        
+
                     }
+                   
 
                 }
 
@@ -178,20 +175,27 @@ namespace Miner
                 {
                     if (Terrain.player_collis(2, deltatime) == false)
                     {
-                        
-                        
+                        upCollision = false;
+
                         ofset_y += 2;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
-                    
+                    else
+                    {
+                        upCollision = true;
+
+                    }
+
+
+
 
                 }
 
-                
+
             }
             else
             {
-                
+
                 engine_sound_inst.Volume = 0.4f;
             }
 
