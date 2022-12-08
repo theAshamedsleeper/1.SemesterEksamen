@@ -25,6 +25,10 @@ namespace Miner
         protected static bool isArtiClicked = false;
 
         protected static bool[] upgraded = new bool[13];//for the upgrade system
+        /*  index range 0-3 is drill speed
+            index range 4-7 is battery storage
+            index range 8-11 is battery recharge speed
+            index range 12 is final upgrade*/
         protected static byte upgradeClicked;//for a switch case controling which info you can see
         protected static byte artifactClicked;//for a switch case controling which info you can see;
 
@@ -35,13 +39,13 @@ namespace Miner
         private static int r4Plat;
         private static int r5Uranium;
 
-        private static bool isInvOpen = false;//to see if the inventory is open
+        private bool isInvOpen = false;//to see if the inventory is open
         protected float closeDownShopTimer;//A timer to make sure you cant spame the invetory button.
         protected SoundEffect menuSound;//for playing the sound of moving around the inventory
         //A property so you can access the upgrade system from another class
         public static bool[] Upgraded { get { return upgraded; } set { upgraded = value; } }
         //A property so you can open the inventory through another sub class
-        public static bool IsInvOpen { get { return isInvOpen; } set { isInvOpen = value; } }
+        public bool IsInvOpen { get { return isInvOpen; } set { isInvOpen = value; } }
         //5 properties for each resource that can be accessed in anyother script
         public static int R1Cop { get { return r1Copper; } set { r1Copper = value; } }
         public static int R2Mili { get { return r2MilitaryScrap; } set { r2MilitaryScrap = value; } }
