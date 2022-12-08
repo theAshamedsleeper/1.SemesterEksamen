@@ -107,7 +107,11 @@ namespace Miner
             #region input
             float deltatime = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
+            if (Tools.batteryFrame >= 300)
+            {
+                Exit();
 
+            }
 
             Terrain.Move_Main_chunk(ofset_x, ofset_y);
 
