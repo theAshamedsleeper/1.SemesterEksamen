@@ -71,7 +71,7 @@ namespace Miner
             if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
                 drilling = true;
-                if (GameWorld.upCollision == true)
+                if (GameWorld.upCollision == true && GameWorld.inAir == true)
                 {
                     _spriteSheetTexture = _drillingUpTexture;
                 }
