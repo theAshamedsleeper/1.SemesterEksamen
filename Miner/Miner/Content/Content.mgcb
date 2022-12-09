@@ -504,6 +504,18 @@
 /processorParam:TextureFormat=Color
 /build:Ui Sprites/InvetoryTitleUpgrade.png
 
+#begin Ui Sprites/OpenInv.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ui Sprites/OpenInv.png
+
 #begin Ui Sprites/UpgradeInfo/10P faster drill_Layer 0.png
 /importer:TextureImporter
 /processor:TextureProcessor
