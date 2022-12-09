@@ -107,20 +107,24 @@ namespace Miner
                         {
                             case 0:
                                 // pos check 1
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x -1;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 1;
                                 break;
                             case 1:
                                 // pos check 2
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x -1;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5 - 1;
                                 break;
                         }
                         // if terrain not air
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
                         {
-                            mining_updater(pos_x, pos_y, deltatime, 0);
-                            break_Sound(deltatime);
+                            if (GameWorld.inAir == true)
+                            {
+                                mining_updater(pos_x, pos_y, deltatime, 0);
+                                break_Sound(deltatime);
+                            }
+                           
                             return true;
                         }
                     }
@@ -143,8 +147,12 @@ namespace Miner
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
                         {
-                            mining_updater(pos_x, pos_y, deltatime, 1);
-                            break_Sound(deltatime);
+                            if (GameWorld.inAir == true)
+                            {
+                                mining_updater(pos_x, pos_y, deltatime, 1);
+                                break_Sound(deltatime);
+                            }
+                           
                             return true;
                         }
                     }
@@ -217,11 +225,11 @@ namespace Miner
                 switch (p)
                 {
                     case 0:
-                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 2;
+                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 3;
                         pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
                         break;
                     case 1:
-                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 - 2;
+                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 - 3;
                         pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
                         break;
                 }
