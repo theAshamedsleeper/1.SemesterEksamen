@@ -78,8 +78,8 @@ namespace Miner
 
 
             spriteBatch.DrawString(_controlsFont,
-                " Fly              W \n Drive        A&D \n Dig down   S \n Dig side     C \n Inventory      I"
-                , new Vector2(1700, 20), Color.White, 0f, new Vector2 (0,0),2f, SpriteEffects.None,1);
+                $"Inventory: I\nMove:  W, S, A, D"
+                , new Vector2(1600, 20), Color.Green, 0f, new Vector2 (0,0),2f, SpriteEffects.None,1);
 
         }
 

@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Miner.UiForInv;
 using System.Collections.Generic;
+using SpriteBatch = Microsoft.Xna.Framework.Graphics.SpriteBatch;
 
 namespace Miner
 {
@@ -13,6 +14,9 @@ namespace Miner
         private SpriteBatch _spriteBatch;
 
         private static Vector2 screenSize;
+
+        protected const string BACKGROUND_TOP = "BackgroundTopBigScale5";
+        private Texture2D backgroundTop;
 
         private Texture2D[] groundSprite = new Texture2D[10];
         private Texture2D texture_terrain;
@@ -35,6 +39,7 @@ namespace Miner
         private SoundEffect engine_sound;
         private SoundEffectInstance engine_sound_inst;
         private bool digginUp;
+        private int backflow;
 
         public GameWorld()
         {
@@ -64,11 +69,13 @@ namespace Miner
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            
+
             for (int i = 0; i < workShop.Count; i++)
             {
                 workShop[i].LoadContent(Content);
             }
-            groundSprite[0] = Content.Load<Texture2D>("pixil-frame-0");//Grass Terrain
+            groundSprite[0] = Content.Load<Texture2D>("BackgroundTop3");//Baggrund Over Jorden
             groundSprite[1] = Content.Load<Texture2D>("GroundSprite/output-onlinepngtools (1)");
             groundSprite[2] = Content.Load<Texture2D>("pixil-frame-2");//dirt Terrain
             groundSprite[3] = Content.Load<Texture2D>("GroundSprite/Stone");
@@ -78,7 +85,7 @@ namespace Miner
             engine_sound = Content.Load<SoundEffect>("Sound/motorcycle-idle-01");
             engine_sound_inst = engine_sound.CreateInstance();
 
-
+            backgroundTop = Content.Load<Texture2D>(BACKGROUND_TOP);
 
             ContFont = Content.Load<SpriteFont>("FileFont");
 
@@ -100,7 +107,11 @@ namespace Miner
             #region input
             float deltatime = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
+            if (Tools.batteryFrame >= 300)
+            {
+                Exit();
 
+            }
 
             Terrain.Move_Main_chunk(ofset_x, ofset_y);
 
@@ -205,12 +216,23 @@ namespace Miner
             }
             base.Update(gameTime);
 
-        }
+            if (ofset_y > 0)
+            {
+                backflow = -ofset_y;
+            }
+            else
+            {
+                backflow = 0;
+            }
+
+    }
 
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
+
+            _spriteBatch.Draw(backgroundTop, new Vector2(ofset_x/2, ofset_y - 160), new Rectangle(0, 0, 3500, 800), Color.White, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, 0f);
 
             #region terain World
             // x and y coords of where the terrain tiles are drawn.
@@ -264,15 +286,18 @@ namespace Miner
                             break;
                     }
                     #endregion
-                    _spriteBatch.Draw(texture_terrain,//what to draw
-                    new Vector2(gx + ofset_x + direction[0], gy + ofset_y + direction[1]),//place to draw it
-                    null,//rectangle
-                    Color.White,//color of player
-                    0f, //Rotation of player
-                    Vector2.Zero,//Orgin Point
-                    worldScale,//How big is the player
-                    SpriteEffects.None,//effects
-                    1f);//Layer 
+                    if (Terrain.Which(gx, gy, loaded_chunk) != 0)
+                    {
+                        _spriteBatch.Draw(texture_terrain,//what to draw
+                   new Vector2(gx + ofset_x + direction[0], gy + ofset_y + direction[1]),//place to draw it
+                   null,//rectangle
+                   Color.White,//color of player
+                   0f, //Rotation of player
+                   Vector2.Zero,//Orgin Point
+                   worldScale,//How big is the player
+                   SpriteEffects.None,//effects
+                   1f);//Layer 
+                    }
                     if (tx >= 31)
                     {
                         tx = 0;

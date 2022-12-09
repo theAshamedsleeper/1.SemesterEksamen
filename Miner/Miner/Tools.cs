@@ -18,7 +18,7 @@ namespace Miner
         public float Battery = 10;
         public float draintimer = 0;
         public float gaintimer = 0;
-        private int batteryFrame = 0;
+        public static int batteryFrame = 0;
         public int batteryMax;
         public int solarPanelSize;
         public int solarPanelCombined;
@@ -115,17 +115,11 @@ namespace Miner
             // - BATTERIETS VIRKNING OG ANIMATION -
             draintimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             //drainTimer tæller op til batteryMax, som bliver defineret pr batteri upgrade. 
-            if (Terrain.is_we_on_top() == false && draintimer > batteryMax && batteryFrame <= 320 && !Keyboard.GetState().IsKeyDown(Keys.Q)) 
+            if (Terrain.is_we_on_top() == false && draintimer > batteryMax && batteryFrame <= 300 && !Keyboard.GetState().IsKeyDown(Keys.Q)) 
 
             {
                 batteryFrame = batteryFrame + 30;
                 draintimer = 0;
-            }
-
-            if (batteryFrame > 320)
-            {
-                //Game over
-
             }
 
 
