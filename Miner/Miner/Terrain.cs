@@ -24,10 +24,10 @@ namespace Miner
         private static int x_1 = 0;
         private static int y_1 = 0;
         private static int z_1 = 0;
-        private static int terrain_amount = 6;
         private static float scale = 1.875f;
         private static List<int[]> chunks = new List<int[]>();
         private static int[] chunk_0 = new int[2];
+
         private static int[] tiles_x = new int[width * height];
         private static int[] tiles_y = new int[width * height];
         private static int[] tiles_t_c1 = new int[width * height];
@@ -35,10 +35,11 @@ namespace Miner
         private static int[] tiles_t_c3 = new int[width * height];
         private static int[] tiles_t_c4 = new int[width * height];
         private static int[] tiles_empty = new int[width * height];
+        private static float[] tiles_mined = new float[width * height];
+
         static Random rnd = new Random();
         private static int[] current_chunk = new int[width * height];
         private static List<int[]> loaded_chunks = new List<int[]>();
-        private static float[] tiles_mined = new float[width * height];
         private static byte switch_off = 0;
         private static SoundEffect stonebreak_1;
         private static SoundEffect stonebreak_2;
@@ -49,10 +50,13 @@ namespace Miner
         public static float t_scale { get { return scale; } }
         #region terrain making
         /// <summary>
-        /// a method to give value to 3 arrays, so we can more easily allocate which is dirt grass or hoed dirt.
-        /// it will give the x and y values, and check if those coordinates are dirt or grass.
-        /// it has 3 arrays one for x, y and terrain type, the terrain type is chosen with a number.
-        /// this way we will be able to pin point a location, 
+        /// a method to give value to 2 arrays and loading all needed soundeffects.
+        /// it will give the x and y values, as i don't wanna do it manually, the array is 576 indexes long.
+        /// this way we will be able to pin point a index, by finding the index with both x and y is the correct index, 
+        /// and then we know the index of the terrain type array and the amount mined array.
+        /// Ones the funktion is done, it should look like this if x was 3 long and y 4 long
+        /// x [0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2]
+        /// y [0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
         /// we believe this will be more effective than an object for each tile.
         /// </summary>
         public static void Give_Terrain(ContentManager content)
@@ -80,6 +84,13 @@ namespace Miner
         }
         #endregion
         #region stuff
+        /// <summary>
+        /// a Collision between player and terrain, will mine the terrain then called.
+        /// it checks on 2 points in giving direction, those 2 points are the 2 ends of the sprite.
+        /// </summary>
+        /// <param name="side"> side is for the side to check on.</param>
+        /// <param name="deltatime"> deltatime is for mining to call afterwards</param>
+        /// <returns></returns>
         public static bool player_collis(int side, float deltatime)
         {
             float pos_x = 0;
@@ -95,18 +106,21 @@ namespace Miner
                         switch (j)
                         {
                             case 0:
+                                // pos check 1
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y+1;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 1;
                                 break;
                             case 1:
+                                // pos check 2
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5-1;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5 - 1;
                                 break;
                         }
+                        // if terrain not air
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
                         {
                             mining_updater(pos_x, pos_y, deltatime, 0);
-                            Walk_Sound(deltatime);
+                            break_Sound(deltatime);
                             return true;
                         }
                     }
@@ -120,17 +134,17 @@ namespace Miner
                         {
                             case 0:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y+1;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 1;
                                 break;
                             case 1:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5-1;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5 - 1;
                                 break;
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
                         {
                             mining_updater(pos_x, pos_y, deltatime, 1);
-                            Walk_Sound(deltatime);
+                            break_Sound(deltatime);
                             return true;
                         }
                     }
@@ -143,18 +157,18 @@ namespace Miner
                         switch (p)
                         {
                             case 0:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 2;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y-1;
                                 break;
                             case 1:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 - 2;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - 1;
                                 break;
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
                         {
                             mining_updater(pos_x, pos_y, deltatime, 2);
-                            Walk_Sound(deltatime);
+                            break_Sound(deltatime);
                             return true;
                         }
                     }
@@ -167,18 +181,18 @@ namespace Miner
                         switch (l)
                         {
                             case 0:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 1;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
                                 break;
                             case 1:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 - 1;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
                                 break;
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
                         {
                             mining_updater(pos_x, pos_y, deltatime, 3);
-                            Walk_Sound(deltatime);
+                            break_Sound(deltatime);
                             return true;
                         }
                     }
@@ -188,6 +202,10 @@ namespace Miner
 
             return false;
         }
+        /// <summary>
+        /// Checks if the ground beneth is air, basically the same as player collis
+        /// </summary>
+        /// <returns></returns>
         public static bool player_collis_gravity()
         {
             float pos_x = 0;
@@ -199,11 +217,11 @@ namespace Miner
                 switch (p)
                 {
                     case 0:
-                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - 1;
-                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y+ 32 *5;
+                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 2;
+                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
                         break;
                     case 1:
-                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 + 1;
+                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 - 2;
                         pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
                         break;
                 }
@@ -214,18 +232,27 @@ namespace Miner
             }
             return false;
         }
+        /// <summary>
+        /// checks if player is on the top part of world
+        /// </summary>
+        /// <returns></returns>
         public static bool is_we_on_top()
         {
             if (loaded_chunks[0][1] > -1)
             {
-                if (Which(1920 / 2 - (32 * 5) / 2, 1080 / 2 - (32 * 5)  / 2 - GameWorld.ofset_y, loaded_chunks[0]) == 0)
+                if (Which(1920 / 2 - (32 * 5) / 2, 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y, loaded_chunks[0]) == 0)
                 {
                     return true;
                 }
             }
             return false;
         }
-        private static void Walk_Sound(float deltatime)
+        /// <summary>
+        /// Plays a breaking sound of terrain, gets deltatime to make sure the sound isn't spammed.
+        /// It has a switch to ensure that different sounds play, otherwise it would get irritating.
+        /// </summary>
+        /// <param name="deltatime"></param>
+        private static void break_Sound(float deltatime)
         {
             sound_timer += deltatime;
             if (sound_timer > 700)
@@ -255,6 +282,11 @@ namespace Miner
         #region chunks
         #region new chunks
         #region deciding
+        /// <summary>
+        /// checks if there should be new chunks around the player that should be made.
+        /// </summary>
+        /// <param name="x_off"> player x off set</param>
+        /// <param name="y_off"> player y off set </param>
         public static void Load_chunks(int x_off, int y_off)
         {
             int[] direction = new int[2];
@@ -283,8 +315,25 @@ namespace Miner
                     direction[1] = 0;
                     break;
             }
-            sorter_new(direction);
+            bool new_terrain = true;
+            for (int i = loaded_chunks.Count - 1; i >= 0; i--)
+            {
+                if (direction[0] + loaded_chunks[0][0] == loaded_chunks[i][0]
+                 && direction[1] + loaded_chunks[0][1] == loaded_chunks[i][1])
+                {
+                    new_terrain = false;
+                }
+            }
+            if (new_terrain)
+            {
+                sorter_new(direction);
+            }
         }
+        /// <summary>
+        /// checks if there should be a change in the chunks player stand on.
+        /// </summary>
+        /// <param name="x_1"> player x off set</param>
+        /// <param name="y_1"> player y off set </param>
         public static void Move_Main_chunk(int x_1, int y_1)
         {
             int _width = 5120;
@@ -322,6 +371,14 @@ namespace Miner
         }
         #endregion
         #region sorting
+        /// <summary>
+        /// loads in the array of a new or old chunk, 
+        /// if theres a file of it, it will read that file (using the read funktion), 
+        /// and get the array that way, else it will make a new chunk (with maker funktion), 
+        /// that chunk will then be written as a new file.
+        /// </summary>
+        /// <param name="pos"> position of the chunk, x and y.</param>
+        /// <param name="tile"> where the array should be set to.</param>
         private static void Get_tiles(int[] pos, int tile)
         {
             int[] tiles = new int[width * height];
@@ -349,6 +406,19 @@ namespace Miner
                     break;
             }
         }
+        /// <summary>
+        /// I gave up on sorting a list, and now we are using switch to find the location chosen, 
+        /// and then setting values based ont that position.
+        /// the system is set to 9 values, set up like this.
+        ///   0  1  2
+        ///   3  4  5
+        ///   6  7  8
+        /// 4 can be forgotten, the middle is always the chunk player is in, 
+        /// and all other chunks are in a order based on their value of above model.
+        /// used that system as well the i tried sorting a list, 
+        /// thought that this way would make it easier later to get the array of other chunks that arent main chunk later.
+        /// </summary>
+        /// <param name="new_one">the new position to be set to</param>
         public static void sorter_new(int[] new_one)
         {
             switch (new_one)
@@ -550,6 +620,12 @@ namespace Miner
                     break;
             }
         }
+        /// <summary>
+        /// changes the main chunk to the direction given direction, then calls sorter_new to get the rest made.
+        /// </summary>
+        /// <param name="new_one"> direction given</param>
+        /// <param name="x_1"> to call load_chunks</param>
+        /// <param name="y_1"> to call load_chunks</param>
         private static void sort_chunk_moving(int[] new_one, int x_1, int y_1)
         {
             switch (new_one)
@@ -610,12 +686,22 @@ namespace Miner
         }
         #endregion
         #region Making chunks
+        /// <summary>
+        /// A funktion that needs to be called at the start of the game.
+        /// It will create a new chunk to start on.
+        /// </summary>
+        /// <param name="direction"></param>
         public static void Start_Chunk(int[] direction)
         {
             // remove all files here
             tiles_t_c1 = Chunk_maker(direction);
             loaded_chunks.Add(direction);
         }
+        /// <summary>
+        /// The making of chunks, it will make an array of the terrain tiles, and then send it to chunk writer, then return the array.
+        /// </summary>
+        /// <param name="direction"> The position of the chunk</param>
+        /// <returns></returns>
         static int[] Chunk_maker(int[] direction)
         {
             int[] tiles_t = new int[width * height];
@@ -634,28 +720,104 @@ namespace Miner
             chunk_writer(tiles_t, pos);
             return tiles_t;
         }
+        /// <summary>
+        /// Decides which terrain gets placed on the given tile.
+        /// This funktion will return the terrain type to give the index.
+        /// Most of this funktion will then be switches and ifs as this funktion is made to decide the terrain, 
+        /// and could just not be here as there will only be 1 reference, 
+        /// but this funktion will get confusing and clustered the more we add to the game, so thats why.
+        /// </summary>
+        /// <param name="xy"> chunk location</param>
+        /// <param name="i"> the index of the array</param>
+        /// <returns></returns>
         static int chunk_terrain(int[] xy, int i)
         {
             if (xy[0] == 0 && xy[1] == 0)
             {
                 if (i > 127)
                 {
-                    int returns = (Randomies.randoms(3) + 2);
-                    if (returns == 3)
+                    if (i > 319)
                     {
-                        if (Randomies.randoms(5) == 0)
+                        if (i > 448)
                         {
-                            returns = 5;
+                            #region layer 3
+                            int returns = (Randomies.randoms(10) + 2);
+                            if (returns == 10 || returns == 11 || returns == 12 || returns == 9 || returns == 8 || returns == 7 || returns == 6 || returns == 5)
+                            {
+                                returns = Randomies.randoms(10) + 3;
+                                if (returns < 10)
+                                {
+                                    returns = 4;
+                                }
+                                else
+                                {
+                                    returns = 3;
+                                }
+                            }
+                            if (returns == 4)
+                            {
+                                if (Randomies.randoms(4) == 0)
+                                {
+                                    returns = Randomies.randoms(3) + 6;
+                                }
+                            }
+                            if (returns == 3)
+                            {
+                                if (Randomies.randoms(7) == 0)
+                                {
+                                    returns = 5;
+                                }
+                            }
+                            return returns;
+                            #endregion
+                        }
+                        else
+                        {
+                            #region layer 2
+                            int returns = (Randomies.randoms(10) + 2);
+                            if (returns == 10 || returns == 11 || returns == 12 || returns == 9 || returns == 8 || returns == 7 || returns == 6 || returns == 5)
+                            {
+                                returns = Randomies.randoms(2) + 3;
+                            }
+                            if (returns == 3)
+                            {
+                                if (Randomies.randoms(7) == 0)
+                                {
+                                    returns = 5;
+                                }
+                            }
+                            if (returns == 4)
+                            {
+                                if (Randomies.randoms(7) == 0)
+                                {
+                                    returns = 6;
+                                }
+                            }
+                            return returns;
+                            #endregion
                         }
                     }
-                    if (returns == 4)
+                    else
                     {
-                        if (Randomies.randoms(5) == 0)
+                        #region layer 1
+                        int returns = (Randomies.randoms(3) + 2);
+                        if (returns == 3)
                         {
-                            returns = 6;
+                            if (Randomies.randoms(5) == 0)
+                            {
+                                returns = 5;
+                            }
                         }
+                        if (returns == 4)
+                        {
+                            if (Randomies.randoms(5) == 0)
+                            {
+                                returns = 6;
+                            }
+                        }
+                        return returns;
+                        #endregion
                     }
-                    return returns;
                 }
                 return 0;
             }
@@ -668,6 +830,12 @@ namespace Miner
         }
         #endregion
         #region write chunks
+        /// <summary>
+        /// Writing chunks, making a text file and writes down the int array int the file, it splits each index with a comma,
+        /// So then we read the file later we can see the split in each index. 
+        /// </summary>
+        /// <param name="t"> The array to write</param>
+        /// <param name="direction"> The location of the chunk, will be name of file</param>
         private static void chunk_writer(int[] t, int[] direction)
         {
             string filename = direction[0].ToString() + " " + direction[1].ToString() + ".txt";
@@ -675,9 +843,10 @@ namespace Miner
             {
                 File.Delete(@"Chunks\" + filename);
             }
-
-            //File.CreateText(@"Chunks\" + filename);
+            //File.CreateText(@"Chunks\" + filename); Used this earlier to create files,
+            //makes the files it creates protected though, and i don't need protected files.
             string write = "";
+            // loop to make the hole array to an string, adds each index to the string.
             for (int i = 0; i < t.Length; i++)
             {
                 write += t[i].ToString();
@@ -686,18 +855,22 @@ namespace Miner
                 {
                     write += "\n";
                 }
-
             }
+            // writes it.
             using (StreamWriter tw = new StreamWriter(@"Chunks\" + filename, true))
             {
                 tw.WriteLine(write);
                 tw.Close();
             }
-
         }
         #endregion
         #endregion
         #region Reading chunks
+        /// <summary>
+        /// checks if file exits
+        /// </summary>
+        /// <param name="Position"> the location of the chunk, in this case the name aswell.</param>
+        /// <returns></returns>
         static bool chunk_check_file(int[] Position)
         {
             int[] filename = new int[2];
@@ -727,6 +900,15 @@ namespace Miner
             }
             return false;
         }
+        /// <summary>
+        /// takes the file and read all in it as a string, then it will use a for loop to go through the string.
+        /// in the for loop it will add to curren_text with the numbers, and then it reaches a comma, 
+        /// it will add curent_text to the int array converted to an int, 
+        /// this way it will get each index of the array and numbers such as 10 and above that would fill up 2 or more chars can still be read.
+        /// when done it returns the array.
+        /// </summary>
+        /// <param name="direction"> location of chunk, in this case also the file name. </param>
+        /// <returns></returns>
         private static int[] Chunk_Read(int[] direction)
         {
             string comma = ",";
@@ -753,14 +935,17 @@ namespace Miner
 
             return tiles;
         }
+        // returns amount of chunks loaded
         public static int Chunk_differ()
         {
             return loaded_chunks.Count;
         }
+        // returns the array of a chunk from the loaded_chunks list, by using given index.
         public static int[] Loaded_Chunk_differ(int i)
         {
             return loaded_chunks[i];
         }
+        // gets the x and y coordinates to add then drawing in gameWorld, as the entire terrain fills 1024 * 5 and 576 * 5.
         public static int[] direction(int[] loaded_one)
         {
             int[] direction = new int[2];
@@ -829,6 +1014,7 @@ namespace Miner
                         if (loaded_chunks[k][0] == chunk[0] && loaded_chunks[k][1] == chunk[1])
                         {
                             // we have x and y, now we know how far down the array we gotta go for the terrain, then we change it.
+                            // the switch here is for which terrain array gotta get changed and rewritten.
                             switch (k)
                             {
                                 case 0:
@@ -886,6 +1072,7 @@ namespace Miner
                         if (loaded_chunks[k][0] == chunk[0] && loaded_chunks[k][1] == chunk[1])
                         {
                             // found the location of the value of terrain in terrain array
+                            // the switch here is for which terrain array gotta get the terrain type from.
                             switch (k)
                             {
                                 case 0:
@@ -905,6 +1092,14 @@ namespace Miner
         }
         #endregion
         #region mining
+        /// <summary>
+        /// Mining updater takes a given location, change it into an index of an array, 
+        /// and use this index to find the amount we have mined on that block, if we have mined enough on that block then it will break.
+        /// </summary>
+        /// <param name="x"> x coordinate</param>
+        /// <param name="y"> y coordinate</param>
+        /// <param name="deltatime"> deltatime to add to the amount mined</param>
+        /// <param name="direction"> which chunk</param>
         public static void mining_updater(float x, float y, float deltatime, int direction)
         {
             int x_mod = 0;
@@ -927,8 +1122,9 @@ namespace Miner
             {
                 if (tiles_x[(x_mod * width) + i] == x_1)
                 {
-                    switch(tiles_t_c1[(x_mod*width) + i])
+                    switch (tiles_t_c1[(x_mod * width) + i])
                     {
+                        #region changing the terrain
                         case 2:
                             if (tiles_mined[(x_mod * width) + i] > 700)
                             {
@@ -937,7 +1133,37 @@ namespace Miner
                             }
                             else
                             {
-                                tiles_mined[(x_mod * width) + i] += deltatime;
+                                #region drill grade check
+                                if (WorkShop.Upgraded[0])
+                                {
+                                    if (WorkShop.Upgraded[1])
+                                    {
+                                        if (WorkShop.Upgraded[2])
+                                        {
+                                            if (WorkShop.Upgraded[3])
+                                            {
+                                                tiles_mined[(x_mod * width) + i] += deltatime * 5;
+                                            }
+                                            else
+                                            {
+                                                tiles_mined[(x_mod * width) + i] += deltatime * 4;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            tiles_mined[(x_mod * width) + i] += deltatime * 3;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        tiles_mined[(x_mod * width) + i] += deltatime * 2;
+                                    }
+                                }
+                                else
+                                {
+                                    tiles_mined[(x_mod * width) + i] += deltatime;
+                                }
+                                #endregion
                             }
                             break;
                         case int n when n == 3 || n == 5:
@@ -952,7 +1178,37 @@ namespace Miner
                             }
                             else
                             {
-                                tiles_mined[(x_mod * width) + i] += deltatime;
+                                #region drill grade check
+                                if (WorkShop.Upgraded[0])
+                                {
+                                    if (WorkShop.Upgraded[1])
+                                    {
+                                        if (WorkShop.Upgraded[2])
+                                        {
+                                            if (WorkShop.Upgraded[3])
+                                            {
+                                                tiles_mined[(x_mod * width) + i] += deltatime * 5;
+                                            }
+                                            else
+                                            {
+                                                tiles_mined[(x_mod * width) + i] += deltatime * 4;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            tiles_mined[(x_mod * width) + i] += deltatime * 3;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        tiles_mined[(x_mod * width) + i] += deltatime * 2;
+                                    }
+                                }
+                                else
+                                {
+                                    tiles_mined[(x_mod * width) + i] += deltatime;
+                                }
+                                #endregion
                             }
                             break;
                         case int n when n == 4 || n == 6:
@@ -967,11 +1223,87 @@ namespace Miner
                             }
                             else
                             {
-                                tiles_mined[(x_mod * width) + i] += deltatime;
+                                #region drill grade check
+                                if (WorkShop.Upgraded[0])
+                                {
+                                    if (WorkShop.Upgraded[1])
+                                    {
+                                        if (WorkShop.Upgraded[2])
+                                        {
+                                            if (WorkShop.Upgraded[3])
+                                            {
+                                                tiles_mined[(x_mod * width) + i] += deltatime * 5;
+                                            }
+                                            else
+                                            {
+                                                tiles_mined[(x_mod * width) + i] += deltatime * 4;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            tiles_mined[(x_mod * width) + i] += deltatime * 3;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        tiles_mined[(x_mod * width) + i] += deltatime * 2;
+                                    }
+                                }
+                                else
+                                {
+                                    tiles_mined[(x_mod * width) + i] += deltatime;
+                                }
+                                #endregion
                             }
                             break;
+                        case int n when n == 7 || n == 8:
+                            if (tiles_mined[(x_mod * width) + i] > 3000)
+                            {
+                                if (Terrain.Which(x, y, loaded_chunks[0]) == 6)
+                                {
+                                    WorkShop.R3Tit++;
+                                }
+                                stonebreakfinish.Play();
+                                Terrain.Change(x, y, 1, loaded_chunks[0]);
+                            }
+                            else
+                            {
+                                #region drill grade check
+                                if (WorkShop.Upgraded[0])
+                                {
+                                    if (WorkShop.Upgraded[1])
+                                    {
+                                        if (WorkShop.Upgraded[2])
+                                        {
+                                            if (WorkShop.Upgraded[3])
+                                            {
+                                                tiles_mined[(x_mod * width) + i] += deltatime * 5;
+                                            }
+                                            else
+                                            {
+                                                tiles_mined[(x_mod * width) + i] += deltatime * 4;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            tiles_mined[(x_mod * width) + i] += deltatime * 3;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        tiles_mined[(x_mod * width) + i] += deltatime * 2;
+                                    }
+                                }
+                                else
+                                {
+                                    tiles_mined[(x_mod * width) + i] += deltatime;
+                                }
+                                #endregion
+                            }
+                            break;
+                            #endregion
                     }
-                    
+
                 }
             }
         }

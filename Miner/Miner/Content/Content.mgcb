@@ -159,6 +159,18 @@
 /processorParam:TextureFormat=Color
 /build:GroundSprite/Kobber.png
 
+#begin GroundSprite/MilitaryScrap.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GroundSprite/MilitaryScrap.png
+
 #begin GroundSprite/output-onlinepngtools (1).png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -170,6 +182,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GroundSprite/output-onlinepngtools (1).png
+
+#begin GroundSprite/Platinium2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GroundSprite/Platinium2.png
 
 #begin GroundSprite/RockyDrit.png
 /importer:TextureImporter
