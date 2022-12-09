@@ -69,7 +69,7 @@ namespace Miner
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            
+
 
             for (int i = 0; i < workShop.Count; i++)
             {
@@ -125,12 +125,13 @@ namespace Miner
                 }
                 engine_sound_inst.Volume = 0.8f;
 
+
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.D))
                 {
                     if (Terrain.player_collis(1, deltatime) == false)
                     {
                         sideCollision = false;
-                        ofset_x--;
+                        ofset_x -= 4;
                         Terrain.Load_chunks(ofset_x, ofset_y);
 
                     }
@@ -147,7 +148,7 @@ namespace Miner
                     if (Terrain.player_collis(0, deltatime) == false)
                     {
                         sideCollision = false;
-                        ofset_x++;
+                        ofset_x += 4;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
                     else
@@ -155,11 +156,13 @@ namespace Miner
                         sideCollision = true;
                     }
                 }
+
+
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.S))
                 {
                     if (Terrain.player_collis(3, deltatime) == false)
                     {
-                        ofset_y--;
+                        ofset_y -= 4;
                         Terrain.Load_chunks(ofset_x, ofset_y);
 
                     }
@@ -171,7 +174,7 @@ namespace Miner
                     {
                         upCollision = false;
 
-                        ofset_y += 2;
+                        ofset_y += 8;
                         Terrain.Load_chunks(ofset_x, ofset_y);
                     }
                     else
@@ -192,7 +195,7 @@ namespace Miner
             float player_pos_y = screenSize.Y / 2 - (32 * 5) / 2 + ofset_y;
             if (Terrain.player_collis_gravity() == false)
             {
-                ofset_y--;
+                ofset_y -=4;
                 inAir = false;
             }
             else
@@ -218,23 +221,16 @@ namespace Miner
             }
             base.Update(gameTime);
 
-            if (ofset_y > 0)
-            {
-                backflow = -ofset_y;
-            }
-            else
-            {
-                backflow = 0;
-            }
+           
 
-    }
+        }
 
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
 
-            _spriteBatch.Draw(backgroundTop, new Vector2(ofset_x/2, ofset_y - 160), new Rectangle(0, 0, 3500, 800), Color.White, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, 0f);
+            _spriteBatch.Draw(backgroundTop, new Vector2(ofset_x / 2, ofset_y - 160), new Rectangle(0, 0, 3500, 800), Color.White, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, 0f);
 
             #region terain World
             // x and y coords of where the terrain tiles are drawn.
