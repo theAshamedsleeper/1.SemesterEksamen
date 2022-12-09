@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Sound/motorcycle-idle-01.mp3</SourceFile>
-  <SourceTime>2022-12-06T09:49:09.1059086+01:00</SourceTime>
-  <DestFile>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Sound/motorcycle-idle-01.xnb</DestFile>
-  <DestTime>2022-12-09T10:45:16.8586493+01:00</DestTime>
-  <Importer>Mp3Importer</Importer>
-  <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
-  <Processor>SoundEffectProcessor</Processor>
-  <ProcessorTime>2022-07-26T13:44:56+02:00</ProcessorTime>
-  <Parameters>
-    <Key>Quality</Key>
-    <Value>Best</Value>
-  </Parameters>
-  <Dependencies />
-  <BuildAsset />
-  <BuildOutput />
-</PipelineBuildEvent>
+<?xml version="1.0" encoding="utf-8"?><PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><SourceFile>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Sound/motorcycle-idle-01.mp3</SourceFile><SourceTime>2022-12-06T08:32:47.4577591+01:00</SourceTime><DestFile>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/bin/Windows/Sound/motorcycle-idle-01.xnb</DestFile><DestTime>2022-12-09T11:48:32.6990308+01:00</DestTime><Importer>Mp3Importer</Importer><ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime><Processor>SoundEffectProcessor</Processor><ProcessorTime>2022-07-26T13:44:56+02:00</ProcessorTime><Parameters><Key>Quality</Key><Value>Best</Value></Parameters><Dependencies /><BuildAsset /><BuildOutput /></PipelineBuildEvent>
