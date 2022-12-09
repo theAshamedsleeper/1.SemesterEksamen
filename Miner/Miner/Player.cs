@@ -129,7 +129,7 @@ namespace Miner
             #region - DRILLING ANIMATIONS _ SIDE -
             
 
-            else if (Keyboard.GetState().IsKeyDown(Keys.D) && GameWorld.sideCollision == true)
+            else if (Keyboard.GetState().IsKeyDown(Keys.D) && GameWorld.sideCollision == true && GameWorld.inAir == true)
             {
                 drilling = true;
                 _spriteSheetTexture = _drillingSideTexture;
@@ -149,7 +149,7 @@ namespace Miner
                 }
 
             }
-            else if (Keyboard.GetState().IsKeyDown(Keys.A) && GameWorld.sideCollision == true)
+            else if (Keyboard.GetState().IsKeyDown(Keys.A) && GameWorld.sideCollision == true && GameWorld.inAir == true)
             {
                 drilling = true;
                 _spriteSheetTexture = _drillingSideTexture;
