@@ -3,18 +3,13 @@ using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Miner.UiForInv
 {
     internal class ArtifactsButton : WorkShop
     {
         private MouseState mouse;
-
+        private static Rectangle[] artiRec = new Rectangle[12];
         /// <summary>
         /// Loads in the Different places, sizes of the artifacts and the menu sound
         /// </summary>
@@ -23,17 +18,19 @@ namespace Miner.UiForInv
         {
             artifactsPlacer[0] = new Rectangle(750, 560, 150, 150);
             artifactsPlacer[1] = new Rectangle(935, 560, 150, 150);
-            artifactsPlacer[2] = new Rectangle(1120, 560, 150, 150); 
-            artifactsPlacer[3] = new Rectangle(1305, 560, 150, 150); 
-            artifactsPlacer[4] = new Rectangle(1490, 560, 150, 150); 
-            artifactsPlacer[5] = new Rectangle(1675, 560, 150, 150); 
-            
+            artifactsPlacer[2] = new Rectangle(1120, 560, 150, 150);
+            artifactsPlacer[3] = new Rectangle(1305, 560, 150, 150);
+            artifactsPlacer[4] = new Rectangle(1490, 560, 150, 150);
+            artifactsPlacer[5] = new Rectangle(1675, 560, 150, 150);
+
             artifactsPlacer[6] = new Rectangle(750, 800, 150, 150);
             artifactsPlacer[7] = new Rectangle(935, 800, 150, 150);
             artifactsPlacer[8] = new Rectangle(1120, 800, 150, 150);
             artifactsPlacer[9] = new Rectangle(1305, 800, 150, 150);
             artifactsPlacer[10] = new Rectangle(1490, 800, 150, 150);
             artifactsPlacer[11] = new Rectangle(1675, 800, 150, 150);
+
+            artiRec[0] = new Rectangle(465, 550, 200, 400);
 
             menuSound = content.Load<SoundEffect>("Sound/Menu Selection Click");
 
@@ -54,23 +51,228 @@ namespace Miner.UiForInv
         public static void DrawArtifact(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(spritePlacer[7], uiRectangles[24], Color.Black);//nothing imprtant, just a border.
-            spriteBatch.Draw(spritePlacer[7], artifactsPlacer[0], Color.White);
-            spriteBatch.Draw(spritePlacer[7], artifactsPlacer[1], Color.White);
-            spriteBatch.Draw(spritePlacer[7], artifactsPlacer[2], Color.White);
-            spriteBatch.Draw(spritePlacer[7], artifactsPlacer[3], Color.White);
-            spriteBatch.Draw(spritePlacer[7], artifactsPlacer[4], Color.White);
-            spriteBatch.Draw(spritePlacer[7], artifactsPlacer[5], Color.White);
-            spriteBatch.Draw(spritePlacer[7], artifactsPlacer[6], Color.White);
-            spriteBatch.Draw(spritePlacer[7], artifactsPlacer[7], Color.White);
-            spriteBatch.Draw(spritePlacer[7], artifactsPlacer[8], Color.White);
-            spriteBatch.Draw(spritePlacer[7], artifactsPlacer[9], Color.White);
-            spriteBatch.Draw(spritePlacer[7], artifactsPlacer[10], Color.White);
-            spriteBatch.Draw(spritePlacer[7], artifactsPlacer[11], Color.White);
-
+            #region First line Artifacts
+            if (artiFound[0] == false)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[0], Color.Gray);
+            }
+            else if (artiFound[0] == true)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[0], Color.White);
+            }
+            if (artiFound[1] == false)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[1], Color.Gray);
+            }
+            else if (artiFound[1] == true)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[1], Color.White);
+            }
+            if (artiFound[2] == false)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[2], Color.Gray);
+            }
+            else if (artiFound[2] == true)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[2], Color.White);
+            }
+            if (artiFound[3] == false)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[3], Color.Gray);
+            }
+            else if (artiFound[3] == true)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[3], Color.White);
+            }
+            if (artiFound[4] == false)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[4], Color.Gray);
+            }
+            else if (artiFound[4] == true)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[4], Color.White);
+            }
+            if (artiFound[5] == false)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[5], Color.Gray);
+            }
+            else if (artiFound[5] == true)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[5], Color.White);
+            }
+            #endregion
+            #region Second line of Artifacts
+            if (artiFound[6] == false)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[6], Color.Gray);
+            }
+            else if (artiFound[6] == true)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[6], Color.White);
+            }
+            if (artiFound[7] == false)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[7], Color.Gray);
+            }
+            else if (artiFound[7] == true)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[7], Color.White);
+            }
+            if (artiFound[8] == false)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[8], Color.Gray);
+            }
+            else if (artiFound[8] == true)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[8], Color.White);
+            }
+            if (artiFound[9] == false)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[9], Color.Gray);
+            }
+            else if (artiFound[8] == true)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[9], Color.White);
+            }
+            if (artiFound[10] == false)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[10], Color.Gray);
+            }
+            else if (artiFound[10] == true)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[10], Color.White);
+            }
+            if (artiFound[11] == false)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[11], Color.Gray);
+            }
+            else if (artiFound[11] == true)
+            {
+                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[11], Color.White);
+            }
+            #endregion
+           //Different artifact you have clicked
             switch (artifactClicked)
             {
                 case 1:
-                   // spriteBatch.Draw(spritePlacer[7], )
+                    if (artiFound[0] == false)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                    }
+                    else if (artiFound[0] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                    }
+                    break;
+                case 2:
+                    if (artiFound[1] == false)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                    }
+                    else if (artiFound[1] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                    }
+                    break;
+                case 3:
+                    if (artiFound[2] == false)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                    }
+                    else if (artiFound[2] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                    }
+                    break;
+                case 4:
+                    if (artiFound[3] == false)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                    }
+                    else if (artiFound[3] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                    }
+                    break;
+                case 5:
+                    if (artiFound[4] == false)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                    }
+                    else if (artiFound[4] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                    }
+                    break;
+                case 6:
+                    if (artiFound[5] == false)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                    }
+                    else if (artiFound[5] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                    }
+                    break;
+                case 7:
+                    if (artiFound[6] == false)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                    }
+                    else if (artiFound[6] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                    }
+                    break;
+                case 8:
+                    if (artiFound[7] == false)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                    }
+                    else if (artiFound[7] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                    }
+                    break;
+                case 9:
+                    if (artiFound[8] == false)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                    }
+                    else if (artiFound[8] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                    }
+                    break;
+                case 10:
+                    if (artiFound[9] == false)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                    }
+                    else if (artiFound[9] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                    }
+                    break;
+                case 11:
+                    if (artiFound[10] == false)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                    }
+                    else if (artiFound[10] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                    }
+                    break;
+                case 12:
+                    if (artiFound[11] == false)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                    }
+                    else if (artiFound[11] == true)
+                    {
+                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                    }
                     break;
             }
         }
@@ -182,7 +384,7 @@ namespace Miner.UiForInv
                 artifactClicked = 12;
             }
             #endregion
-           
+
         }
     }
 }
