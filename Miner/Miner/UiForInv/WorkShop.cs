@@ -25,6 +25,7 @@ namespace Miner
         protected static bool isArtiClicked = false;
 
         protected static bool[] upgraded = new bool[13];//for the upgrade system
+        protected static bool[] artiFound = new bool[12];//for the artifact system
         /*  index range 0-3 is drill speed
             index range 4-7 is battery storage
             index range 8-11 is battery recharge speed
@@ -44,6 +45,8 @@ namespace Miner
         protected SoundEffect menuSound;//for playing the sound of moving around the inventory
         //A property so you can access the upgrade system from another class
         public static bool[] Upgraded { get { return upgraded; } set { upgraded = value; } }
+        //A property so you can access the whcich artifacts you have found from another class
+        public static bool[] ArtiFound { get { return artiFound; } set { artiFound = value; } }
         //A property so you can open the inventory through another sub class
         public bool IsInvOpen { get { return isInvOpen; } set { isInvOpen = value; } }
         //5 properties for each resource that can be accessed in anyother script
