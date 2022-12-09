@@ -82,6 +82,8 @@ namespace Miner
             groundSprite[4] = Content.Load<Texture2D>("GroundSprite/RockyDrit");
             groundSprite[5] = Content.Load<Texture2D>("GroundSprite/Kobber");
             groundSprite[6] = Content.Load<Texture2D>("GroundSprite/Titanium");
+            groundSprite[7] = Content.Load<Texture2D>("GroundSprite/UraniumNew");
+            groundSprite[8] = Content.Load<Texture2D>("GroundSprite/Platinium2");
             engine_sound = Content.Load<SoundEffect>("Sound/motorcycle-idle-01");
             engine_sound_inst = engine_sound.CreateInstance();
 
@@ -273,7 +275,7 @@ namespace Miner
                             SpriteEffects.None,//effects
                             1f);//Layer 
                             break;
-                        case Texture n when n == groundSprite[6]:
+                        case Texture n when n == groundSprite[6] || n == groundSprite[7] || n == groundSprite[8]:
                             _spriteBatch.Draw(groundSprite[4],//what to draw
                             new Vector2(gx + ofset_x + direction[0], gy + ofset_y + direction[1]),//place to draw it
                             null,//rectangle
