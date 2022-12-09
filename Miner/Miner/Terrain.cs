@@ -1267,9 +1267,13 @@ namespace Miner
                         case int n when n == 7 || n == 8:
                             if (tiles_mined[(x_mod * width) + i] > 3000)
                             {
-                                if (Terrain.Which(x, y, loaded_chunks[0]) == 6)
+                                if (Terrain.Which(x, y, loaded_chunks[0]) == 8)
                                 {
-                                    WorkShop.R3Tit++;
+                                    WorkShop.R4Plat++;
+                                }
+                                if (Terrain.Which(x, y, loaded_chunks[0]) == 7)
+                                {
+                                    WorkShop.R5Uran++;
                                 }
                                 stonebreakfinish.Play();
                                 Terrain.Change(x, y, 1, loaded_chunks[0]);

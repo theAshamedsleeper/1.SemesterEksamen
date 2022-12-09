@@ -1,1 +1,178 @@
-<?xml version="1.0" encoding="utf-8"?><SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Profile>Reach</Profile><Platform>Windows</Platform><Config /><SourceFiles><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/BackgroundTop3.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/BackgroundTopBigScale5.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Baggrund Atmosphere.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/DrillDiggingDown3Spritesheet.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/DrillDiggingSide6Spritesheet.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/DrillFlying7Spritesheet.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/DrillFlyingDiggingSpritesheet.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/DrillIdleBub3.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/DrillMoving9Spritesheet.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/File.spritefont</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/FileFont.spritefont</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/ArtefactBlock.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/Kobber.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/MilitaryScrap.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/output-onlinepngtools (1).png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/Platinium2.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/RockyDrit.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/Stone.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/Titanium.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/UraniumNew.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/pixil-frame-0.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/pixil-frame-2.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/pixilart-drawing_1.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Sound/Menu Selection Click.wav</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Sound/motorcycle-idle-01.mp3</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Sound/Rocks/StoneBreak1.mp3</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Sound/Rocks/StoneBreak2.mp3</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Sound/Rocks/StoneBreak3.mp3</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Sound/Rocks/StoneBreak4.mp3</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Sound/Rocks/StoneBreakfinish.mp3</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/BarDivider.PNG</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/BatteryForPlayer_Batterholder.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/BatteryForPlayer_batteryPower.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/CraftingButton.PNG</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/ArtifactsFontT.spritefont</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/CloseUIButton.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/CraftFontT.spritefont</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/R1.spritefont</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/R2.spritefont</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/R3.spritefont</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/R4.spritefont</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/R5.spritefont</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/StatsFontT.spritefont</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/UpgradeFontT.spritefont</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/InventorybackGround.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/InvetoryTitleArtifacts.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/InvetoryTitleCraft.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/InvetoryTitleStats.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/InvetoryTitleUpgrade.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/OpenInv.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/10P faster drill_Layer 0.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/10PBetterBattery.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/10PBetterDrill_Info.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/10PBetterSolarPanel.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/20P faster drill_Layer 1.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/20PBetterBattery.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/20PBetterDrill_Info.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/20PBetterSolarPanel.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/30P faster drill_Layer 2.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/30PBetterBattery.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/30PBetterDrill_Info.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/30PBetterSolarPanel.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/40P faster drill_Layer 3.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/40PBetterBattery.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/40PBetterDrill_Info.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/40PBetterSolarPanel.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/Biger battery_Layer 0.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/Biger battery_Layer 1.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/Biger battery_Layer 2.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/Biger battery_Layer 3.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 0.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 1.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 2.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 3.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/Last Upgrade AiBrainPng.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_Copper.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_MiliScrap.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_Plat.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_Titanium.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_Uranium.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/RougeAiUpgradeInfo.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/UpgradeButton.png</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradePlaceHolder.PNG</File><File>C:/Users/Bjark/OneDrive/Skrivebord/Study/Basisprogrammering/1.SemesterEksamen/Miner/Miner/Content/Uranium.png</File></SourceFiles><DestFiles><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /><File xsi:nil="true" /></DestFiles></SourceFileCollection>
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/BackgroundTop3.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/BackgroundTopBigScale5.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Baggrund Atmosphere.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/DrillDiggingDown3Spritesheet.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/DrillDiggingSide6Spritesheet.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/DrillFlying7Spritesheet.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/DrillFlyingDiggingSpritesheet.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/DrillIdleBub3.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/DrillMoving9Spritesheet.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/File.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/FileFont.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/ArtefactBlock.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/Kobber.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/MilitaryScrap.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/output-onlinepngtools (1).png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/Platinium2.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/RockyDrit.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/Stone.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/Titanium.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/GroundSprite/UraniumNew.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/pixil-frame-0.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/pixil-frame-2.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/pixilart-drawing_1.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Sound/Menu Selection Click.wav</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Sound/motorcycle-idle-01.mp3</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Sound/Rocks/StoneBreak1.mp3</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Sound/Rocks/StoneBreak2.mp3</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Sound/Rocks/StoneBreak3.mp3</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Sound/Rocks/StoneBreak4.mp3</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Sound/Rocks/StoneBreakfinish.mp3</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/BarDivider.PNG</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/BatteryForPlayer_Batterholder.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/BatteryForPlayer_batteryPower.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/CraftingButton.PNG</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/ArtifactsFontT.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/CloseUIButton.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/CraftFontT.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/R1.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/R2.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/R3.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/R4.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/R5.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/StatsFontT.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/Fonts/UpgradeFontT.spritefont</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/InventorybackGround.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/InvetoryTitleArtifacts.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/InvetoryTitleCraft.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/InvetoryTitleStats.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/InvetoryTitleUpgrade.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/OpenInv.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/10P faster drill_Layer 0.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/10PBetterBattery.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/10PBetterDrill_Info.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/10PBetterSolarPanel.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/20P faster drill_Layer 1.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/20PBetterBattery.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/20PBetterDrill_Info.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/20PBetterSolarPanel.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/30P faster drill_Layer 2.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/30PBetterBattery.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/30PBetterDrill_Info.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/30PBetterSolarPanel.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/40P faster drill_Layer 3.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/40PBetterBattery.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/40PBetterDrill_Info.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/40PBetterSolarPanel.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/Biger battery_Layer 0.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/Biger battery_Layer 1.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/Biger battery_Layer 2.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/Biger battery_Layer 3.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 0.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 1.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 2.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/faster Battery recharge_Layer 3.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/Last Upgrade AiBrainPng.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_Copper.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_MiliScrap.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_Plat.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_Titanium.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/OreSymbol_Uranium.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/RougeAiUpgradeInfo.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradeInfo/UpgradeButton.png</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Ui Sprites/UpgradePlaceHolder.PNG</File>
+    <File>C:/Users/thorb/stuff/Skole/1.Semester/Eksammen/Files/1.SemesterEksamen/Miner/Miner/Content/Uranium.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
