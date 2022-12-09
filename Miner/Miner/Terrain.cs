@@ -175,8 +175,12 @@ namespace Miner
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
                         {
-                            mining_updater(pos_x, pos_y, deltatime, 2);
-                            break_Sound(deltatime);
+                            if (GameWorld.inAir == true)
+                            {
+                                mining_updater(pos_x, pos_y, deltatime, 2);
+                                break_Sound(deltatime);
+                            }
+                            
                             return true;
                         }
                     }
