@@ -104,7 +104,7 @@ namespace Miner
 
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.P))
                 Exit();
             #region input
             float deltatime = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
