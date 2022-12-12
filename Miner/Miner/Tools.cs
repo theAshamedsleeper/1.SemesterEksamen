@@ -43,23 +43,18 @@ namespace Miner
 
 
             #region - Battery upgrade -
-            
-
             if (UpgradeButton.Upgraded[7] == true)
             {
                 batteryMax = 14000;
             }
-            
             if (UpgradeButton.Upgraded[6] == true)
             {
                 batteryMax = 13000;
             }
-            
             if (UpgradeButton.Upgraded[5] == true)
             {
                 batteryMax = 12000;
             }
-
             if (UpgradeButton.Upgraded[4] == true)
             {
                 batteryMax = 11000;
@@ -96,7 +91,6 @@ namespace Miner
 
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
-
             // - SOLPANELETS VIRKNING -
             gaintimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             /*gainTimer tæller op til solarPanelCombined,
@@ -104,19 +98,14 @@ namespace Miner
             Når den er nået til max, skifter den frame og timeren bliver resettet. */
             if (Terrain.is_we_on_top() == true && batteryFrame > 0 && gaintimer > solarPanelCombined)
             {
-
                 batteryFrame -= 30;
                 gaintimer = 0;
                 
             }
-
-            
-
             // - BATTERIETS VIRKNING OG ANIMATION -
             draintimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             //drainTimer tæller op til batteryMax, som bliver defineret pr batteri upgrade. 
-            if (Terrain.is_we_on_top() == false && draintimer > batteryMax && batteryFrame <= 300 && !Keyboard.GetState().IsKeyDown(Keys.Q)) 
-
+            if (Terrain.is_we_on_top() == false && draintimer > batteryMax && batteryFrame <= 300) 
             {
                 batteryFrame = batteryFrame + 30;
                 draintimer = 0;

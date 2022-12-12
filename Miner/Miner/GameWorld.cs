@@ -227,7 +227,7 @@ namespace Miner
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Beige);
             _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
 
             _spriteBatch.Draw(backgroundTop, new Vector2(ofset_x / 2, ofset_y - 160), new Rectangle(0, 0, 3500, 800), Color.White, 0f, new Vector2(0, 0), 1f, SpriteEffects.None, 0f);
