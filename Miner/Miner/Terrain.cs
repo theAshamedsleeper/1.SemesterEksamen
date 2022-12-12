@@ -160,15 +160,19 @@ namespace Miner
                     break;
                 case 2:
                     #region up
-                    for (int p = 0; p < 2; p++)
+                    for (int p = 0; p < 3; p++)
                     {
                         switch (p)
                         {
                             case 0:
+                                pos_x = 1920 / 2  - GameWorld.ofset_x + 2;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - 1;
+                                break;
+                            case 1:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 2;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y-1;
                                 break;
-                            case 1:
+                            case 2:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 - 2;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - 1;
                                 break;
@@ -188,15 +192,19 @@ namespace Miner
                     break;
                 case 3:
                     #region down
-                    for (int l = 0; l < 2; l++)
+                    for (int l = 0; l < 3; l++)
                     {
                         switch (l)
                         {
                             case 0:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 1;
+                                pos_x = 1920 / 2  - GameWorld.ofset_x;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
                                 break;
                             case 1:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 1;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
+                                break;
+                            case 2:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 - 1;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
                                 break;
