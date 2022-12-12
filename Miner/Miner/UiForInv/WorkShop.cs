@@ -40,7 +40,7 @@ namespace Miner
         private static int r4Plat;
         private static int r5Uranium;
 
-        private bool isInvOpen = false;//to see if the inventory is open
+        protected bool isInvOpen = false;//to see if the inventory is open
         protected float closeDownShopTimer;//A timer to make sure you cant spame the invetory button.
         protected SoundEffect menuSound;//for playing the sound of moving around the inventory
         //A property so you can access the upgrade system from another class
@@ -72,6 +72,8 @@ namespace Miner
         /// <param name="spriteBatch"></param>
         public void Draw(SpriteBatch spriteBatch)
         {
+
+
             if (isInvOpen == true)//handles the drawing and the 4 buttons at the top of the inventory
             {
                 //draws the button at the top of the inv

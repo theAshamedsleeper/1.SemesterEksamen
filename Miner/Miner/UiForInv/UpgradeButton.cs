@@ -426,6 +426,8 @@ namespace Miner.UiForInv
         /// <param name="gameTime"></param>
         private void UpgradeTab(GameTime gameTime)
         {
+           
+
             #region switch tabs
             //showing Craft tab
             if (uiRectangles[0].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)

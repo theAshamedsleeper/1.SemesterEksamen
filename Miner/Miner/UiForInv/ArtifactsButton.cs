@@ -317,6 +317,7 @@ namespace Miner.UiForInv
                 isArtiClicked = false;
                 isUpgradesClicked = false;
             }
+            
             closeDownShopTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
             // close down Shop
             if (IsInvOpen == true && uiRectangles[4].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
