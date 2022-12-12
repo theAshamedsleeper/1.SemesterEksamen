@@ -42,6 +42,11 @@ namespace Miner.UiForInv
         public override void Update(GameTime gameTime)
         {
             mouse = Mouse.GetState();//So you can click around with the mouse.
+            //Closses down the Invetory
+            if (IsInvOpen == true && Keyboard.GetState().IsKeyDown(Keys.Escape))
+            {
+                IsInvOpen = false;
+            }
             ArtifactsTab(gameTime);
         }
         /// <summary>

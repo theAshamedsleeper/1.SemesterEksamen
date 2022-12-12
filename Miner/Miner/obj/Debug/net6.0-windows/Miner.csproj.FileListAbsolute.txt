@@ -255,7 +255,6 @@ D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradePlaceHolder.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingDown3Spritesheet.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingSide6Spritesheet.xnb
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlying6Spritesheet.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillIdleBub3.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillMoving9Spritesheet.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\File.xnb
@@ -682,3 +681,12 @@ C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Min
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleStats.xnb
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleUpgrade.xnb
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\OpenInv.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\BackgroundTopBig.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\BackgroundTop3.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\BackgroundTopBigScale5.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Baggrund Atmosphere.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlying7Spritesheet.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlyingDiggingSpritesheet.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\MilitaryScrap.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Platinium2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\OpenInv.xnb
