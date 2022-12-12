@@ -41,7 +41,7 @@ namespace Miner
         private static int r5Uranium;
 
         protected bool isInvOpen = false;//to see if the inventory is open
-        protected float closeDownShopTimer;//A timer to make sure you cant spame the invetory button.
+        protected float closeDownShopTimer;//A timer to make sure you cant spame the invetory button.S
         protected SoundEffect menuSound;//for playing the sound of moving around the inventory
         //A property so you can access the upgrade system from another class
         public static bool[] Upgraded { get { return upgraded; } set { upgraded = value; } }

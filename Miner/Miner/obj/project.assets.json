@@ -7538,11 +7538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program Files (x86)\\Skole\\1 semester\\1.SemesterEksamen\\Miner\\Miner\\Miner.csproj",
+      "projectUniqueName": "C:\\Users\\thorb\\stuff\\Skole\\1.Semester\\Eksammen\\Files\\1.SemesterEksamen\\Miner\\Miner\\Miner.csproj",
       "projectName": "Miner",
-      "projectPath": "D:\\Program Files (x86)\\Skole\\1 semester\\1.SemesterEksamen\\Miner\\Miner\\Miner.csproj",
+      "projectPath": "C:\\Users\\thorb\\stuff\\Skole\\1.Semester\\Eksammen\\Files\\1.SemesterEksamen\\Miner\\Miner\\Miner.csproj",
       "packagesPath": "C:\\Users\\thorb\\.nuget\\packages\\",
-      "outputPath": "D:\\Program Files (x86)\\Skole\\1 semester\\1.SemesterEksamen\\Miner\\Miner\\obj\\",
+      "outputPath": "C:\\Users\\thorb\\stuff\\Skole\\1.Semester\\Eksammen\\Files\\1.SemesterEksamen\\Miner\\Miner\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7604,7 +7604,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
