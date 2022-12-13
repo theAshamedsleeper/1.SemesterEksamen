@@ -30,7 +30,7 @@ namespace Miner
         protected const string SPRITESHEET_FLYING = "DrillFlying7Spritesheet";
         protected const string SPRITESHEET_DIGGING_DOWN = "DrillDiggingDown3Spritesheet";
         protected const string SPRITE_OVERLAY = "DrillIdleBub3";
-        protected const string SPRITESHEET_DIGGING_UP = "DrillFlyingDiggingSpritesheet";
+        protected const string SPRITESHEET_DIGGING_UP = "DrillDiggingUp4Spr";
 
 
         protected Texture2D _spriteSheetTexture;
@@ -57,7 +57,7 @@ namespace Miner
         {
 
 
-            spriteBatch.Draw(_spriteSheetTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5f, effect, 1f);
+            spriteBatch.Draw(_spriteSheetTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 4.34375f, effect, 1f);
 
             idletimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             
@@ -65,7 +65,7 @@ namespace Miner
             {
                 if (drilling == false)
                 {
-                    spriteBatch.Draw(_spriteIdleTexture, position, new Rectangle(0, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 5f, effect, 1f);
+                    spriteBatch.Draw(_spriteIdleTexture, position, new Rectangle(0, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 4.34375f, effect, 1f);
                 }
 
             }

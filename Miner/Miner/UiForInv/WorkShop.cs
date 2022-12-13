@@ -20,7 +20,7 @@ namespace Miner
         protected static Rectangle[] artifactsPlacer = new Rectangle[20];//only for storing the placement and size of the artifacts
         //4 bools to see which tap your are on
         protected static bool isCraftClicked = false;
-        protected static bool isUpgradesClicked = false;
+        protected static bool isUpgradesClicked = true;
         protected static bool isStatsClicked = false;
         protected static bool isArtiClicked = false;
 

@@ -66,8 +66,6 @@ namespace Miner
             #endregion
 
             #region - FLYING ANIMATIONS -
-
-
             if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
                 drilling = true;
@@ -79,26 +77,16 @@ namespace Miner
                 {
                     _spriteSheetTexture = _flyingTexture;
                 }
-                
-
                 frameTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-
-
                 if (frameTimer > 50)
                 {
-
                     frame = frame + 32;
                     frameTimer = 0;
-
-
                 }
-
                 if (frame == 128)
                 {
                     frame = 0;
                 }
-
-
             }
 
             else if (Keyboard.GetState().IsKeyDown(Keys.S) && GameWorld.inAir == false)
