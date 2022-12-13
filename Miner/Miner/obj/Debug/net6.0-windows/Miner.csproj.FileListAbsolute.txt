@@ -325,7 +325,6 @@ C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Mine
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PDrill.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingDown3Spritesheet.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingSide6Spritesheet.xnb
-C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlying6Spritesheet.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillIdleBub3.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillMoving9Spritesheet.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\File.xnb
@@ -656,7 +655,6 @@ C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Mine
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\BackgroundTop3.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\BackgroundTopBigScale5.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\Baggrund Atmosphere.xnb
-C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlyingDiggingSpritesheet.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleArtifacts.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleCraft.xnb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleStats.xnb
@@ -690,3 +688,6 @@ D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Platinium2.xnb
 D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\OpenInv.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingUp4Spr.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingUp4Spr.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlying7Spritesheet.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\OpenInv.xnb

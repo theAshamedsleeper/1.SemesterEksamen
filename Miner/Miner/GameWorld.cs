@@ -319,7 +319,7 @@ namespace Miner
                 text += "\n";
             }
             text += ofset_x + " " + ofset_y;
-            _spriteBatch.DrawString(ContFont, text, new Vector2(1600, 100), Color.White);
+            _spriteBatch.DrawString(ContFont, text, new Vector2(1600, 100), Color.Green);
 
 
             foreach (GameObjects objects in gameObjects)

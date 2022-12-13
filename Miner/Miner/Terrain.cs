@@ -24,9 +24,6 @@ namespace Miner
         private static int x_1 = 0;
         private static int y_1 = 0;
         private static int z_1 = 0;
-        private static float scale = 1.875f;
-        private static List<int[]> chunks = new List<int[]>();
-        private static int[] chunk_0 = new int[2];
 
         private static int[] tiles_x = new int[width * height];
         private static int[] tiles_y = new int[width * height];
@@ -37,8 +34,6 @@ namespace Miner
         private static int[] tiles_empty = new int[width * height];
         private static float[] tiles_mined = new float[width * height];
 
-        static Random rnd = new Random();
-        private static int[] current_chunk = new int[width * height];
         private static List<int[]> loaded_chunks = new List<int[]>();
         private static byte switch_off = 0;
         private static SoundEffect stonebreak_1;
@@ -47,7 +42,6 @@ namespace Miner
         private static SoundEffect stonebreak_4;
         private static SoundEffect stonebreakfinish;
         private static float sound_timer = 0;
-        public static float t_scale { get { return scale; } }
         #region terrain making
         /// <summary>
         /// a method to give value to 2 arrays and loading all needed soundeffects.
@@ -313,10 +307,10 @@ namespace Miner
             //direction switch, choses direction based on offset.
             switch (x_off)
             {
-                case int k when k > 0:
+                case int k when k > 0 + loaded_chunks[0][0] * 1920*5:
                     direction[0] = -1;
                     break;
-                case int k when k < 0:
+                case int k when k < -(1920*5 - 1920/2 - 32 * 4.34375) - loaded_chunks[0][0] * 1920*5:
                     direction[0] = 1;
                     break;
                 default:
@@ -325,10 +319,10 @@ namespace Miner
             }
             switch (y_off)
             {
-                case int k when k > 0:
+                case int k when k > 0 + loaded_chunks[0][1] * 1080 * 5:
                     direction[1] = 1;
                     break;
-                case int k when k < 0:
+                case int k when k < -(1080 * 5 - 1080 / 2 - 32 * 4.34375) - loaded_chunks[0][1] * (1080*5):
                     direction[1] = -1;
                     break;
                 default:
@@ -356,29 +350,29 @@ namespace Miner
         /// <param name="y_1"> player y off set </param>
         public static void Move_Main_chunk(int x_1, int y_1)
         {
-            int _width = 5120;
-            int _height = 2880;
+            int _width = 9600;
+            int _height = 5400;
             // make a adding for strait and not strait, this can not add 2 chunks
             int[] direction = new int[2];
-            if (x_1 < -(_width - (1920 / 2 - (32 * 5) / 2)) - loaded_chunks[0][0] * 5120)
+            if (x_1 < -(_width - (1920 / 2 - (32 * 5) / 2)) - loaded_chunks[0][0] * _width)
             {
                 direction[0] = 1;
                 direction[1] = 0;
                 // change new main chunk
             }
-            if (x_1 - (1920 / 2 - (32 * 5) / 2) + loaded_chunks[0][0] * 5120 > 0)
+            if (x_1 - (1920 / 2 - (32 * 5) / 2) + loaded_chunks[0][0] * _width > 0)
             {
                 direction[0] = -1;
                 direction[1] = 0;
                 // change new main chunk
             }
-            if (y_1 > _height - (1080 / 2 - (32 * 5) / 2) + loaded_chunks[0][1] * 2880)
+            if (y_1 > _height - (1080 / 2 - (32 * 5) / 2) + loaded_chunks[0][1] * _height)
             {
                 direction[0] = 0;
                 direction[1] = 1;
                 // change new main chunk
             }
-            if (y_1 < -(_height - (1080 / 2 - (32 * 5) / 2)) + loaded_chunks[0][1] * 2880)
+            if (y_1 < -(_height - (1080 / 2 - (32 * 5) / 2)) + loaded_chunks[0][1] * _height)
             {
                 direction[0] = 0;
                 direction[1] = -1;
@@ -761,10 +755,10 @@ namespace Miner
                         if (i > 448)
                         {
                             #region layer 3
-                            int returns = (Randomies.randoms(10) + 2);
+                            int returns = (randoms(10) + 2);
                             if (returns == 10 || returns == 11 || returns == 12 || returns == 9 || returns == 8 || returns == 7 || returns == 6 || returns == 5)
                             {
-                                returns = Randomies.randoms(10) + 3;
+                                returns = randoms(10) + 3;
                                 if (returns < 10)
                                 {
                                     returns = 4;
@@ -776,14 +770,14 @@ namespace Miner
                             }
                             if (returns == 4)
                             {
-                                if (Randomies.randoms(4) == 0)
+                                if (randoms(4) == 0)
                                 {
-                                    returns = Randomies.randoms(3) + 6;
+                                    returns = randoms(3) + 6;
                                 }
                             }
                             if (returns == 3)
                             {
-                                if (Randomies.randoms(7) == 0)
+                                if (randoms(7) == 0)
                                 {
                                     returns = 5;
                                 }
@@ -794,21 +788,21 @@ namespace Miner
                         else
                         {
                             #region layer 2
-                            int returns = (Randomies.randoms(10) + 2);
+                            int returns = (randoms(10) + 2);
                             if (returns == 10 || returns == 11 || returns == 12 || returns == 9 || returns == 8 || returns == 7 || returns == 6 || returns == 5)
                             {
-                                returns = Randomies.randoms(2) + 3;
+                                returns = randoms(2) + 3;
                             }
                             if (returns == 3)
                             {
-                                if (Randomies.randoms(7) == 0)
+                                if (randoms(7) == 0)
                                 {
                                     returns = 5;
                                 }
                             }
                             if (returns == 4)
                             {
-                                if (Randomies.randoms(7) == 0)
+                                if (randoms(7) == 0)
                                 {
                                     returns = 6;
                                 }
@@ -820,17 +814,17 @@ namespace Miner
                     else
                     {
                         #region layer 1
-                        int returns = (Randomies.randoms(3) + 2);
+                        int returns = (randoms(3) + 2);
                         if (returns == 3)
                         {
-                            if (Randomies.randoms(5) == 0)
+                            if (randoms(5) == 0)
                             {
                                 returns = 5;
                             }
                         }
                         if (returns == 4)
                         {
-                            if (Randomies.randoms(5) == 0)
+                            if (randoms(5) == 0)
                             {
                                 returns = 6;
                             }
@@ -847,6 +841,22 @@ namespace Miner
                     return 1;
             }
             return 0;
+        }
+        private static int randoms(int threshold)
+        {
+            Random rnd = new Random();
+            int num = rnd.Next(threshold);
+            switch (num)
+            {
+                case 0:
+                    return 0;
+                case 1:
+                    return 1;
+                case 2:
+                    return 2;
+
+            }
+            return num;
         }
         #endregion
         #region write chunks
@@ -972,10 +982,10 @@ namespace Miner
             switch (loaded_one[0])
             {
                 case int n when n < loaded_chunks[0][0]:
-                    direction[0] = -5120;
+                    direction[0] = -9600;
                     break;
                 case int n when n > loaded_chunks[0][0]:
-                    direction[0] = 5120;
+                    direction[0] = 9600;
                     break;
                 default:
                     direction[0] = 0;
@@ -984,10 +994,10 @@ namespace Miner
             switch (loaded_one[1])
             {
                 case int k when k < loaded_chunks[0][1]:
-                    direction[1] = 2880;
+                    direction[1] = 5400;
                     break;
                 case int k when k > loaded_chunks[0][1]:
-                    direction[1] = -2880;
+                    direction[1] = -5400;
                     break;
                 default:
                     direction[1] = 0;
@@ -1153,37 +1163,7 @@ namespace Miner
                             }
                             else
                             {
-                                #region drill grade check
-                                if (WorkShop.Upgraded[0])
-                                {
-                                    if (WorkShop.Upgraded[1])
-                                    {
-                                        if (WorkShop.Upgraded[2])
-                                        {
-                                            if (WorkShop.Upgraded[3])
-                                            {
-                                                tiles_mined[(x_mod * width) + i] += deltatime * 5;
-                                            }
-                                            else
-                                            {
-                                                tiles_mined[(x_mod * width) + i] += deltatime * 4;
-                                            }
-                                        }
-                                        else
-                                        {
-                                            tiles_mined[(x_mod * width) + i] += deltatime * 3;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        tiles_mined[(x_mod * width) + i] += deltatime * 2;
-                                    }
-                                }
-                                else
-                                {
-                                    tiles_mined[(x_mod * width) + i] += deltatime;
-                                }
-                                #endregion
+                                mining_on_tile((x_mod * width) + i, deltatime);
                             }
                             break;
                         case int n when n == 3 || n == 5:
@@ -1198,37 +1178,7 @@ namespace Miner
                             }
                             else
                             {
-                                #region drill grade check
-                                if (WorkShop.Upgraded[0])
-                                {
-                                    if (WorkShop.Upgraded[1])
-                                    {
-                                        if (WorkShop.Upgraded[2])
-                                        {
-                                            if (WorkShop.Upgraded[3])
-                                            {
-                                                tiles_mined[(x_mod * width) + i] += deltatime * 5;
-                                            }
-                                            else
-                                            {
-                                                tiles_mined[(x_mod * width) + i] += deltatime * 4;
-                                            }
-                                        }
-                                        else
-                                        {
-                                            tiles_mined[(x_mod * width) + i] += deltatime * 3;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        tiles_mined[(x_mod * width) + i] += deltatime * 2;
-                                    }
-                                }
-                                else
-                                {
-                                    tiles_mined[(x_mod * width) + i] += deltatime;
-                                }
-                                #endregion
+                                mining_on_tile((x_mod * width) + i, deltatime);
                             }
                             break;
                         case int n when n == 4 || n == 6:
@@ -1243,37 +1193,7 @@ namespace Miner
                             }
                             else
                             {
-                                #region drill grade check
-                                if (WorkShop.Upgraded[0])
-                                {
-                                    if (WorkShop.Upgraded[1])
-                                    {
-                                        if (WorkShop.Upgraded[2])
-                                        {
-                                            if (WorkShop.Upgraded[3])
-                                            {
-                                                tiles_mined[(x_mod * width) + i] += deltatime * 5;
-                                            }
-                                            else
-                                            {
-                                                tiles_mined[(x_mod * width) + i] += deltatime * 4;
-                                            }
-                                        }
-                                        else
-                                        {
-                                            tiles_mined[(x_mod * width) + i] += deltatime * 3;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        tiles_mined[(x_mod * width) + i] += deltatime * 2;
-                                    }
-                                }
-                                else
-                                {
-                                    tiles_mined[(x_mod * width) + i] += deltatime;
-                                }
-                                #endregion
+                                mining_on_tile((x_mod * width) + i, deltatime);
                             }
                             break;
                         case int n when n == 7 || n == 8:
@@ -1292,43 +1212,45 @@ namespace Miner
                             }
                             else
                             {
-                                #region drill grade check
-                                if (WorkShop.Upgraded[0])
-                                {
-                                    if (WorkShop.Upgraded[1])
-                                    {
-                                        if (WorkShop.Upgraded[2])
-                                        {
-                                            if (WorkShop.Upgraded[3])
-                                            {
-                                                tiles_mined[(x_mod * width) + i] += deltatime * 5;
-                                            }
-                                            else
-                                            {
-                                                tiles_mined[(x_mod * width) + i] += deltatime * 4;
-                                            }
-                                        }
-                                        else
-                                        {
-                                            tiles_mined[(x_mod * width) + i] += deltatime * 3;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        tiles_mined[(x_mod * width) + i] += deltatime * 2;
-                                    }
-                                }
-                                else
-                                {
-                                    tiles_mined[(x_mod * width) + i] += deltatime;
-                                }
-                                #endregion
+                                mining_on_tile((x_mod * width) + i, deltatime); 
                             }
                             break;
                             #endregion
                     }
 
                 }
+            }
+        }
+        private static void mining_on_tile(int i, float deltatime)
+        {
+            if (WorkShop.Upgraded[0])
+            {
+                if (WorkShop.Upgraded[1])
+                {
+                    if (WorkShop.Upgraded[2])
+                    {
+                        if (WorkShop.Upgraded[3])
+                        {
+                            tiles_mined[i] += deltatime * 5;
+                        }
+                        else
+                        {
+                            tiles_mined[i] += deltatime * 4;
+                        }
+                    }
+                    else
+                    {
+                        tiles_mined[i] += deltatime * 3;
+                    }
+                }
+                else
+                {
+                    tiles_mined[i] += deltatime * 2;
+                }
+            }
+            else
+            {
+                tiles_mined[i] += deltatime;
             }
         }
         #endregion
