@@ -101,13 +101,13 @@ namespace Miner
                         {
                             case 0:
                                 // pos check 1
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x -1;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 1;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - 1;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 5;
                                 break;
                             case 1:
                                 // pos check 2
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x -1;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5 - 1;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - 1;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f - 5;
                                 break;
                         }
                         // if terrain not air
@@ -118,7 +118,7 @@ namespace Miner
                                 mining_updater(pos_x, pos_y, deltatime, 0);
                                 break_Sound(deltatime);
                             }
-                           
+
                             return true;
                         }
                     }
@@ -131,12 +131,12 @@ namespace Miner
                         switch (h)
                         {
                             case 0:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 1;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f + 1;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 5;
                                 break;
                             case 1:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5 - 1;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f + 1;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f - 5;
                                 break;
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
@@ -146,7 +146,7 @@ namespace Miner
                                 mining_updater(pos_x, pos_y, deltatime, 1);
                                 break_Sound(deltatime);
                             }
-                           
+
                             return true;
                         }
                     }
@@ -159,15 +159,15 @@ namespace Miner
                         switch (p)
                         {
                             case 0:
-                                pos_x = 1920 / 2  - GameWorld.ofset_x + 2;
+                                pos_x = 1920 / 2 - GameWorld.ofset_x + 2;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - 1;
                                 break;
                             case 1:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 2;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y-1;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - 1;
                                 break;
                             case 2:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 - 2;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f - 2;
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - 1;
                                 break;
                         }
@@ -178,7 +178,7 @@ namespace Miner
                                 mining_updater(pos_x, pos_y, deltatime, 2);
                                 break_Sound(deltatime);
                             }
-                            
+
                             return true;
                         }
                     }
@@ -191,16 +191,16 @@ namespace Miner
                         switch (l)
                         {
                             case 0:
-                                pos_x = 1920 / 2  - GameWorld.ofset_x;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
+                                pos_x = 1920 / 2 - GameWorld.ofset_x;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
                                 break;
                             case 1:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 1;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
                                 break;
                             case 2:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 - 1;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f - 1;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
                                 break;
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
@@ -226,20 +226,67 @@ namespace Miner
             float pos_y = 0;
             // 0 + amount;
             int amount_of_air_tiles = 1;
+            int _width = 5120;
+            int _height = 2880;
+
             for (int p = 0; p < 2; p++)
             {
                 switch (p)
                 {
                     case 0:
-                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 3;
-                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
+                        switch (loaded_chunks[0][0])
+                        {
+                            case int n when n < 0:
+                                pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x + 1920 / 2 - (32 * 5) / 2) + 3;
+                                break;
+                            case int n when n > 0:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + (_width * loaded_chunks[0][0]) + 3;
+                                break;
+                            default:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 3;
+                                break;
+                        }
+                        switch (loaded_chunks[0][1])
+                        {
+                            case int n when n < 0:
+                                pos_y = (_height * loaded_chunks[0][1] * (-1)) - (GameWorld.ofset_y + 1080 / 2 - (32 * 5) / 2) + 32 * 4.34375f;
+                                break;
+                            case int n when n > 0:
+                                pos_x = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + (_height * loaded_chunks[0][1]) + 32 * 4.34375f;
+                                break;
+                            default:
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
+                                break;
+                        }
                         break;
                     case 1:
-                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 5 - 3;
-                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 5;
+                        switch (loaded_chunks[0][0])
+                        {
+                            case int n when n < 0:
+                                pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x + 1920 / 2 - (32 * 5) / 2) + 32 * 4.34375f - 3;
+                                break;
+                            case int n when n > 0:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + (_width * loaded_chunks[0][0]) + 32 * 4.34375f - 3;
+                                break;
+                            default:
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f - 7;
+                                break;
+                        }
+                        switch (loaded_chunks[0][1])
+                        {
+                            case int n when n < 0:
+                                pos_y = (_height * loaded_chunks[0][1] * (-1)) - (GameWorld.ofset_y + 1080 / 2 - (32 * 5) / 2) + 32 * 4.34375f;
+                                break;
+                            case int n when n > 0:
+                                pos_x = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + (_height * loaded_chunks[0][1]) + 32 * 4.34375f;
+                                break;
+                            default:
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
+                                break;
+                        }
                         break;
                 }
-                if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
+                if (Terrain.Which(pos_x, pos_y, loaded_chunks[0]) > amount_of_air_tiles)
                 {
                     return true;
                 }
@@ -307,10 +354,10 @@ namespace Miner
             //direction switch, choses direction based on offset.
             switch (x_off)
             {
-                case int k when k > 0 + loaded_chunks[0][0] * 1920*5:
+                case int k when k > 0 + -(loaded_chunks[0][0] * 5120):
                     direction[0] = -1;
                     break;
-                case int k when k < -(1920*5 - 1920/2 - 32 * 4.34375) - loaded_chunks[0][0] * 1920*5:
+                case int k when k < -(5120 - (1920 - ((32 * 5)))) - 5120 * loaded_chunks[0][0]:
                     direction[0] = 1;
                     break;
                 default:
@@ -319,10 +366,10 @@ namespace Miner
             }
             switch (y_off)
             {
-                case int k when k > 0 + loaded_chunks[0][1] * 1080 * 5:
+                case int k when k > 0 + loaded_chunks[0][1] * 2880:
                     direction[1] = 1;
                     break;
-                case int k when k < -(1080 * 5 - 1080 / 2 - 32 * 4.34375) - loaded_chunks[0][1] * (1080*5):
+                case int k when k < -((2880 - 1080 - (32 * 5))) + 2880 * loaded_chunks[0][0]:
                     direction[1] = -1;
                     break;
                 default:
@@ -653,7 +700,7 @@ namespace Miner
                         loaded_chunks.RemoveAt(i - 1);
                     }
                     loaded_chunks.Add(new_one);
-                    Get_tiles(new_one, 0);
+                    Get_tiles(new_one, 1);
                     Load_chunks(x_1, y_1);
                     #endregion
                     break;
@@ -666,7 +713,7 @@ namespace Miner
                         loaded_chunks.RemoveAt(i - 1);
                     }
                     loaded_chunks.Add(new_one);
-                    Get_tiles(new_one, 0);
+                    Get_tiles(new_one, 1);
                     Load_chunks(x_1, y_1);
                     #endregion
                     break;
@@ -679,7 +726,7 @@ namespace Miner
                         loaded_chunks.RemoveAt(i - 1);
                     }
                     loaded_chunks.Add(new_one);
-                    Get_tiles(new_one, 0);
+                    Get_tiles(new_one, 1);
                     Load_chunks(x_1, y_1);
                     #endregion
                     break;
@@ -692,7 +739,7 @@ namespace Miner
                         loaded_chunks.RemoveAt(i - 1);
                     }
                     loaded_chunks.Add(new_one);
-                    Get_tiles(new_one, 0);
+                    Get_tiles(new_one, 1);
                     Load_chunks(x_1, y_1);
                     #endregion
                     break;
@@ -746,7 +793,7 @@ namespace Miner
         /// <returns></returns>
         static int chunk_terrain(int[] xy, int i)
         {
-            if (xy[0] == 0 && xy[1] == 0)
+            if ((xy[0] == 0 || xy[0] == -1 || xy[0] == 1) && xy[1] == 0)
             {
                 if (i > 127)
                 {
@@ -837,8 +884,8 @@ namespace Miner
             }
             switch (xy[1])
             {
-                case int n when n < 3 && n > -1:
-                    return 1;
+                case int n when n < 3 && n > -3:
+                    return 4;
             }
             return 0;
         }
@@ -981,11 +1028,11 @@ namespace Miner
             int[] direction = new int[2];
             switch (loaded_one[0])
             {
-                case int n when n < loaded_chunks[0][0]:
-                    direction[0] = -9600;
+                case int n when n < 0:
+                    direction[0] = -5120;
                     break;
-                case int n when n > loaded_chunks[0][0]:
-                    direction[0] = 9600;
+                case int n when n > 0:
+                    direction[0] = 5120;
                     break;
                 default:
                     direction[0] = 0;
@@ -993,11 +1040,11 @@ namespace Miner
             }
             switch (loaded_one[1])
             {
-                case int k when k < loaded_chunks[0][1]:
-                    direction[1] = 5400;
+                case int k when k < 0:
+                    direction[1] = 2880;
                     break;
-                case int k when k > loaded_chunks[0][1]:
-                    direction[1] = -5400;
+                case int k when k > 0:
+                    direction[1] = -2880;
                     break;
                 default:
                     direction[1] = 0;
@@ -1212,7 +1259,7 @@ namespace Miner
                             }
                             else
                             {
-                                mining_on_tile((x_mod * width) + i, deltatime); 
+                                mining_on_tile((x_mod * width) + i, deltatime);
                             }
                             break;
                             #endregion
