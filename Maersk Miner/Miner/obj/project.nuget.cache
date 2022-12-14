@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BFRmIgkZv+Azt3uFds9kQpHLZ5gRzF9nI1CAWN1omGbgzffULIZ3kqpCxmdXjzHy7jFEba9Fp05mGyqcQjfkjQ==",
+  "dgSpecHash": "IFHqCgveIugUetxc0aOeQ/ZjhMVKRJmL4UhU0CxXDj1Anw3n99Mh7IxQks+ShoJu+LnMGEPJePDKOOOqrGCYUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thorb\\OneDrive\\Dokumenter\\GitHub\\2Uger pro\\1.SemesterEksamen\\Maersk Miner\\Miner\\Maersk Miner.csproj",
+  "projectFilePath": "C:\\Users\\thorb\\stuff\\Skole\\1.Semester\\Eksammen\\Files\\1.SemesterEksamen\\Maersk Miner\\Miner\\Maersk Miner.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thorb\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\thorb\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
