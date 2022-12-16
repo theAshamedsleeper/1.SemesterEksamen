@@ -77,9 +77,9 @@ namespace Miner
 
 
 
-            spriteBatch.DrawString(_controlsFont,
-                $"Inventory: I\nMove:  W, S, A, D"
-                , new Vector2(1600, 20), Color.Green, 0f, new Vector2 (0,0),2f, SpriteEffects.None,1);
+            //spriteBatch.DrawString(_controlsFont,
+            //    $"Inventory: I\nMove:  W, S, A, D"
+            //    , new Vector2(1600, 20), Color.Green, 0f, new Vector2 (0,0),2f, SpriteEffects.None,1);
 
         }
 

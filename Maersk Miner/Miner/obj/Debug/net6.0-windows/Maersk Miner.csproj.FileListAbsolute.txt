@@ -397,3 +397,136 @@ C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Min
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.pdb
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.genruntimeconfig.cache
 C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\ref\Maersk Miner.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\BackgroundTopBig.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\BatterySpritesheet2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Pixilart Sprite Sheet (19).xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak1.wma
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak2.wma
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak3.wma
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak4.wma
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreakfinish.wma
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10PDrill.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PDrill.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PDrill.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PDrill.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\BackgroundTop3.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\BackgroundTopBigScale5.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Baggrund Atmosphere.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingDown3Spritesheet.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingSide6Spritesheet.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingUp4Spr.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlying7Spritesheet.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DrillIdleBub3.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DrillMoving9Spritesheet.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\File.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\FileFont.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\ArtefactBlock.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Kobber.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\MilitaryScrap.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\output-onlinepngtools (1).xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Platinium2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\RockyDrit.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Stone.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Titanium.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\UraniumNew.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\pixil-frame-0.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\pixil-frame-2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\pixilart-drawing_1.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Menu Selection Click.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\motorcycle-idle-01.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak1.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak3.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak4.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreakfinish.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BarDivider.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_Batterholder.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_batteryPower.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\CraftingButton.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\ArtifactsFontT.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CloseUIButton.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CraftFontT.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R1.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R3.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R4.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R5.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\StatsFontT.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\UpgradeFontT.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InventorybackGround.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleArtifacts.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleCraft.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleStats.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleUpgrade.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\OpenInv.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10P faster drill_Layer 0.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10PBetterBattery.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10PBetterDrill_Info.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10PBetterSolarPanel.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20P faster drill_Layer 1.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PBetterBattery.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PBetterDrill_Info.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PBetterSolarPanel.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30P faster drill_Layer 2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PBetterBattery.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PBetterDrill_Info.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PBetterSolarPanel.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40P faster drill_Layer 3.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PBetterBattery.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PBetterDrill_Info.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PBetterSolarPanel.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Biger battery_Layer 0.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Biger battery_Layer 1.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Biger battery_Layer 2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Biger battery_Layer 3.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\faster Battery recharge_Layer 0.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\faster Battery recharge_Layer 1.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\faster Battery recharge_Layer 2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\faster Battery recharge_Layer 3.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Last Upgrade AiBrainPng.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Copper.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_MiliScrap.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Plat.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Titanium.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Uranium.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\RougeAiUpgradeInfo.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\UpgradeButton.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradePlaceHolder.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Uranium.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Maersk Miner.exe
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Maersk Miner.deps.json
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Maersk Miner.runtimeconfig.json
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Maersk Miner.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Maersk Miner.pdb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.csproj.AssemblyReference.cache
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.AssemblyInfoInputs.cache
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.AssemblyInfo.cs
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.csproj.CopyComplete
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\refint\Maersk Miner.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.pdb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.genruntimeconfig.cache
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\ref\Maersk Miner.dll
