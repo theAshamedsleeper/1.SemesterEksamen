@@ -15,7 +15,7 @@ namespace Miner
 
         private static Vector2 screenSize;
 
-        protected const string BACKGROUND_TOP = "BackgroundTopBigScale5";
+        private const string BACKGROUND_TOP = "BackgroundTopBigScale5";
         private Texture2D backgroundTop;
 
         private Texture2D[] groundSprite = new Texture2D[10];
@@ -27,10 +27,8 @@ namespace Miner
         private List<WorkShop> workShop = new List<WorkShop>();
 
         private float worldScale = 5f;//2.4f så passer den i width
-        private bool inv = false;
         public static int ofset_x = 0;
         public static int ofset_y = 0;
-        private int current_chunk = 0;
         public static bool sideCollision = false;
         public static bool upCollision = false;
         public static bool inAir = false;
@@ -38,8 +36,14 @@ namespace Miner
 
         private SoundEffect engine_sound;
         private SoundEffectInstance engine_sound_inst;
-        private bool digginUp;
-        private int backflow;
+
+        private Rectangle invOpenRecBag;
+        private Texture2D invOpenTab;
+        private MouseState mouseMove;
+        private bool gamePaused = false;
+        private Rectangle[] menuButtonRec = new Rectangle[2];
+        private Texture2D[] menuButtonTex = new Texture2D[2];
+        private float pauseButtonTimer;
 
         public GameWorld()
         {
@@ -68,9 +72,12 @@ namespace Miner
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
-
-
+            invOpenTab = Content.Load<Texture2D>("Ui Sprites/OpenInv");
+            invOpenRecBag = new Rectangle(1800, 10, 100, 100);
+            menuButtonTex[0] = Content.Load<Texture2D>("Ui Sprites/InvetoryTitleUpgrade");
+            menuButtonTex[1] = Content.Load<Texture2D>("Ui Sprites/InvetoryTitleUpgrade");
+            menuButtonRec[0] = new Rectangle(750, 500, 300, 100);
+            menuButtonRec[1] = new Rectangle(750, 650, 300, 100);
             for (int i = 0; i < workShop.Count; i++)
             {
                 workShop[i].LoadContent(Content);
@@ -104,11 +111,32 @@ namespace Miner
 
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.P))
+            mouseMove = Mouse.GetState();
+            pauseButtonTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            #region Menu
+            if (pauseButtonTimer > 0.5f && gamePaused == false && Keyboard.GetState().IsKeyDown(Keys.Escape))
+            {
+                gamePaused = true;
+                pauseButtonTimer = 0f;
+            }
+            if (pauseButtonTimer > 0.5f && gamePaused == true && Keyboard.GetState().IsKeyDown(Keys.Escape))
+            {
+                gamePaused = false;
+                pauseButtonTimer = 0f;
+            }
+            if (menuButtonRec[1].Contains(mouseMove.X, mouseMove.Y) && mouseMove.LeftButton == ButtonState.Pressed)
+            {
                 Exit();
+            }
+            #endregion
+            //Back pack
+            if (WorkShop.IsInvOpen == false && invOpenRecBag.Contains(mouseMove.X, mouseMove.Y) && mouseMove.LeftButton == ButtonState.Pressed)
+            {
+                WorkShop.IsInvOpen = true;
+            }
             #region input
             float deltatime = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-
+            //
             if (Tools.batteryFrame >= 300)
             {
                 Exit();
@@ -192,10 +220,9 @@ namespace Miner
 
             #endregion
             #region gravity
-            float player_pos_y = screenSize.Y / 2 - (32 * 5) / 2 + ofset_y;
             if (Terrain.player_collis_gravity() == false)
             {
-                ofset_y -=4;
+                ofset_y -= 4;
                 inAir = false;
             }
             else
@@ -219,9 +246,10 @@ namespace Miner
             {
                 toolList[i].Update(gameTime);
             }
+
             base.Update(gameTime);
 
-           
+
 
         }
 
@@ -319,8 +347,8 @@ namespace Miner
                 text += "\n";
             }
             text += ofset_x + " " + ofset_y;
-            _spriteBatch.DrawString(ContFont, text, new Vector2(1600, 100), Color.Green);
-
+            //_spriteBatch.DrawString(ContFont, text, new Vector2(1600, 100), Color.Green);
+            _spriteBatch.Draw(invOpenTab, invOpenRecBag, Color.White);
 
             foreach (GameObjects objects in gameObjects)
             {
@@ -335,6 +363,14 @@ namespace Miner
             {
                 tool.Draw(_spriteBatch, gameTime);
             }
+            if (gamePaused == true)
+            {
+                _spriteBatch.Draw(menuButtonTex[0], menuButtonRec[0], Color.White);
+                _spriteBatch.Draw(menuButtonTex[1], menuButtonRec[1], Color.White);
+            }
+
+
+
 
             _spriteBatch.End();
 

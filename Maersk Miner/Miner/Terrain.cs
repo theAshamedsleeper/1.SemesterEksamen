@@ -1,18 +1,8 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
+﻿using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 namespace Miner
 {
@@ -252,7 +242,7 @@ namespace Miner
                                 pos_y = (_height * loaded_chunks[0][1] * (-1)) - (GameWorld.ofset_y + 1080 / 2 - (32 * 5) / 2) + 32 * 4.34375f;
                                 break;
                             case int n when n > 0:
-                                pos_x = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + (_height * loaded_chunks[0][1]) + 32 * 4.34375f;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + (_height * loaded_chunks[0][1]) + 32 * 4.34375f;
                                 break;
                             default:
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
@@ -278,7 +268,7 @@ namespace Miner
                                 pos_y = (_height * loaded_chunks[0][1] * (-1)) - (GameWorld.ofset_y + 1080 / 2 - (32 * 5) / 2) + 32 * 4.34375f;
                                 break;
                             case int n when n > 0:
-                                pos_x = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + (_height * loaded_chunks[0][1]) + 32 * 4.34375f;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + (_height * loaded_chunks[0][1]) + 32 * 4.34375f;
                                 break;
                             default:
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
