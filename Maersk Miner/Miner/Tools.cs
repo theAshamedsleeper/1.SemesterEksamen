@@ -2,9 +2,6 @@
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Miner.UiForInv;
-using System;
-using Keyboard = Microsoft.Xna.Framework.Input.Keyboard;
-using Keys = Microsoft.Xna.Framework.Input.Keys;
 using SpriteBatch = Microsoft.Xna.Framework.Graphics.SpriteBatch;
 
 namespace Miner
@@ -28,13 +25,11 @@ namespace Miner
             batterySpritesheet = content.Load<Texture2D>(SPRITESHEET_BATTERY);
             batteryMax = 10000;
             solarPanelSize = 8000;
-            
         }
 
-        
+
         public void Update(GameTime gameTime)
         {
-            
             solarPanelCombined = batteryMax - solarPanelSize;
             /*(variablen solarPanelCombined^ sikrer at et større batteri tager længere tid at oplade,
             i sammenhæng med størrelsen af solpanelet. 
@@ -63,7 +58,6 @@ namespace Miner
             #endregion
 
             #region - Solar upgrade -
-           
 
             if (UpgradeButton.Upgraded[11] == true)
             {
@@ -100,12 +94,12 @@ namespace Miner
             {
                 batteryFrame -= 30;
                 gaintimer = 0;
-                
+
             }
             // - BATTERIETS VIRKNING OG ANIMATION -
             draintimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             //drainTimer tæller op til batteryMax, som bliver defineret pr batteri upgrade. 
-            if (Terrain.is_we_on_top() == false && draintimer > batteryMax && batteryFrame <= 300) 
+            if (Terrain.is_we_on_top() == false && draintimer > batteryMax && batteryFrame <= 300)
             {
                 batteryFrame = batteryFrame + 30;
                 draintimer = 0;

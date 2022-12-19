@@ -15,7 +15,7 @@ namespace Miner
 
         private static Vector2 screenSize;
 
-        protected const string BACKGROUND_TOP = "BackgroundTopBigScale5";
+        private const string BACKGROUND_TOP = "BackgroundTopBigScale5";
         private Texture2D backgroundTop;
 
         private Texture2D[] groundSprite = new Texture2D[10];
@@ -27,10 +27,8 @@ namespace Miner
         private List<WorkShop> workShop = new List<WorkShop>();
 
         private float worldScale = 5f;//2.4f så passer den i width
-        private bool inv = false;
         public static int ofset_x = 0;
         public static int ofset_y = 0;
-        private int current_chunk = 0;
         public static bool sideCollision = false;
         public static bool upCollision = false;
         public static bool inAir = false;
@@ -38,8 +36,6 @@ namespace Miner
 
         private SoundEffect engine_sound;
         private SoundEffectInstance engine_sound_inst;
-        private bool digginUp;
-        private int backflow;
 
         private Rectangle invOpenRecBag;
         private Texture2D invOpenTab;
@@ -128,19 +124,19 @@ namespace Miner
                 gamePaused = false;
                 pauseButtonTimer = 0f;
             }
-            if (menuButtonRec[1].Contains(mouseMove.X,mouseMove.Y) && mouseMove.LeftButton == ButtonState.Pressed)
+            if (menuButtonRec[1].Contains(mouseMove.X, mouseMove.Y) && mouseMove.LeftButton == ButtonState.Pressed)
             {
                 Exit();
             }
             #endregion
-
+            //Back pack
             if (WorkShop.IsInvOpen == false && invOpenRecBag.Contains(mouseMove.X, mouseMove.Y) && mouseMove.LeftButton == ButtonState.Pressed)
             {
                 WorkShop.IsInvOpen = true;
             }
             #region input
             float deltatime = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-
+            //
             if (Tools.batteryFrame >= 300)
             {
                 Exit();
@@ -224,7 +220,6 @@ namespace Miner
 
             #endregion
             #region gravity
-            float player_pos_y = screenSize.Y / 2 - (32 * 5) / 2 + ofset_y;
             if (Terrain.player_collis_gravity() == false)
             {
                 ofset_y -= 4;

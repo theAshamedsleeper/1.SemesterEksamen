@@ -262,11 +262,6 @@ namespace Miner
             
             #endregion
             #endregion
-
-            
-
         }
-
-
     }
 }

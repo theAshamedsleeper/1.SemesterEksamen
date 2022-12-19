@@ -1,16 +1,6 @@
-﻿using Microsoft.VisualBasic.Devices;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using SharpDX.Direct2D1;
-using SharpDX.Direct2D1.Effects;
-using SharpDX.Direct3D9;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using SpriteBatch = Microsoft.Xna.Framework.Graphics.SpriteBatch;
 
 namespace Miner
@@ -41,8 +31,8 @@ namespace Miner
         public bool drilling = false;
 
         public abstract void LoadContent(ContentManager content);
-        
-        
+
+
 
         public abstract void Update(GameTime gameTime);
 
@@ -60,7 +50,7 @@ namespace Miner
             spriteBatch.Draw(_spriteSheetTexture, position, new Rectangle(frame, 0, 32, 32), Color.White, 0f, new Vector2(0, 0), 4.34375f, effect, 1f);
 
             idletimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-            
+
             if (idletimer > 750)
             {
                 if (drilling == false)
