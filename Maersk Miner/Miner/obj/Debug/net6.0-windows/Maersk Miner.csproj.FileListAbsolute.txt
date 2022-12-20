@@ -796,6 +796,10 @@ C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Ma
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.pdb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.genruntimeconfig.cache
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\ref\Maersk Miner.dll
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonMenu.xnb
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonOptions.xnb
-D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonQuit.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\ArtefactPC.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Toxic waste.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\PC_Artefact_Text.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\PC_Artefact_textNB.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Key_Artefact_textNB.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\KeycardArtefact5.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Toxic_Artefact_Text.xnb
