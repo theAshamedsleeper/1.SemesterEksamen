@@ -40,19 +40,19 @@ namespace Miner
             #region - Battery upgrade -
             if (UpgradeButton.Upgraded[7] == true)
             {
-                batteryMax = 14000;
+                batteryMax = 30000;
             }
             if (UpgradeButton.Upgraded[6] == true)
             {
-                batteryMax = 13000;
+                batteryMax = 25000;
             }
             if (UpgradeButton.Upgraded[5] == true)
             {
-                batteryMax = 12000;
+                batteryMax = 20000;
             }
             if (UpgradeButton.Upgraded[4] == true)
             {
-                batteryMax = 11000;
+                batteryMax = 15000;
             }
 
             #endregion
@@ -61,22 +61,35 @@ namespace Miner
 
             if (UpgradeButton.Upgraded[11] == true)
             {
-                solarPanelSize = 10000;
+                if (batteryMax - 25000! <= 0)
+                {
+                    solarPanelSize = 25000;
+                }
             }
 
             if (UpgradeButton.Upgraded[10] == true)
             {
-                solarPanelSize = 9500;
+                if (batteryMax - 20000! <= 0)
+                {
+                    solarPanelSize = 20000;
+                }
             }
 
             if (UpgradeButton.Upgraded[9] == true)
             {
-                solarPanelSize = 9000;
+                if (batteryMax - 15000! <= 0)
+                {
+                    solarPanelSize = 15000;
+                }
             }
 
             if (UpgradeButton.Upgraded[8] == true)
             {
-                solarPanelSize = 8500;
+                if (batteryMax - 10000 !<= 0)
+                {
+                    solarPanelSize = 10000;
+                }
+                
             }
 
             #endregion
