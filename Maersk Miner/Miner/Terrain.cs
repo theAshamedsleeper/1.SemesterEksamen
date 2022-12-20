@@ -30,6 +30,13 @@ namespace Miner
         private static SoundEffect stonebreak_2;
         private static SoundEffect stonebreak_3;
         private static SoundEffect stonebreak_4;
+        private static SoundEffect glassbreak_1;
+        private static SoundEffect glassbreak_2;
+        private static SoundEffect glassbreak_3;
+        private static SoundEffect metalbreak_1;
+        private static SoundEffect metalbreak_2;
+        private static SoundEffect metalbreak_3;
+        private static SoundEffect metalbreak_4;
         private static SoundEffect stonebreakfinish;
         private static float sound_timer = 0;
         private static int arte_mined = 0;
@@ -65,6 +72,13 @@ namespace Miner
             stonebreak_2 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak2");
             stonebreak_3 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak3");
             stonebreak_4 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak4");
+            glassbreak_1 = content.Load<SoundEffect>("Sound/Glass-Bottle-Shattering-A2-www.fesliyanstudios.com");
+            glassbreak_2 = content.Load<SoundEffect>("Sound/Glass-Bottle-Shattering-A3-www.fesliyanstudios.com");
+            glassbreak_3 = content.Load<SoundEffect>("Sound/Glass-Bottle-Shattering-A4-www.fesliyanstudios.com");
+            metalbreak_1 = content.Load<SoundEffect>("Sound/Hammer-hitting-single-tap-on-metal-1-www.FesliyanStudios.com");
+            metalbreak_2 = content.Load<SoundEffect>("Sound/Hammer-hitting-single-tap-on-metal-2-www.FesliyanStudios.com");
+            metalbreak_3 = content.Load<SoundEffect>("Sound/Hammer-hitting-single-tap-on-metal-3-www.FesliyanStudios.com");
+            metalbreak_4 = content.Load<SoundEffect>("Sound/Hammer-hitting-single-tap-on-metal-4-www.FesliyanStudios.com");
             stonebreakfinish = content.Load<SoundEffect>("Sound/Rocks/StoneBreakfinish");
         }
         #endregion
