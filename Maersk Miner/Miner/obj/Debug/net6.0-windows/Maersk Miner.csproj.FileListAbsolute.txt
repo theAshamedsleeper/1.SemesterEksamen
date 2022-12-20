@@ -807,3 +807,147 @@ C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Ma
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonMenu.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonOptions.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonQuit.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\BackgroundTopBig.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\BatterySpritesheet2.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Pixilart Sprite Sheet (19).xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak1.wma
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak2.wma
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak3.wma
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak4.wma
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreakfinish.wma
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10PDrill.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PDrill.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PDrill.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PDrill.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\ArtefactBlock.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\ArtefactPC.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\BackgroundTop3.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\BackgroundTopBigScale5.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Baggrund Atmosphere.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingDown3Spritesheet.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingSide6Spritesheet.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DrillDiggingUp4Spr.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DrillFlying7Spritesheet.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DrillIdleBub3.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DrillMoving9Spritesheet.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\File.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\FileFont.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\ArtefactBlock.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Kobber.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\MilitaryScrap.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\output-onlinepngtools (1).xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Platinium2.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\RockyDrit.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Stone.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\Titanium.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\GroundSprite\UraniumNew.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\KeycardArtefact5.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Key_Artefact_textNB.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\PC_Artefact_Text.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\PC_Artefact_textNB.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\pixil-frame-0.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\pixil-frame-2.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\pixilart-drawing_1.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Menu Selection Click.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\motorcycle-idle-01.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak1.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak2.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak3.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreak4.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Rocks\StoneBreakfinish.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Toxic waste.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Toxic_Artefact_Text.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BarDivider.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_Batterholder.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\BatteryForPlayer_batteryPower.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\CraftingButton.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\ArtifactsFontT.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CloseUIButton.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\CraftFontT.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R1.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R2.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R3.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R4.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\R5.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\StatsFontT.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Fonts\UpgradeFontT.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InventorybackGround.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleArtifacts.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleCraft.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleStats.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\InvetoryTitleUpgrade.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonMenu.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonOptions.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonQuit.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\OpenInv.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10P faster drill_Layer 0.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10PBetterBattery.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10PBetterDrill_Info.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\10PBetterSolarPanel.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20P faster drill_Layer 1.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PBetterBattery.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PBetterDrill_Info.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\20PBetterSolarPanel.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30P faster drill_Layer 2.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PBetterBattery.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PBetterDrill_Info.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\30PBetterSolarPanel.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40P faster drill_Layer 3.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PBetterBattery.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PBetterDrill_Info.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\40PBetterSolarPanel.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Biger battery_Layer 0.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Biger battery_Layer 1.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Biger battery_Layer 2.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Biger battery_Layer 3.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\faster Battery recharge_Layer 0.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\faster Battery recharge_Layer 1.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\faster Battery recharge_Layer 2.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\faster Battery recharge_Layer 3.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\Last Upgrade AiBrainPng.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Copper.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_MiliScrap.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Plat.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Titanium.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\OreSymbol_Uranium.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\RougeAiUpgradeInfo.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradeInfo\UpgradeButton.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\UpgradePlaceHolder.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Uranium.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Maersk Miner.exe
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Maersk Miner.deps.json
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Maersk Miner.runtimeconfig.json
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Maersk Miner.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Maersk Miner.pdb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.csproj.AssemblyReference.cache
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.AssemblyInfoInputs.cache
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.AssemblyInfo.cs
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.csproj.CoreCompileInputs.cache
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.csproj.CopyComplete
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\refint\Maersk Miner.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.pdb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.genruntimeconfig.cache
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\ref\Maersk Miner.dll
