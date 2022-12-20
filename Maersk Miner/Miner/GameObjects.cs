@@ -63,7 +63,7 @@ namespace Miner
             {
                 idletimer = 0;
             }
-
+            
 
 
 
