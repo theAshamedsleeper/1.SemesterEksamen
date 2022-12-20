@@ -951,3 +951,32 @@ C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\
 C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.pdb
 C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.genruntimeconfig.cache
 C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\ref\Maersk Miner.dll
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DarkRedClayBlock.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\MilitaryScrapBlock2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirt2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtRootV1.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtRootV2.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtSmallRocks.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtWithFossil.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\RedClayBlock.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\ArtefactBlock.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\ArtefactPC.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\KeycardArtefact5.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Key_Artefact_textNB.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\PC_Artefact_Text.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\PC_Artefact_textNB.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Glass-Bottle-Shattering-A2-www.fesliyanstudios.com.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Glass-Bottle-Shattering-A3-www.fesliyanstudios.com.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Glass-Bottle-Shattering-A4-www.fesliyanstudios.com.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-1-www.FesliyanStudios.com.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-2-www.FesliyanStudios.com.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-3-www.FesliyanStudios.com.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-4-www.FesliyanStudios.com.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Toxic waste.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Toxic_Artefact_Text.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonMenu.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonOptions.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonQuit.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\Dead.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\Restart.xnb
+D:\Program Files (x86)\Skole\1 semester\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\Won.xnb
