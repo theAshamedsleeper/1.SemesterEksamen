@@ -807,3 +807,11 @@ C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Ma
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonMenu.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonOptions.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonQuit.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\MilitaryScrapBlock2.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\RedClayBlock.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DarkRedClayBlock.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirt2.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtRootV1.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtRootV2.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtWithFossil.xnb
+C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtSmallRocks.xnb
