@@ -966,3 +966,6 @@ C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\
 C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-2-www.FesliyanStudios.com.xnb
 C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-3-www.FesliyanStudios.com.xnb
 C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-4-www.FesliyanStudios.com.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\Dead.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\Restart.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\Won.xnb

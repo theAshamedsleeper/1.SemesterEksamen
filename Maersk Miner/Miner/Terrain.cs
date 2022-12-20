@@ -1089,7 +1089,15 @@ namespace Miner
             pos[0] = direction[0];
             pos[1] = direction[1];
             // add to list, make function to sort
-            int artefact_pos = randoms(576 - 127);
+            int artefact_pos = 0;
+            if (direction[1] == 0)
+            {
+                artefact_pos = randoms(576 - 127);
+            }
+            else
+            {
+                artefact_pos = randoms(576);
+            }
             for (int i = 0; i < width * height; i++)
             {
                 // function/method to see if the given x and y coordinates have a predetermined value for the terrain
@@ -1114,11 +1122,23 @@ namespace Miner
         {
             if (xy[1] < 1)
             {
-                if (i == arte + 127)
+                if (xy[1] == 0)
                 {
-                    int artes = randoms(3) + 16;
-                    return artes;
+                    if (i == arte + 127)
+                    {
+                        int artes = randoms(3) + 16;
+                        return artes;
+                    }
                 }
+                else
+                {
+                    if (i == arte)
+                    {
+                        int artes = randoms(3) + 16;
+                        return artes;
+                    }
+                }
+                
             }
             switch (xy[1])
             {
@@ -1136,9 +1156,10 @@ namespace Miner
                         }
                         if (returns == 4)
                         {
-                            if (randoms(5) == 0)
+                            returns = 10 + randoms(5);
+                            if (returns == 11)
                             {
-                                returns = 6;
+                                returns = 10 + randoms(5);
                             }
                         }
                         return returns;
@@ -1200,7 +1221,18 @@ namespace Miner
                     return returns3;
                 #endregion
                 case int n when n > 0:
-                    return 0;
+                    #region layer 4 Final
+                    int returns4 = randoms(20);
+                    switch (returns4)
+                    {
+                        case 0:
+                            break;
+                        case int r when r > 14:
+                            returns4 = randoms(3) + 2;
+                            break;
+                    }
+                    return returns4;
+                    #endregion;
             }
             return 4;
         }
@@ -1523,7 +1555,7 @@ namespace Miner
                     switch (tiles_t_c1[(x_mod * width) + i])
                     {
                         #region changing the terrain
-                        case 2:
+                        case int n when n == 2 || n == 10 || n == 11 || n == 12 || n == 13 || n == 14:
                             if (tiles_mined[(x_mod * width) + i] > 700)
                             {
                                 stonebreakfinish.Play();
@@ -1556,6 +1588,18 @@ namespace Miner
                                 {
                                     WorkShop.R3Tit++;
                                 }
+                                stonebreakfinish.Play();
+                                Terrain.Change(x, y, 1, loaded_chunks[0]);
+                            }
+                            else
+                            {
+                                mining_on_tile((x_mod * width) + i, deltatime);
+                            }
+                            break;
+                        case 9:
+                            if (tiles_mined[(x_mod * width) + i] > 2500)
+                            {
+                                WorkShop.R2Mili++;
                                 stonebreakfinish.Play();
                                 Terrain.Change(x, y, 1, loaded_chunks[0]);
                             }
