@@ -93,6 +93,7 @@ namespace Miner
             groundSprite[6] = Content.Load<Texture2D>("GroundSprite/Titanium");
             groundSprite[7] = Content.Load<Texture2D>("GroundSprite/UraniumNew");
             groundSprite[8] = Content.Load<Texture2D>("GroundSprite/Platinium2");
+            groundSprite[9] = Content.Load<Texture2D>("ArtefactBlock");
             engine_sound = Content.Load<SoundEffect>("Sound/motorcycle-idle-01");
             engine_sound_inst = engine_sound.CreateInstance();
 
