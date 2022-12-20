@@ -641,7 +641,7 @@ namespace Miner.UiForInv
                         break;
                     //Last Upgrade
                     case 13://checks that all the last upgrades have been made and you have the resource needed.
-                        if (Upgraded[7] == false && Upgraded[11] == true && Upgraded[3] == true
+                        if (Upgraded[7] == true && Upgraded[11] == true && Upgraded[3] == true
                             && R1Cop >= 50 && R3Tit >= 50 && R4Plat >= 50 && R5Uran >= 50)
                         {
                             Upgraded[12] = true;
@@ -653,7 +653,7 @@ namespace Miner.UiForInv
                         }
                         break;
                 }
-            }//Confirm Upgrade Button
+            }
         }
     }
 }

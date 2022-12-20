@@ -36,14 +36,22 @@ namespace Miner
 
         private SoundEffect engine_sound;
         private SoundEffectInstance engine_sound_inst;
+        private bool isDead = false;
+        private bool win = false;
 
         private Rectangle invOpenRecBag;
         private Texture2D invOpenTab;
         private MouseState mouseMove;
         private bool gamePaused = false;
-        private Rectangle[] menuButtonRec = new Rectangle[3];
-        private Texture2D[] menuButtonTex = new Texture2D[3];
+        private Rectangle[] menuButtonRec = new Rectangle[4];
+        private Texture2D[] menuButtonTex = new Texture2D[4];
         private float pauseButtonTimer;
+
+        private static Texture2D[] deadTex2D = new Texture2D[2];
+        private static Rectangle[] deadRec = new Rectangle[2];
+
+        private static Texture2D[] victoryTex2D = new Texture2D[2];
+        private static Rectangle[] vicRec = new Rectangle[2];
 
         public GameWorld()
         {
@@ -65,6 +73,7 @@ namespace Miner
             Terrain.Give_Terrain(Content);
             int[] ints = new int[] { 0, 0 };
             Terrain.Start_Chunk(ints);
+
             base.Initialize();
 
         }
@@ -72,6 +81,17 @@ namespace Miner
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            deadTex2D[0] = Content.Load<Texture2D>("Ui Sprites/Menu Buttons/Dead");
+            deadTex2D[1] = Content.Load<Texture2D>("Ui Sprites/CraftingButton");
+            deadRec[0] = new Rectangle(775, 300, 450, 250);
+            deadRec[1] = new Rectangle(0, 0, 1920, 1080);
+            menuButtonTex[3] = Content.Load<Texture2D>("Ui Sprites/Menu Buttons/Restart");
+            menuButtonRec[3] = new Rectangle(850,525,300,100);
+
+            victoryTex2D[0] = Content.Load<Texture2D>("Ui Sprites/Menu Buttons/Won");
+            vicRec[0] = new Rectangle(775, 300, 450, 250);
+
             invOpenTab = Content.Load<Texture2D>("Ui Sprites/OpenInv");
             invOpenRecBag = new Rectangle(1800, 10, 100, 100);
             menuButtonTex[0] = Content.Load<Texture2D>("Ui Sprites/Menu Buttons/ButtonMenu");
@@ -117,7 +137,7 @@ namespace Miner
             mouseMove = Mouse.GetState();
             pauseButtonTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
             #region Menu
-            if (WorkShop.IsInvOpen == false && pauseButtonTimer > 0.5f && gamePaused == false && Keyboard.GetState().IsKeyDown(Keys.Escape))
+            if (win == false && isDead == false && WorkShop.IsInvOpen == false && pauseButtonTimer > 0.5f && gamePaused == false && Keyboard.GetState().IsKeyDown(Keys.Escape))
             {
                 gamePaused = true;
                 pauseButtonTimer = 0f;
@@ -137,7 +157,15 @@ namespace Miner
                 WorkShop.IsInvOpen = false;
                 pauseButtonTimer = 0f;
             }
-            if (gamePaused== true && menuButtonRec[2].Contains(mouseMove.X, mouseMove.Y) && mouseMove.LeftButton == ButtonState.Pressed)
+            if (gamePaused == true && menuButtonRec[2].Contains(mouseMove.X, mouseMove.Y) && mouseMove.LeftButton == ButtonState.Pressed)
+            {
+                Exit();
+            }
+            if (isDead == true && menuButtonRec[2].Contains(mouseMove.X, mouseMove.Y) && mouseMove.LeftButton == ButtonState.Pressed)
+            {
+                Exit();
+            }
+            if (win == true && menuButtonRec[2].Contains(mouseMove.X, mouseMove.Y) && mouseMove.LeftButton == ButtonState.Pressed)
             {
                 Exit();
             }
@@ -147,14 +175,17 @@ namespace Miner
             {
                 WorkShop.IsInvOpen = true;
             }
-            #region input
-            float deltatime = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-            //
+            //Death
             if (Tools.batteryFrame >= 300)
             {
-                Exit();
-
+                isDead = true;
             }
+            if (WorkShop.Upgraded[12] == true)
+            {
+                win = true;
+            }
+            #region input
+            float deltatime = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
             Terrain.Move_Main_chunk(ofset_x, ofset_y);
 
@@ -382,7 +413,22 @@ namespace Miner
                 _spriteBatch.Draw(menuButtonTex[1], menuButtonRec[1], Color.White);
                 _spriteBatch.Draw(menuButtonTex[2], menuButtonRec[2], Color.White);
             }
+            if (isDead == true)
+            {
+                _spriteBatch.Draw(deadTex2D[1], deadRec[1], Color.White);
+                _spriteBatch.Draw(deadTex2D[0], deadRec[0], Color.White);   
+                _spriteBatch.Draw(menuButtonTex[2], menuButtonRec[2], Color.Red);
+                _spriteBatch.Draw(menuButtonTex[3], menuButtonRec[3], Color.Red);
 
+            }
+            if (win == true)
+            {
+                _spriteBatch.Draw(deadTex2D[1], deadRec[1], Color.White);
+                _spriteBatch.Draw(victoryTex2D[0], vicRec[0], Color.White);
+                _spriteBatch.Draw(menuButtonTex[2], menuButtonRec[2], Color.Green);
+                _spriteBatch.Draw(menuButtonTex[3], menuButtonRec[3], Color.Green);
+              
+            }
 
 
 

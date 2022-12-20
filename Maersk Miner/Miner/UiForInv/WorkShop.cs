@@ -34,11 +34,11 @@ namespace Miner
         protected static byte artifactClicked;//for a switch case controling which info you can see;
 
         //The 5 different resource
-        private static int r1Copper = 100;
-        private static int r2MilitaryScrap = 100;
-        private static int r3Titanium = 100;
-        private static int r4Plat = 100;
-        private static int r5Uranium = 100;
+        private static int r1Copper = 300;
+        private static int r2MilitaryScrap = 300;
+        private static int r3Titanium = 300;
+        private static int r4Plat = 300;
+        private static int r5Uranium = 300;
 
         private static bool isInvOpen = false;//to see if the inventory is open
         protected float closeDownShopTimer;//A timer to make sure you cant spame the invetory button.S
