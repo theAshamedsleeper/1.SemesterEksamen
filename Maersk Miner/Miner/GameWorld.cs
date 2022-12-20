@@ -41,8 +41,8 @@ namespace Miner
         private Texture2D invOpenTab;
         private MouseState mouseMove;
         private bool gamePaused = false;
-        private Rectangle[] menuButtonRec = new Rectangle[2];
-        private Texture2D[] menuButtonTex = new Texture2D[2];
+        private Rectangle[] menuButtonRec = new Rectangle[3];
+        private Texture2D[] menuButtonTex = new Texture2D[3];
         private float pauseButtonTimer;
 
         public GameWorld()
@@ -74,10 +74,12 @@ namespace Miner
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             invOpenTab = Content.Load<Texture2D>("Ui Sprites/OpenInv");
             invOpenRecBag = new Rectangle(1800, 10, 100, 100);
-            menuButtonTex[0] = Content.Load<Texture2D>("Ui Sprites/InvetoryTitleUpgrade");
-            menuButtonTex[1] = Content.Load<Texture2D>("Ui Sprites/InvetoryTitleUpgrade");
-            menuButtonRec[0] = new Rectangle(750, 500, 300, 100);
-            menuButtonRec[1] = new Rectangle(750, 650, 300, 100);
+            menuButtonTex[0] = Content.Load<Texture2D>("Ui Sprites/Menu Buttons/ButtonMenu");
+            menuButtonTex[1] = Content.Load<Texture2D>("Ui Sprites/Menu Buttons/ButtonOptions");
+            menuButtonTex[2] = Content.Load<Texture2D>("Ui Sprites/Menu Buttons/ButtonQuit");
+            menuButtonRec[0] = new Rectangle(850, 400, 300, 100);
+            menuButtonRec[1] = new Rectangle(850, 525, 300, 100);
+            menuButtonRec[2] = new Rectangle(850, 650, 300, 100);
             for (int i = 0; i < workShop.Count; i++)
             {
                 workShop[i].LoadContent(Content);
@@ -114,7 +116,7 @@ namespace Miner
             mouseMove = Mouse.GetState();
             pauseButtonTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
             #region Menu
-            if (pauseButtonTimer > 0.5f && gamePaused == false && Keyboard.GetState().IsKeyDown(Keys.Escape))
+            if (WorkShop.IsInvOpen == false && pauseButtonTimer > 0.5f && gamePaused == false && Keyboard.GetState().IsKeyDown(Keys.Escape))
             {
                 gamePaused = true;
                 pauseButtonTimer = 0f;
@@ -124,7 +126,17 @@ namespace Miner
                 gamePaused = false;
                 pauseButtonTimer = 0f;
             }
-            if (menuButtonRec[1].Contains(mouseMove.X, mouseMove.Y) && mouseMove.LeftButton == ButtonState.Pressed)
+            if (gamePaused == false && pauseButtonTimer > 0.5f && WorkShop.IsInvOpen == false && Keyboard.GetState().IsKeyDown(Keys.I))
+            {
+                WorkShop.IsInvOpen = true;
+                pauseButtonTimer = 0f;
+            }
+            if (pauseButtonTimer > 0.5f && WorkShop.IsInvOpen == true && Keyboard.GetState().IsKeyDown(Keys.I))
+            {
+                WorkShop.IsInvOpen = false;
+                pauseButtonTimer = 0f;
+            }
+            if (gamePaused== true && menuButtonRec[2].Contains(mouseMove.X, mouseMove.Y) && mouseMove.LeftButton == ButtonState.Pressed)
             {
                 Exit();
             }
@@ -367,6 +379,7 @@ namespace Miner
             {
                 _spriteBatch.Draw(menuButtonTex[0], menuButtonRec[0], Color.White);
                 _spriteBatch.Draw(menuButtonTex[1], menuButtonRec[1], Color.White);
+                _spriteBatch.Draw(menuButtonTex[2], menuButtonRec[2], Color.White);
             }
 
 

@@ -329,16 +329,6 @@ namespace Miner.UiForInv
             {
                 IsInvOpen = false;
             }
-            if (IsInvOpen == true && Keyboard.GetState().IsKeyDown(Keys.I) && closeDownShopTimer > 0.3f)
-            {
-                IsInvOpen = false;
-                closeDownShopTimer = 0f;
-            }
-            else if (IsInvOpen == false && Keyboard.GetState().IsKeyDown(Keys.I) && closeDownShopTimer > 0.3f)
-            {
-                IsInvOpen = true;
-                closeDownShopTimer = 0f;
-            }
             #endregion
             #region Mouse Collsion
             if (artifactsPlacer[0].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
