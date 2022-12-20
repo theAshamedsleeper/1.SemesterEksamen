@@ -106,7 +106,7 @@ namespace Miner
             }
             groundSprite[0] = Content.Load<Texture2D>("BackgroundTop3");//Baggrund Over Jorden
             groundSprite[1] = Content.Load<Texture2D>("GroundSprite/output-onlinepngtools (1)");
-            groundSprite[2] = Content.Load<Texture2D>("pixil-frame-2");//dirt Terrain
+            groundSprite[2] = Content.Load<Texture2D>("NewDirt2");//dirt Terrain
             groundSprite[3] = Content.Load<Texture2D>("GroundSprite/Stone");
             groundSprite[4] = Content.Load<Texture2D>("GroundSprite/RockyDrit");
             groundSprite[5] = Content.Load<Texture2D>("GroundSprite/Kobber");
@@ -114,6 +114,17 @@ namespace Miner
             groundSprite[7] = Content.Load<Texture2D>("GroundSprite/UraniumNew");
             groundSprite[8] = Content.Load<Texture2D>("GroundSprite/Platinium2");
             groundSprite[9] = Content.Load<Texture2D>("ArtefactBlock");
+            groundSprite[10] = Content.Load<Texture2D>("MilitaryScrapBlock2");
+            groundSprite[11] = Content.Load<Texture2D>("RedClayBlock");
+            groundSprite[12] = Content.Load<Texture2D>("DarkRedClayBlock");
+            groundSprite[13] = Content.Load<Texture2D>("RootDirtBlock");
+            groundSprite[14] = Content.Load<Texture2D>("NewDirtRootV1");
+            groundSprite[15] = Content.Load<Texture2D>("NewDirtRootV2");
+            groundSprite[16] = Content.Load<Texture2D>("NewDirtRootV2");
+            groundSprite[17] = Content.Load<Texture2D>("NewDirtSmallRocks");
+
+
+
             engine_sound = Content.Load<SoundEffect>("Sound/motorcycle-idle-01");
             engine_sound_inst = engine_sound.CreateInstance();
 
@@ -328,7 +339,14 @@ namespace Miner
                     #region texture terrain switch
                     // the switch changes the terrain drawn depending on the terrain int.
 
-                    texture_terrain = groundSprite[Terrain.Which(gx, gy, loaded_chunk)];
+                    if (Terrain.Which(gx, gy, loaded_chunk) > 9)
+                    {
+                        texture_terrain = groundSprite[9];
+                    }
+                    else
+                    {
+                        texture_terrain = groundSprite[Terrain.Which(gx, gy, loaded_chunk)];
+                    }
 
                     switch (texture_terrain)
                     {
@@ -345,6 +363,18 @@ namespace Miner
                             break;
                         case Texture n when n == groundSprite[6] || n == groundSprite[7] || n == groundSprite[8]:
                             _spriteBatch.Draw(groundSprite[4],//what to draw
+                            new Vector2(gx + ofset_x + direction[0], gy + ofset_y + direction[1]),//place to draw it
+                            null,//rectangle
+                            Color.White,//color of player
+                            0f, //Rotation of player
+                            Vector2.Zero,//Orgin Point
+                            worldScale,//How big is the player
+                            SpriteEffects.None,//effects
+                            1f);//Layer 
+                            break;
+                        case Texture n when n == groundSprite[9]:
+                            int terrain_mod = Terrain.Which(gx, gy, loaded_chunk);
+                            _spriteBatch.Draw(groundSprite[2 + terrain_mod - 10],//what to draw
                             new Vector2(gx + ofset_x + direction[0], gy + ofset_y + direction[1]),//place to draw it
                             null,//rectangle
                             Color.White,//color of player
