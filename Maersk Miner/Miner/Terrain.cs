@@ -22,6 +22,7 @@ namespace Miner
         private static int[] tiles_t_c3 = new int[width * height];
         private static int[] tiles_t_c4 = new int[width * height];
         private static int[] tiles_empty = new int[width * height];
+        private static float[] tiles_empty_float = new float[width * height];
         private static float[] tiles_mined = new float[width * height];
 
         private static List<int[]> loaded_chunks = new List<int[]>();
@@ -81,6 +82,8 @@ namespace Miner
             float pos_y = 0;
             // 0 + amount;
             int amount_of_air_tiles = 1;
+            int _width = 5120;
+            int _height = 2880;
             switch (side)
             {
                 case 0:
@@ -90,14 +93,56 @@ namespace Miner
                         switch (j)
                         {
                             case 0:
-                                // pos check 1
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - 1;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 5;
+                                switch (loaded_chunks[0][0])
+                                {
+                                    case int n when n < 0:
+                                        pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x - (1920 / 2 - (32 * 5) / 2)) - 1;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - (_width * loaded_chunks[0][0]) - 1;
+                                        break;
+                                    default:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - 1;
+                                        break;
+                                }
+                                switch (loaded_chunks[0][1])
+                                {
+                                    case int n when n < 0:
+                                        pos_y = (_height * loaded_chunks[0][1]) - (GameWorld.ofset_y - (1080 / 2 - (32 * 5) / 2)) + 5;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - (_height * loaded_chunks[0][1]) + 5;
+                                        break;
+                                    default:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 5;
+                                        break;
+                                }
                                 break;
                             case 1:
-                                // pos check 2
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - 1;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f - 5;
+                                switch (loaded_chunks[0][0])
+                                {
+                                    case int n when n < 0:
+                                        pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x - (1920 / 2 - (32 * 5) / 2)) - 1;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - (_width * loaded_chunks[0][0]) - 1;
+                                        break;
+                                    default:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - 1;
+                                        break;
+                                }
+                                switch (loaded_chunks[0][1])
+                                {
+                                    case int n when n < 0:
+                                        pos_y = (_height * loaded_chunks[0][1]) - (GameWorld.ofset_y - (1080 / 2 - (32 * 5) / 2)) + 32 * 4.34375f - 5;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - (_height * loaded_chunks[0][1]) + 32 * 4.34375f - 5;
+                                        break;
+                                    default:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f - 5;
+                                        break;
+                                }
                                 break;
                         }
                         // if terrain not air
@@ -121,12 +166,56 @@ namespace Miner
                         switch (h)
                         {
                             case 0:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f + 1;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 5;
+                                switch (loaded_chunks[0][0])
+                                {
+                                    case int n when n < 0:
+                                        pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x - (1920 / 2 - (32 * 5) / 2)) + 32 * 4.34375f + 1;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - (_width * loaded_chunks[0][0]) + 32 * 4.34375f + 1;
+                                        break;
+                                    default:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f + 1;
+                                        break;
+                                }
+                                switch (loaded_chunks[0][1])
+                                {
+                                    case int n when n < 0:
+                                        pos_y = (_height * loaded_chunks[0][1]) - (GameWorld.ofset_y - (1080 / 2 - (32 * 5) / 2)) + 5;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - (_height * loaded_chunks[0][1]) + 5;
+                                        break;
+                                    default:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 5;
+                                        break;
+                                }
                                 break;
                             case 1:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f + 1;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f - 5;
+                                switch (loaded_chunks[0][0])
+                                {
+                                    case int n when n < 0:
+                                        pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x - (1920 / 2 - (32 * 5) / 2)) + 32 * 4.34375f + 1;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - (_width * loaded_chunks[0][0]) + 32 * 4.34375f + 1;
+                                        break;
+                                    default:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f + 1;
+                                        break;
+                                }
+                                switch (loaded_chunks[0][1])
+                                {
+                                    case int n when n < 0:
+                                        pos_y = (_height * loaded_chunks[0][1]) - (GameWorld.ofset_y - (1080 / 2 - (32 * 5) / 2)) + 32 * 4.34375f - 5;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - (_height * loaded_chunks[0][1]) + 32 * 4.34375f - 5;
+                                        break;
+                                    default:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f - 5;
+                                        break;
+                                }
                                 break;
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
@@ -149,16 +238,82 @@ namespace Miner
                         switch (p)
                         {
                             case 0:
-                                pos_x = 1920 / 2 - GameWorld.ofset_x + 2;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - 1;
+                                switch (loaded_chunks[0][0])
+                                {
+                                    case int n when n < 0:
+                                        pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x - 1920 / 2) + 2;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_x = 1920 / 2 - GameWorld.ofset_x - (_width * loaded_chunks[0][0]) + 2;
+                                        break;
+                                    default:
+                                        pos_x = 1920 / 2 - GameWorld.ofset_x + 2;
+                                        break;
+                                }
+                                switch (loaded_chunks[0][1])
+                                {
+                                    case int n when n < 0:
+                                        pos_y = (_height * loaded_chunks[0][1]) - (GameWorld.ofset_y - (1080 / 2 - (32 * 5) / 2)) - 1;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - (_height * loaded_chunks[0][1]) - 1;
+                                        break;
+                                    default:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - 1;
+                                        break;
+                                }
                                 break;
                             case 1:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 2;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - 1;
+                                switch (loaded_chunks[0][0])
+                                {
+                                    case int n when n < 0:
+                                        pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x - (1920 / 2 - (32 * 5) / 2)) + 2;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - (_width * loaded_chunks[0][0]) + 2;
+                                        break;
+                                    default:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 2;
+                                        break;
+                                }
+                                switch (loaded_chunks[0][1])
+                                {
+                                    case int n when n < 0:
+                                        pos_y = (_height * loaded_chunks[0][1]) - (GameWorld.ofset_y - (1080 / 2 - (32 * 5) / 2)) - 1;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - (_height * loaded_chunks[0][1]) - 1;
+                                        break;
+                                    default:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - 1;
+                                        break;
+                                }
                                 break;
                             case 2:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f - 2;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - 1;
+                                switch (loaded_chunks[0][0])
+                                {
+                                    case int n when n < 0:
+                                        pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x - (1920 / 2 - (32 * 5) / 2)) + 32 * 4.34375f - 2;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - (_width * loaded_chunks[0][0]) + 32 * 4.34375f - 2;
+                                        break;
+                                    default:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f - 2;
+                                        break;
+                                }
+                                switch (loaded_chunks[0][1])
+                                {
+                                    case int n when n < 0:
+                                        pos_y = (_height * loaded_chunks[0][1]) - (GameWorld.ofset_y - (1080 / 2 - (32 * 5) / 2)) - 1;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - (_height * loaded_chunks[0][1]) - 1;
+                                        break;
+                                    default:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - 1;
+                                        break;
+                                }
                                 break;
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
@@ -181,16 +336,82 @@ namespace Miner
                         switch (l)
                         {
                             case 0:
-                                pos_x = 1920 / 2 - GameWorld.ofset_x;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
+                                switch (loaded_chunks[0][0])
+                                {
+                                    case int n when n < 0:
+                                        pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x - 1920 / 2);
+                                        break;
+                                    case int n when n > 0:
+                                        pos_x = 1920 / 2 - GameWorld.ofset_x - (_width * loaded_chunks[0][0]);
+                                        break;
+                                    default:
+                                        pos_x = 1920 / 2 - GameWorld.ofset_x;
+                                        break;
+                                }
+                                switch (loaded_chunks[0][1])
+                                {
+                                    case int n when n < 0:
+                                        pos_y = (_height * loaded_chunks[0][1]) - (GameWorld.ofset_y - (1080 / 2 - (32 * 5) / 2)) + 32 * 4.34375f;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - (_height * loaded_chunks[0][1]) + 32 * 4.34375f;
+                                        break;
+                                    default:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
+                                        break;
+                                }
                                 break;
                             case 1:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 1;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
+                                switch (loaded_chunks[0][0])
+                                {
+                                    case int n when n < 0:
+                                        pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x - (1920 / 2 - (32 * 5) / 2)) + 1;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - (_width * loaded_chunks[0][0]) + 1;
+                                        break;
+                                    default:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 1;
+                                        break;
+                                }
+                                switch (loaded_chunks[0][1])
+                                {
+                                    case int n when n < 0:
+                                        pos_y = (_height * loaded_chunks[0][1]) - (GameWorld.ofset_y - (1080 / 2 - (32 * 5) / 2)) + 32 * 4.34375f;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - (_height * loaded_chunks[0][1]) + 32 * 4.34375f;
+                                        break;
+                                    default:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
+                                        break;
+                                }
                                 break;
                             case 2:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f - 1;
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
+                                switch (loaded_chunks[0][0])
+                                {
+                                    case int n when n < 0:
+                                        pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x - (1920 / 2 - (32 * 5) / 2)) + 32 * 4.34375f - 1;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - (_width * loaded_chunks[0][0]) + 32 * 4.34375f - 1;
+                                        break;
+                                    default:
+                                        pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f - 1;
+                                        break;
+                                }
+                                switch (loaded_chunks[0][1])
+                                {
+                                    case int n when n < 0:
+                                        pos_y = (_height * loaded_chunks[0][1]) - (GameWorld.ofset_y - (1080 / 2 - (32 * 5) / 2)) + 32 * 4.34375f;
+                                        break;
+                                    case int n when n > 0:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - (_height * loaded_chunks[0][1]) + 32 * 4.34375f;
+                                        break;
+                                    default:
+                                        pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
+                                        break;
+                                }
                                 break;
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
@@ -227,10 +448,10 @@ namespace Miner
                         switch (loaded_chunks[0][0])
                         {
                             case int n when n < 0:
-                                pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x + 1920 / 2 - (32 * 5) / 2) + 3;
+                                pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x - (1920 / 2 - (32 * 5) / 2)) + 3;
                                 break;
                             case int n when n > 0:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + (_width * loaded_chunks[0][0]) + 3;
+                                pos_x = (1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x) - (_width * loaded_chunks[0][0]) + 3;
                                 break;
                             default:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 3;
@@ -239,10 +460,10 @@ namespace Miner
                         switch (loaded_chunks[0][1])
                         {
                             case int n when n < 0:
-                                pos_y = (_height * loaded_chunks[0][1] * (-1)) - (GameWorld.ofset_y + 1080 / 2 - (32 * 5) / 2) + 32 * 4.34375f;
+                                pos_y = (_height * loaded_chunks[0][1]) - (GameWorld.ofset_y - (1080 / 2 - (32 * 5) / 2)) + 32 * 4.34375f;
                                 break;
                             case int n when n > 0:
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + (_height * loaded_chunks[0][1]) + 32 * 4.34375f;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - (_height * loaded_chunks[0][1] * (-1)) + 32 * 4.34375f;
                                 break;
                             default:
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
@@ -253,10 +474,10 @@ namespace Miner
                         switch (loaded_chunks[0][0])
                         {
                             case int n when n < 0:
-                                pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x + 1920 / 2 - (32 * 5) / 2) + 32 * 4.34375f - 3;
+                                pos_x = (_width * loaded_chunks[0][0] * (-1)) - (GameWorld.ofset_x - (1920 / 2 - (32 * 5) / 2)) + 32 * 4.34375f - 3;
                                 break;
                             case int n when n > 0:
-                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + (_width * loaded_chunks[0][0]) + 32 * 4.34375f - 3;
+                                pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x - (_width * loaded_chunks[0][0]) + 32 * 4.34375f - 3;
                                 break;
                             default:
                                 pos_x = 1920 / 2 - (32 * 5) / 2 - GameWorld.ofset_x + 32 * 4.34375f - 7;
@@ -265,10 +486,10 @@ namespace Miner
                         switch (loaded_chunks[0][1])
                         {
                             case int n when n < 0:
-                                pos_y = (_height * loaded_chunks[0][1] * (-1)) - (GameWorld.ofset_y + 1080 / 2 - (32 * 5) / 2) + 32 * 4.34375f;
+                                pos_y = (_height * loaded_chunks[0][1]) - (GameWorld.ofset_y - (1080 / 2 - (32 * 5) / 2)) + 32 * 4.34375f;
                                 break;
                             case int n when n > 0:
-                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + (_height * loaded_chunks[0][1]) + 32 * 4.34375f;
+                                pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y - (_height * loaded_chunks[0][1]) + 32 * 4.34375f;
                                 break;
                             default:
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
@@ -387,29 +608,29 @@ namespace Miner
         /// <param name="y_1"> player y off set </param>
         public static void Move_Main_chunk(int x_1, int y_1)
         {
-            int _width = 9600;
-            int _height = 5400;
+            int _width = 5200;
+            int _height = 2880;
             // make a adding for strait and not strait, this can not add 2 chunks
             int[] direction = new int[2];
-            if (x_1 < -(_width - (1920 / 2 - (32 * 5) / 2)) - loaded_chunks[0][0] * _width)
+            if (x_1 < -(_width - (1920 / 2)) - loaded_chunks[0][0] * _width)
             {
                 direction[0] = 1;
                 direction[1] = 0;
                 // change new main chunk
             }
-            if (x_1 - (1920 / 2 - (32 * 5) / 2) + loaded_chunks[0][0] * _width > 0)
+            if (x_1 - (1920 / 2) + loaded_chunks[0][0] * _width > 0)
             {
                 direction[0] = -1;
                 direction[1] = 0;
                 // change new main chunk
             }
-            if (y_1 > _height - (1080 / 2 - (32 * 5) / 2) + loaded_chunks[0][1] * _height)
+            if (y_1 - (1080 / 2) + loaded_chunks[0][1] * (-1) * _height > 0)
             {
                 direction[0] = 0;
                 direction[1] = 1;
                 // change new main chunk
             }
-            if (y_1 < -(_height - (1080 / 2 - (32 * 5) / 2)) + loaded_chunks[0][1] * _height)
+            if (y_1 < -(_height - (1080 / 2)) + loaded_chunks[0][1] * _height)
             {
                 direction[0] = 0;
                 direction[1] = -1;
@@ -417,6 +638,10 @@ namespace Miner
             }
             if (direction[0] != 0 || direction[1] != 0)
             {
+                for (int i = 0; i < tiles_mined.Length; i++)
+                {
+                    tiles_mined[i] = 0;
+                }
                 sort_chunk_moving(direction, x_1, y_1);
             }
         }
@@ -783,72 +1008,10 @@ namespace Miner
         /// <returns></returns>
         static int chunk_terrain(int[] xy, int i)
         {
-            if ((xy[0] == 0 || xy[0] == -1 || xy[0] == 1) && xy[1] == 0)
+            switch (xy[1])
             {
-                if (i > 127)
-                {
-                    if (i > 319)
-                    {
-                        if (i > 448)
-                        {
-                            #region layer 3
-                            int returns = (randoms(10) + 2);
-                            if (returns == 10 || returns == 11 || returns == 12 || returns == 9 || returns == 8 || returns == 7 || returns == 6 || returns == 5)
-                            {
-                                returns = randoms(10) + 3;
-                                if (returns < 10)
-                                {
-                                    returns = 4;
-                                }
-                                else
-                                {
-                                    returns = 3;
-                                }
-                            }
-                            if (returns == 4)
-                            {
-                                if (randoms(4) == 0)
-                                {
-                                    returns = randoms(3) + 6;
-                                }
-                            }
-                            if (returns == 3)
-                            {
-                                if (randoms(7) == 0)
-                                {
-                                    returns = 5;
-                                }
-                            }
-                            return returns;
-                            #endregion
-                        }
-                        else
-                        {
-                            #region layer 2
-                            int returns = (randoms(10) + 2);
-                            if (returns == 10 || returns == 11 || returns == 12 || returns == 9 || returns == 8 || returns == 7 || returns == 6 || returns == 5)
-                            {
-                                returns = randoms(2) + 3;
-                            }
-                            if (returns == 3)
-                            {
-                                if (randoms(7) == 0)
-                                {
-                                    returns = 5;
-                                }
-                            }
-                            if (returns == 4)
-                            {
-                                if (randoms(7) == 0)
-                                {
-                                    returns = 6;
-                                }
-                            }
-                            return returns;
-                            #endregion
-                        }
-                    }
-                    else
+                case int n when n == 0:
+                    if (i > 127)
                     {
                         #region layer 1
                         int returns = (randoms(3) + 2);
@@ -869,15 +1032,65 @@ namespace Miner
                         return returns;
                         #endregion
                     }
-                }
-                return 0;
+                    return 0;
+                case int n when n == -1 || n == -2:
+                    #region layer 2
+                    int returns2 = (randoms(10) + 2);
+                    if (returns2 == 10 || returns2 == 11 || returns2 == 12 || returns2 == 9 || returns2 == 8 || returns2 == 7 || returns2 == 6 || returns2 == 5)
+                    {
+                        returns2 = randoms(2) + 3;
+                    }
+                    if (returns2 == 3)
+                    {
+                        if (randoms(7) == 0)
+                        {
+                            returns2 = 5;
+                        }
+                    }
+                    if (returns2 == 4)
+                    {
+                        if (randoms(7) == 0)
+                        {
+                            returns2 = 6;
+                        }
+                    }
+                    return returns2;
+                #endregion;
+                case int n when n == -3 || n == -4:
+                    #region layer 3
+                    int returns3 = (randoms(10) + 2);
+                    if (returns3 == 10 || returns3 == 11 || returns3 == 12 || returns3 == 9 || returns3 == 8 || returns3 == 7 || returns3 == 6 || returns3 == 5)
+                    {
+                        returns3 = randoms(10) + 3;
+                        if (returns3 < 10)
+                        {
+                            returns3 = 4;
+                        }
+                        else
+                        {
+                            returns3 = 3;
+                        }
+                    }
+                    if (returns3 == 4)
+                    {
+                        if (randoms(4) == 0)
+                        {
+                            returns3 = randoms(3) + 6;
+                        }
+                    }
+                    if (returns3 == 3)
+                    {
+                        if (randoms(7) == 0)
+                        {
+                            returns3 = 5;
+                        }
+                    }
+                    return returns3;
+                #endregion
+                case int n when n > 0:
+                    return 0;
             }
-            switch (xy[1])
-            {
-                case int n when n < 3 && n > -3:
-                    return 4;
-            }
-            return 0;
+            return 4;
         }
         private static int randoms(int threshold)
         {
@@ -1019,10 +1232,10 @@ namespace Miner
             switch (loaded_one[0])
             {
                 case int n when n < 0:
-                    direction[0] = -5120;
+                    direction[0] = 5120 * loaded_one[0];
                     break;
                 case int n when n > 0:
-                    direction[0] = 5120;
+                    direction[0] = 5120 * loaded_one[0];
                     break;
                 default:
                     direction[0] = 0;
@@ -1031,10 +1244,10 @@ namespace Miner
             switch (loaded_one[1])
             {
                 case int k when k < 0:
-                    direction[1] = 2880;
+                    direction[1] = 2880 * loaded_one[1] * (-1);
                     break;
                 case int k when k > 0:
-                    direction[1] = -2880;
+                    direction[1] = -2880 * loaded_one[1] * (-1);
                     break;
                 default:
                     direction[1] = 0;

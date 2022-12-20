@@ -360,7 +360,7 @@ namespace Miner
                 text += "\n";
             }
             text += ofset_x + " " + ofset_y;
-            //_spriteBatch.DrawString(ContFont, text, new Vector2(1600, 100), Color.Green);
+            _spriteBatch.DrawString(ContFont, text, new Vector2(1600, 100), Color.Green);
             _spriteBatch.Draw(invOpenTab, invOpenRecBag, Color.White);
 
             foreach (GameObjects objects in gameObjects)
