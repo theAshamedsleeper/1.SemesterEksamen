@@ -23,6 +23,8 @@ namespace Miner
         protected const string SPRITESHEET_DIGGING_UP = "DrillDiggingUp4Spr";
 
 
+
+
         protected Texture2D _spriteSheetTexture;
         protected Texture2D _spriteIdleTexture;
         public SpriteFont _controlsFont;

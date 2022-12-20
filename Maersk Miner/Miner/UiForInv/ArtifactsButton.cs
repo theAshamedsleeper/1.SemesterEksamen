@@ -10,12 +10,22 @@ namespace Miner.UiForInv
     {
         private MouseState mouse;
         private static Rectangle[] artiRec = new Rectangle[12];
+        private static Texture2D[] artifactTextArray = new Texture2D[12];
         /// <summary>
         /// Loads in the Different places, sizes of the artifacts and the menu sound
         /// </summary>
         /// <param name="content"></param>
         public override void LoadContent(ContentManager content)
         {
+            artifactsSprite[0] = content.Load<Texture2D>("ArtefactPC");
+            artifactsSprite[1] = content.Load<Texture2D>("KeycardArtefact5");
+            artifactsSprite[2] = content.Load<Texture2D>("Toxic waste");
+
+            artifactTextArray[0] = content.Load<Texture2D>("PC_Artefact_textNB");
+            artifactTextArray[1] = content.Load<Texture2D>("Key_Artefact_textNB");
+            artifactTextArray[2] = content.Load<Texture2D>("Toxic_Artefact_Text");
+
+
             artifactsPlacer[0] = new Rectangle(750, 560, 150, 150);
             artifactsPlacer[1] = new Rectangle(935, 560, 150, 150);
             artifactsPlacer[2] = new Rectangle(1120, 560, 150, 150);
@@ -30,7 +40,7 @@ namespace Miner.UiForInv
             artifactsPlacer[10] = new Rectangle(1490, 800, 150, 150);
             artifactsPlacer[11] = new Rectangle(1675, 800, 150, 150);
 
-            artiRec[0] = new Rectangle(465, 550, 200, 400);
+            artiRec[0] = new Rectangle(465, 550, 200, 150);
 
             menuSound = content.Load<SoundEffect>("Sound/Menu Selection Click");
 
@@ -59,27 +69,27 @@ namespace Miner.UiForInv
             #region First line Artifacts
             if (artiFound[0] == false)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[0], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[0], artifactsPlacer[0], Color.Gray);
             }
             else if (artiFound[0] == true)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[0], Color.White);
+                spriteBatch.Draw(artifactsSprite[0], artifactsPlacer[0], Color.White);
             }
             if (artiFound[1] == false)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[1], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[1], artifactsPlacer[1], Color.Gray);
             }
             else if (artiFound[1] == true)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[1], Color.White);
+                spriteBatch.Draw(artifactsSprite[1], artifactsPlacer[1], Color.White);
             }
             if (artiFound[2] == false)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[2], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[2], artifactsPlacer[2], Color.Gray);
             }
             else if (artiFound[2] == true)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[2], Color.White);
+                spriteBatch.Draw(artifactsSprite[2], artifactsPlacer[2], Color.White);
             }
             if (artiFound[3] == false)
             {
@@ -162,31 +172,31 @@ namespace Miner.UiForInv
                 case 1:
                     if (artiFound[0] == false)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                        spriteBatch.Draw(artifactTextArray[0], artiRec[0], Color.White);
                     }
                     else if (artiFound[0] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                        spriteBatch.Draw(artifactTextArray[0], artiRec[0], Color.White);
                     }
                     break;
                 case 2:
                     if (artiFound[1] == false)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                        spriteBatch.Draw(artifactTextArray[1], artiRec[0], Color.White);
                     }
                     else if (artiFound[1] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                        spriteBatch.Draw(artifactTextArray[1], artiRec[0], Color.White);
                     }
                     break;
                 case 3:
                     if (artiFound[2] == false)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                        spriteBatch.Draw(artifactTextArray[2], artiRec[0], Color.White);
                     }
                     else if (artiFound[2] == true)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.White);
+                        spriteBatch.Draw(artifactTextArray[2], artiRec[0], Color.White);
                     }
                     break;
                 case 4:
@@ -329,16 +339,7 @@ namespace Miner.UiForInv
             {
                 IsInvOpen = false;
             }
-            if (IsInvOpen == true && Keyboard.GetState().IsKeyDown(Keys.I) && closeDownShopTimer > 0.3f)
-            {
-                IsInvOpen = false;
-                closeDownShopTimer = 0f;
-            }
-            else if (IsInvOpen == false && Keyboard.GetState().IsKeyDown(Keys.I) && closeDownShopTimer > 0.3f)
-            {
-                IsInvOpen = true;
-                closeDownShopTimer = 0f;
-            }
+            
             #endregion
             #region Mouse Collsion
             if (artifactsPlacer[0].Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed)
