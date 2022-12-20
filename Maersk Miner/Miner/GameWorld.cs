@@ -18,7 +18,7 @@ namespace Miner
         private const string BACKGROUND_TOP = "BackgroundTopBigScale5";
         private Texture2D backgroundTop;
 
-        private Texture2D[] groundSprite = new Texture2D[10];
+        private Texture2D[] groundSprite = new Texture2D[20];
         private Texture2D texture_terrain;
         private SpriteFont ContFont;
 
@@ -93,15 +93,13 @@ namespace Miner
             groundSprite[6] = Content.Load<Texture2D>("GroundSprite/Titanium");
             groundSprite[7] = Content.Load<Texture2D>("GroundSprite/UraniumNew");
             groundSprite[8] = Content.Load<Texture2D>("GroundSprite/Platinium2");
-            groundSprite[9] = Content.Load<Texture2D>("ArtefactBlock");
-            groundSprite[10] = Content.Load<Texture2D>("MilitaryScrapBlock2");
-            groundSprite[11] = Content.Load<Texture2D>("RedClayBlock");
-            groundSprite[12] = Content.Load<Texture2D>("DarkRedClayBlock");
-            groundSprite[13] = Content.Load<Texture2D>("RootDirtBlock");
-            groundSprite[14] = Content.Load<Texture2D>("NewDirtRootV1");
-            groundSprite[15] = Content.Load<Texture2D>("NewDirtRootV2");
-            groundSprite[16] = Content.Load<Texture2D>("NewDirtRootV2");
-            groundSprite[17] = Content.Load<Texture2D>("NewDirtSmallRocks");
+            groundSprite[9] = Content.Load<Texture2D>("MilitaryScrapBlock2");
+            groundSprite[10] = Content.Load<Texture2D>("RedClayBlock");
+            groundSprite[11] = Content.Load<Texture2D>("DarkRedClayBlock");
+            groundSprite[12] = Content.Load<Texture2D>("NewDirtSmallRocks");
+            groundSprite[13] = Content.Load<Texture2D>("NewDirtRootV1");
+            groundSprite[14] = Content.Load<Texture2D>("NewDirtRootV2");
+            groundSprite[15] = Content.Load<Texture2D>("ArtefactBlock");
 
 
 
@@ -308,9 +306,9 @@ namespace Miner
                     #region texture terrain switch
                     // the switch changes the terrain drawn depending on the terrain int.
 
-                    if (Terrain.Which(gx, gy, loaded_chunk) > 9)
+                    if (Terrain.Which(gx, gy, loaded_chunk) > 16)
                     {
-                        texture_terrain = groundSprite[9];
+                        texture_terrain = groundSprite[15];
                     }
                     else
                     {
@@ -341,9 +339,9 @@ namespace Miner
                             SpriteEffects.None,//effects
                             1f);//Layer 
                             break;
-                        case Texture n when n == groundSprite[9]:
+                        case Texture n when n == groundSprite[15]:
                             int terrain_mod = Terrain.Which(gx, gy, loaded_chunk);
-                            _spriteBatch.Draw(groundSprite[2 + terrain_mod - 10],//what to draw
+                            _spriteBatch.Draw(groundSprite[2 + terrain_mod - 15],//what to draw
                             new Vector2(gx + ofset_x + direction[0], gy + ofset_y + direction[1]),//place to draw it
                             null,//rectangle
                             Color.White,//color of player

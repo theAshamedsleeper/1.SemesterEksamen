@@ -951,3 +951,18 @@ C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\
 C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.pdb
 C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\Maersk Miner.genruntimeconfig.cache
 C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\obj\Debug\net6.0-windows\ref\Maersk Miner.dll
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DarkRedClayBlock.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\MilitaryScrapBlock2.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirt2.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtRootV1.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtRootV2.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtSmallRocks.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtWithFossil.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\RedClayBlock.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Glass-Bottle-Shattering-A2-www.fesliyanstudios.com.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Glass-Bottle-Shattering-A3-www.fesliyanstudios.com.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Glass-Bottle-Shattering-A4-www.fesliyanstudios.com.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-1-www.FesliyanStudios.com.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-2-www.FesliyanStudios.com.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-3-www.FesliyanStudios.com.xnb
+C:\Users\Thorbjørn\Documents\GitHubv2\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-4-www.FesliyanStudios.com.xnb
