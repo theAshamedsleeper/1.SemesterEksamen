@@ -308,7 +308,14 @@ namespace Miner
                     #region texture terrain switch
                     // the switch changes the terrain drawn depending on the terrain int.
 
-                    texture_terrain = groundSprite[Terrain.Which(gx, gy, loaded_chunk)];
+                    if (Terrain.Which(gx, gy, loaded_chunk) > 9)
+                    {
+                        texture_terrain = groundSprite[9];
+                    }
+                    else
+                    {
+                        texture_terrain = groundSprite[Terrain.Which(gx, gy, loaded_chunk)];
+                    }
 
                     switch (texture_terrain)
                     {
@@ -325,6 +332,18 @@ namespace Miner
                             break;
                         case Texture n when n == groundSprite[6] || n == groundSprite[7] || n == groundSprite[8]:
                             _spriteBatch.Draw(groundSprite[4],//what to draw
+                            new Vector2(gx + ofset_x + direction[0], gy + ofset_y + direction[1]),//place to draw it
+                            null,//rectangle
+                            Color.White,//color of player
+                            0f, //Rotation of player
+                            Vector2.Zero,//Orgin Point
+                            worldScale,//How big is the player
+                            SpriteEffects.None,//effects
+                            1f);//Layer 
+                            break;
+                        case Texture n when n == groundSprite[9]:
+                            int terrain_mod = Terrain.Which(gx, gy, loaded_chunk);
+                            _spriteBatch.Draw(groundSprite[2 + terrain_mod - 10],//what to draw
                             new Vector2(gx + ofset_x + direction[0], gy + ofset_y + direction[1]),//place to draw it
                             null,//rectangle
                             Color.White,//color of player

@@ -22,7 +22,6 @@ namespace Miner
         private static int[] tiles_t_c3 = new int[width * height];
         private static int[] tiles_t_c4 = new int[width * height];
         private static int[] tiles_empty = new int[width * height];
-        private static float[] tiles_empty_float = new float[width * height];
         private static float[] tiles_mined = new float[width * height];
 
         private static List<int[]> loaded_chunks = new List<int[]>();
@@ -31,8 +30,16 @@ namespace Miner
         private static SoundEffect stonebreak_2;
         private static SoundEffect stonebreak_3;
         private static SoundEffect stonebreak_4;
+        private static SoundEffect glassbreak_1;
+        private static SoundEffect glassbreak_2;
+        private static SoundEffect glassbreak_3;
+        private static SoundEffect metalbreak_1;
+        private static SoundEffect metalbreak_2;
+        private static SoundEffect metalbreak_3;
+        private static SoundEffect metalbreak_4;
         private static SoundEffect stonebreakfinish;
         private static float sound_timer = 0;
+        private static int arte_mined = 0;
         #region terrain making
         /// <summary>
         /// a method to give value to 2 arrays and loading all needed soundeffects.
@@ -65,6 +72,13 @@ namespace Miner
             stonebreak_2 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak2");
             stonebreak_3 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak3");
             stonebreak_4 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak4");
+            glassbreak_1 = content.Load<SoundEffect>("Sound/Glass-Bottle-Shattering-A2-www.fesliyanstudios.com");
+            glassbreak_2 = content.Load<SoundEffect>("Sound/Glass-Bottle-Shattering-A3-www.fesliyanstudios.com");
+            glassbreak_3 = content.Load<SoundEffect>("Sound/Glass-Bottle-Shattering-A4-www.fesliyanstudios.com");
+            metalbreak_1 = content.Load<SoundEffect>("Sound/Hammer-hitting-single-tap-on-metal-1-www.FesliyanStudios.com");
+            metalbreak_2 = content.Load<SoundEffect>("Sound/Hammer-hitting-single-tap-on-metal-2-www.FesliyanStudios.com");
+            metalbreak_3 = content.Load<SoundEffect>("Sound/Hammer-hitting-single-tap-on-metal-3-www.FesliyanStudios.com");
+            metalbreak_4 = content.Load<SoundEffect>("Sound/Hammer-hitting-single-tap-on-metal-4-www.FesliyanStudios.com");
             stonebreakfinish = content.Load<SoundEffect>("Sound/Rocks/StoneBreakfinish");
         }
         #endregion
@@ -986,10 +1000,11 @@ namespace Miner
             pos[0] = direction[0];
             pos[1] = direction[1];
             // add to list, make function to sort
+            int artefact_pos = randoms(576 - 127);
             for (int i = 0; i < width * height; i++)
             {
                 // function/method to see if the given x and y coordinates have a predetermined value for the terrain
-                z_1 = chunk_terrain(pos, i);
+                z_1 = chunk_terrain(pos, i, artefact_pos);
                 tiles_t[i] = z_1;
             }
 
@@ -1006,8 +1021,16 @@ namespace Miner
         /// <param name="xy"> chunk location</param>
         /// <param name="i"> the index of the array</param>
         /// <returns></returns>
-        static int chunk_terrain(int[] xy, int i)
+        static int chunk_terrain(int[] xy, int i, int arte)
         {
+            if (xy[1] < 1)
+            {
+                if (i == arte + 127)
+                {
+                    int artes = randoms(3) + 10;
+                    return artes;
+                }
+            }
             switch (xy[1])
             {
                 case int n when n == 0:
@@ -1456,6 +1479,22 @@ namespace Miner
                                 if (Terrain.Which(x, y, loaded_chunks[0]) == 7)
                                 {
                                     WorkShop.R5Uran++;
+                                }
+                                stonebreakfinish.Play();
+                                Terrain.Change(x, y, 1, loaded_chunks[0]);
+                            }
+                            else
+                            {
+                                mining_on_tile((x_mod * width) + i, deltatime);
+                            }
+                            break;
+                        case int n when n == 10 || n == 11 || n == 12:
+                            if (tiles_mined[(x_mod * width) + i] > 3000)
+                            {
+                                if (arte_mined < WorkShop.ArtiFound.Length)
+                                {
+                                    WorkShop.ArtiFound[arte_mined] = true;
+                                    arte_mined++;
                                 }
                                 stonebreakfinish.Play();
                                 Terrain.Change(x, y, 1, loaded_chunks[0]);
