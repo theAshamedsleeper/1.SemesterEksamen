@@ -1220,14 +1220,13 @@ namespace Miner
                     }
                     return returns3;
                 #endregion
-                case int n when n > 0:
+                case int n when n < -4:
                     #region layer 4 Final
                     int returns4 = randoms(20);
                     switch (returns4)
                     {
-                        case 0:
-                            break;
-                        case int r when r > 14:
+                        
+                        case int r when r > 14 || (r < 2 && r > -1):
                             returns4 = randoms(3) + 2;
                             break;
                     }
