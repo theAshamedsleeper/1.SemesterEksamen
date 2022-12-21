@@ -9,7 +9,7 @@ namespace Miner.UiForInv
     internal class ArtifactsButton : WorkShop
     {
         private MouseState mouse;
-        private static Rectangle[] artiRec = new Rectangle[12];
+        private static Rectangle[] artiRec = new Rectangle[14];
         private static Texture2D[] artifactTextArray = new Texture2D[12];
         /// <summary>
         /// Loads in the Different places, sizes of the artifacts and the menu sound
@@ -25,6 +25,8 @@ namespace Miner.UiForInv
             artifactTextArray[1] = content.Load<Texture2D>("Key_Artefact_textNB");
             artifactTextArray[2] = content.Load<Texture2D>("Toxic_Artefact_Text");
 
+            artifactsSprite[12] = content.Load<Texture2D>("Ui Sprites/Question Mark no Back");
+            artifactsSprite[13] = content.Load<Texture2D>("Ui Sprites/Question Mark with edge");
 
             artifactsPlacer[0] = new Rectangle(750, 560, 150, 150);
             artifactsPlacer[1] = new Rectangle(935, 560, 150, 150);
@@ -69,7 +71,7 @@ namespace Miner.UiForInv
             #region First line Artifacts
             if (artiFound[0] == false)
             {
-                spriteBatch.Draw(artifactsSprite[0], artifactsPlacer[0], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[13], artifactsPlacer[0], Color.Gray);
             }
             else if (artiFound[0] == true)
             {
@@ -77,7 +79,7 @@ namespace Miner.UiForInv
             }
             if (artiFound[1] == false)
             {
-                spriteBatch.Draw(artifactsSprite[1], artifactsPlacer[1], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[13], artifactsPlacer[1], Color.Gray);
             }
             else if (artiFound[1] == true)
             {
@@ -85,7 +87,7 @@ namespace Miner.UiForInv
             }
             if (artiFound[2] == false)
             {
-                spriteBatch.Draw(artifactsSprite[2], artifactsPlacer[2], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[13], artifactsPlacer[2], Color.Gray);
             }
             else if (artiFound[2] == true)
             {
@@ -93,7 +95,7 @@ namespace Miner.UiForInv
             }
             if (artiFound[3] == false)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[3], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[13], artifactsPlacer[3], Color.Gray);
             }
             else if (artiFound[3] == true)
             {
@@ -101,7 +103,7 @@ namespace Miner.UiForInv
             }
             if (artiFound[4] == false)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[4], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[13], artifactsPlacer[4], Color.Gray);
             }
             else if (artiFound[4] == true)
             {
@@ -109,7 +111,7 @@ namespace Miner.UiForInv
             }
             if (artiFound[5] == false)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[5], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[13], artifactsPlacer[5], Color.Gray);
             }
             else if (artiFound[5] == true)
             {
@@ -119,7 +121,7 @@ namespace Miner.UiForInv
             #region Second line of Artifacts
             if (artiFound[6] == false)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[6], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[13], artifactsPlacer[6], Color.Gray);
             }
             else if (artiFound[6] == true)
             {
@@ -127,7 +129,7 @@ namespace Miner.UiForInv
             }
             if (artiFound[7] == false)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[7], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[13], artifactsPlacer[7], Color.Gray);
             }
             else if (artiFound[7] == true)
             {
@@ -135,7 +137,7 @@ namespace Miner.UiForInv
             }
             if (artiFound[8] == false)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[8], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[13], artifactsPlacer[8], Color.Gray);
             }
             else if (artiFound[8] == true)
             {
@@ -143,7 +145,7 @@ namespace Miner.UiForInv
             }
             if (artiFound[9] == false)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[9], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[13], artifactsPlacer[9], Color.Gray);
             }
             else if (artiFound[8] == true)
             {
@@ -151,7 +153,7 @@ namespace Miner.UiForInv
             }
             if (artiFound[10] == false)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[10], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[13], artifactsPlacer[10], Color.Gray);
             }
             else if (artiFound[10] == true)
             {
@@ -159,7 +161,7 @@ namespace Miner.UiForInv
             }
             if (artiFound[11] == false)
             {
-                spriteBatch.Draw(spritePlacer[7], artifactsPlacer[11], Color.Gray);
+                spriteBatch.Draw(artifactsSprite[13], artifactsPlacer[11], Color.Gray);
             }
             else if (artiFound[11] == true)
             {
@@ -172,7 +174,7 @@ namespace Miner.UiForInv
                 case 1:
                     if (artiFound[0] == false)
                     {
-                        spriteBatch.Draw(artifactTextArray[0], artiRec[0], Color.White);
+                        spriteBatch.Draw(artifactsSprite[12], artiRec[0], Color.White);
                     }
                     else if (artiFound[0] == true)
                     {
@@ -182,7 +184,7 @@ namespace Miner.UiForInv
                 case 2:
                     if (artiFound[1] == false)
                     {
-                        spriteBatch.Draw(artifactTextArray[1], artiRec[0], Color.White);
+                        spriteBatch.Draw(artifactsSprite[12], artiRec[0], Color.White);
                     }
                     else if (artiFound[1] == true)
                     {
@@ -192,7 +194,7 @@ namespace Miner.UiForInv
                 case 3:
                     if (artiFound[2] == false)
                     {
-                        spriteBatch.Draw(artifactTextArray[2], artiRec[0], Color.White);
+                        spriteBatch.Draw(artifactsSprite[12], artiRec[0], Color.White);
                     }
                     else if (artiFound[2] == true)
                     {
@@ -202,7 +204,7 @@ namespace Miner.UiForInv
                 case 4:
                     if (artiFound[3] == false)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                        spriteBatch.Draw(artifactsSprite[12], artiRec[0], Color.Gray);
                     }
                     else if (artiFound[3] == true)
                     {
@@ -212,7 +214,7 @@ namespace Miner.UiForInv
                 case 5:
                     if (artiFound[4] == false)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                        spriteBatch.Draw(artifactsSprite[12], artiRec[0], Color.Gray);
                     }
                     else if (artiFound[4] == true)
                     {
@@ -222,7 +224,7 @@ namespace Miner.UiForInv
                 case 6:
                     if (artiFound[5] == false)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                        spriteBatch.Draw(artifactsSprite[12], artiRec[0], Color.Gray);
                     }
                     else if (artiFound[5] == true)
                     {
@@ -232,7 +234,7 @@ namespace Miner.UiForInv
                 case 7:
                     if (artiFound[6] == false)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                        spriteBatch.Draw(artifactsSprite[12], artiRec[0], Color.Gray);
                     }
                     else if (artiFound[6] == true)
                     {
@@ -242,7 +244,7 @@ namespace Miner.UiForInv
                 case 8:
                     if (artiFound[7] == false)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                        spriteBatch.Draw(artifactsSprite[12], artiRec[0], Color.Gray);
                     }
                     else if (artiFound[7] == true)
                     {
@@ -252,7 +254,7 @@ namespace Miner.UiForInv
                 case 9:
                     if (artiFound[8] == false)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                        spriteBatch.Draw(artifactsSprite[12], artiRec[0], Color.Gray);
                     }
                     else if (artiFound[8] == true)
                     {
@@ -262,7 +264,7 @@ namespace Miner.UiForInv
                 case 10:
                     if (artiFound[9] == false)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                        spriteBatch.Draw(artifactsSprite[12], artiRec[0], Color.Gray);
                     }
                     else if (artiFound[9] == true)
                     {
@@ -272,7 +274,7 @@ namespace Miner.UiForInv
                 case 11:
                     if (artiFound[10] == false)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                        spriteBatch.Draw(artifactsSprite[12], artiRec[0], Color.Gray);
                     }
                     else if (artiFound[10] == true)
                     {
@@ -282,7 +284,7 @@ namespace Miner.UiForInv
                 case 12:
                     if (artiFound[11] == false)
                     {
-                        spriteBatch.Draw(spritePlacer[7], artiRec[0], Color.Gray);
+                        spriteBatch.Draw(artifactsSprite[12], artiRec[0], Color.Gray);
                     }
                     else if (artiFound[11] == true)
                     {
