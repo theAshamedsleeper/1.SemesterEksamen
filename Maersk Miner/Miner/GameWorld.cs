@@ -115,7 +115,7 @@ namespace Miner
             groundSprite[8] = Content.Load<Texture2D>("GroundSprite/Platinium2");
             groundSprite[9] = Content.Load<Texture2D>("MilitaryScrapBlock2");
             groundSprite[10] = Content.Load<Texture2D>("RedClayBlock");
-            groundSprite[11] = Content.Load<Texture2D>("DarkRedClayBlock");
+            groundSprite[11] = Content.Load<Texture2D>("NewDirtWithFossil");
             groundSprite[12] = Content.Load<Texture2D>("NewDirtSmallRocks");
             groundSprite[13] = Content.Load<Texture2D>("NewDirtRootV1");
             groundSprite[14] = Content.Load<Texture2D>("NewDirtRootV2");
@@ -337,7 +337,7 @@ namespace Miner
                     #region texture terrain switch
                     // the switch changes the terrain drawn depending on the terrain int.
 
-                    if (Terrain.Which(gx, gy, loaded_chunk) > 16)
+                    if (Terrain.Which(gx, gy, loaded_chunk) > 15)
                     {
                         texture_terrain = groundSprite[15];
                     }
@@ -348,7 +348,7 @@ namespace Miner
 
                     switch (texture_terrain)
                     {
-                        case Texture n when n == groundSprite[5]:
+                        case Texture n when n == groundSprite[5] || n == groundSprite[9]:
                             _spriteBatch.Draw(groundSprite[3],//what to draw
                             new Vector2(gx + ofset_x + direction[0], gy + ofset_y + direction[1]),//place to draw it
                             null,//rectangle
@@ -372,7 +372,7 @@ namespace Miner
                             break;
                         case Texture n when n == groundSprite[15]:
                             int terrain_mod = Terrain.Which(gx, gy, loaded_chunk);
-                            _spriteBatch.Draw(groundSprite[2 + terrain_mod - 15],//what to draw
+                            _spriteBatch.Draw(groundSprite[terrain_mod - 6],//what to draw
                             new Vector2(gx + ofset_x + direction[0], gy + ofset_y + direction[1]),//place to draw it
                             null,//rectangle
                             Color.White,//color of player
