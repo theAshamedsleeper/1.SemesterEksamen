@@ -27,8 +27,10 @@ namespace Miner
         private List<WorkShop> workShop = new List<WorkShop>();
 
         private float worldScale = 5f;//2.4f så passer den i width
+
         public static int ofset_x = 0;
         public static int ofset_y = 0;
+        
         public static bool sideCollision = false;
         public static bool upCollision = false;
         public static bool inAir = false;

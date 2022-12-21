@@ -13,4 +13,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Maersk_Miner
+<<<<<<< Updated upstream
 build_property.ProjectDir = C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\
+=======
+build_property.ProjectDir = C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\
+>>>>>>> Stashed changes

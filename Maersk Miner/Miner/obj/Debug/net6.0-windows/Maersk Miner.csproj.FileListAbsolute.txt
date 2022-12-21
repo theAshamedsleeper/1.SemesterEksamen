@@ -1001,6 +1001,43 @@ C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\gruppe 1, T,T,B\Maersk Mine
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\gruppe 1, T,T,B\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Question Mark .xnb
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\gruppe 1, T,T,B\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Question Mark no Back.xnb
 C:\Users\thorb\stuff\Skole\1.Semester\Eksammen\Files\gruppe 1, T,T,B\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Question Mark with edge.xnb
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DarkRedClayBlock.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\MilitaryScrapBlock2.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirt2.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtRootV1.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtRootV2.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtSmallRocks.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirtWithFossil.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\RedClayBlock.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\ArtefactBlock.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\ArtefactPC.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\KeycardArtefact5.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Key_Artefact_textNB.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\PC_Artefact_Text.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\PC_Artefact_textNB.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Glass-Bottle-Shattering-A2-www.fesliyanstudios.com.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Glass-Bottle-Shattering-A3-www.fesliyanstudios.com.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Glass-Bottle-Shattering-A4-www.fesliyanstudios.com.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-1-www.FesliyanStudios.com.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-2-www.FesliyanStudios.com.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-3-www.FesliyanStudios.com.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Sound\Hammer-hitting-single-tap-on-metal-4-www.FesliyanStudios.com.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Toxic waste.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Toxic_Artefact_Text.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonMenu.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonOptions.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\ButtonQuit.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\Dead.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\Restart.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Menu Buttons\Won.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Question Mark .xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Question Mark no Back.xnb
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Question Mark with edge.xnb
+=======
+>>>>>>> Stashed changes
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\DarkRedClayBlock.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\MilitaryScrapBlock2.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\NewDirt2.xnb
@@ -1023,3 +1060,8 @@ C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Ma
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Question Mark no Back.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\UI Sprites\Question Mark with edge.xnb
 C:\Users\Bjark\OneDrive\Skrivebord\Study\Basisprogrammering\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Rock2.xnb
+<<<<<<< Updated upstream
+=======
+>>>>>>> 704f973f2d83f1a2c0c84a55eab06475ed286148
+C:\Users\thorb\OneDrive\Dokumenter\GitHub\2Uger pro\1.SemesterEksamen\Maersk Miner\Miner\bin\Debug\net6.0-windows\Content\Rock2.xnb
+>>>>>>> Stashed changes

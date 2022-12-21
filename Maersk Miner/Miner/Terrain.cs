@@ -713,31 +713,26 @@ namespace Miner
         {
             int _width = 5200;
             int _height = 2880;
-            // make a adding for strait and not strait, this can not add 2 chunks
             int[] direction = new int[2];
             if (x_1 < -(_width - (1920 / 2)) - loaded_chunks[0][0] * _width)
             {
                 direction[0] = 1;
                 direction[1] = 0;
-                // change new main chunk
             }
             if (x_1 - (1920 / 2) + loaded_chunks[0][0] * _width > 0)
             {
                 direction[0] = -1;
                 direction[1] = 0;
-                // change new main chunk
             }
             if (y_1 - (1080 / 2) + loaded_chunks[0][1] * (-1) * _height > 0)
             {
                 direction[0] = 0;
                 direction[1] = 1;
-                // change new main chunk
             }
             if (y_1 < -(_height - (1080 / 2)) + loaded_chunks[0][1] * _height)
             {
                 direction[0] = 0;
                 direction[1] = -1;
-                // change new main chunk
             }
             if (direction[0] != 0 || direction[1] != 0)
             {
@@ -1138,7 +1133,6 @@ namespace Miner
                         return artes;
                     }
                 }
-                
             }
             switch (xy[1])
             {
@@ -1233,7 +1227,7 @@ namespace Miner
                     return returns4;
                     #endregion;
             }
-            return 4;
+            return 0;
         }
         private static int randoms(int threshold)
         {
@@ -1542,7 +1536,6 @@ namespace Miner
                 if (tiles_y[i * width] == y_1)
                 {
                     x_mod = i;
-
                     break;
                 }
             }
@@ -1644,7 +1637,6 @@ namespace Miner
                             break;
                             #endregion
                     }
-
                 }
             }
         }

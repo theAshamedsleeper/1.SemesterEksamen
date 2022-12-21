@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "h0Vpbcs+Czwbw1URb8QstIYbayXxCve+9yB2MC9Lb2iWzmvPlvovo7BRGMf6pMPnC4Epg31GIE+wz2k30woIdw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bjark\\OneDrive\\Skrivebord\\Study\\Basisprogrammering\\1.SemesterEksamen\\Maersk Miner\\Miner\\Maersk Miner.csproj",
+=======
+  "dgSpecHash": "BFRmIgkZv+Azt3uFds9kQpHLZ5gRzF9nI1CAWN1omGbgzffULIZ3kqpCxmdXjzHy7jFEba9Fp05mGyqcQjfkjQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\thorb\\OneDrive\\Dokumenter\\GitHub\\2Uger pro\\1.SemesterEksamen\\Maersk Miner\\Miner\\Maersk Miner.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\Bjark\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\Bjark\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
@@ -126,5 +132,12 @@
     "C:\\Users\\Bjark\\.nuget\\packages\\system.xml.xpath\\4.0.1\\system.xml.xpath.4.0.1.nupkg.sha512",
     "C:\\Users\\Bjark\\.nuget\\packages\\system.xml.xpath.xdocument\\4.0.1\\system.xml.xpath.xdocument.4.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\thorb\\OneDrive\\Dokumenter\\GitHub\\2Uger pro\\1.SemesterEksamen\\Maersk Miner\\Miner\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
