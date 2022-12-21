@@ -107,7 +107,7 @@ namespace Miner
             groundSprite[0] = Content.Load<Texture2D>("BackgroundTop3");//Baggrund Over Jorden
             groundSprite[1] = Content.Load<Texture2D>("GroundSprite/output-onlinepngtools (1)");
             groundSprite[2] = Content.Load<Texture2D>("NewDirt2");//dirt Terrain
-            groundSprite[3] = Content.Load<Texture2D>("GroundSprite/Stone");
+            groundSprite[3] = Content.Load<Texture2D>("Rock2");
             groundSprite[4] = Content.Load<Texture2D>("GroundSprite/RockyDrit");
             groundSprite[5] = Content.Load<Texture2D>("GroundSprite/Kobber");
             groundSprite[6] = Content.Load<Texture2D>("GroundSprite/Titanium");
