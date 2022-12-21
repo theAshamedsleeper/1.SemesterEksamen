@@ -68,6 +68,7 @@ namespace Miner
                     x_1 += 1;
                 }
             }
+            #region sounds
             stonebreak_1 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak1");
             stonebreak_2 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak2");
             stonebreak_3 = content.Load<SoundEffect>("Sound/Rocks/StoneBreak3");
@@ -80,6 +81,7 @@ namespace Miner
             metalbreak_3 = content.Load<SoundEffect>("Sound/Hammer-hitting-single-tap-on-metal-3-www.FesliyanStudios.com");
             metalbreak_4 = content.Load<SoundEffect>("Sound/Hammer-hitting-single-tap-on-metal-4-www.FesliyanStudios.com");
             stonebreakfinish = content.Load<SoundEffect>("Sound/Rocks/StoneBreakfinish");
+            #endregion
         }
         #endregion
         #region stuff
@@ -164,8 +166,13 @@ namespace Miner
                         {
                             if (GameWorld.inAir == true)
                             {
+                                int material = 0;
+                                if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > 4 && Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) < 9)
+                                    material = 1;
+                                if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > 15 && Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) < 19)
+                                    material = 2;
                                 mining_updater(pos_x, pos_y, deltatime, 0);
-                                break_Sound(deltatime);
+                                break_Sound(deltatime, material);
                             }
 
                             return true;
@@ -236,8 +243,13 @@ namespace Miner
                         {
                             if (GameWorld.inAir == true)
                             {
+                                int material = 0;
+                                if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > 4 && Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) < 9)
+                                    material = 1;
+                                if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > 15 && Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) < 19)
+                                    material = 2;
                                 mining_updater(pos_x, pos_y, deltatime, 1);
-                                break_Sound(deltatime);
+                                break_Sound(deltatime, material);
                             }
 
                             return true;
@@ -334,8 +346,13 @@ namespace Miner
                         {
                             if (GameWorld.inAir == true)
                             {
+                                int material = 0;
+                                if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > 4 && Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) < 9)
+                                    material = 1;
+                                if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > 15 && Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) < 19)
+                                    material = 2;
                                 mining_updater(pos_x, pos_y, deltatime, 2);
-                                break_Sound(deltatime);
+                                break_Sound(deltatime, material);
                             }
 
                             return true;
@@ -430,8 +447,13 @@ namespace Miner
                         }
                         if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > amount_of_air_tiles)
                         {
+                            int material = 0;
+                            if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > 4 && Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) < 9)
+                                material = 1;
+                            if (Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) > 15 && Terrain.Which(pos_x, pos_y, Terrain.Loaded_Chunk_differ(0)) < 19)
+                                material = 2;
                             mining_updater(pos_x, pos_y, deltatime, 3);
-                            break_Sound(deltatime);
+                            break_Sound(deltatime, material);
                             return true;
                         }
                     }
@@ -459,6 +481,7 @@ namespace Miner
                 switch (p)
                 {
                     case 0:
+                        #region down
                         switch (loaded_chunks[0][0])
                         {
                             case int n when n < 0:
@@ -509,6 +532,7 @@ namespace Miner
                                 pos_y = 1080 / 2 - (32 * 5) / 2 - GameWorld.ofset_y + 32 * 4.34375f;
                                 break;
                         }
+                        #endregion
                         break;
                 }
                 if (Terrain.Which(pos_x, pos_y, loaded_chunks[0]) > amount_of_air_tiles)
@@ -538,27 +562,92 @@ namespace Miner
         /// It has a switch to ensure that different sounds play, otherwise it would get irritating.
         /// </summary>
         /// <param name="deltatime"></param>
-        private static void break_Sound(float deltatime)
+        private static void break_Sound(float deltatime, int material)
         {
             sound_timer += deltatime;
             if (sound_timer > 700)
             {
                 #region rnd switch
                 Random rnd = new Random();
-                switch (rnd.Next(4) + 1)
+                switch (material)
                 {
+                    case 0:
+                        switch (rnd.Next(4) + 1)
+                        {
+                            case 1:
+                                stonebreak_1.Play();
+                                break;
+                            case 2:
+                                stonebreak_2.Play();
+                                break;
+                            case 3:
+                                stonebreak_3.Play();
+                                break;
+                            case 4:
+                                stonebreak_4.Play();
+                                break;
+                        }
+                        break;
                     case 1:
-                        stonebreak_1.Play();
+                        switch (rnd.Next(4) + 1)
+                        {
+                            case 1:
+                                if (rnd.Next(2) == 0)
+                                {
+                                    metalbreak_1.Play();
+                                }
+                                else
+                                {
+                                    stonebreak_1.Play();
+                                }
+                                break;
+                            case 2:
+                                if (rnd.Next(2) == 0)
+                                {
+                                    metalbreak_2.Play();
+                                }
+                                else
+                                {
+                                    stonebreak_2.Play();
+                                }
+                                break;
+                            case 3:
+                                if (rnd.Next(2) == 0)
+                                {
+                                    metalbreak_3.Play();
+                                }
+                                else
+                                {
+                                    stonebreak_3.Play();
+                                }
+                                break;
+                            case 4:
+                                if (rnd.Next(2) == 0)
+                                {
+                                    metalbreak_4.Play();
+                                }
+                                else
+                                {
+                                    stonebreak_4.Play();
+                                }
+                                break;
+                        }
                         break;
                     case 2:
-                        stonebreak_2.Play();
+                        switch (rnd.Next(3) + 1)
+                        {
+                            case 1:
+                                glassbreak_1.Play();
+                                break;
+                            case 2:
+                                glassbreak_2.Play();
+                                break;
+                            case 3:
+                                glassbreak_3.Play();
+                                break;
+                        }
                         break;
-                    case 3:
-                        stonebreak_3.Play();
-                        break;
-                    case 4:
-                        stonebreak_4.Play();
-                        break;
+
                 }
                 #endregion
                 sound_timer -= 500;
@@ -1000,7 +1089,15 @@ namespace Miner
             pos[0] = direction[0];
             pos[1] = direction[1];
             // add to list, make function to sort
-            int artefact_pos = randoms(576 - 127);
+            int artefact_pos = 0;
+            if (direction[1] == 0)
+            {
+                artefact_pos = randoms(576 - 127);
+            }
+            else
+            {
+                artefact_pos = randoms(576);
+            }
             for (int i = 0; i < width * height; i++)
             {
                 // function/method to see if the given x and y coordinates have a predetermined value for the terrain
@@ -1025,11 +1122,23 @@ namespace Miner
         {
             if (xy[1] < 1)
             {
-                if (i == arte + 127)
+                if (xy[1] == 0)
                 {
-                    int artes = randoms(3) + 10;
-                    return artes;
+                    if (i == arte + 127)
+                    {
+                        int artes = randoms(3) + 16;
+                        return artes;
+                    }
                 }
+                else
+                {
+                    if (i == arte)
+                    {
+                        int artes = randoms(3) + 16;
+                        return artes;
+                    }
+                }
+                
             }
             switch (xy[1])
             {
@@ -1047,9 +1156,10 @@ namespace Miner
                         }
                         if (returns == 4)
                         {
-                            if (randoms(5) == 0)
+                            returns = 10 + randoms(5);
+                            if (returns == 11)
                             {
-                                returns = 6;
+                                returns = 10 + randoms(5);
                             }
                         }
                         return returns;
@@ -1110,8 +1220,18 @@ namespace Miner
                     }
                     return returns3;
                 #endregion
-                case int n when n > 0:
-                    return 0;
+                case int n when n < -4:
+                    #region layer 4 Final
+                    int returns4 = randoms(20);
+                    switch (returns4)
+                    {
+                        
+                        case int r when r > 14 || (r < 2 && r > -1):
+                            returns4 = randoms(3) + 2;
+                            break;
+                    }
+                    return returns4;
+                    #endregion;
             }
             return 4;
         }
@@ -1305,6 +1425,7 @@ namespace Miner
                 if (tiles_y[i * width] == y_1)
                 {
                     x_mod = i;
+                    break;
                 }
             }
             // checks the x array for location
@@ -1337,6 +1458,8 @@ namespace Miner
                                     chunk_writer(tiles_t_c4, chunk);
                                     break;
                             }
+
+                            break;
                         }
                     }
                 }
@@ -1363,6 +1486,7 @@ namespace Miner
                 if (tiles_y[i * width + 1] == y_1)
                 {
                     x_mod = i;
+                    break;
                 }
             }
             // locates x pos in x array, but its increases by y array possion amount.
@@ -1418,6 +1542,8 @@ namespace Miner
                 if (tiles_y[i * width] == y_1)
                 {
                     x_mod = i;
+
+                    break;
                 }
             }
             // checks the x array for location
@@ -1428,7 +1554,7 @@ namespace Miner
                     switch (tiles_t_c1[(x_mod * width) + i])
                     {
                         #region changing the terrain
-                        case 2:
+                        case int n when n == 2 || n == 10 || n == 11 || n == 12 || n == 13 || n == 14:
                             if (tiles_mined[(x_mod * width) + i] > 700)
                             {
                                 stonebreakfinish.Play();
@@ -1469,6 +1595,18 @@ namespace Miner
                                 mining_on_tile((x_mod * width) + i, deltatime);
                             }
                             break;
+                        case 9:
+                            if (tiles_mined[(x_mod * width) + i] > 2500)
+                            {
+                                WorkShop.R2Mili++;
+                                stonebreakfinish.Play();
+                                Terrain.Change(x, y, 1, loaded_chunks[0]);
+                            }
+                            else
+                            {
+                                mining_on_tile((x_mod * width) + i, deltatime);
+                            }
+                            break;
                         case int n when n == 7 || n == 8:
                             if (tiles_mined[(x_mod * width) + i] > 3000)
                             {
@@ -1488,8 +1626,8 @@ namespace Miner
                                 mining_on_tile((x_mod * width) + i, deltatime);
                             }
                             break;
-                        case int n when n == 10 || n == 11 || n == 12:
-                            if (tiles_mined[(x_mod * width) + i] > 3000)
+                        case int n when n == 16 || n == 17 || n == 18:
+                            if (tiles_mined[(x_mod * width) + i] > 4500)
                             {
                                 if (arte_mined < WorkShop.ArtiFound.Length)
                                 {
